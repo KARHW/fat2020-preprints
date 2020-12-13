@@ -71,4 +71,53 @@ fips = no
 
 ; **************************************************************************
 ; * Service defaults may also be specified in individual service sections  *
-; ***************************
+; **************************************************************************
+
+; Certificate/key is needed in server mode and optional in client mode
+cert = stunnel_demo.pem
+;key = stunnel.pem
+
+; Disable support for insecure SSLv2 protocol
+options = NO_SSLv2
+; Workaround for Eudora bug
+;options = DONT_INSERT_EMPTY_FRAGMENTS
+
+; These options provide additional security at some performance degradation
+;options = SINGLE_ECDH_USE
+;options = SINGLE_DH_USE
+
+; **************************************************************************
+; * Service definitions (at least one service has to be defined)           *
+; **************************************************************************
+
+; Example SSL server mode services
+
+[FIXCLIENT]
+client=yes
+accept=127.0.0.1:8882
+connect=74.217.226.197:19905
+```
+
+
+**Step # 3: Starting Stunnel**
+
+1. Search for **Stunnel GUI Start** program and start it.
+
+***OR***
+
+To start the service
+
+1. Search for **Stunnel Service Install** and execute it (Needs Administrative Privileges).
+1. Search for **Stunnel Service Start** and execute it (Needs Administrative Privileges).
+
+***
+
+### Compiling Code
+
+**Clean** and **Build** the code from Visual Studio.
+
+***
+
+### Bugs
+
+Please report bugs [here](https://github.com/trade-nexus/bugs)
