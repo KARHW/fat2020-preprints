@@ -8,4 +8,30 @@ FileLogPath=c:\fix\logs\client-fix-messages
 FileStorePath=c:\fix\logs\client-fix-messages
 
 UseDataDictionary=Y
-DataDi
+DataDictionary=<Path for Data Dictionary>   #####To Be Updated
+
+# ValidateFieldsHaveValues=N
+# ValidateFieldsOutOfOrder=N
+# ReconnectInterval=0
+# ResetOnDisconnect=Y
+# ResetSeqNumFlag=Y
+# ResetOnLogout=Y
+# SendResetSeqNumFlag=Y
+# ContinueInitializationOnError=Y
+
+# Session definition Stream/Price
+DeliverToCompID=<Deliver To CompID>   #####To Be Updated
+[SESSION]
+SessionName=Price
+BeginString=<Begin String>   #####To Be Updated (Example: FIX.4.4)
+TargetCompID=<Target CompID>   #####To Be Updated
+SenderCompID=<Sender CompID>   #####To Be Updated
+SenderSubID=<Sender SubID>   #####To Be Updated
+StartDay=Monday
+EndDay=Friday
+StartTime=17:00:01
+EndTime=16:59:59
+MillisecondsInTimeStamp=Y
+HeartBtInt=30
+SocketConnectPort=<Socket Connect Port>   #####To Be Updated
+SocketConnectHost=<IP/Socket Connect Host>   #####To Be Updated
