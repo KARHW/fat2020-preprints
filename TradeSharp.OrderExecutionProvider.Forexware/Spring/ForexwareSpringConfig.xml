@@ -4,4 +4,7 @@
     The object definition for Forexware market data provider
   </description>
 
-  <object id="ForexwareOrderExecutionProvider" type="TradeSharp.OrderExecutionProvider.Forexware.Provider.ForexwareOrderExecutionProvider, TradeSharp.OrderExecutionPr
+  <object id="ForexwareOrderExecutionProvider" type="TradeSharp.OrderExecutionProvider.Forexware.Provider.ForexwareOrderExecutionProvider, TradeSharp.OrderExecutionProvider.Forexware">
+  </object>
+
+</objects>
