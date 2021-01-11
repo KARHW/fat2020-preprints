@@ -70,4 +70,49 @@ namespace TradeSharp.OrderExecutionProvider.Forexware.Tests.Integration
                         manualLogonEvent.Set();
                     };
 
-            _executi
+            _executionProvider.Start();
+            manualLogonEvent.WaitOne(30000, false);
+
+            Assert.AreEqual(true, isConnected);
+        }
+
+        [Test]
+        [Category("Integration")]
+        public void DisconnectOrderExecutionProviderTestCase()
+        {
+            bool isConnected = false;
+            var manualLogonEvent = new ManualResetEvent(false);
+            _executionProvider.LogonArrived +=
+                    delegate (string obj)
+                    {
+                        isConnected = true;
+                        _executionProvider.Stop();
+                        manualLogonEvent.Set();
+                    };
+
+            bool isDisconnected = false;
+            var manualLogoutEvent = new ManualResetEvent(false);
+            _executionProvider.LogoutArrived +=
+                    delegate (string obj)
+                    {
+                        isDisconnected = true;
+                        manualLogoutEvent.Set();
+                    };
+
+            _executionProvider.Start();
+            manualLogonEvent.WaitOne(30000, false);
+            manualLogoutEvent.WaitOne(30000, false);
+
+            Assert.AreEqual(true, isConnected, "Connected");
+            Assert.AreEqual(true, isDisconnected, "Disconnected");
+        }
+
+        [Test]
+        [Category("Integration")]
+        public void MarketOrder_OrderExecutionProviderTestCase()
+        {
+            MarketOrder marketOrder = new MarketOrder(Constants.OrderExecutionProvider.Forexware)
+            {
+                OrderID = "5000",
+                Security = new Security { Symbol = "EUR/USD" },
+                Or
