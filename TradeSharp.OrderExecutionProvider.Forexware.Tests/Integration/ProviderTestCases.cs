@@ -115,4 +115,48 @@ namespace TradeSharp.OrderExecutionProvider.Forexware.Tests.Integration
             {
                 OrderID = "5000",
                 Security = new Security { Symbol = "EUR/USD" },
-                Or
+                OrderSide = Constants.OrderSide.BUY,
+                OrderSize = 1000,
+                OrderTif = Constants.OrderTif.GTC
+            };
+
+            bool isConnected = false;
+            bool isDisconnected = false;
+            bool newArrived = false;
+            bool executionArrived = false;
+
+            var manualLogoutEvent = new ManualResetEvent(false);
+            var manualLogonEvent = new ManualResetEvent(false);
+            var manualNewEvent = new ManualResetEvent(false);
+            var manualExecutionEvent = new ManualResetEvent(false);
+
+            _executionProvider.LogonArrived +=
+                    delegate (string obj)
+                    {
+                        isConnected = true;
+                        _executionProvider.SendMarketOrder(marketOrder);
+                        manualLogonEvent.Set();
+                    };
+
+            _executionProvider.NewArrived += delegate (Order order)
+            {
+                newArrived = true;
+                manualNewEvent.Set();
+            };
+
+            _executionProvider.ExecutionArrived += delegate (Execution order)
+            {
+                if (order.Fill.LeavesQuantity.Equals(0))
+                {
+                    executionArrived = true;
+                    _executionProvider.Stop();
+                    manualExecutionEvent.Set();
+                }
+            };
+
+            _executionProvider.LogoutArrived +=
+                    delegate (string obj)
+                    {
+                        isDisconnected = true;
+                        manualLogoutEvent.Set();
+        
