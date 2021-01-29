@@ -159,4 +159,19 @@ namespace TradeSharp.OrderExecutionProvider.Forexware.Tests.Integration
                     {
                         isDisconnected = true;
                         manualLogoutEvent.Set();
-        
+                    };
+
+            _executionProvider.Start();
+
+            manualLogonEvent.WaitOne(30000, false);
+            manualNewEvent.WaitOne(30000, false);
+            manualExecutionEvent.WaitOne(30000, false);
+            manualLogoutEvent.WaitOne(30000, false);
+
+            Assert.AreEqual(true, isConnected, "Connected");
+            Assert.AreEqual(true, newArrived, "New Arrived");
+            Assert.AreEqual(true, executionArrived, "Execution Arrived");
+            Assert.AreEqual(true, isDisconnected, "Disconnected");
+        }
+    }
+}
