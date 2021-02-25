@@ -909,3 +909,1541 @@
             Gets and sets the category for this fixture.
             May be a comma-separated list of categories.
             </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestFixtureAttribute.Categories">
+            <summary>
+            Gets a list of categories for this fixture
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestFixtureAttribute.Arguments">
+            <summary>
+            The arguments originally provided to the attribute
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestFixtureAttribute.Ignore">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:NUnit.Framework.TestFixtureAttribute"/> should be ignored.
+            </summary>
+            <value><c>true</c> if ignore; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NUnit.Framework.TestFixtureAttribute.IgnoreReason">
+            <summary>
+            Gets or sets the ignore reason. May set Ignored as a side effect.
+            </summary>
+            <value>The ignore reason.</value>
+        </member>
+        <member name="P:NUnit.Framework.TestFixtureAttribute.TypeArgs">
+            <summary>
+            Get or set the type arguments. If not set
+            explicitly, any leading arguments that are
+            Types are taken as type arguments.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestFixtureSetUpAttribute">
+            <summary>
+            Attribute used to identify a method that is 
+            called before any tests in a fixture are run.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestFixtureTearDownAttribute">
+            <summary>
+            Attribute used to identify a method that is called after
+            all the tests in a fixture have run. The method is 
+            guaranteed to be called, even if an exception is thrown.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TheoryAttribute">
+            <summary>
+            Adding this attribute to a method within a <seealso cref="T:NUnit.Framework.TestFixtureAttribute"/> 
+            class makes the method callable from the NUnit test runner. There is a property 
+            called Description which is optional which you can provide a more detailed test
+            description. This class cannot be inherited.
+            </summary>
+            
+            <example>
+            [TestFixture]
+            public class Fixture
+            {
+              [Test]
+              public void MethodToTest()
+              {}
+              
+              [Test(Description = "more detailed description")]
+              publc void TestDescriptionMethod()
+              {}
+            }
+            </example>
+            
+        </member>
+        <member name="T:NUnit.Framework.TimeoutAttribute">
+            <summary>
+            Used on a method, marks the test with a timeout value in milliseconds. 
+            The test will be run in a separate thread and is cancelled if the timeout 
+            is exceeded. Used on a method or assembly, sets the default timeout 
+            for all contained test methods.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TimeoutAttribute.#ctor(System.Int32)">
+            <summary>
+            Construct a TimeoutAttribute given a time in milliseconds
+            </summary>
+            <param name="timeout">The timeout value in milliseconds</param>
+        </member>
+        <member name="T:NUnit.Framework.RequiresSTAAttribute">
+            <summary>
+            Marks a test that must run in the STA, causing it
+            to run in a separate thread if necessary.
+            
+            On methods, you may also use STAThreadAttribute
+            to serve the same purpose.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.RequiresSTAAttribute.#ctor">
+            <summary>
+            Construct a RequiresSTAAttribute
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.RequiresMTAAttribute">
+            <summary>
+            Marks a test that must run in the MTA, causing it
+            to run in a separate thread if necessary.
+            
+            On methods, you may also use MTAThreadAttribute
+            to serve the same purpose.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.RequiresMTAAttribute.#ctor">
+            <summary>
+            Construct a RequiresMTAAttribute
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.RequiresThreadAttribute">
+            <summary>
+            Marks a test that must run on a separate thread.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.RequiresThreadAttribute.#ctor">
+            <summary>
+            Construct a RequiresThreadAttribute
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.RequiresThreadAttribute.#ctor(System.Threading.ApartmentState)">
+            <summary>
+            Construct a RequiresThreadAttribute, specifying the apartment
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.ValueSourceAttribute">
+            <summary>
+            ValueSourceAttribute indicates the source to be used to
+            provide data for one parameter of a test method.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.ValueSourceAttribute.#ctor(System.String)">
+            <summary>
+            Construct with the name of the factory - for use with languages
+            that don't support params arrays.
+            </summary>
+            <param name="sourceName">The name of the data source to be used</param>
+        </member>
+        <member name="M:NUnit.Framework.ValueSourceAttribute.#ctor(System.Type,System.String)">
+            <summary>
+            Construct with a Type and name - for use with languages
+            that don't support params arrays.
+            </summary>
+            <param name="sourceType">The Type that will provide data</param>
+            <param name="sourceName">The name of the method, property or field that will provide data</param>
+        </member>
+        <member name="P:NUnit.Framework.ValueSourceAttribute.SourceName">
+            <summary>
+            The name of a the method, property or fiend to be used as a source
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.ValueSourceAttribute.SourceType">
+            <summary>
+            A Type to be used as a source
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.AttributeExistsConstraint">
+            <summary>
+            AttributeExistsConstraint tests for the presence of a
+            specified attribute on  a Type.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.Constraint">
+            <summary>
+            The Constraint class is the base of all built-in constraints
+            within NUnit. It provides the operator overloads used to combine 
+            constraints.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.IResolveConstraint">
+            <summary>
+            The IConstraintExpression interface is implemented by all
+            complete and resolvable constraints and expressions.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.IResolveConstraint.Resolve">
+            <summary>
+            Return the top-level constraint for this expression
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.Constraint.UNSET">
+            <summary>
+            Static UnsetObject used to detect derived constraints
+            failing to set the actual value.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.Constraint.actual">
+            <summary>
+            The actual value being tested against a constraint
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.Constraint.displayName">
+            <summary>
+            The display name of this Constraint for use by ToString()
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.Constraint.argcnt">
+            <summary>
+            Argument fields used by ToString();
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.Constraint.builder">
+            <summary>
+            The builder holding this constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.#ctor">
+            <summary>
+            Construct a constraint with no arguments
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.#ctor(System.Object)">
+            <summary>
+            Construct a constraint with one argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.#ctor(System.Object,System.Object)">
+            <summary>
+            Construct a constraint with two arguments
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.SetBuilder(NUnit.Framework.Constraints.ConstraintBuilder)">
+            <summary>
+            Sets the ConstraintBuilder holding this constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.WriteMessageTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the failure message to the MessageWriter provided
+            as an argument. The default implementation simply passes
+            the constraint and the actual value to the writer, which
+            then displays the constraint description and the value.
+            
+            Constraints that need to provide additional details,
+            such as where the error occured can override this.
+            </summary>
+            <param name="writer">The MessageWriter on which to display the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.Matches(NUnit.Framework.Constraints.ActualValueDelegate)">
+            <summary>
+            Test whether the constraint is satisfied by an
+            ActualValueDelegate that returns the value to be tested.
+            The default implementation simply evaluates the delegate
+            but derived classes may override it to provide for delayed 
+            processing.
+            </summary>
+            <param name="del">An ActualValueDelegate</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.Matches``1(``0@)">
+            <summary>
+            Test whether the constraint is satisfied by a given reference.
+            The default implementation simply dereferences the value but
+            derived classes may override it to provide for delayed processing.
+            </summary>
+            <param name="actual">A reference to the value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.ToString">
+            <summary>
+            Default override of ToString returns the constraint DisplayName
+            followed by any arguments within angle brackets.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of this constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.op_BitwiseAnd(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            This operator creates a constraint that is satisfied only if both 
+            argument constraints are satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.op_BitwiseOr(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            This operator creates a constraint that is satisfied if either 
+            of the argument constraints is satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.op_LogicalNot(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            This operator creates a constraint that is satisfied if the 
+            argument constraint is not satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.After(System.Int32)">
+            <summary>
+            Returns a DelayedConstraint with the specified delay time.
+            </summary>
+            <param name="delayInMilliseconds">The delay in milliseconds.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Constraint.After(System.Int32,System.Int32)">
+            <summary>
+            Returns a DelayedConstraint with the specified delay time
+            and polling interval.
+            </summary>
+            <param name="delayInMilliseconds">The delay in milliseconds.</param>
+            <param name="pollingInterval">The interval at which to test the constraint.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Constraint.DisplayName">
+            <summary>
+            The display name of this Constraint for use by ToString().
+            The default value is the name of the constraint with
+            trailing "Constraint" removed. Derived classes may set
+            this to another name in their constructors.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Constraint.And">
+            <summary>
+            Returns a ConstraintExpression by appending And
+            to the current constraint.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Constraint.With">
+            <summary>
+            Returns a ConstraintExpression by appending And
+            to the current constraint.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Constraint.Or">
+            <summary>
+            Returns a ConstraintExpression by appending Or
+            to the current constraint.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.Constraint.UnsetObject">
+            <summary>
+            Class used to detect any derived constraints
+            that fail to set the actual value in their
+            Matches override.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeExistsConstraint.#ctor(System.Type)">
+            <summary>
+            Constructs an AttributeExistsConstraint for a specific attribute Type
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeExistsConstraint.Matches(System.Object)">
+            <summary>
+            Tests whether the object provides the expected attribute.
+            </summary>
+            <param name="actual">A Type, MethodInfo, or other ICustomAttributeProvider</param>
+            <returns>True if the expected attribute is present, otherwise false</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeExistsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Writes the description of the constraint to the specified writer
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.AttributeConstraint">
+            <summary>
+            AttributeConstraint tests that a specified attribute is present
+            on a Type or other provider and that the value of the attribute
+            satisfies some other constraint.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.PrefixConstraint">
+            <summary>
+            Abstract base class used for prefixes
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.PrefixConstraint.baseConstraint">
+            <summary>
+            The base constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PrefixConstraint.#ctor(NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Construct given a base constraint
+            </summary>
+            <param name="resolvable"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeConstraint.#ctor(System.Type,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Constructs an AttributeConstraint for a specified attriute
+            Type and base constraint.
+            </summary>
+            <param name="type"></param>
+            <param name="baseConstraint"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeConstraint.Matches(System.Object)">
+            <summary>
+            Determines whether the Type or other provider has the 
+            expected attribute and if its value matches the
+            additional constraint specified.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Writes a description of the attribute to the specified writer.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Writes the actual value supplied to the specified writer.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AttributeConstraint.GetStringRepresentation">
+            <summary>
+            Returns a string representation of the constraint.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.BasicConstraint">
+            <summary>
+            BasicConstraint is the abstract base for constraints that
+            perform a simple comparison to a constant value.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BasicConstraint.#ctor(System.Object,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BasicConstraint"/> class.
+            </summary>
+            <param name="expected">The expected.</param>
+            <param name="description">The description.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BasicConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BasicConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NullConstraint">
+            <summary>
+            NullConstraint tests that the actual value is null
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NullConstraint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:NullConstraint"/> class.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.TrueConstraint">
+            <summary>
+            TrueConstraint tests that the actual value is true
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.TrueConstraint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TrueConstraint"/> class.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.FalseConstraint">
+            <summary>
+            FalseConstraint tests that the actual value is false
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.FalseConstraint.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FalseConstraint"/> class.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NaNConstraint">
+            <summary>
+            NaNConstraint tests that the actual value is a double or float NaN
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NaNConstraint.Matches(System.Object)">
+            <summary>
+            Test that the actual value is an NaN
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NaNConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a specified writer
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.BinaryConstraint">
+            <summary>
+            BinaryConstraint is the abstract base of all constraints
+            that combine two other constraints in some fashion.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.BinaryConstraint.left">
+            <summary>
+            The first constraint being combined
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.BinaryConstraint.right">
+            <summary>
+            The second constraint being combined
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BinaryConstraint.#ctor(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Construct a BinaryConstraint from two other constraints
+            </summary>
+            <param name="left">The first constraint</param>
+            <param name="right">The second constraint</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.AndConstraint">
+            <summary>
+            AndConstraint succeeds only if both members succeed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AndConstraint.#ctor(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Create an AndConstraint from two other constraints
+            </summary>
+            <param name="left">The first constraint</param>
+            <param name="right">The second constraint</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AndConstraint.Matches(System.Object)">
+            <summary>
+            Apply both member constraints to an actual value, succeeding 
+            succeeding only if both of them succeed.
+            </summary>
+            <param name="actual">The actual value</param>
+            <returns>True if the constraints both succeeded</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AndConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description for this contraint to a MessageWriter
+            </summary>
+            <param name="writer">The MessageWriter to receive the description</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AndConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.OrConstraint">
+            <summary>
+            OrConstraint succeeds if either member succeeds
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.OrConstraint.#ctor(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Create an OrConstraint from two other constraints
+            </summary>
+            <param name="left">The first constraint</param>
+            <param name="right">The second constraint</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.OrConstraint.Matches(System.Object)">
+            <summary>
+            Apply the member constraints to an actual value, succeeding 
+            succeeding as soon as one of them succeeds.
+            </summary>
+            <param name="actual">The actual value</param>
+            <returns>True if either constraint succeeded</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.OrConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description for this contraint to a MessageWriter
+            </summary>
+            <param name="writer">The MessageWriter to receive the description</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionConstraint">
+            <summary>
+            CollectionConstraint is the abstract base class for
+            constraints that operate on collections.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionConstraint.#ctor">
+            <summary>
+            Construct an empty CollectionConstraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionConstraint.#ctor(System.Object)">
+            <summary>
+            Construct a CollectionConstraint
+            </summary>
+            <param name="arg"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionConstraint.IsEmpty(System.Collections.IEnumerable)">
+            <summary>
+            Determines whether the specified enumerable is empty.
+            </summary>
+            <param name="enumerable">The enumerable.</param>
+            <returns>
+            	<c>true</c> if the specified enumerable is empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Protected method to be implemented by derived classes
+            </summary>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionItemsEqualConstraint">
+            <summary>
+            CollectionItemsEqualConstraint is the abstract base class for all
+            collection constraints that apply some notion of item equality
+            as a part of their operation.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.#ctor">
+            <summary>
+            Construct an empty CollectionConstraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.#ctor(System.Object)">
+            <summary>
+            Construct a CollectionConstraint
+            </summary>
+            <param name="arg"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.Using(System.Collections.IComparer)">
+            <summary>
+            Flag the constraint to use the supplied IComparer object.
+            </summary>
+            <param name="comparer">The IComparer object to use.</param>
+            <returns>Self.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.Using``1(System.Collections.Generic.IComparer{``0})">
+            <summary>
+            Flag the constraint to use the supplied IComparer object.
+            </summary>
+            <param name="comparer">The IComparer object to use.</param>
+            <returns>Self.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.Using``1(System.Comparison{``0})">
+            <summary>
+            Flag the constraint to use the supplied Comparison object.
+            </summary>
+            <param name="comparer">The IComparer object to use.</param>
+            <returns>Self.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.Using(System.Collections.IEqualityComparer)">
+            <summary>
+            Flag the constraint to use the supplied IEqualityComparer object.
+            </summary>
+            <param name="comparer">The IComparer object to use.</param>
+            <returns>Self.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.Using``1(System.Collections.Generic.IEqualityComparer{``0})">
+            <summary>
+            Flag the constraint to use the supplied IEqualityComparer object.
+            </summary>
+            <param name="comparer">The IComparer object to use.</param>
+            <returns>Self.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.ItemsEqual(System.Object,System.Object)">
+            <summary>
+            Compares two collection members for equality
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.Tally(System.Collections.IEnumerable)">
+            <summary>
+            Return a new CollectionTally for use in making tests
+            </summary>
+            <param name="c">The collection to be included in the tally</param>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.CollectionItemsEqualConstraint.IgnoreCase">
+            <summary>
+            Flag the constraint to ignore case and return self.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.EmptyCollectionConstraint">
+            <summary>
+            EmptyCollectionConstraint tests whether a collection is empty. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EmptyCollectionConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Check that the collection is empty
+            </summary>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EmptyCollectionConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.UniqueItemsConstraint">
+            <summary>
+            UniqueItemsConstraint tests whether all the items in a 
+            collection are unique.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.UniqueItemsConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Check that all items are unique.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.UniqueItemsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionContainsConstraint">
+            <summary>
+            CollectionContainsConstraint is used to test whether a collection
+            contains an expected object as a member.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionContainsConstraint.#ctor(System.Object)">
+            <summary>
+            Construct a CollectionContainsConstraint
+            </summary>
+            <param name="expected"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionContainsConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Test whether the expected item is contained in the collection
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionContainsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a descripton of the constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionEquivalentConstraint">
+            <summary>
+            CollectionEquivalentCOnstraint is used to determine whether two
+            collections are equivalent.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionEquivalentConstraint.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Construct a CollectionEquivalentConstraint
+            </summary>
+            <param name="expected"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionEquivalentConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Test whether two collections are equivalent
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionEquivalentConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionSubsetConstraint">
+            <summary>
+            CollectionSubsetConstraint is used to determine whether
+            one collection is a subset of another
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionSubsetConstraint.#ctor(System.Collections.IEnumerable)">
+            <summary>
+            Construct a CollectionSubsetConstraint
+            </summary>
+            <param name="expected">The collection that the actual value is expected to be a subset of</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionSubsetConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Test whether the actual collection is a subset of 
+            the expected collection provided.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionSubsetConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionOrderedConstraint">
+            <summary>
+            CollectionOrderedConstraint is used to test whether a collection is ordered.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.#ctor">
+            <summary>
+            Construct a CollectionOrderedConstraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.Using(System.Collections.IComparer)">
+            <summary>
+            Modifies the constraint to use an IComparer and returns self.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.Using``1(System.Collections.Generic.IComparer{``0})">
+            <summary>
+            Modifies the constraint to use an IComparer&lt;T&gt; and returns self.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.Using``1(System.Comparison{``0})">
+            <summary>
+            Modifies the constraint to use a Comparison&lt;T&gt; and returns self.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.By(System.String)">
+            <summary>
+            Modifies the constraint to test ordering by the value of
+            a specified property and returns self.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.doMatch(System.Collections.IEnumerable)">
+            <summary>
+            Test whether the collection is ordered
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of the constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionOrderedConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of the constraint.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.CollectionOrderedConstraint.Descending">
+            <summary>
+             If used performs a reverse comparison
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.CollectionTally">
+            <summary>
+            CollectionTally counts (tallies) the number of
+            occurences of each object in one or more enumerations.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionTally.#ctor(NUnit.Framework.Constraints.NUnitEqualityComparer,System.Collections.IEnumerable)">
+            <summary>
+            Construct a CollectionTally object from a comparer and a collection
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionTally.TryRemove(System.Object)">
+            <summary>
+            Try to remove an object from the tally
+            </summary>
+            <param name="o">The object to remove</param>
+            <returns>True if successful, false if the object was not found</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.CollectionTally.TryRemove(System.Collections.IEnumerable)">
+            <summary>
+            Try to remove a set of objects from the tally
+            </summary>
+            <param name="c">The objects to remove</param>
+            <returns>True if successful, false if any object was not found</returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.CollectionTally.Count">
+            <summary>
+            The number of objects remaining in the tally
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ComparisonAdapter">
+            <summary>
+            ComparisonAdapter class centralizes all comparisons of
+            values in NUnit, adapting to the use of any provided
+            IComparer, IComparer&lt;T&gt; or Comparison&lt;T&gt;
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.For(System.Collections.IComparer)">
+            <summary>
+            Returns a ComparisonAdapter that wraps an IComparer
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.For``1(System.Collections.Generic.IComparer{``0})">
+            <summary>
+            Returns a ComparisonAdapter that wraps an IComparer&lt;T&gt;
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.For``1(System.Comparison{``0})">
+            <summary>
+            Returns a ComparisonAdapter that wraps a Comparison&lt;T&gt;
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.Compare(System.Object,System.Object)">
+            <summary>
+            Compares two objects
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ComparisonAdapter.Default">
+            <summary>
+            Gets the default ComparisonAdapter, which wraps an
+            NUnitComparer object.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.ComparerAdapter.#ctor(System.Collections.IComparer)">
+            <summary>
+            Construct a ComparisonAdapter for an IComparer
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.ComparerAdapter.Compare(System.Object,System.Object)">
+            <summary>
+            Compares two objects
+            </summary>
+            <param name="expected"></param>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.DefaultComparisonAdapter.#ctor">
+            <summary>
+            Construct a default ComparisonAdapter
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ComparisonAdapter.ComparerAdapter`1">
+            <summary>
+            ComparisonAdapter&lt;T&gt; extends ComparisonAdapter and
+            allows use of an IComparer&lt;T&gt; or Comparison&lt;T&gt;
+            to actually perform the comparison.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.ComparerAdapter`1.#ctor(System.Collections.Generic.IComparer{`0})">
+            <summary>
+            Construct a ComparisonAdapter for an IComparer&lt;T&gt;
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.ComparerAdapter`1.Compare(System.Object,System.Object)">
+            <summary>
+            Compare a Type T to an object
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.ComparisonAdapterForComparison`1.#ctor(System.Comparison{`0})">
+            <summary>
+            Construct a ComparisonAdapter for a Comparison&lt;T&gt;
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonAdapter.ComparisonAdapterForComparison`1.Compare(System.Object,System.Object)">
+            <summary>
+            Compare a Type T to an object
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ComparisonConstraint">
+            <summary>
+            Abstract base class for constraints that compare values to
+            determine if one is greater than, equal to or less than
+            the other. This class supplies the Using modifiers.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.ComparisonConstraint.comparer">
+            <summary>
+            ComparisonAdapter to be used in making the comparison
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonConstraint.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ComparisonConstraint"/> class.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonConstraint.#ctor(System.Object,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ComparisonConstraint"/> class.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonConstraint.Using(System.Collections.IComparer)">
+            <summary>
+            Modifies the constraint to use an IComparer and returns self
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonConstraint.Using``1(System.Collections.Generic.IComparer{``0})">
+            <summary>
+            Modifies the constraint to use an IComparer&lt;T&gt; and returns self
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ComparisonConstraint.Using``1(System.Comparison{``0})">
+            <summary>
+            Modifies the constraint to use a Comparison&lt;T&gt; and returns self
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ActualValueDelegate">
+            <summary>
+            Delegate used to delay evaluation of the actual value
+            to be used in evaluating a constraint
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ConstraintBuilder">
+            <summary>
+            ConstraintBuilder maintains the stacks that are used in
+            processing a ConstraintExpression. An OperatorStack
+            is used to hold operators that are waiting for their
+            operands to be reognized. a ConstraintStack holds 
+            input constraints as well as the results of each
+            operator applied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConstraintBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.Append(NUnit.Framework.Constraints.ConstraintOperator)">
+            <summary>
+            Appends the specified operator to the expression by first
+            reducing the operator stack and then pushing the new
+            operator on the stack.
+            </summary>
+            <param name="op">The operator to push.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.Append(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Appends the specified constraint to the expresson by pushing
+            it on the constraint stack.
+            </summary>
+            <param name="constraint">The constraint to push.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.SetTopOperatorRightContext(System.Object)">
+            <summary>
+            Sets the top operator right context.
+            </summary>
+            <param name="rightContext">The right context.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.ReduceOperatorStack(System.Int32)">
+            <summary>
+            Reduces the operator stack until the topmost item
+            precedence is greater than or equal to the target precedence.
+            </summary>
+            <param name="targetPrecedence">The target precedence.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.Resolve">
+            <summary>
+            Resolves this instance, returning a Constraint. If the builder
+            is not currently in a resolvable state, an exception is thrown.
+            </summary>
+            <returns>The resolved constraint</returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintBuilder.IsResolvable">
+            <summary>
+            Gets a value indicating whether this instance is resolvable.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is resolvable; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ConstraintBuilder.OperatorStack">
+            <summary>
+            OperatorStack is a type-safe stack for holding ConstraintOperators
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.OperatorStack.#ctor(NUnit.Framework.Constraints.ConstraintBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OperatorStack"/> class.
+            </summary>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.OperatorStack.Push(NUnit.Framework.Constraints.ConstraintOperator)">
+            <summary>
+            Pushes the specified operator onto the stack.
+            </summary>
+            <param name="op">The op.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.OperatorStack.Pop">
+            <summary>
+            Pops the topmost operator from the stack.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintBuilder.OperatorStack.Empty">
+            <summary>
+            Gets a value indicating whether this <see cref="T:OpStack"/> is empty.
+            </summary>
+            <value><c>true</c> if empty; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintBuilder.OperatorStack.Top">
+            <summary>
+            Gets the topmost operator without modifying the stack.
+            </summary>
+            <value>The top.</value>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ConstraintBuilder.ConstraintStack">
+            <summary>
+            ConstraintStack is a type-safe stack for holding Constraints
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.ConstraintStack.#ctor(NUnit.Framework.Constraints.ConstraintBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConstraintStack"/> class.
+            </summary>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.ConstraintStack.Push(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Pushes the specified constraint. As a side effect,
+            the constraint's builder field is set to the 
+            ConstraintBuilder owning this stack.
+            </summary>
+            <param name="constraint">The constraint.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintBuilder.ConstraintStack.Pop">
+            <summary>
+            Pops this topmost constrait from the stack.
+            As a side effect, the constraint's builder
+            field is set to null.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintBuilder.ConstraintStack.Empty">
+            <summary>
+            Gets a value indicating whether this <see cref="T:ConstraintStack"/> is empty.
+            </summary>
+            <value><c>true</c> if empty; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintBuilder.ConstraintStack.Top">
+            <summary>
+            Gets the topmost constraint without modifying the stack.
+            </summary>
+            <value>The topmost constraint</value>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ConstraintExpression">
+            <summary>
+            ConstraintExpression represents a compound constraint in the 
+            process of being constructed from a series of syntactic elements.
+            
+            Individual elements are appended to the expression as they are
+            reognized. Once an actual Constraint is appended, the expression
+            returns a resolvable Constraint.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ConstraintExpressionBase">
+            <summary>
+            ConstraintExpressionBase is the abstract base class for the 
+            ConstraintExpression class, which represents a 
+            compound constraint in the process of being constructed 
+            from a series of syntactic elements.
+            
+            NOTE: ConstraintExpressionBase is separate because the
+            ConstraintExpression class was generated in earlier
+            versions of NUnit. The two classes may be combined
+            in a future version.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.ConstraintExpressionBase.builder">
+            <summary>
+            The ConstraintBuilder holding the elements recognized so far
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpressionBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConstraintExpressionBase"/> class.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpressionBase.#ctor(NUnit.Framework.Constraints.ConstraintBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConstraintExpressionBase"/> 
+            class passing in a ConstraintBuilder, which may be pre-populated.
+            </summary>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpressionBase.ToString">
+            <summary>
+            Returns a string representation of the expression as it
+            currently stands. This should only be used for testing,
+            since it has the side-effect of resolving the expression.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpressionBase.Append(NUnit.Framework.Constraints.ConstraintOperator)">
+            <summary>
+            Appends an operator to the expression and returns the
+            resulting expression itself.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpressionBase.Append(NUnit.Framework.Constraints.SelfResolvingOperator)">
+            <summary>
+            Appends a self-resolving operator to the expression and
+            returns a new ResolvableConstraintExpression.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpressionBase.Append(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Appends a constraint to the expression and returns that
+            constraint, which is associated with the current state
+            of the expression being built.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConstraintExpression"/> class.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.#ctor(NUnit.Framework.Constraints.ConstraintBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ConstraintExpression"/> 
+            class passing in a ConstraintBuilder, which may be pre-populated.
+            </summary>
+            <param name="builder">The builder.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Exactly(System.Int32)">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding only if a specified number of them succeed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Property(System.String)">
+            <summary>
+            Returns a new PropertyConstraintExpression, which will either
+            test for the existence of the named property on the object
+            being tested or apply any following constraint to that property.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Attribute(System.Type)">
+            <summary>
+            Returns a new AttributeConstraint checking for the
+            presence of a particular attribute on an object.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Attribute``1">
+            <summary>
+            Returns a new AttributeConstraint checking for the
+            presence of a particular attribute on an object.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Matches(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Returns the constraint provided as an argument - used to allow custom
+            custom constraints to easily participate in the syntax.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Matches``1(System.Predicate{``0})">
+            <summary>
+            Returns the constraint provided as an argument - used to allow custom
+            custom constraints to easily participate in the syntax.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.EqualTo(System.Object)">
+            <summary>
+            Returns a constraint that tests two items for equality
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.SameAs(System.Object)">
+            <summary>
+            Returns a constraint that tests that two references are the same object
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.GreaterThan(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is greater than the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.GreaterThanOrEqualTo(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is greater than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.AtLeast(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is greater than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.LessThan(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is less than the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.LessThanOrEqualTo(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is less than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.AtMost(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is less than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.TypeOf(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual
+            value is of the exact type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.TypeOf``1">
+            <summary>
+            Returns a constraint that tests whether the actual
+            value is of the exact type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.InstanceOf(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.InstanceOf``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.InstanceOfType(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.InstanceOfType``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.AssignableFrom(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.AssignableFrom``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.AssignableTo(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.AssignableTo``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.EquivalentTo(System.Collections.IEnumerable)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is a collection containing the same elements as the 
+            collection supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.SubsetOf(System.Collections.IEnumerable)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is a subset of the collection supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Member(System.Object)">
+            <summary>
+            Returns a new CollectionContainsConstraint checking for the
+            presence of a particular object in the collection.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Contains(System.Object)">
+            <summary>
+            Returns a new CollectionContainsConstraint checking for the
+            presence of a particular object in the collection.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Contains(System.String)">
+            <summary>
+            Returns a new ContainsConstraint. This constraint
+            will, in turn, make use of the appropriate second-level
+            constraint, depending on the type of the actual argument. 
+            This overload is only used if the item sought is a string,
+            since any other type implies that we are looking for a 
+            collection member.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.StringContaining(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value contains the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.ContainsSubstring(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value contains the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.StartsWith(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value starts with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.StringStarting(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value starts with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.EndsWith(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value ends with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.StringEnding(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value ends with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.Matches(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value matches the Regex pattern supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.StringMatching(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value matches the Regex pattern supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.SamePath(System.String)">
+            <summary>
+            Returns a constraint that tests whether the path provided 
+            is the same as an expected path after canonicalization.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.SubPath(System.String)">
+            <summary>
+            Returns a constraint that tests whether the path provided 
+            is the same path or under an expected path after canonicalization.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.SamePathOrUnder(System.String)">
+            <summary>
+            Returns a constraint that tests whether the path provided 
+            is the same path or under an expected path after canonicalization.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ConstraintExpression.InRange``1(``0,``0)">
+            <summary>
+            Returns a constraint that tests whether the actual value falls 
+            within a specified range.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.Not">
+            <summary>
+            Returns a ConstraintExpression that negates any
+            following constraint.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.No">
+            <summary>
+            Returns a ConstraintExpression that negates any
+            following constraint.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.All">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if all of them succeed.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.Some">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if at least one of them succeeds.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.None">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if all of them fail.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.Length">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the Length property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.Count">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the Count property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.Message">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the Message property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.InnerException">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the InnerException property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ConstraintExpression.With">
+            <summary>
+            With is currently a NOP - reserved for future use.
+            </summary>
