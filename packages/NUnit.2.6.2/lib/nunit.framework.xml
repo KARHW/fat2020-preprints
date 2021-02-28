@@ -3925,3 +3925,1577 @@
             </summary>
             <param name="level">The indentation level of the message</param>
             <param name="message">The message to be written</param>
+            <param name="args">Any arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.DisplayDifferences(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Display Expected and Actual lines for a constraint. This
+            is called by MessageWriter's default implementation of 
+            WriteMessageTo and provides the generic two-line display. 
+            </summary>
+            <param name="constraint">The constraint that failed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.DisplayDifferences(System.Object,System.Object)">
+            <summary>
+            Display Expected and Actual lines for given values. This
+            method may be called by constraints that need more control over
+            the display of actual and expected values than is provided
+            by the default implementation.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value causing the failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.DisplayDifferences(System.Object,System.Object,NUnit.Framework.Constraints.Tolerance)">
+            <summary>
+            Display Expected and Actual lines for given values, including
+            a tolerance value on the Expected line.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value causing the failure</param>
+            <param name="tolerance">The tolerance within which the test was made</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.DisplayStringDifferences(System.String,System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Display the expected and actual string values on separate lines.
+            If the mismatch parameter is >=0, an additional line is displayed
+            line containing a caret that points to the mismatch point.
+            </summary>
+            <param name="expected">The expected string value</param>
+            <param name="actual">The actual string value</param>
+            <param name="mismatch">The point at which the strings don't match or -1</param>
+            <param name="ignoreCase">If true, case is ignored in locating the point where the strings differ</param>
+            <param name="clipping">If true, the strings should be clipped to fit the line</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WriteConnector(System.String)">
+            <summary>
+            Writes the text for a connector.
+            </summary>
+            <param name="connector">The connector.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WritePredicate(System.String)">
+            <summary>
+            Writes the text for a predicate.
+            </summary>
+            <param name="predicate">The predicate.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WriteExpectedValue(System.Object)">
+            <summary>
+            Writes the text for an expected value.
+            </summary>
+            <param name="expected">The expected value.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WriteModifier(System.String)">
+            <summary>
+            Writes the text for a modifier
+            </summary>
+            <param name="modifier">The modifier.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WriteActualValue(System.Object)">
+            <summary>
+            Writes the text for an actual value.
+            </summary>
+            <param name="actual">The actual value.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WriteValue(System.Object)">
+            <summary>
+            Writes the text for a generalized value.
+            </summary>
+            <param name="val">The value.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MessageWriter.WriteCollectionElements(System.Collections.IEnumerable,System.Int32,System.Int32)">
+            <summary>
+            Writes the text for a collection value,
+            starting at a particular point, to a max length
+            </summary>
+            <param name="collection">The collection containing elements to write.</param>
+            <param name="start">The starting point of the elements to write</param>
+            <param name="max">The maximum number of elements to write</param>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.MessageWriter.MaxLineLength">
+            <summary>
+            Abstract method to get the max line length
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.MsgUtils">
+            <summary>
+            Static methods used in creating messages
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.MsgUtils.ELLIPSIS">
+            <summary>
+            Static string used when strings are clipped
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.GetTypeRepresentation(System.Object)">
+            <summary>
+            Returns the representation of a type as used in NUnitLite.
+            This is the same as Type.ToString() except for arrays,
+            which are displayed with their declared sizes.
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.EscapeControlChars(System.String)">
+            <summary>
+            Converts any control characters in a string 
+            to their escaped representation.
+            </summary>
+            <param name="s">The string to be converted</param>
+            <returns>The converted string</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.GetArrayIndicesAsString(System.Int32[])">
+            <summary>
+            Return the a string representation for a set of indices into an array
+            </summary>
+            <param name="indices">Array of indices for which a string is needed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.GetArrayIndicesFromCollectionIndex(System.Collections.IEnumerable,System.Int32)">
+            <summary>
+            Get an array of indices representing the point in a enumerable, 
+            collection or array corresponding to a single int index into the 
+            collection.
+            </summary>
+            <param name="collection">The collection to which the indices apply</param>
+            <param name="index">Index in the collection</param>
+            <returns>Array of indices</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.ClipString(System.String,System.Int32,System.Int32)">
+            <summary>
+            Clip a string to a given length, starting at a particular offset, returning the clipped
+            string with ellipses representing the removed parts
+            </summary>
+            <param name="s">The string to be clipped</param>
+            <param name="maxStringLength">The maximum permitted length of the result string</param>
+            <param name="clipStart">The point at which to start clipping</param>
+            <returns>The clipped string</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.ClipExpectedAndActual(System.String@,System.String@,System.Int32,System.Int32)">
+            <summary>
+            Clip the expected and actual strings in a coordinated fashion, 
+            so that they may be displayed together.
+            </summary>
+            <param name="expected"></param>
+            <param name="actual"></param>
+            <param name="maxDisplayLength"></param>
+            <param name="mismatch"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.MsgUtils.FindMismatchPosition(System.String,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Shows the position two strings start to differ.  Comparison 
+            starts at the start index.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+            <param name="istart">The index in the strings at which comparison should start</param>
+            <param name="ignoreCase">Boolean indicating whether case should be ignored</param>
+            <returns>-1 if no mismatch found, or the index where mismatch found</returns>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.Numerics">
+            <summary>
+            The Numerics class contains common operations on numeric values.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Numerics.IsNumericType(System.Object)">
+            <summary>
+            Checks the type of the object, returning true if
+            the object is a numeric type.
+            </summary>
+            <param name="obj">The object to check</param>
+            <returns>true if the object is a numeric type</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Numerics.IsFloatingPointNumeric(System.Object)">
+            <summary>
+            Checks the type of the object, returning true if
+            the object is a floating point numeric type.
+            </summary>
+            <param name="obj">The object to check</param>
+            <returns>true if the object is a floating point numeric type</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Numerics.IsFixedPointNumeric(System.Object)">
+            <summary>
+            Checks the type of the object, returning true if
+            the object is a fixed point numeric type.
+            </summary>
+            <param name="obj">The object to check</param>
+            <returns>true if the object is a fixed point numeric type</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Numerics.AreEqual(System.Object,System.Object,NUnit.Framework.Constraints.Tolerance@)">
+            <summary>
+            Test two numeric values for equality, performing the usual numeric 
+            conversions and using a provided or default tolerance. If the tolerance 
+            provided is Empty, this method may set it to a default tolerance.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="tolerance">A reference to the tolerance in effect</param>
+            <returns>True if the values are equal</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Numerics.Compare(System.Object,System.Object)">
+            <summary>
+            Compare two numeric values, performing the usual numeric conversions.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <returns>The relationship of the values to each other</returns>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NUnitComparer">
+            <summary>
+            NUnitComparer encapsulates NUnit's default behavior
+            in comparing two objects.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NUnitComparer.Compare(System.Object,System.Object)">
+            <summary>
+            Compares two objects
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.NUnitComparer.Default">
+            <summary>
+            Returns the default NUnitComparer.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NUnitComparer`1">
+            <summary>
+            Generic version of NUnitComparer
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NUnitComparer`1.Compare(`0,`0)">
+            <summary>
+            Compare two objects of the same type
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NUnitEqualityComparer">
+            <summary>
+            NUnitEqualityComparer encapsulates NUnit's handling of
+            equality tests between objects.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.INUnitEqualityComparer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.INUnitEqualityComparer.AreEqual(System.Object,System.Object,NUnit.Framework.Constraints.Tolerance@)">
+            <summary>
+            Compares two objects for equality within a tolerance
+            </summary>
+            <param name="x">The first object to compare</param>
+            <param name="y">The second object to compare</param>
+            <param name="tolerance">The tolerance to use in the comparison</param>
+            <returns></returns>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.caseInsensitive">
+            <summary>
+            If true, all string comparisons will ignore case
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.compareAsCollection">
+            <summary>
+            If true, arrays will be treated as collections, allowing
+            those of different dimensions to be compared
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.externalComparers">
+            <summary>
+            Comparison objects used in comparisons for some constraints.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NUnitEqualityComparer.AreEqual(System.Object,System.Object,NUnit.Framework.Constraints.Tolerance@)">
+            <summary>
+            Compares two objects for equality within a tolerance.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NUnitEqualityComparer.ArraysEqual(System.Array,System.Array,NUnit.Framework.Constraints.NUnitEqualityComparer.EnumerableRecursionHelper,NUnit.Framework.Constraints.Tolerance@)">
+            <summary>
+            Helper method to compare two arrays
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NUnitEqualityComparer.DirectoriesEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+            <summary>
+            Method to compare two DirectoryInfo objects
+            </summary>
+            <param name="x">first directory to compare</param>
+            <param name="y">second directory to compare</param>
+            <returns>true if equivalent, false if not</returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.NUnitEqualityComparer.Default">
+            <summary>
+            Returns the default NUnitEqualityComparer
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.NUnitEqualityComparer.IgnoreCase">
+            <summary>
+            Gets and sets a flag indicating whether case should
+            be ignored in determining equality.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.NUnitEqualityComparer.CompareAsCollection">
+            <summary>
+            Gets and sets a flag indicating that arrays should be
+            compared as collections, without regard to their shape.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.NUnitEqualityComparer.ExternalComparers">
+            <summary>
+            Gets and sets an external comparer to be used to
+            test for equality. It is applied to members of
+            collections, in place of NUnit's own logic.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoints">
+            <summary>
+            Gets the list of failure points for the last Match performed.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoint">
+            <summary>
+            FailurePoint class represents one point of failure
+            in an equality test.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoint.Position">
+            <summary>
+            The location of the failure
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoint.ExpectedValue">
+            <summary>
+            The expected value
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoint.ActualValue">
+            <summary>
+            The actual value
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoint.ExpectedHasData">
+            <summary>
+            Indicates whether the expected value is valid
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.NUnitEqualityComparer.FailurePoint.ActualHasData">
+            <summary>
+            Indicates whether the actual value is valid
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.PathConstraint">
+            <summary>
+            PathConstraint serves as the abstract base of constraints
+            that operate on paths and provides several helper methods.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.PathConstraint.expectedPath">
+            <summary>
+            The expected path used in the constraint
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.PathConstraint.actualPath">
+            <summary>
+            The actual path being tested
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.PathConstraint.caseInsensitive">
+            <summary>
+            Flag indicating whether a caseInsensitive comparison should be made
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.#ctor(System.String)">
+            <summary>
+            Construct a PathConstraint for a give expected path
+            </summary>
+            <param name="expected">The expected path</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.IsMatch(System.String,System.String)">
+            <summary>
+            Returns true if the expected path and actual path match
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of this constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.Canonicalize(System.String)">
+            <summary>
+            Canonicalize the provided path
+            </summary>
+            <param name="path"></param>
+            <returns>The path in standardized form</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.IsSamePath(System.String,System.String,System.Boolean)">
+            <summary>
+            Test whether two paths are the same
+            </summary>
+            <param name="path1">The first path</param>
+            <param name="path2">The second path</param>
+            <param name="ignoreCase">Indicates whether case should be ignored</param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.IsSubPath(System.String,System.String,System.Boolean)">
+            <summary>
+            Test whether one path is under another path
+            </summary>
+            <param name="path1">The first path - supposed to be the parent path</param>
+            <param name="path2">The second path - supposed to be the child path</param>
+            <param name="ignoreCase">Indicates whether case should be ignored</param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PathConstraint.IsSamePathOrUnder(System.String,System.String)">
+            <summary>
+            Test whether one path is the same as or under another path
+            </summary>
+            <param name="path1">The first path - supposed to be the parent path</param>
+            <param name="path2">The second path - supposed to be the child path</param>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.PathConstraint.IgnoreCase">
+            <summary>
+            Modifies the current instance to be case-insensitve
+            and returns it.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.PathConstraint.RespectCase">
+            <summary>
+            Modifies the current instance to be case-sensitve
+            and returns it.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.SamePathConstraint">
+            <summary>
+            Summary description for SamePathConstraint.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SamePathConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SamePathConstraint"/> class.
+            </summary>
+            <param name="expected">The expected path</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SamePathConstraint.IsMatch(System.String,System.String)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="expectedPath">The expected path</param>
+            <param name="actualPath">The actual path</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SamePathConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.SubPathConstraint">
+            <summary>
+            SubPathConstraint tests that the actual path is under the expected path
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SubPathConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SubPathConstraint"/> class.
+            </summary>
+            <param name="expected">The expected path</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SubPathConstraint.IsMatch(System.String,System.String)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="expectedPath">The expected path</param>
+            <param name="actualPath">The actual path</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SubPathConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.SamePathOrUnderConstraint">
+            <summary>
+            SamePathOrUnderConstraint tests that one path is under another
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SamePathOrUnderConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SamePathOrUnderConstraint"/> class.
+            </summary>
+            <param name="expected">The expected path</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SamePathOrUnderConstraint.IsMatch(System.String,System.String)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="expectedPath">The expected path</param>
+            <param name="actualPath">The actual path</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SamePathOrUnderConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.PredicateConstraint`1">
+            <summary>
+            Predicate constraint wraps a Predicate in a constraint,
+            returning success if the predicate is true.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PredicateConstraint`1.#ctor(System.Predicate{`0})">
+            <summary>
+            Construct a PredicateConstraint from a predicate
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PredicateConstraint`1.Matches(System.Object)">
+            <summary>
+            Determines whether the predicate succeeds when applied
+            to the actual value.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PredicateConstraint`1.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Writes the description to a MessageWriter
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NotConstraint">
+            <summary>
+            NotConstraint negates the effect of some other constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NotConstraint.#ctor(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NotConstraint"/> class.
+            </summary>
+            <param name="baseConstraint">The base constraint to be negated.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NotConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for if the base constraint fails, false if it succeeds</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NotConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NotConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a MessageWriter.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.AllItemsConstraint">
+            <summary>
+            AllItemsConstraint applies another constraint to each
+            item in a collection, succeeding if they all succeed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AllItemsConstraint.#ctor(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Construct an AllItemsConstraint on top of an existing constraint
+            </summary>
+            <param name="itemConstraint"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AllItemsConstraint.Matches(System.Object)">
+            <summary>
+            Apply the item constraint to each item in the collection,
+            failing if any item fails.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AllItemsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.SomeItemsConstraint">
+            <summary>
+            SomeItemsConstraint applies another constraint to each
+            item in a collection, succeeding if any of them succeeds.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SomeItemsConstraint.#ctor(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Construct a SomeItemsConstraint on top of an existing constraint
+            </summary>
+            <param name="itemConstraint"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SomeItemsConstraint.Matches(System.Object)">
+            <summary>
+            Apply the item constraint to each item in the collection,
+            succeeding if any item succeeds.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SomeItemsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NoItemConstraint">
+            <summary>
+            NoItemConstraint applies another constraint to each
+            item in a collection, failing if any of them succeeds.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NoItemConstraint.#ctor(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Construct a NoItemConstraint on top of an existing constraint
+            </summary>
+            <param name="itemConstraint"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NoItemConstraint.Matches(System.Object)">
+            <summary>
+            Apply the item constraint to each item in the collection,
+            failing if any item fails.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NoItemConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ExactCountConstraint">
+            <summary>
+            ExactCoutConstraint applies another constraint to each
+            item in a collection, succeeding only if a specified
+            number of items succeed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExactCountConstraint.#ctor(System.Int32,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Construct an ExactCountConstraint on top of an existing constraint
+            </summary>
+            <param name="expectedCount"></param>
+            <param name="itemConstraint"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExactCountConstraint.Matches(System.Object)">
+            <summary>
+            Apply the item constraint to each item in the collection,
+            succeeding only if the expected number of items pass.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExactCountConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.PropertyExistsConstraint">
+            <summary>
+            PropertyExistsConstraint tests that a named property
+            exists on the object provided through Match.
+            
+            Originally, PropertyConstraint provided this feature
+            in addition to making optional tests on the vaue
+            of the property. The two constraints are now separate.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyExistsConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PropertyExistConstraint"/> class.
+            </summary>
+            <param name="name">The name of the property.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyExistsConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the property exists for a given object
+            </summary>
+            <param name="actual">The object to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyExistsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyExistsConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyExistsConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of the constraint.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.PropertyConstraint">
+            <summary>
+            PropertyConstraint extracts a named property and uses
+            its value as the actual value for a chained constraint.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyConstraint.#ctor(System.String,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:PropertyConstraint"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="baseConstraint">The constraint to apply to the property.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.PropertyConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of the constraint.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.RangeConstraint`1">
+            <summary>
+            RangeConstraint tests whethe two values are within a 
+            specified range.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.RangeConstraint`1.#ctor(`0,`0)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RangeConstraint"/> class.
+            </summary>
+            <param name="from">From.</param>
+            <param name="to">To.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.RangeConstraint`1.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.RangeConstraint`1.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ResolvableConstraintExpression">
+            <summary>
+            ResolvableConstraintExpression is used to represent a compound
+            constraint being constructed at a point where the last operator
+            may either terminate the expression or may have additional 
+            qualifying constraints added to it. 
+            
+            It is used, for example, for a Property element or for
+            an Exception element, either of which may be optionally
+            followed by constraints that apply to the property or 
+            exception.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.#ctor">
+            <summary>
+            Create a new instance of ResolvableConstraintExpression
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.#ctor(NUnit.Framework.Constraints.ConstraintBuilder)">
+            <summary>
+            Create a new instance of ResolvableConstraintExpression,
+            passing in a pre-populated ConstraintBuilder.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.NUnit#Framework#Constraints#IResolveConstraint#Resolve">
+            <summary>
+            Resolve the current expression to a Constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_BitwiseAnd(NUnit.Framework.Constraints.ResolvableConstraintExpression,NUnit.Framework.Constraints.ResolvableConstraintExpression)">
+            <summary>
+            This operator creates a constraint that is satisfied only if both 
+            argument constraints are satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_BitwiseAnd(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.ResolvableConstraintExpression)">
+            <summary>
+            This operator creates a constraint that is satisfied only if both 
+            argument constraints are satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_BitwiseAnd(NUnit.Framework.Constraints.ResolvableConstraintExpression,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            This operator creates a constraint that is satisfied only if both 
+            argument constraints are satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_BitwiseOr(NUnit.Framework.Constraints.ResolvableConstraintExpression,NUnit.Framework.Constraints.ResolvableConstraintExpression)">
+            <summary>
+            This operator creates a constraint that is satisfied if either 
+            of the argument constraints is satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_BitwiseOr(NUnit.Framework.Constraints.ResolvableConstraintExpression,NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            This operator creates a constraint that is satisfied if either 
+            of the argument constraints is satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_BitwiseOr(NUnit.Framework.Constraints.Constraint,NUnit.Framework.Constraints.ResolvableConstraintExpression)">
+            <summary>
+            This operator creates a constraint that is satisfied if either 
+            of the argument constraints is satisfied.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ResolvableConstraintExpression.op_LogicalNot(NUnit.Framework.Constraints.ResolvableConstraintExpression)">
+            <summary>
+            This operator creates a constraint that is satisfied if the 
+            argument constraint is not satisfied.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ResolvableConstraintExpression.And">
+            <summary>
+            Appends an And Operator to the expression
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ResolvableConstraintExpression.Or">
+            <summary>
+            Appends an Or operator to the expression.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ReusableConstraint">
+            <summary>
+            ReusableConstraint wraps a resolved constraint so that it
+            may be saved and reused as needed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ReusableConstraint.#ctor(NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Construct a ReusableConstraint
+            </summary>
+            <param name="c">The constraint or expression to be reused</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ReusableConstraint.op_Implicit(NUnit.Framework.Constraints.Constraint)~NUnit.Framework.Constraints.ReusableConstraint">
+            <summary>
+            Conversion operator from a normal constraint to a ReusableConstraint.
+            </summary>
+            <param name="c">The original constraint to be wrapped as a ReusableConstraint</param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ReusableConstraint.ToString">
+            <summary>
+            Returns the string representation of the constraint.
+            </summary>
+            <returns>A string representing the constraint</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ReusableConstraint.Resolve">
+            <summary>
+            Resolves the ReusableConstraint by returning the constraint
+            that it originally wrapped.
+            </summary>
+            <returns>A resolved constraint</returns>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.SameAsConstraint">
+            <summary>
+            SameAsConstraint tests whether an object is identical to
+            the object passed to its constructor
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SameAsConstraint.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SameAsConstraint"/> class.
+            </summary>
+            <param name="expected">The expected object.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SameAsConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SameAsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.BinarySerializableConstraint">
+            <summary>
+            BinarySerializableConstraint tests whether 
+            an object is serializable in binary format.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BinarySerializableConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BinarySerializableConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BinarySerializableConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.BinarySerializableConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.XmlSerializableConstraint">
+            <summary>
+            BinarySerializableConstraint tests whether 
+            an object is serializable in binary format.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.XmlSerializableConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.XmlSerializableConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.XmlSerializableConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.XmlSerializableConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of this constraint
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.StringConstraint">
+            <summary>
+            StringConstraint is the abstract base for constraints
+            that operate on strings. It supports the IgnoreCase
+            modifier for string operations.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.StringConstraint.expected">
+            <summary>
+            The expected value
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.StringConstraint.caseInsensitive">
+            <summary>
+            Indicates whether tests should be case-insensitive
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.StringConstraint.#ctor(System.String)">
+            <summary>
+            Constructs a StringConstraint given an expected value
+            </summary>
+            <param name="expected">The expected value</param>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.StringConstraint.IgnoreCase">
+            <summary>
+            Modify the constraint to ignore case in matching.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.EmptyStringConstraint">
+            <summary>
+            EmptyStringConstraint tests whether a string is empty.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EmptyStringConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EmptyStringConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.NullOrEmptyStringConstraint">
+            <summary>
+            NullEmptyStringConstraint tests whether a string is either null or empty.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NullOrEmptyStringConstraint.#ctor">
+            <summary>
+            Constructs a new NullOrEmptyStringConstraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NullOrEmptyStringConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.NullOrEmptyStringConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.SubstringConstraint">
+            <summary>
+            SubstringConstraint can test whether a string contains
+            the expected substring.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SubstringConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SubstringConstraint"/> class.
+            </summary>
+            <param name="expected">The expected.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SubstringConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.SubstringConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.StartsWithConstraint">
+            <summary>
+            StartsWithConstraint can test whether a string starts
+            with an expected substring.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.StartsWithConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:StartsWithConstraint"/> class.
+            </summary>
+            <param name="expected">The expected string</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.StartsWithConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is matched by the actual value.
+            This is a template method, which calls the IsMatch method
+            of the derived class.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.StartsWithConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.EndsWithConstraint">
+            <summary>
+            EndsWithConstraint can test whether a string ends
+            with an expected substring.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EndsWithConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EndsWithConstraint"/> class.
+            </summary>
+            <param name="expected">The expected string</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EndsWithConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is matched by the actual value.
+            This is a template method, which calls the IsMatch method
+            of the derived class.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.EndsWithConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.RegexConstraint">
+            <summary>
+            RegexConstraint can test whether a string matches
+            the pattern provided.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.RegexConstraint.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RegexConstraint"/> class.
+            </summary>
+            <param name="pattern">The pattern.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.RegexConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True for success, false for failure</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.RegexConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ThrowsConstraint">
+            <summary>
+            ThrowsConstraint is used to test the exception thrown by 
+            a delegate by applying a constraint to it.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsConstraint.#ctor(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Initializes a new instance of the <see cref="T:ThrowsConstraint"/> class,
+            using a constraint to be applied to the exception.
+            </summary>
+            <param name="baseConstraint">A constraint to apply to the caught exception.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsConstraint.Matches(System.Object)">
+            <summary>
+            Executes the code of the delegate and captures any exception.
+            If a non-null base constraint was provided, it applies that
+            constraint to the exception.
+            </summary>
+            <param name="actual">A delegate representing the code to be tested</param>
+            <returns>True if an exception is thrown and the constraint succeeds, otherwise false</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsConstraint.Matches(NUnit.Framework.Constraints.ActualValueDelegate)">
+            <summary>
+            Converts an ActualValueDelegate to a TestDelegate
+            before calling the primary overload.
+            </summary>
+            <param name="del"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsConstraint.GetStringRepresentation">
+            <summary>
+            Returns the string representation of this constraint
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.ThrowsConstraint.ActualException">
+            <summary>
+            Get the actual exception thrown - used by Assert.Throws.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ThrowsNothingConstraint">
+            <summary>
+            ThrowsNothingConstraint tests that a delegate does not
+            throw an exception.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsNothingConstraint.Matches(System.Object)">
+            <summary>
+            Test whether the constraint is satisfied by a given value
+            </summary>
+            <param name="actual">The value to be tested</param>
+            <returns>True if no exception is thrown, otherwise false</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsNothingConstraint.Matches(NUnit.Framework.Constraints.ActualValueDelegate)">
+            <summary>
+            Converts an ActualValueDelegate to a TestDelegate
+            before calling the primary overload.
+            </summary>
+            <param name="del"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsNothingConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the constraint description to a MessageWriter
+            </summary>
+            <param name="writer">The writer on which the description is displayed</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ThrowsNothingConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. The default implementation simply writes
+            the raw value of actual, leaving it to the writer to
+            perform any formatting.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ToleranceMode">
+            <summary>
+            Modes in which the tolerance value for a comparison can
+            be interpreted.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.ToleranceMode.None">
+            <summary>
+            The tolerance was created with a value, without specifying 
+            how the value would be used. This is used to prevent setting
+            the mode more than once and is generally changed to Linear
+            upon execution of the test.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.ToleranceMode.Linear">
+            <summary>
+            The tolerance is used as a numeric range within which
+            two compared values are considered to be equal.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.ToleranceMode.Percent">
+            <summary>
+            Interprets the tolerance as the percentage by which
+            the two compared values my deviate from each other.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.ToleranceMode.Ulps">
+            <summary>
+            Compares two values based in their distance in
+            representable numbers.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.Tolerance">
+            <summary>
+            The Tolerance class generalizes the notion of a tolerance
+            within which an equality test succeeds. Normally, it is
+            used with numeric types, but it can be used with any
+            type that supports taking a difference between two 
+            objects and comparing that difference to a value.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Tolerance.#ctor(System.Object)">
+            <summary>
+            Constructs a linear tolerance of a specdified amount
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Tolerance.#ctor(System.Object,NUnit.Framework.Constraints.ToleranceMode)">
+            <summary>
+            Constructs a tolerance given an amount and ToleranceMode
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.Tolerance.CheckLinearAndNumeric">
+            <summary>
+            Tests that the current Tolerance is linear with a 
+            numeric value, throwing an exception if it is not.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Empty">
+            <summary>
+            Returns an empty Tolerance object, equivalent to
+            specifying no tolerance. In most cases, it results
+            in an exact match but for floats and doubles a
+            default tolerance may be used.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Zero">
+            <summary>
+            Returns a zero Tolerance object, equivalent to 
+            specifying an exact match.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Mode">
+            <summary>
+            Gets the ToleranceMode for the current Tolerance
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Value">
+            <summary>
+            Gets the value of the current Tolerance instance.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Percent">
+            <summary>
+            Returns a new tolerance, using the current amount as a percentage.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Ulps">
+            <summary>
+            Returns a new tolerance, using the current amount in Ulps.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Days">
+            <summary>
+            Returns a new tolerance with a TimeSpan as the amount, using 
+            the current amount as a number of days.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Hours">
+            <summary>
+            Returns a new tolerance with a TimeSpan as the amount, using 
+            the current amount as a number of hours.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Minutes">
+            <summary>
+            Returns a new tolerance with a TimeSpan as the amount, using 
+            the current amount as a number of minutes.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Seconds">
+            <summary>
+            Returns a new tolerance with a TimeSpan as the amount, using 
+            the current amount as a number of seconds.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Milliseconds">
+            <summary>
+            Returns a new tolerance with a TimeSpan as the amount, using 
+            the current amount as a number of milliseconds.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.Ticks">
+            <summary>
+            Returns a new tolerance with a TimeSpan as the amount, using 
+            the current amount as a number of clock ticks.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Constraints.Tolerance.IsEmpty">
+            <summary>
+            Returns true if the current tolerance is empty.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.TypeConstraint">
+            <summary>
+            TypeConstraint is the abstract base for constraints
+            that take a Type as their expected value.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.Constraints.TypeConstraint.expectedType">
+            <summary>
+            The expected Type used by the constraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.TypeConstraint.#ctor(System.Type)">
+            <summary>
+            Construct a TypeConstraint for a given Type
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.TypeConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. TypeConstraints override this method to write
+            the name of the type.
+            </summary>
+            <param name="writer">The writer on which the actual value is displayed</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ExactTypeConstraint">
+            <summary>
+            ExactTypeConstraint is used to test that an object
+            is of the exact type provided in the constructor
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExactTypeConstraint.#ctor(System.Type)">
+            <summary>
+            Construct an ExactTypeConstraint for a given Type
+            </summary>
+            <param name="type">The expected Type.</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExactTypeConstraint.Matches(System.Object)">
+            <summary>
+            Test that an object is of the exact type specified
+            </summary>
+            <param name="actual">The actual value.</param>
+            <returns>True if the tested object is of the exact type provided, otherwise false.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExactTypeConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer">The MessageWriter to use</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.ExceptionTypeConstraint">
+            <summary>
+            ExceptionTypeConstraint is a special version of ExactTypeConstraint
+            used to provided detailed info about the exception thrown in
+            an error message.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExceptionTypeConstraint.#ctor(System.Type)">
+            <summary>
+            Constructs an ExceptionTypeConstraint
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.ExceptionTypeConstraint.WriteActualValueTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write the actual value for a failing constraint test to a
+            MessageWriter. Overriden to write additional information 
+            in the case of an Exception.
+            </summary>
+            <param name="writer">The MessageWriter to use</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.InstanceOfTypeConstraint">
+            <summary>
+            InstanceOfTypeConstraint is used to test that an object
+            is of the same type provided or derived from it.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.InstanceOfTypeConstraint.#ctor(System.Type)">
+            <summary>
+            Construct an InstanceOfTypeConstraint for the type provided
+            </summary>
+            <param name="type">The expected Type</param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.InstanceOfTypeConstraint.Matches(System.Object)">
+            <summary>
+            Test whether an object is of the specified type or a derived type
+            </summary>
+            <param name="actual">The object to be tested</param>
+            <returns>True if the object is of the provided type or derives from it, otherwise false.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.InstanceOfTypeConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer">The MessageWriter to use</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.AssignableFromConstraint">
+            <summary>
+            AssignableFromConstraint is used to test that an object
+            can be assigned from a given Type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AssignableFromConstraint.#ctor(System.Type)">
+            <summary>
+            Construct an AssignableFromConstraint for the type provided
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AssignableFromConstraint.Matches(System.Object)">
+            <summary>
+            Test whether an object can be assigned from the specified type
+            </summary>
+            <param name="actual">The object to be tested</param>
+            <returns>True if the object can be assigned a value of the expected Type, otherwise false.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AssignableFromConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer">The MessageWriter to use</param>
+        </member>
+        <member name="T:NUnit.Framework.Constraints.AssignableToConstraint">
+            <summary>
+            AssignableToConstraint is used to test that an object
+            can be assigned to a given Type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AssignableToConstraint.#ctor(System.Type)">
+            <summary>
+            Construct an AssignableToConstraint for the type provided
+            </summary>
+            <param name="type"></param>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AssignableToConstraint.Matches(System.Object)">
+            <summary>
+            Test whether an object can be assigned to the specified type
+            </summary>
+            <param name="actual">The object to be tested</param>
+            <returns>True if the object can be assigned a value of the expected Type, otherwise false.</returns>
+        </member>
+        <member name="M:NUnit.Framework.Constraints.AssignableToConstraint.WriteDescriptionTo(NUnit.Framework.Constraints.MessageWriter)">
+            <summary>
+            Write a description of this constraint to a MessageWriter
+            </summary>
+            <param name="writer">The MessageWriter to use</param>
+        </member>
+        <member name="T:NUnit.Framework.AssertionException">
+            <summary>
+            Thrown when an assertion failed.
+            </summary>
+            
+        </member>
+        <member name="M:NUnit.Framework.AssertionException.#ctor(System.String)">
+            <param name="message">The error message that explains 
+            the reason for the exception</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionException.#ctor(System.String,System.Exception)">
+            <param name="message">The error message that explains 
+            the reason for the exception</param>
+            <param name="inner">The exception that caused the 
+            current exception</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization Constructor
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.IgnoreException">
+            <summary>
+            Thrown when an assertion failed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.IgnoreException.#ctor(System.String)">
+            <param name="message"></param>
+        </member>
+        <member name="M:NUnit.Framework.IgnoreException.#ctor(System.String,System.Exception)">
+            <param name="message">The error message that explains 
+            the reason for the exception</param>
+            <param name="inner">The exception that caused the 
+            current exception</param>
+        </member>
+        <member name="M:NUnit.Framework.IgnoreException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization Constructor
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.InconclusiveException">
