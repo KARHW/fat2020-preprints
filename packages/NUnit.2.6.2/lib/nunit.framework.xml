@@ -5499,3 +5499,1515 @@
             </summary>
         </member>
         <member name="T:NUnit.Framework.InconclusiveException">
+            <summary>
+            Thrown when a test executes inconclusively.
+            </summary>
+            
+        </member>
+        <member name="M:NUnit.Framework.InconclusiveException.#ctor(System.String)">
+            <param name="message">The error message that explains 
+            the reason for the exception</param>
+        </member>
+        <member name="M:NUnit.Framework.InconclusiveException.#ctor(System.String,System.Exception)">
+            <param name="message">The error message that explains 
+            the reason for the exception</param>
+            <param name="inner">The exception that caused the 
+            current exception</param>
+        </member>
+        <member name="M:NUnit.Framework.InconclusiveException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization Constructor
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.SuccessException">
+            <summary>
+            Thrown when an assertion failed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.SuccessException.#ctor(System.String)">
+            <param name="message"></param>
+        </member>
+        <member name="M:NUnit.Framework.SuccessException.#ctor(System.String,System.Exception)">
+            <param name="message">The error message that explains 
+            the reason for the exception</param>
+            <param name="inner">The exception that caused the 
+            current exception</param>
+        </member>
+        <member name="M:NUnit.Framework.SuccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Serialization Constructor
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.INUnitEqualityComparer`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:NUnit.Framework.INUnitEqualityComparer`1.AreEqual(`0,`0,NUnit.Framework.Constraints.Tolerance@)">
+            <summary>
+            Compares two objects of a given Type for equality within a tolerance
+            </summary>
+            <param name="x">The first object to compare</param>
+            <param name="y">The second object to compare</param>
+            <param name="tolerance">The tolerance to use in the comparison</param>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.ActionTargets">
+            <summary>
+            The different targets a test action attribute can be applied to
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.ActionTargets.Default">
+            <summary>
+            Default target, which is determined by where the action attribute is attached
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.ActionTargets.Test">
+            <summary>
+            Target a individual test case
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.ActionTargets.Suite">
+            <summary>
+            Target a suite of test cases
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestDelegate">
+            <summary>
+            Delegate used by tests that execute code and
+            capture any thrown exception.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Assert">
+            <summary>
+            The Assert class contains a collection of static methods that
+            implement the most common assertions used in NUnit.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assert.#ctor">
+            <summary>
+            We don't actually want any instances of this object, but some people
+            like to inherit from it to add other static methods. Hence, the
+            protected constructor disallows any instances of this object. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Equals(System.Object,System.Object)">
+            <summary>
+            The Equals method throws an AssertionException. This is done 
+            to make sure there is no mistake by calling this function.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.ReferenceEquals(System.Object,System.Object)">
+            <summary>
+            override the default ReferenceEquals to throw an AssertionException. This 
+            implementation makes sure there is no mistake in calling this function 
+            as part of Assert. 
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AssertDoublesAreEqual(System.Double,System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Helper for Assert.AreEqual(double expected, double actual, ...)
+            allowing code generation to work consistently.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Pass(System.String,System.Object[])">
+            <summary>
+            Throws a <see cref="T:NUnit.Framework.SuccessException"/> with the message and arguments 
+            that are passed in. This allows a test to be cut short, with a result
+            of success returned to NUnit.
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.AssertionException"/> with.</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Pass(System.String)">
+            <summary>
+            Throws a <see cref="T:NUnit.Framework.SuccessException"/> with the message and arguments 
+            that are passed in. This allows a test to be cut short, with a result
+            of success returned to NUnit.
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.AssertionException"/> with.</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Pass">
+            <summary>
+            Throws a <see cref="T:NUnit.Framework.SuccessException"/> with the message and arguments 
+            that are passed in. This allows a test to be cut short, with a result
+            of success returned to NUnit.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Fail(System.String,System.Object[])">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.AssertionException"/> with the message and arguments 
+            that are passed in. This is used by the other Assert functions. 
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.AssertionException"/> with.</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Fail(System.String)">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.AssertionException"/> with the message that is 
+            passed in. This is used by the other Assert functions. 
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.AssertionException"/> with.</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Fail">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.AssertionException"/>. 
+            This is used by the other Assert functions. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Ignore(System.String,System.Object[])">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.IgnoreException"/> with the message and arguments 
+            that are passed in.  This causes the test to be reported as ignored.
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.AssertionException"/> with.</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Ignore(System.String)">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.IgnoreException"/> with the message that is 
+            passed in. This causes the test to be reported as ignored. 
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.AssertionException"/> with.</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Ignore">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.IgnoreException"/>. 
+            This causes the test to be reported as ignored. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Inconclusive(System.String,System.Object[])">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.InconclusiveException"/> with the message and arguments 
+            that are passed in.  This causes the test to be reported as inconclusive.
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.InconclusiveException"/> with.</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Inconclusive(System.String)">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.InconclusiveException"/> with the message that is 
+            passed in. This causes the test to be reported as inconclusive. 
+            </summary>
+            <param name="message">The message to initialize the <see cref="T:NUnit.Framework.InconclusiveException"/> with.</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Inconclusive">
+            <summary>
+            Throws an <see cref="T:NUnit.Framework.InconclusiveException"/>. 
+            This causes the test to be reported as Inconclusive. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(System.Object,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That``1(``0@,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That``1(``0@,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That``1(``0@,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display if the condition is false</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display if the condition is false</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(System.Boolean)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.That(NUnit.Framework.TestDelegate,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Asserts that the code represented by a delegate throws an exception
+            that satisfies the constraint provided.
+            </summary>
+            <param name="code">A TestDelegate to be executed</param>
+            <param name="constraint">A ThrowsConstraint used in the test</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.ByVal(System.Object,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            Used as a synonym for That in rare cases where a private setter 
+            causes a Visual Basic compilation error.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.ByVal(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            Used as a synonym for That in rare cases where a private setter 
+            causes a Visual Basic compilation error.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.ByVal(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure. 
+            Used as a synonym for That in rare cases where a private setter 
+            causes a Visual Basic compilation error.
+            </summary>
+            <remarks>
+            This method is provided for use by VB developers needing to test
+            the value of properties with private setters.
+            </remarks>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws(NUnit.Framework.Constraints.IResolveConstraint,NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <param name="expression">A constraint to be satisfied by the exception</param>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws(NUnit.Framework.Constraints.IResolveConstraint,NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <param name="expression">A constraint to be satisfied by the exception</param>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws(NUnit.Framework.Constraints.IResolveConstraint,NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <param name="expression">A constraint to be satisfied by the exception</param>
+            <param name="code">A TestSnippet delegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws(System.Type,NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <param name="expectedExceptionType">The exception Type expected</param>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws(System.Type,NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <param name="expectedExceptionType">The exception Type expected</param>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws(System.Type,NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <param name="expectedExceptionType">The exception Type expected</param>
+            <param name="code">A TestSnippet delegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws``1(NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <typeparam name="T">Type of the expected exception</typeparam>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws``1(NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <typeparam name="T">Type of the expected exception</typeparam>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Throws``1(NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate throws a particular exception when called.
+            </summary>
+            <typeparam name="T">Type of the expected exception</typeparam>
+            <param name="code">A TestSnippet delegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch(NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate throws an exception when called
+            and returns it.
+            </summary>
+            <param name="code">A TestDelegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch(NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate throws an exception when called
+            and returns it.
+            </summary>
+            <param name="code">A TestDelegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch(NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate throws an exception when called
+            and returns it.
+            </summary>
+            <param name="code">A TestDelegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch(System.Type,NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate throws an exception of a certain Type
+            or one derived from it when called and returns it.
+            </summary>
+            <param name="expectedExceptionType">The expected Exception Type</param>
+            <param name="code">A TestDelegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch(System.Type,NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate throws an exception of a certain Type
+            or one derived from it when called and returns it.
+            </summary>
+            <param name="expectedExceptionType">The expected Exception Type</param>
+            <param name="code">A TestDelegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch(System.Type,NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate throws an exception of a certain Type
+            or one derived from it when called and returns it.
+            </summary>
+            <param name="expectedExceptionType">The expected Exception Type</param>
+            <param name="code">A TestDelegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch``1(NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate throws an exception of a certain Type
+            or one derived from it when called and returns it.
+            </summary>
+            <typeparam name="T">The expected Exception Type</typeparam>
+            <param name="code">A TestDelegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch``1(NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate throws an exception of a certain Type
+            or one derived from it when called and returns it.
+            </summary>
+            <typeparam name="T">The expected Exception Type</typeparam>
+            <param name="code">A TestDelegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Catch``1(NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate throws an exception of a certain Type
+            or one derived from it when called and returns it.
+            </summary>
+            <typeparam name="T">The expected Exception Type</typeparam>
+            <param name="code">A TestDelegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.DoesNotThrow(NUnit.Framework.TestDelegate,System.String,System.Object[])">
+            <summary>
+            Verifies that a delegate does not throw an exception
+            </summary>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.DoesNotThrow(NUnit.Framework.TestDelegate,System.String)">
+            <summary>
+            Verifies that a delegate does not throw an exception.
+            </summary>
+            <param name="code">A TestSnippet delegate</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.DoesNotThrow(NUnit.Framework.TestDelegate)">
+            <summary>
+            Verifies that a delegate does not throw an exception.
+            </summary>
+            <param name="code">A TestSnippet delegate</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.True(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.True(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.True(System.Boolean)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsTrue(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsTrue(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsTrue(System.Boolean)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.False(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is false. If the condition is true the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.False(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is false. If the condition is true the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.False(System.Boolean)">
+            <summary>
+            Asserts that a condition is false. If the condition is true the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsFalse(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is false. If the condition is true the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsFalse(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is false. If the condition is true the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsFalse(System.Boolean)">
+            <summary>
+            Asserts that a condition is false. If the condition is true the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.NotNull(System.Object,System.String,System.Object[])">
+            <summary>
+            Verifies that the object that is passed in is not equal to <code>null</code>
+            If the object is <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.NotNull(System.Object,System.String)">
+            <summary>
+            Verifies that the object that is passed in is not equal to <code>null</code>
+            If the object is <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.NotNull(System.Object)">
+            <summary>
+            Verifies that the object that is passed in is not equal to <code>null</code>
+            If the object is <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotNull(System.Object,System.String,System.Object[])">
+            <summary>
+            Verifies that the object that is passed in is not equal to <code>null</code>
+            If the object is <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotNull(System.Object,System.String)">
+            <summary>
+            Verifies that the object that is passed in is not equal to <code>null</code>
+            If the object is <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotNull(System.Object)">
+            <summary>
+            Verifies that the object that is passed in is not equal to <code>null</code>
+            If the object is <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Null(System.Object,System.String,System.Object[])">
+            <summary>
+            Verifies that the object that is passed in is equal to <code>null</code>
+            If the object is not <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Null(System.Object,System.String)">
+            <summary>
+            Verifies that the object that is passed in is equal to <code>null</code>
+            If the object is not <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Null(System.Object)">
+            <summary>
+            Verifies that the object that is passed in is equal to <code>null</code>
+            If the object is not <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNull(System.Object,System.String,System.Object[])">
+            <summary>
+            Verifies that the object that is passed in is equal to <code>null</code>
+            If the object is not <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNull(System.Object,System.String)">
+            <summary>
+            Verifies that the object that is passed in is equal to <code>null</code>
+            If the object is not <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNull(System.Object)">
+            <summary>
+            Verifies that the object that is passed in is equal to <code>null</code>
+            If the object is not <code>null</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="anObject">The object that is to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNaN(System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that the double that is passed in is an <code>NaN</code> value.
+            If the object is not <code>NaN</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="aDouble">The value that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNaN(System.Double,System.String)">
+            <summary>
+            Verifies that the double that is passed in is an <code>NaN</code> value.
+            If the object is not <code>NaN</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="aDouble">The value that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNaN(System.Double)">
+            <summary>
+            Verifies that the double that is passed in is an <code>NaN</code> value.
+            If the object is not <code>NaN</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="aDouble">The value that is to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNaN(System.Nullable{System.Double},System.String,System.Object[])">
+            <summary>
+            Verifies that the double that is passed in is an <code>NaN</code> value.
+            If the object is not <code>NaN</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="aDouble">The value that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNaN(System.Nullable{System.Double},System.String)">
+            <summary>
+            Verifies that the double that is passed in is an <code>NaN</code> value.
+            If the object is not <code>NaN</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="aDouble">The value that is to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNaN(System.Nullable{System.Double})">
+            <summary>
+            Verifies that the double that is passed in is an <code>NaN</code> value.
+            If the object is not <code>NaN</code> then an <see cref="T:NUnit.Framework.AssertionException"/>
+            is thrown.
+            </summary>
+            <param name="aDouble">The value that is to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Assert that a string is empty - that is equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsEmpty(System.String,System.String)">
+            <summary>
+            Assert that a string is empty - that is equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsEmpty(System.String)">
+            <summary>
+            Assert that a string is empty - that is equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsEmpty(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing ICollection</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsEmpty(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing ICollection</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsEmpty(System.Collections.IEnumerable)">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing ICollection</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Assert that a string is not empty - that is not equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotEmpty(System.String,System.String)">
+            <summary>
+            Assert that a string is not empty - that is not equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotEmpty(System.String)">
+            <summary>
+            Assert that a string is not empty - that is not equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotEmpty(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Assert that an array, list or other collection is not empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing ICollection</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotEmpty(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Assert that an array, list or other collection is not empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing ICollection</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotEmpty(System.Collections.IEnumerable)">
+            <summary>
+            Assert that an array, list or other collection is not empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing ICollection</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNullOrEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Assert that a string is either null or equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNullOrEmpty(System.String,System.String)">
+            <summary>
+            Assert that a string is either null or equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNullOrEmpty(System.String)">
+            <summary>
+            Assert that a string is either null or equal to string.Empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotNullOrEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Assert that a string is not null or empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotNullOrEmpty(System.String,System.String)">
+            <summary>
+            Assert that a string is not null or empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotNullOrEmpty(System.String)">
+            <summary>
+            Assert that a string is not null or empty
+            </summary>
+            <param name="aString">The string to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsAssignableFrom(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object may be assigned a  value of a given Type.
+            </summary>
+            <param name="expected">The expected Type.</param>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsAssignableFrom(System.Type,System.Object,System.String)">
+            <summary>
+            Asserts that an object may be assigned a  value of a given Type.
+            </summary>
+            <param name="expected">The expected Type.</param>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsAssignableFrom(System.Type,System.Object)">
+            <summary>
+            Asserts that an object may be assigned a  value of a given Type.
+            </summary>
+            <param name="expected">The expected Type.</param>
+            <param name="actual">The object under examination</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsAssignableFrom``1(System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object may be assigned a  value of a given Type.
+            </summary>
+            <typeparam name="T">The expected Type.</typeparam>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsAssignableFrom``1(System.Object,System.String)">
+            <summary>
+            Asserts that an object may be assigned a  value of a given Type.
+            </summary>
+            <typeparam name="T">The expected Type.</typeparam>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsAssignableFrom``1(System.Object)">
+            <summary>
+            Asserts that an object may be assigned a  value of a given Type.
+            </summary>
+            <typeparam name="T">The expected Type.</typeparam>
+            <param name="actual">The object under examination</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotAssignableFrom(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object may not be assigned a  value of a given Type.
+            </summary>
+            <param name="expected">The expected Type.</param>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotAssignableFrom(System.Type,System.Object,System.String)">
+            <summary>
+            Asserts that an object may not be assigned a  value of a given Type.
+            </summary>
+            <param name="expected">The expected Type.</param>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotAssignableFrom(System.Type,System.Object)">
+            <summary>
+            Asserts that an object may not be assigned a  value of a given Type.
+            </summary>
+            <param name="expected">The expected Type.</param>
+            <param name="actual">The object under examination</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotAssignableFrom``1(System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object may not be assigned a  value of a given Type.
+            </summary>
+            <typeparam name="T">The expected Type.</typeparam>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotAssignableFrom``1(System.Object,System.String)">
+            <summary>
+            Asserts that an object may not be assigned a  value of a given Type.
+            </summary>
+            <typeparam name="T">The expected Type.</typeparam>
+            <param name="actual">The object under examination</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotAssignableFrom``1(System.Object)">
+            <summary>
+            Asserts that an object may not be assigned a  value of a given Type.
+            </summary>
+            <typeparam name="T">The expected Type.</typeparam>
+            <param name="actual">The object under examination</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOf(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOf(System.Type,System.Object,System.String)">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOf(System.Type,System.Object)">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOfType(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOfType(System.Type,System.Object,System.String)">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOfType(System.Type,System.Object)">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOf``1(System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <typeparam name="T">The expected Type</typeparam>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOf``1(System.Object,System.String)">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <typeparam name="T">The expected Type</typeparam>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsInstanceOf``1(System.Object)">
+            <summary>
+            Asserts that an object is an instance of a given type.
+            </summary>
+            <typeparam name="T">The expected Type</typeparam>
+            <param name="actual">The object being examined</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOf(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOf(System.Type,System.Object,System.String)">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOf(System.Type,System.Object)">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOfType(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOfType(System.Type,System.Object,System.String)">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOfType(System.Type,System.Object)">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <param name="expected">The expected Type</param>
+            <param name="actual">The object being examined</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOf``1(System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <typeparam name="T">The expected Type</typeparam>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOf``1(System.Object,System.String)">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <typeparam name="T">The expected Type</typeparam>
+            <param name="actual">The object being examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.IsNotInstanceOf``1(System.Object)">
+            <summary>
+            Asserts that an object is not an instance of a given type.
+            </summary>
+            <typeparam name="T">The expected Type</typeparam>
+            <param name="actual">The object being examined</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Int32,System.Int32,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Int32,System.Int32,System.String)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Int32,System.Int32)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Int64,System.Int64,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Int64,System.Int64,System.String)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Int64,System.Int64)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.UInt32,System.UInt32,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.UInt32,System.UInt32,System.String)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.UInt32,System.UInt32)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.UInt64,System.UInt64,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.UInt64,System.UInt64,System.String)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.UInt64,System.UInt64)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Decimal,System.Decimal,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Decimal,System.Decimal)">
+            <summary>
+            Verifies that two values are equal. If they are not, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Double,System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that two doubles are equal considering a delta. If the
+            expected value is infinity then the delta value is ignored. If 
+            they are not equal then an <see cref="T:NUnit.Framework.AssertionException"/> is
+            thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            Verifies that two doubles are equal considering a delta. If the
+            expected value is infinity then the delta value is ignored. If 
+            they are not equal then an <see cref="T:NUnit.Framework.AssertionException"/> is
+            thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Double,System.Double,System.Double)">
+            <summary>
+            Verifies that two doubles are equal considering a delta. If the
+            expected value is infinity then the delta value is ignored. If 
+            they are not equal then an <see cref="T:NUnit.Framework.AssertionException"/> is
+            thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Double,System.Nullable{System.Double},System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that two doubles are equal considering a delta. If the
+            expected value is infinity then the delta value is ignored. If 
+            they are not equal then an <see cref="T:NUnit.Framework.AssertionException"/> is
+            thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Double,System.Nullable{System.Double},System.Double,System.String)">
+            <summary>
+            Verifies that two doubles are equal considering a delta. If the
+            expected value is infinity then the delta value is ignored. If 
+            they are not equal then an <see cref="T:NUnit.Framework.AssertionException"/> is
+            thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Double,System.Nullable{System.Double},System.Double)">
+            <summary>
+            Verifies that two doubles are equal considering a delta. If the
+            expected value is infinity then the delta value is ignored. If 
+            they are not equal then an <see cref="T:NUnit.Framework.AssertionException"/> is
+            thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="delta">The maximum acceptable difference between the
+            the expected and the actual</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Object,System.Object,System.String,System.Object[])">
+            <summary>
+            Verifies that two objects are equal.  Two objects are considered
+            equal if both are null, or if both have the same value. NUnit
+            has special semantics for some object types.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The value that is expected</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Object,System.Object,System.String)">
+            <summary>
+            Verifies that two objects are equal.  Two objects are considered
+            equal if both are null, or if both have the same value. NUnit
+            has special semantics for some object types.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The value that is expected</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreEqual(System.Object,System.Object)">
+            <summary>
+            Verifies that two objects are equal.  Two objects are considered
+            equal if both are null, or if both have the same value. NUnit
+            has special semantics for some object types.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The value that is expected</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Int32,System.Int32,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Int32,System.Int32,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Int32,System.Int32)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Int64,System.Int64,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Int64,System.Int64,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Int64,System.Int64)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.UInt32,System.UInt32,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.UInt32,System.UInt32,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.UInt32,System.UInt32)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.UInt64,System.UInt64,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.UInt64,System.UInt64,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.UInt64,System.UInt64)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Decimal,System.Decimal,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
