@@ -7011,3 +7011,1563 @@
             <summary>
             Verifies that two values are not equal. If they are equal, then an 
             <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Decimal,System.Decimal)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Single,System.Single,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Single,System.Single,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Single,System.Single)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Double,System.Double,System.String)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Double,System.Double)">
+            <summary>
+            Verifies that two values are not equal. If they are equal, then an 
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Object,System.Object,System.String,System.Object[])">
+            <summary>
+            Verifies that two objects are not equal.  Two objects are considered
+            equal if both are null, or if both have the same value. NUnit
+            has special semantics for some object types.
+            If they are equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The value that is expected</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Object,System.Object,System.String)">
+            <summary>
+            Verifies that two objects are not equal.  Two objects are considered
+            equal if both are null, or if both have the same value. NUnit
+            has special semantics for some object types.
+            If they are equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The value that is expected</param>
+            <param name="actual">The actual value</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotEqual(System.Object,System.Object)">
+            <summary>
+            Verifies that two objects are not equal.  Two objects are considered
+            equal if both are null, or if both have the same value. NUnit
+            has special semantics for some object types.
+            If they are equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The value that is expected</param>
+            <param name="actual">The actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreSame(System.Object,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that two objects refer to the same object. If they
+            are not the same an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The actual object</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreSame(System.Object,System.Object,System.String)">
+            <summary>
+            Asserts that two objects refer to the same object. If they
+            are not the same an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The actual object</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreSame(System.Object,System.Object)">
+            <summary>
+            Asserts that two objects refer to the same object. If they
+            are not the same an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The actual object</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotSame(System.Object,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that two objects do not refer to the same object. If they
+            are the same an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The actual object</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotSame(System.Object,System.Object,System.String)">
+            <summary>
+            Asserts that two objects do not refer to the same object. If they
+            are the same an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The actual object</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.AreNotSame(System.Object,System.Object)">
+            <summary>
+            Asserts that two objects do not refer to the same object. If they
+            are the same an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The actual object</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Int32,System.Int32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Int32,System.Int32,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Int32,System.Int32)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.UInt32,System.UInt32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.UInt32,System.UInt32,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.UInt32,System.UInt32)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Int64,System.Int64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Int64,System.Int64,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Int64,System.Int64)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.UInt64,System.UInt64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.UInt64,System.UInt64,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.UInt64,System.UInt64)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Decimal,System.Decimal,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Decimal,System.Decimal)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Double,System.Double,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Double,System.Double)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Single,System.Single,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Single,System.Single,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.Single,System.Single)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.IComparable,System.IComparable,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.IComparable,System.IComparable,System.String)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Greater(System.IComparable,System.IComparable)">
+            <summary>
+            Verifies that the first value is greater than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Int32,System.Int32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Int32,System.Int32,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Int32,System.Int32)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.UInt32,System.UInt32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.UInt32,System.UInt32,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.UInt32,System.UInt32)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Int64,System.Int64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Int64,System.Int64,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Int64,System.Int64)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.UInt64,System.UInt64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.UInt64,System.UInt64,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.UInt64,System.UInt64)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Decimal,System.Decimal,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Decimal,System.Decimal)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Double,System.Double,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Double,System.Double)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Single,System.Single,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Single,System.Single,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.Single,System.Single)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.IComparable,System.IComparable,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.IComparable,System.IComparable,System.String)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Less(System.IComparable,System.IComparable)">
+            <summary>
+            Verifies that the first value is less than the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Int32,System.Int32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Int32,System.Int32,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Int32,System.Int32)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.UInt32,System.UInt32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.UInt32,System.UInt32,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.UInt32,System.UInt32)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Int64,System.Int64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Int64,System.Int64,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Int64,System.Int64)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.UInt64,System.UInt64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.UInt64,System.UInt64,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.UInt64,System.UInt64)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Decimal,System.Decimal,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Decimal,System.Decimal)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Double,System.Double,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Double,System.Double)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Single,System.Single,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Single,System.Single,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.Single,System.Single)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.IComparable,System.IComparable,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.IComparable,System.IComparable,System.String)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.GreaterOrEqual(System.IComparable,System.IComparable)">
+            <summary>
+            Verifies that the first value is greater than or equal tothe second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be greater</param>
+            <param name="arg2">The second value, expected to be less</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Int32,System.Int32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Int32,System.Int32,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Int32,System.Int32)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.UInt32,System.UInt32,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.UInt32,System.UInt32,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.UInt32,System.UInt32)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Int64,System.Int64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Int64,System.Int64,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Int64,System.Int64)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.UInt64,System.UInt64,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.UInt64,System.UInt64,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.UInt64,System.UInt64)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Decimal,System.Decimal,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Decimal,System.Decimal)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Double,System.Double,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Double,System.Double,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Double,System.Double)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Single,System.Single,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Single,System.Single,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.Single,System.Single)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.IComparable,System.IComparable,System.String,System.Object[])">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.IComparable,System.IComparable,System.String)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.LessOrEqual(System.IComparable,System.IComparable)">
+            <summary>
+            Verifies that the first value is less than or equal to the second
+            value. If it is not, then an
+            <see cref="T:NUnit.Framework.AssertionException"/> is thrown. 
+            </summary>
+            <param name="arg1">The first value, expected to be less</param>
+            <param name="arg2">The second value, expected to be greater</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Contains(System.Object,System.Collections.ICollection,System.String,System.Object[])">
+            <summary>
+            Asserts that an object is contained in a list.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The list to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Array of objects to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Contains(System.Object,System.Collections.ICollection,System.String)">
+            <summary>
+            Asserts that an object is contained in a list.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The list to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assert.Contains(System.Object,System.Collections.ICollection)">
+            <summary>
+            Asserts that an object is contained in a list.
+            </summary>
+            <param name="expected">The expected object</param>
+            <param name="actual">The list to be examined</param>
+        </member>
+        <member name="P:NUnit.Framework.Assert.Counter">
+            <summary>
+            Gets the number of assertions executed so far and 
+            resets the counter to zero.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.AssertionHelper">
+            <summary>
+            AssertionHelper is an optional base class for user tests,
+            allowing the use of shorter names for constraints and
+            asserts and avoiding conflict with the definition of 
+            <see cref="T:NUnit.Framework.Is"/>, from which it inherits much of its
+            behavior, in certain mock object frameworks.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(System.Object,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure. Works
+            identically to Assert.That
+            </summary>
+            <param name="constraint">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure. Works
+            identically to Assert.That.
+            </summary>
+            <param name="constraint">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure. Works
+            identically to Assert.That
+            </summary>
+            <param name="constraint">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect``1(``0@,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="constraint">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect``1(``0@,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="constraint">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect``1(``0@,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an assertion exception on failure.
+            </summary>
+            <param name="expression">A Constraint to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>. Works Identically to Assert.That.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display if the condition is false</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>. Works Identically to Assert.That.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display if the condition is false</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(System.Boolean)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.AssertionException"/>. Works Identically Assert.That.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Expect(NUnit.Framework.TestDelegate,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Asserts that the code represented by a delegate throws an exception
+            that satisfies the constraint provided.
+            </summary>
+            <param name="code">A TestDelegate to be executed</param>
+            <param name="constraint">A ThrowsConstraint used in the test</param>
+        </member>
+        <member name="M:NUnit.Framework.AssertionHelper.Map(System.Collections.ICollection)">
+            <summary>
+            Returns a ListMapper based on a collection.
+            </summary>
+            <param name="original">The original collection</param>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.Assume">
+            <summary>
+            Provides static methods to express the assumptions
+            that must be met for a test to give a meaningful
+            result. If an assumption is not met, the test
+            should produce an inconclusive result.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Assume.Equals(System.Object,System.Object)">
+            <summary>
+            The Equals method throws an AssertionException. This is done 
+            to make sure there is no mistake by calling this function.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.ReferenceEquals(System.Object,System.Object)">
+            <summary>
+            override the default ReferenceEquals to throw an AssertionException. This 
+            implementation makes sure there is no mistake in calling this function 
+            as part of Assert. 
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(System.Object,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(System.Object,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(NUnit.Framework.Constraints.ActualValueDelegate,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to an actual value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="del">An ActualValueDelegate returning the value to be tested</param>
+            <param name="expr">A Constraint expression to be applied</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That``1(``0@,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That``1(``0@,NUnit.Framework.Constraints.IResolveConstraint,System.String)">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That``1(``0@,NUnit.Framework.Constraints.IResolveConstraint,System.String,System.Object[])">
+            <summary>
+            Apply a constraint to a referenced value, succeeding if the constraint
+            is satisfied and throwing an InconclusiveException on failure.
+            </summary>
+            <param name="expression">A Constraint expression to be applied</param>
+            <param name="actual">The actual value to test</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(System.Boolean,System.String,System.Object[])">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.InconclusiveException"/>.
+            </summary> 
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display if the condition is false</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the method throws
+            an <see cref="T:NUnit.Framework.InconclusiveException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+            <param name="message">The message to display if the condition is false</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(System.Boolean)">
+            <summary>
+            Asserts that a condition is true. If the condition is false the 
+            method throws an <see cref="T:NUnit.Framework.InconclusiveException"/>.
+            </summary>
+            <param name="condition">The evaluated condition</param>
+        </member>
+        <member name="M:NUnit.Framework.Assume.That(NUnit.Framework.TestDelegate,NUnit.Framework.Constraints.IResolveConstraint)">
+            <summary>
+            Asserts that the code represented by a delegate throws an exception
+            that satisfies the constraint provided.
+            </summary>
+            <param name="code">A TestDelegate to be executed</param>
+            <param name="constraint">A ThrowsConstraint used in the test</param>
+        </member>
+        <member name="T:NUnit.Framework.CollectionAssert">
+            <summary>
+            A set of Assert methods operationg on one or more collections
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.Equals(System.Object,System.Object)">
+            <summary>
+            The Equals method throws an AssertionException. This is done 
+            to make sure there is no mistake by calling this function.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.ReferenceEquals(System.Object,System.Object)">
+            <summary>
+            override the default ReferenceEquals to throw an AssertionException. This 
+            implementation makes sure there is no mistake in calling this function 
+            as part of Assert. 
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreInstancesOfType(System.Collections.IEnumerable,System.Type)">
+            <summary>
+            Asserts that all items contained in collection are of the type specified by expectedType.
+            </summary>
+            <param name="collection">IEnumerable containing objects to be considered</param>
+            <param name="expectedType">System.Type that all objects in collection must be instances of</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreInstancesOfType(System.Collections.IEnumerable,System.Type,System.String)">
+            <summary>
+            Asserts that all items contained in collection are of the type specified by expectedType.
+            </summary>
+            <param name="collection">IEnumerable containing objects to be considered</param>
+            <param name="expectedType">System.Type that all objects in collection must be instances of</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreInstancesOfType(System.Collections.IEnumerable,System.Type,System.String,System.Object[])">
+            <summary>
+            Asserts that all items contained in collection are of the type specified by expectedType.
+            </summary>
+            <param name="collection">IEnumerable containing objects to be considered</param>
+            <param name="expectedType">System.Type that all objects in collection must be instances of</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreNotNull(System.Collections.IEnumerable)">
+            <summary>
+            Asserts that all items contained in collection are not equal to null.
+            </summary>
+            <param name="collection">IEnumerable containing objects to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreNotNull(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that all items contained in collection are not equal to null.
+            </summary>
+            <param name="collection">IEnumerable containing objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreNotNull(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that all items contained in collection are not equal to null.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreUnique(System.Collections.IEnumerable)">
+            <summary>
+            Ensures that every object contained in collection exists within the collection
+            once and only once.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreUnique(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Ensures that every object contained in collection exists within the collection
+            once and only once.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AllItemsAreUnique(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Ensures that every object contained in collection exists within the collection
+            once and only once.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEqual(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            Asserts that expected and actual are exactly equal.  The collections must have the same count, 
+            and contain the exact same objects in the same order.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IComparer)">
+            <summary>
+            Asserts that expected and actual are exactly equal.  The collections must have the same count, 
+            and contain the exact same objects in the same order.
+            If comparer is not null then it will be used to compare the objects.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="comparer">The IComparer to use in comparing objects from each IEnumerable</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that expected and actual are exactly equal.  The collections must have the same count, 
+            and contain the exact same objects in the same order.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IComparer,System.String)">
+            <summary>
+            Asserts that expected and actual are exactly equal.  The collections must have the same count, 
+            and contain the exact same objects in the same order.
+            If comparer is not null then it will be used to compare the objects.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="comparer">The IComparer to use in comparing objects from each IEnumerable</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that expected and actual are exactly equal.  The collections must have the same count, 
+            and contain the exact same objects in the same order.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
