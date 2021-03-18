@@ -8571,3 +8571,1564 @@
             </summary>
             <param name="expected">The first IEnumerable of objects to be considered</param>
             <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IComparer,System.String,System.Object[])">
+            <summary>
+            Asserts that expected and actual are exactly equal.  The collections must have the same count, 
+            and contain the exact same objects in the same order.
+            If comparer is not null then it will be used to compare the objects.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="comparer">The IComparer to use in comparing objects from each IEnumerable</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEquivalent(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            Asserts that expected and actual are equivalent, containing the same objects but the match may be in any order.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEquivalent(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that expected and actual are equivalent, containing the same objects but the match may be in any order.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreEquivalent(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that expected and actual are equivalent, containing the same objects but the match may be in any order.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEqual(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            Asserts that expected and actual are not exactly equal.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IComparer)">
+            <summary>
+            Asserts that expected and actual are not exactly equal.
+            If comparer is not null then it will be used to compare the objects.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="comparer">The IComparer to use in comparing objects from each IEnumerable</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that expected and actual are not exactly equal.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IComparer,System.String)">
+            <summary>
+            Asserts that expected and actual are not exactly equal.
+            If comparer is not null then it will be used to compare the objects.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="comparer">The IComparer to use in comparing objects from each IEnumerable</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that expected and actual are not exactly equal.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEqual(System.Collections.IEnumerable,System.Collections.IEnumerable,System.Collections.IComparer,System.String,System.Object[])">
+            <summary>
+            Asserts that expected and actual are not exactly equal.
+            If comparer is not null then it will be used to compare the objects.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="comparer">The IComparer to use in comparing objects from each IEnumerable</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEquivalent(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            Asserts that expected and actual are not equivalent.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEquivalent(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that expected and actual are not equivalent.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.AreNotEquivalent(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that expected and actual are not equivalent.
+            </summary>
+            <param name="expected">The first IEnumerable of objects to be considered</param>
+            <param name="actual">The second IEnumerable of objects to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.Contains(System.Collections.IEnumerable,System.Object)">
+            <summary>
+            Asserts that collection contains actual as an item.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="actual">Object to be found within collection</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.Contains(System.Collections.IEnumerable,System.Object,System.String)">
+            <summary>
+            Asserts that collection contains actual as an item.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="actual">Object to be found within collection</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.Contains(System.Collections.IEnumerable,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that collection contains actual as an item.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="actual">Object to be found within collection</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.DoesNotContain(System.Collections.IEnumerable,System.Object)">
+            <summary>
+            Asserts that collection does not contain actual as an item.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="actual">Object that cannot exist within collection</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.DoesNotContain(System.Collections.IEnumerable,System.Object,System.String)">
+            <summary>
+            Asserts that collection does not contain actual as an item.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="actual">Object that cannot exist within collection</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.DoesNotContain(System.Collections.IEnumerable,System.Object,System.String,System.Object[])">
+            <summary>
+            Asserts that collection does not contain actual as an item.
+            </summary>
+            <param name="collection">IEnumerable of objects to be considered</param>
+            <param name="actual">Object that cannot exist within collection</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsNotSubsetOf(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            Asserts that superset is not a subject of subset.
+            </summary>
+            <param name="subset">The IEnumerable superset to be considered</param>
+            <param name="superset">The IEnumerable subset to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsNotSubsetOf(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that superset is not a subject of subset.
+            </summary>
+            <param name="subset">The IEnumerable superset to be considered</param>
+            <param name="superset">The IEnumerable subset to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsNotSubsetOf(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that superset is not a subject of subset.
+            </summary>
+            <param name="subset">The IEnumerable superset to be considered</param>
+            <param name="superset">The IEnumerable subset to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsSubsetOf(System.Collections.IEnumerable,System.Collections.IEnumerable)">
+            <summary>
+            Asserts that superset is a subset of subset.
+            </summary>
+            <param name="subset">The IEnumerable superset to be considered</param>
+            <param name="superset">The IEnumerable subset to be considered</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsSubsetOf(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String)">
+            <summary>
+            Asserts that superset is a subset of subset.
+            </summary>
+            <param name="subset">The IEnumerable superset to be considered</param>
+            <param name="superset">The IEnumerable subset to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsSubsetOf(System.Collections.IEnumerable,System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Asserts that superset is a subset of subset.
+            </summary>
+            <param name="subset">The IEnumerable superset to be considered</param>
+            <param name="superset">The IEnumerable subset to be considered</param>
+            <param name="message">The message that will be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsEmpty(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="message">The message to be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsEmpty(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="message">The message to be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsEmpty(System.Collections.IEnumerable)">
+            <summary>
+            Assert that an array,list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsNotEmpty(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="message">The message to be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsNotEmpty(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Assert that an array, list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="message">The message to be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsNotEmpty(System.Collections.IEnumerable)">
+            <summary>
+            Assert that an array,list or other collection is empty
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsOrdered(System.Collections.IEnumerable,System.String,System.Object[])">
+            <summary>
+            Assert that an array, list or other collection is ordered
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="message">The message to be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsOrdered(System.Collections.IEnumerable,System.String)">
+            <summary>
+            Assert that an array, list or other collection is ordered
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="message">The message to be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsOrdered(System.Collections.IEnumerable)">
+            <summary>
+            Assert that an array, list or other collection is ordered
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsOrdered(System.Collections.IEnumerable,System.Collections.IComparer,System.String,System.Object[])">
+            <summary>
+            Assert that an array, list or other collection is ordered
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="comparer">A custom comparer to perform the comparisons</param>
+            <param name="message">The message to be displayed on failure</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsOrdered(System.Collections.IEnumerable,System.Collections.IComparer,System.String)">
+            <summary>
+            Assert that an array, list or other collection is ordered
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="comparer">A custom comparer to perform the comparisons</param>
+            <param name="message">The message to be displayed on failure</param>
+        </member>
+        <member name="M:NUnit.Framework.CollectionAssert.IsOrdered(System.Collections.IEnumerable,System.Collections.IComparer)">
+            <summary>
+            Assert that an array, list or other collection is ordered
+            </summary>
+            <param name="collection">An array, list or other collection implementing IEnumerable</param>
+            <param name="comparer">A custom comparer to perform the comparisons</param>
+        </member>
+        <member name="T:NUnit.Framework.Contains">
+            <summary>
+            Static helper class used in the constraint-based syntax
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Contains.Substring(System.String)">
+            <summary>
+            Creates a new SubstringConstraint
+            </summary>
+            <param name="substring">The value of the substring</param>
+            <returns>A SubstringConstraint</returns>
+        </member>
+        <member name="M:NUnit.Framework.Contains.Item(System.Object)">
+            <summary>
+            Creates a new CollectionContainsConstraint.
+            </summary>
+            <param name="item">The item that should be found.</param>
+            <returns>A new CollectionContainsConstraint</returns>
+        </member>
+        <member name="T:NUnit.Framework.DirectoryAssert">
+            <summary>
+            Summary description for DirectoryAssert
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.Equals(System.Object,System.Object)">
+            <summary>
+            The Equals method throws an AssertionException. This is done 
+            to make sure there is no mistake by calling this function.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.ReferenceEquals(System.Object,System.Object)">
+            <summary>
+            override the default ReferenceEquals to throw an AssertionException. This 
+            implementation makes sure there is no mistake in calling this function 
+            as part of Assert. 
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.#ctor">
+            <summary>
+            We don't actually want any instances of this object, but some people
+            like to inherit from it to add other static methods. Hence, the
+            protected constructor disallows any instances of this object. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String,System.Object[])">
+            <summary>
+            Verifies that two directories are equal.  Two directories are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory containing the value that is expected</param>
+            <param name="actual">A directory containing the actual value</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Verifies that two directories are equal.  Two directories are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory containing the value that is expected</param>
+            <param name="actual">A directory containing the actual value</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+            <summary>
+            Verifies that two directories are equal.  Two directories are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory containing the value that is expected</param>
+            <param name="actual">A directory containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreEqual(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Verifies that two directories are equal.  Two directories are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory path string containing the value that is expected</param>
+            <param name="actual">A directory path string containing the actual value</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreEqual(System.String,System.String,System.String)">
+            <summary>
+            Verifies that two directories are equal.  Two directories are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory path string containing the value that is expected</param>
+            <param name="actual">A directory path string containing the actual value</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreEqual(System.String,System.String)">
+            <summary>
+            Verifies that two directories are equal.  Two directories are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory path string containing the value that is expected</param>
+            <param name="actual">A directory path string containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreNotEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String,System.Object[])">
+            <summary>
+            Asserts that two directories are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory containing the value that is expected</param>
+            <param name="actual">A directory containing the actual value</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreNotEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Asserts that two directories are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory containing the value that is expected</param>
+            <param name="actual">A directory containing the actual value</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreNotEqual(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+            <summary>
+            Asserts that two directories are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory containing the value that is expected</param>
+            <param name="actual">A directory containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreNotEqual(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that two directories are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory path string containing the value that is expected</param>
+            <param name="actual">A directory path string containing the actual value</param>
+            <param name="message">The message to display if directories are equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreNotEqual(System.String,System.String,System.String)">
+            <summary>
+            Asserts that two directories are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory path string containing the value that is expected</param>
+            <param name="actual">A directory path string containing the actual value</param>
+            <param name="message">The message to display if directories are equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.AreNotEqual(System.String,System.String)">
+            <summary>
+            Asserts that two directories are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A directory path string containing the value that is expected</param>
+            <param name="actual">A directory path string containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsEmpty(System.IO.DirectoryInfo,System.String,System.Object[])">
+            <summary>
+            Asserts that the directory is empty. If it is not empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsEmpty(System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Asserts that the directory is empty. If it is not empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsEmpty(System.IO.DirectoryInfo)">
+            <summary>
+            Asserts that the directory is empty. If it is not empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that the directory is empty. If it is not empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsEmpty(System.String,System.String)">
+            <summary>
+            Asserts that the directory is empty. If it is not empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsEmpty(System.String)">
+            <summary>
+            Asserts that the directory is empty. If it is not empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotEmpty(System.IO.DirectoryInfo,System.String,System.Object[])">
+            <summary>
+            Asserts that the directory is not empty. If it is empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotEmpty(System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Asserts that the directory is not empty. If it is empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotEmpty(System.IO.DirectoryInfo)">
+            <summary>
+            Asserts that the directory is not empty. If it is empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotEmpty(System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that the directory is not empty. If it is empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotEmpty(System.String,System.String)">
+            <summary>
+            Asserts that the directory is not empty. If it is empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="message">The message to display if directories are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotEmpty(System.String)">
+            <summary>
+            Asserts that the directory is not empty. If it is empty
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsWithin(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String,System.Object[])">
+            <summary>
+            Asserts that path contains actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsWithin(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Asserts that path contains actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsWithin(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+            <summary>
+            Asserts that path contains actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsWithin(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that path contains actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsWithin(System.String,System.String,System.String)">
+            <summary>
+            Asserts that path contains actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsWithin(System.String,System.String)">
+            <summary>
+            Asserts that path contains actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotWithin(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String,System.Object[])">
+            <summary>
+            Asserts that path does not contain actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotWithin(System.IO.DirectoryInfo,System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Asserts that path does not contain actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotWithin(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+            <summary>
+            Asserts that path does not contain actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotWithin(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that path does not contain actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotWithin(System.String,System.String,System.String)">
+            <summary>
+            Asserts that path does not contain actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+            <param name="message">The message to display if directory is not within the path</param>
+        </member>
+        <member name="M:NUnit.Framework.DirectoryAssert.IsNotWithin(System.String,System.String)">
+            <summary>
+            Asserts that path does not contain actual as a subdirectory or
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="directory">A directory to search</param>
+            <param name="actual">sub-directory asserted to exist under directory</param>
+        </member>
+        <member name="T:NUnit.Framework.FileAssert">
+            <summary>
+            Summary description for FileAssert.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.Equals(System.Object,System.Object)">
+            <summary>
+            The Equals method throws an AssertionException. This is done 
+            to make sure there is no mistake by calling this function.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.ReferenceEquals(System.Object,System.Object)">
+            <summary>
+            override the default ReferenceEquals to throw an AssertionException. This 
+            implementation makes sure there is no mistake in calling this function 
+            as part of Assert. 
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.#ctor">
+            <summary>
+            We don't actually want any instances of this object, but some people
+            like to inherit from it to add other static methods. Hence, the
+            protected constructor disallows any instances of this object. 
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.IO.Stream,System.IO.Stream,System.String,System.Object[])">
+            <summary>
+            Verifies that two Streams are equal.  Two Streams are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected Stream</param>
+            <param name="actual">The actual Stream</param>
+            <param name="message">The message to display if Streams are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.IO.Stream,System.IO.Stream,System.String)">
+            <summary>
+            Verifies that two Streams are equal.  Two Streams are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected Stream</param>
+            <param name="actual">The actual Stream</param>
+            <param name="message">The message to display if objects are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Verifies that two Streams are equal.  Two Streams are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected Stream</param>
+            <param name="actual">The actual Stream</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.IO.FileInfo,System.IO.FileInfo,System.String,System.Object[])">
+            <summary>
+            Verifies that two files are equal.  Two files are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A file containing the value that is expected</param>
+            <param name="actual">A file containing the actual value</param>
+            <param name="message">The message to display if Streams are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.IO.FileInfo,System.IO.FileInfo,System.String)">
+            <summary>
+            Verifies that two files are equal.  Two files are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A file containing the value that is expected</param>
+            <param name="actual">A file containing the actual value</param>
+            <param name="message">The message to display if objects are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Verifies that two files are equal.  Two files are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A file containing the value that is expected</param>
+            <param name="actual">A file containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Verifies that two files are equal.  Two files are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The path to a file containing the value that is expected</param>
+            <param name="actual">The path to a file containing the actual value</param>
+            <param name="message">The message to display if Streams are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.String,System.String,System.String)">
+            <summary>
+            Verifies that two files are equal.  Two files are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The path to a file containing the value that is expected</param>
+            <param name="actual">The path to a file containing the actual value</param>
+            <param name="message">The message to display if objects are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreEqual(System.String,System.String)">
+            <summary>
+            Verifies that two files are equal.  Two files are considered
+            equal if both are null, or if both have the same value byte for byte.
+            If they are not equal an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The path to a file containing the value that is expected</param>
+            <param name="actual">The path to a file containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.IO.Stream,System.IO.Stream,System.String,System.Object[])">
+            <summary>
+            Asserts that two Streams are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected Stream</param>
+            <param name="actual">The actual Stream</param>
+            <param name="message">The message to be displayed when the two Stream are the same.</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.IO.Stream,System.IO.Stream,System.String)">
+            <summary>
+            Asserts that two Streams are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected Stream</param>
+            <param name="actual">The actual Stream</param>
+            <param name="message">The message to be displayed when the Streams are the same.</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Asserts that two Streams are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The expected Stream</param>
+            <param name="actual">The actual Stream</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.IO.FileInfo,System.IO.FileInfo,System.String,System.Object[])">
+            <summary>
+            Asserts that two files are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A file containing the value that is expected</param>
+            <param name="actual">A file containing the actual value</param>
+            <param name="message">The message to display if Streams are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.IO.FileInfo,System.IO.FileInfo,System.String)">
+            <summary>
+            Asserts that two files are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A file containing the value that is expected</param>
+            <param name="actual">A file containing the actual value</param>
+            <param name="message">The message to display if objects are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Asserts that two files are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">A file containing the value that is expected</param>
+            <param name="actual">A file containing the actual value</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that two files are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The path to a file containing the value that is expected</param>
+            <param name="actual">The path to a file containing the actual value</param>
+            <param name="message">The message to display if Streams are not equal</param>
+            <param name="args">Arguments to be used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.String,System.String,System.String)">
+            <summary>
+            Asserts that two files are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The path to a file containing the value that is expected</param>
+            <param name="actual">The path to a file containing the actual value</param>
+            <param name="message">The message to display if objects are not equal</param>
+        </member>
+        <member name="M:NUnit.Framework.FileAssert.AreNotEqual(System.String,System.String)">
+            <summary>
+            Asserts that two files are not equal. If they are equal
+            an <see cref="T:NUnit.Framework.AssertionException"/> is thrown.
+            </summary>
+            <param name="expected">The path to a file containing the value that is expected</param>
+            <param name="actual">The path to a file containing the actual value</param>
+        </member>
+        <member name="T:NUnit.Framework.GlobalSettings">
+            <summary>
+            GlobalSettings is a place for setting default values used
+            by the framework in performing asserts.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.GlobalSettings.DefaultFloatingPointTolerance">
+            <summary>
+            Default tolerance for floating point equality
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Has">
+            <summary>
+            Helper class with properties and methods that supply
+            a number of constraints used in Asserts.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Has.Exactly(System.Int32)">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding only if a specified number of them succeed.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Has.Property(System.String)">
+            <summary>
+            Returns a new PropertyConstraintExpression, which will either
+            test for the existence of the named property on the object
+            being tested or apply any following constraint to that property.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Has.Attribute(System.Type)">
+            <summary>
+            Returns a new AttributeConstraint checking for the
+            presence of a particular attribute on an object.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Has.Attribute``1">
+            <summary>
+            Returns a new AttributeConstraint checking for the
+            presence of a particular attribute on an object.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Has.Member(System.Object)">
+            <summary>
+            Returns a new CollectionContainsConstraint checking for the
+            presence of a particular object in the collection.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.No">
+            <summary>
+            Returns a ConstraintExpression that negates any
+            following constraint.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.All">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if all of them succeed.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.Some">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if at least one of them succeeds.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.None">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if all of them fail.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.Length">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the Length property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.Count">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the Count property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.Message">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the Message property of the object being tested.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Has.InnerException">
+            <summary>
+            Returns a new ConstraintExpression, which will apply the following
+            constraint to the InnerException property of the object being tested.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.IExpectException">
+            <summary>
+            Interface implemented by a user fixture in order to
+            validate any expected exceptions. It is only called
+            for test methods marked with the ExpectedException
+            attribute.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.IExpectException.HandleException(System.Exception)">
+            <summary>
+            Method to handle an expected exception
+            </summary>
+            <param name="ex">The exception to be handled</param>
+        </member>
+        <member name="T:NUnit.Framework.Is">
+            <summary>
+            Helper class with properties and methods that supply
+            a number of constraints used in Asserts.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.EqualTo(System.Object)">
+            <summary>
+            Returns a constraint that tests two items for equality
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.SameAs(System.Object)">
+            <summary>
+            Returns a constraint that tests that two references are the same object
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.GreaterThan(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is greater than the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.GreaterThanOrEqualTo(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is greater than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.AtLeast(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is greater than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.LessThan(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is less than the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.LessThanOrEqualTo(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is less than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.AtMost(System.Object)">
+            <summary>
+            Returns a constraint that tests whether the
+            actual value is less than or equal to the suppled argument
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.TypeOf(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual
+            value is of the exact type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.TypeOf``1">
+            <summary>
+            Returns a constraint that tests whether the actual
+            value is of the exact type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.InstanceOf(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.InstanceOf``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.InstanceOfType(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.InstanceOfType``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is of the type supplied as an argument or a derived type.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.AssignableFrom(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.AssignableFrom``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.AssignableTo(System.Type)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.AssignableTo``1">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is assignable from the type supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.EquivalentTo(System.Collections.IEnumerable)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is a collection containing the same elements as the 
+            collection supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.SubsetOf(System.Collections.IEnumerable)">
+            <summary>
+            Returns a constraint that tests whether the actual value
+            is a subset of the collection supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.StringContaining(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value contains the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.StringStarting(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value starts with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.StringEnding(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value ends with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.StringMatching(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value matches the Regex pattern supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.SamePath(System.String)">
+            <summary>
+            Returns a constraint that tests whether the path provided 
+            is the same as an expected path after canonicalization.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.SubPath(System.String)">
+            <summary>
+            Returns a constraint that tests whether the path provided 
+            is the same path or under an expected path after canonicalization.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.SamePathOrUnder(System.String)">
+            <summary>
+            Returns a constraint that tests whether the path provided 
+            is the same path or under an expected path after canonicalization.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Is.InRange``1(``0,``0)">
+            <summary>
+            Returns a constraint that tests whether the actual value falls 
+            within a specified range.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Not">
+            <summary>
+            Returns a ConstraintExpression that negates any
+            following constraint.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.All">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if all of them succeed.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Null">
+            <summary>
+            Returns a constraint that tests for null
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.True">
+            <summary>
+            Returns a constraint that tests for True
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.False">
+            <summary>
+            Returns a constraint that tests for False
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Positive">
+            <summary>
+            Returns a constraint that tests for a positive value
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Negative">
+            <summary>
+            Returns a constraint that tests for a negative value
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.NaN">
+            <summary>
+            Returns a constraint that tests for NaN
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Empty">
+            <summary>
+            Returns a constraint that tests for empty
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Unique">
+            <summary>
+            Returns a constraint that tests whether a collection 
+            contains all unique items.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.BinarySerializable">
+            <summary>
+            Returns a constraint that tests whether an object graph is serializable in binary format.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.XmlSerializable">
+            <summary>
+            Returns a constraint that tests whether an object graph is serializable in xml format.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Is.Ordered">
+            <summary>
+            Returns a constraint that tests whether a collection is ordered
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Iz">
+            <summary>
+            The Iz class is a synonym for Is intended for use in VB,
+            which regards Is as a keyword.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.List">
+            <summary>
+            The List class is a helper class with properties and methods
+            that supply a number of constraints used with lists and collections.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.List.Map(System.Collections.ICollection)">
+            <summary>
+            List.Map returns a ListMapper, which can be used to map
+            the original collection to another collection.
+            </summary>
+            <param name="actual"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.ListMapper">
+            <summary>
+            ListMapper is used to transform a collection used as an actual argument
+            producing another collection to be used in the assertion.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.ListMapper.#ctor(System.Collections.ICollection)">
+            <summary>
+            Construct a ListMapper based on a collection
+            </summary>
+            <param name="original">The collection to be transformed</param>
+        </member>
+        <member name="M:NUnit.Framework.ListMapper.Property(System.String)">
+            <summary>
+            Produces a collection containing all the values of a property
+            </summary>
+            <param name="name">The collection of property values</param>
+            <returns></returns>
+        </member>
+        <member name="T:NUnit.Framework.Randomizer">
+            <summary>
+            Randomizer returns a set of random values in a repeatable
+            way, to allow re-running of tests if necessary.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.GetRandomizer(System.Reflection.MemberInfo)">
+            <summary>
+            Get a randomizer for a particular member, returning
+            one that has already been created if it exists.
+            This ensures that the same values are generated
+            each time the tests are reloaded.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.GetRandomizer(System.Reflection.ParameterInfo)">
+            <summary>
+            Get a randomizer for a particular parameter, returning
+            one that has already been created if it exists.
+            This ensures that the same values are generated
+            each time the tests are reloaded.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.#ctor">
+            <summary>
+            Construct a randomizer using a random seed
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.#ctor(System.Int32)">
+            <summary>
+            Construct a randomizer using a specified seed
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.GetDoubles(System.Int32)">
+            <summary>
+            Return an array of random doubles between 0.0 and 1.0.
+            </summary>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.GetDoubles(System.Double,System.Double,System.Int32)">
+            <summary>
+            Return an array of random doubles with values in a specified range.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Randomizer.GetInts(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Return an array of random ints with values in a specified range.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Randomizer.RandomSeed">
+            <summary>
+            Get a random seed for use in creating a randomizer.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.SpecialValue">
+            <summary>
+            The SpecialValue enum is used to represent TestCase arguments
+            that cannot be used as arguments to an Attribute.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.SpecialValue.Null">
+            <summary>
+            Null represents a null value, which cannot be used as an 
+            argument to an attriute under .NET 1.x
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.StringAssert">
+            <summary>
+            Basic Asserts on strings.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.Equals(System.Object,System.Object)">
+            <summary>
+            The Equals method throws an AssertionException. This is done 
+            to make sure there is no mistake by calling this function.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.ReferenceEquals(System.Object,System.Object)">
+            <summary>
+            override the default ReferenceEquals to throw an AssertionException. This 
+            implementation makes sure there is no mistake in calling this function 
+            as part of Assert. 
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.Contains(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string is found within another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.Contains(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string is found within another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.Contains(System.String,System.String)">
+            <summary>
+            Asserts that a string is found within another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotContain(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string is not found within another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotContain(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string is found within another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotContain(System.String,System.String)">
+            <summary>
+            Asserts that a string is found within another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.StartsWith(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string starts with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.StartsWith(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string starts with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.StartsWith(System.String,System.String)">
+            <summary>
+            Asserts that a string starts with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotStartWith(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string does not start with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotStartWith(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string does not start with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotStartWith(System.String,System.String)">
+            <summary>
+            Asserts that a string does not start with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.EndsWith(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string ends with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.EndsWith(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string ends with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.EndsWith(System.String,System.String)">
+            <summary>
+            Asserts that a string ends with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotEndWith(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string does not end with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotEndWith(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string does not end with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotEndWith(System.String,System.String)">
+            <summary>
+            Asserts that a string does not end with another string.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The string to be examined</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.AreEqualIgnoringCase(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that two strings are equal, without regard to case.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.AreEqualIgnoringCase(System.String,System.String,System.String)">
+            <summary>
+            Asserts that two strings are equal, without regard to case.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.AreEqualIgnoringCase(System.String,System.String)">
+            <summary>
+            Asserts that two strings are equal, without regard to case.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.AreNotEqualIgnoringCase(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that two strings are not equal, without regard to case.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.AreNotEqualIgnoringCase(System.String,System.String,System.String)">
+            <summary>
+            Asserts that two strings are Notequal, without regard to case.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.AreNotEqualIgnoringCase(System.String,System.String)">
+            <summary>
+            Asserts that two strings are not equal, without regard to case.
+            </summary>
+            <param name="expected">The expected string</param>
+            <param name="actual">The actual string</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.IsMatch(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string matches an expected regular expression pattern.
+            </summary>
+            <param name="pattern">The regex pattern to be matched</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.IsMatch(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string matches an expected regular expression pattern.
+            </summary>
+            <param name="pattern">The regex pattern to be matched</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.IsMatch(System.String,System.String)">
+            <summary>
+            Asserts that a string matches an expected regular expression pattern.
