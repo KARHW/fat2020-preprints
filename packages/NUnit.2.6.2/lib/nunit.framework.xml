@@ -10132,3 +10132,769 @@
         <member name="M:NUnit.Framework.StringAssert.IsMatch(System.String,System.String)">
             <summary>
             Asserts that a string matches an expected regular expression pattern.
+            </summary>
+            <param name="pattern">The regex pattern to be matched</param>
+            <param name="actual">The actual string</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotMatch(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            Asserts that a string does not match an expected regular expression pattern.
+            </summary>
+            <param name="pattern">The regex pattern to be used</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+            <param name="args">Arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotMatch(System.String,System.String,System.String)">
+            <summary>
+            Asserts that a string does not match an expected regular expression pattern.
+            </summary>
+            <param name="pattern">The regex pattern to be used</param>
+            <param name="actual">The actual string</param>
+            <param name="message">The message to display in case of failure</param>
+        </member>
+        <member name="M:NUnit.Framework.StringAssert.DoesNotMatch(System.String,System.String)">
+            <summary>
+            Asserts that a string does not match an expected regular expression pattern.
+            </summary>
+            <param name="pattern">The regex pattern to be used</param>
+            <param name="actual">The actual string</param>
+        </member>
+        <member name="T:NUnit.Framework.TestCaseData">
+            <summary>
+            The TestCaseData class represents a set of arguments
+            and other parameter info to be used for a parameterized
+            test case. It provides a number of instance modifiers
+            for use in initializing the test case.
+            
+            Note: Instance modifiers are getters that return
+            the same instance after modifying it's state.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.arguments">
+            <summary>
+            The argument list to be provided to the test
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.expectedResult">
+            <summary>
+            The expected result to be returned
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.hasExpectedResult">
+            <summary>
+            Set to true if this has an expected result
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.expectedExceptionType">
+            <summary>
+             The expected exception Type
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.expectedExceptionName">
+            <summary>
+            The FullName of the expected exception
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.testName">
+            <summary>
+            The name to be used for the test
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.description">
+            <summary>
+            The description of the test
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.properties">
+            <summary>
+            A dictionary of properties, used to add information
+            to tests without requiring the class to change.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.isIgnored">
+            <summary>
+            If true, indicates that the test case is to be ignored
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.isExplicit">
+            <summary>
+            If true, indicates that the test case is marked explicit
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestCaseData.ignoreReason">
+            <summary>
+            The reason for ignoring a test case
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.#ctor(System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestCaseData"/> class.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestCaseData"/> class.
+            </summary>
+            <param name="arg">The argument.</param>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.#ctor(System.Object,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestCaseData"/> class.
+            </summary>
+            <param name="arg1">The first argument.</param>
+            <param name="arg2">The second argument.</param>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.#ctor(System.Object,System.Object,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TestCaseData"/> class.
+            </summary>
+            <param name="arg1">The first argument.</param>
+            <param name="arg2">The second argument.</param>
+            <param name="arg3">The third argument.</param>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.Returns(System.Object)">
+            <summary>
+            Sets the expected result for the test
+            </summary>
+            <param name="result">The expected result</param>
+            <returns>A modified TestCaseData</returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.Throws(System.Type)">
+            <summary>
+            Sets the expected exception type for the test
+            </summary>
+            <param name="exceptionType">Type of the expected exception.</param>
+            <returns>The modified TestCaseData instance</returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.Throws(System.String)">
+            <summary>
+            Sets the expected exception type for the test
+            </summary>
+            <param name="exceptionName">FullName of the expected exception.</param>
+            <returns>The modified TestCaseData instance</returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.SetName(System.String)">
+            <summary>
+            Sets the name of the test case
+            </summary>
+            <returns>The modified TestCaseData instance</returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.SetDescription(System.String)">
+            <summary>
+            Sets the description for the test case
+            being constructed.
+            </summary>
+            <param name="description">The description.</param>
+            <returns>The modified TestCaseData instance.</returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.SetCategory(System.String)">
+            <summary>
+            Applies a category to the test
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.SetProperty(System.String,System.String)">
+            <summary>
+            Applies a named property to the test
+            </summary>
+            <param name="propName"></param>
+            <param name="propValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.SetProperty(System.String,System.Int32)">
+            <summary>
+            Applies a named property to the test
+            </summary>
+            <param name="propName"></param>
+            <param name="propValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.SetProperty(System.String,System.Double)">
+            <summary>
+            Applies a named property to the test
+            </summary>
+            <param name="propName"></param>
+            <param name="propValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.Ignore">
+            <summary>
+            Ignores this TestCase.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.Ignore(System.String)">
+            <summary>
+            Ignores this TestCase, specifying the reason.
+            </summary>
+            <param name="reason">The reason.</param>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.MakeExplicit">
+            <summary>
+            Marks this TestCase as Explicit
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NUnit.Framework.TestCaseData.MakeExplicit(System.String)">
+            <summary>
+            Marks this TestCase as Explicit, specifying the reason.
+            </summary>
+            <param name="reason">The reason.</param>
+            <returns></returns>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Arguments">
+            <summary>
+            Gets the argument list to be provided to the test
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Result">
+            <summary>
+            Gets the expected result
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.HasExpectedResult">
+            <summary>
+            Returns true if the result has been set
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.ExpectedException">
+            <summary>
+             Gets the expected exception Type
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.ExpectedExceptionName">
+            <summary>
+            Gets the FullName of the expected exception
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.TestName">
+            <summary>
+            Gets the name to be used for the test
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Description">
+            <summary>
+            Gets the description of the test
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Ignored">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NUnit.Framework.ITestCaseData"/> is ignored.
+            </summary>
+            <value><c>true</c> if ignored; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Explicit">
+            <summary>
+            Gets a value indicating whether this <see cref="T:NUnit.Framework.ITestCaseData"/> is explicit.
+            </summary>
+            <value><c>true</c> if explicit; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.IgnoreReason">
+            <summary>
+            Gets the ignore reason.
+            </summary>
+            <value>The ignore reason.</value>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Categories">
+            <summary>
+            Gets a list of categories associated with this test.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestCaseData.Properties">
+            <summary>
+            Gets the property dictionary for this test
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestContext">
+            <summary>
+            Provide the context information of the current test
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TestContext.#ctor(System.Collections.IDictionary)">
+            <summary>
+            Constructs a TestContext using the provided context dictionary
+            </summary>
+            <param name="context">A context dictionary</param>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.CurrentContext">
+            <summary>
+            Get the current test context. This is created
+            as needed. The user may save the context for
+            use within a test, but it should not be used
+            outside the test for which it is created.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.Test">
+            <summary>
+            Gets a TestAdapter representing the currently executing test in this context.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.Result">
+            <summary>
+            Gets a ResultAdapter representing the current result for the test 
+            executing in this context.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.TestDirectory">
+            <summary>
+            Gets the directory containing the current test assembly.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.WorkDirectory">
+            <summary>
+            Gets the directory to be used for outputing files created
+            by this test run.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestContext.TestAdapter">
+            <summary>
+            TestAdapter adapts a Test for consumption by
+            the user test code.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TestContext.TestAdapter.#ctor(System.Collections.IDictionary)">
+            <summary>
+            Constructs a TestAdapter for this context
+            </summary>
+            <param name="context">The context dictionary</param>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.TestAdapter.Name">
+            <summary>
+            The name of the test.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.TestAdapter.FullName">
+            <summary>
+            The FullName of the test
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.TestAdapter.Properties">
+            <summary>
+            The properties of the test.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestContext.ResultAdapter">
+            <summary>
+            ResultAdapter adapts a TestResult for consumption by
+            the user test code.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TestContext.ResultAdapter.#ctor(System.Collections.IDictionary)">
+            <summary>
+            Construct a ResultAdapter for a context
+            </summary>
+            <param name="context">The context holding the result</param>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.ResultAdapter.State">
+            <summary>
+            The TestState of current test. This maps to the ResultState
+            used in nunit.core and is subject to change in the future.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestContext.ResultAdapter.Status">
+            <summary>
+            The TestStatus of current test. This enum will be used
+            in future versions of NUnit and so is to be preferred
+            to the TestState value.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestDetails">
+            <summary>
+            Provides details about a test
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TestDetails.#ctor(System.Object,System.Reflection.MethodInfo,System.String,System.String,System.Boolean)">
+            <summary>
+             Creates an instance of TestDetails
+            </summary>
+            <param name="fixture">The fixture that the test is a member of, if available.</param>
+            <param name="method">The method that implements the test, if available.</param>
+            <param name="fullName">The full name of the test.</param>
+            <param name="type">A string representing the type of test, e.g. "Test Case".</param>
+            <param name="isSuite">Indicates if the test represents a suite of tests.</param>
+        </member>
+        <member name="P:NUnit.Framework.TestDetails.Fixture">
+            <summary>
+             The fixture that the test is a member of, if available.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestDetails.Method">
+            <summary>
+            The method that implements the test, if available.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestDetails.FullName">
+            <summary>
+            The full name of the test.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestDetails.Type">
+            <summary>
+            A string representing the type of test, e.g. "Test Case".
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.TestDetails.IsSuite">
+            <summary>
+            Indicates if the test represents a suite of tests.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestState">
+            <summary>
+            The ResultState enum indicates the result of running a test
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Inconclusive">
+            <summary>
+            The result is inconclusive
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.NotRunnable">
+            <summary>
+            The test was not runnable.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Skipped">
+            <summary>
+            The test has been skipped. 
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Ignored">
+            <summary>
+            The test has been ignored.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Success">
+            <summary>
+            The test succeeded
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Failure">
+            <summary>
+            The test failed
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Error">
+            <summary>
+            The test encountered an unexpected exception
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestState.Cancelled">
+            <summary>
+            The test was cancelled by the user
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TestStatus">
+            <summary>
+            The TestStatus enum indicates the result of running a test
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestStatus.Inconclusive">
+            <summary>
+            The test was inconclusive
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestStatus.Skipped">
+            <summary>
+            The test has skipped 
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestStatus.Passed">
+            <summary>
+            The test succeeded
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TestStatus.Failed">
+            <summary>
+            The test failed
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Text">
+            <summary>
+            Helper class with static methods used to supply constraints
+            that operate on strings.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.Contains(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value contains the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.DoesNotContain(System.String)">
+            <summary>
+            Returns a constraint that fails if the actual
+            value contains the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.StartsWith(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value starts with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.DoesNotStartWith(System.String)">
+            <summary>
+            Returns a constraint that fails if the actual
+            value starts with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.EndsWith(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value ends with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.DoesNotEndWith(System.String)">
+            <summary>
+            Returns a constraint that fails if the actual
+            value ends with the substring supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.Matches(System.String)">
+            <summary>
+            Returns a constraint that succeeds if the actual
+            value matches the Regex pattern supplied as an argument.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Text.DoesNotMatch(System.String)">
+            <summary>
+            Returns a constraint that fails if the actual
+            value matches the pattern supplied as an argument.
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Text.All">
+            <summary>
+            Returns a ConstraintExpression, which will apply
+            the following constraint to all members of a collection,
+            succeeding if all of them succeed.
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.TextMessageWriter">
+            <summary>
+            TextMessageWriter writes constraint descriptions and messages
+            in displayable form as a text stream. It tailors the display
+            of individual message components to form the standard message
+            format of NUnit assertion failure messages.
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TextMessageWriter.Pfx_Expected">
+            <summary>
+            Prefix used for the expected value line of a message
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TextMessageWriter.Pfx_Actual">
+            <summary>
+            Prefix used for the actual value line of a message
+            </summary>
+        </member>
+        <member name="F:NUnit.Framework.TextMessageWriter.PrefixLength">
+            <summary>
+            Length of a message prefix
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.#ctor">
+            <summary>
+            Construct a TextMessageWriter
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.#ctor(System.String,System.Object[])">
+            <summary>
+            Construct a TextMessageWriter, specifying a user message
+            and optional formatting arguments.
+            </summary>
+            <param name="userMessage"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteMessageLine(System.Int32,System.String,System.Object[])">
+            <summary>
+            Method to write single line  message with optional args, usually
+            written to precede the general failure message, at a givel 
+            indentation level.
+            </summary>
+            <param name="level">The indentation level of the message</param>
+            <param name="message">The message to be written</param>
+            <param name="args">Any arguments used in formatting the message</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.DisplayDifferences(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Display Expected and Actual lines for a constraint. This
+            is called by MessageWriter's default implementation of 
+            WriteMessageTo and provides the generic two-line display. 
+            </summary>
+            <param name="constraint">The constraint that failed</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.DisplayDifferences(System.Object,System.Object)">
+            <summary>
+            Display Expected and Actual lines for given values. This
+            method may be called by constraints that need more control over
+            the display of actual and expected values than is provided
+            by the default implementation.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value causing the failure</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.DisplayDifferences(System.Object,System.Object,NUnit.Framework.Constraints.Tolerance)">
+            <summary>
+            Display Expected and Actual lines for given values, including
+            a tolerance value on the expected line.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="actual">The actual value causing the failure</param>
+            <param name="tolerance">The tolerance within which the test was made</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.DisplayStringDifferences(System.String,System.String,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Display the expected and actual string values on separate lines.
+            If the mismatch parameter is >=0, an additional line is displayed
+            line containing a caret that points to the mismatch point.
+            </summary>
+            <param name="expected">The expected string value</param>
+            <param name="actual">The actual string value</param>
+            <param name="mismatch">The point at which the strings don't match or -1</param>
+            <param name="ignoreCase">If true, case is ignored in string comparisons</param>
+            <param name="clipping">If true, clip the strings to fit the max line length</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteConnector(System.String)">
+            <summary>
+            Writes the text for a connector.
+            </summary>
+            <param name="connector">The connector.</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WritePredicate(System.String)">
+            <summary>
+            Writes the text for a predicate.
+            </summary>
+            <param name="predicate">The predicate.</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteModifier(System.String)">
+            <summary>
+            Write the text for a modifier.
+            </summary>
+            <param name="modifier">The modifier.</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteExpectedValue(System.Object)">
+            <summary>
+            Writes the text for an expected value.
+            </summary>
+            <param name="expected">The expected value.</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteActualValue(System.Object)">
+            <summary>
+            Writes the text for an actual value.
+            </summary>
+            <param name="actual">The actual value.</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteValue(System.Object)">
+            <summary>
+            Writes the text for a generalized value.
+            </summary>
+            <param name="val">The value.</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteCollectionElements(System.Collections.IEnumerable,System.Int32,System.Int32)">
+            <summary>
+            Writes the text for a collection value,
+            starting at a particular point, to a max length
+            </summary>
+            <param name="collection">The collection containing elements to write.</param>
+            <param name="start">The starting point of the elements to write</param>
+            <param name="max">The maximum number of elements to write</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteExpectedLine(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Write the generic 'Expected' line for a constraint
+            </summary>
+            <param name="constraint">The constraint that failed</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteExpectedLine(System.Object)">
+            <summary>
+            Write the generic 'Expected' line for a given value
+            </summary>
+            <param name="expected">The expected value</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteExpectedLine(System.Object,NUnit.Framework.Constraints.Tolerance)">
+            <summary>
+            Write the generic 'Expected' line for a given value
+            and tolerance.
+            </summary>
+            <param name="expected">The expected value</param>
+            <param name="tolerance">The tolerance within which the test was made</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteActualLine(NUnit.Framework.Constraints.Constraint)">
+            <summary>
+            Write the generic 'Actual' line for a constraint
+            </summary>
+            <param name="constraint">The constraint for which the actual value is to be written</param>
+        </member>
+        <member name="M:NUnit.Framework.TextMessageWriter.WriteActualLine(System.Object)">
+            <summary>
+            Write the generic 'Actual' line for a given value
+            </summary>
+            <param name="actual">The actual value causing a failure</param>
+        </member>
+        <member name="P:NUnit.Framework.TextMessageWriter.MaxLineLength">
+            <summary>
+            Gets or sets the maximum line length for this writer
+            </summary>
+        </member>
+        <member name="T:NUnit.Framework.Throws">
+            <summary>
+            Helper class with properties and methods that supply
+            constraints that operate on exceptions.
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Throws.TypeOf(System.Type)">
+            <summary>
+            Creates a constraint specifying the exact type of exception expected
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Throws.TypeOf``1">
+            <summary>
+            Creates a constraint specifying the exact type of exception expected
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Throws.InstanceOf(System.Type)">
+            <summary>
+            Creates a constraint specifying the type of exception expected
+            </summary>
+        </member>
+        <member name="M:NUnit.Framework.Throws.InstanceOf``1">
+            <summary>
+            Creates a constraint specifying the type of exception expected
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Throws.Exception">
+            <summary>
+            Creates a constraint specifying an expected exception
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Throws.InnerException">
+            <summary>
+            Creates a constraint specifying an exception with a given InnerException
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Throws.TargetInvocationException">
+            <summary>
+            Creates a constraint specifying an expected TargetInvocationException
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Throws.ArgumentException">
+            <summary>
+            Creates a constraint specifying an expected TargetInvocationException
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Throws.InvalidOperationException">
+            <summary>
+            Creates a constraint specifying an expected TargetInvocationException
+            </summary>
+        </member>
+        <member name="P:NUnit.Framework.Throws.Nothing">
+            <summary>
+            Creates a constraint specifying that no exception is thrown
+            </summary>
+        </member>
+    </members>
+</doc>
