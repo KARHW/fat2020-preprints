@@ -826,3 +826,4 @@
     </field>
     <field number="140" name="PrevClosePx" type="FLOAT"/>
   </fields>
+</fix>
