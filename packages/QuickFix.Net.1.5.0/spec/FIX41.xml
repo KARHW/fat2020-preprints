@@ -107,4 +107,39 @@
       <field name="Currency" required="N"/>
       <field name="ValidUntilTime" required="N"/>
       <field name="IOIQltyInd" required="N"/>
-      <field na
+      <field name="IOIOthSvc" required="N"/>
+      <field name="IOINaturalFlag" required="N"/>
+      <group name="NoIOIQualifiers" required="N">
+        <field name="IOIQualifier" required="N"/>
+      </group>
+      <field name="Text" required="N"/>
+      <field name="TransactTime" required="N"/>
+      <field name="URLLink" required="N"/>
+    </message>
+    <message name="News" msgtype="B" msgcat="app">
+      <field name="OrigTime" required="N"/>
+      <field name="Urgency" required="N"/>
+      <field name="Headline" required="Y"/>
+      <group name="NoRelatedSym" required="N">
+        <field name="RelatdSym" required="N"/>
+        <field name="SymbolSfx" required="N"/>
+        <field name="SecurityID" required="N"/>
+        <field name="IDSource" required="N"/>
+        <field name="SecurityType" required="N"/>
+        <field name="MaturityMonthYear" required="N"/>
+        <field name="MaturityDay" required="N"/>
+        <field name="PutOrCall" required="N"/>
+        <field name="StrikePrice" required="N"/>
+        <field name="OptAttribute" required="N"/>
+        <field name="SecurityExchange" required="N"/>
+        <field name="Issuer" required="N"/>
+        <field name="SecurityDesc" required="N"/>
+      </group>
+      <group name="LinesOfText" required="Y">
+        <field name="Text" required="Y"/>
+      </group>
+      <field name="URLLink" required="N"/>
+      <field name="RawDataLength" required="N"/>
+      <field name="RawData" required="N"/>
+    </message>
+    <message name="Email" ms
