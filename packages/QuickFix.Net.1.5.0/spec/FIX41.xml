@@ -73,4 +73,38 @@
       <field name="OptAttribute" required="N"/>
       <field name="SecurityExchange" required="N"/>
       <field name="Issuer" required="N"/>
- 
+      <field name="SecurityDesc" required="N"/>
+      <field name="AdvSide" required="Y"/>
+      <field name="Shares" required="Y"/>
+      <field name="Price" required="N"/>
+      <field name="Currency" required="N"/>
+      <field name="TradeDate" required="N"/>
+      <field name="TransactTime" required="N"/>
+      <field name="Text" required="N"/>
+      <field name="URLLink" required="N"/>
+      <field name="LastMkt" required="N"/>
+    </message>
+    <message name="IndicationofInterest" msgtype="6" msgcat="app">
+      <field name="IOIid" required="Y"/>
+      <field name="IOITransType" required="Y"/>
+      <field name="IOIRefID" required="N"/>
+      <field name="Symbol" required="Y"/>
+      <field name="SymbolSfx" required="N"/>
+      <field name="SecurityID" required="N"/>
+      <field name="IDSource" required="N"/>
+      <field name="SecurityType" required="N"/>
+      <field name="MaturityMonthYear" required="N"/>
+      <field name="MaturityDay" required="N"/>
+      <field name="PutOrCall" required="N"/>
+      <field name="StrikePrice" required="N"/>
+      <field name="OptAttribute" required="N"/>
+      <field name="SecurityExchange" required="N"/>
+      <field name="Issuer" required="N"/>
+      <field name="SecurityDesc" required="N"/>
+      <field name="Side" required="Y"/>
+      <field name="IOIShares" required="Y"/>
+      <field name="Price" required="N"/>
+      <field name="Currency" required="N"/>
+      <field name="ValidUntilTime" required="N"/>
+      <field name="IOIQltyInd" required="N"/>
+      <field na
