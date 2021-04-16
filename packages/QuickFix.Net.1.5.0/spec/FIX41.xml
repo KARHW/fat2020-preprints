@@ -142,4 +142,39 @@
       <field name="RawDataLength" required="N"/>
       <field name="RawData" required="N"/>
     </message>
-    <message name="Email" ms
+    <message name="Email" msgtype="C" msgcat="app">
+      <field name="EmailThreadID" required="Y"/>
+      <field name="EmailType" required="Y"/>
+      <field name="OrigTime" required="N"/>
+      <field name="Subject" required="Y"/>
+      <group name="NoRelatedSym" required="N">
+        <field name="RelatdSym" required="N"/>
+        <field name="SymbolSfx" required="N"/>
+        <field name="SecurityID" required="N"/>
+        <field name="IDSource" required="N"/>
+        <field name="SecurityType" required="N"/>
+        <field name="MaturityMonthYear" required="N"/>
+        <field name="MaturityDay" required="N"/>
+        <field name="PutOrCall" required="N"/>
+        <field name="StrikePrice" required="N"/>
+        <field name="OptAttribute" required="N"/>
+        <field name="SecurityExchange" required="N"/>
+        <field name="Issuer" required="N"/>
+        <field name="SecurityDesc" required="N"/>
+      </group>
+      <field name="OrderID" required="N"/>
+      <field name="ClOrdID" required="N"/>
+      <group name="LinesOfText" required="Y">
+        <field name="Text" required="Y"/>
+      </group>
+      <field name="RawDataLength" required="N"/>
+      <field name="RawData" required="N"/>
+    </message>
+    <message name="QuoteRequest" msgtype="R" msgcat="app">
+      <field name="QuoteReqID" required="Y"/>
+      <field name="Symbol" required="Y"/>
+      <field name="SymbolSfx" required="N"/>
+      <field name="SecurityID" required="N"/>
+      <field name="IDSource" required="N"/>
+      <field name="SecurityType" required="N"/>
+      <field name
