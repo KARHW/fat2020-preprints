@@ -177,4 +177,38 @@
       <field name="SecurityID" required="N"/>
       <field name="IDSource" required="N"/>
       <field name="SecurityType" required="N"/>
-      <field name
+      <field name="MaturityMonthYear" required="N"/>
+      <field name="MaturityDay" required="N"/>
+      <field name="PutOrCall" required="N"/>
+      <field name="StrikePrice" required="N"/>
+      <field name="OptAttribute" required="N"/>
+      <field name="SecurityExchange" required="N"/>
+      <field name="Issuer" required="N"/>
+      <field name="SecurityDesc" required="N"/>
+      <field name="PrevClosePx" required="N"/>
+      <field name="Side" required="N"/>
+      <field name="OrderQty" required="N"/>
+      <field name="FutSettDate" required="N"/>
+      <field name="OrdType" required="N"/>
+      <field name="FutSettDate2" required="N"/>
+      <field name="OrderQty2" required="N"/>
+    </message>
+    <message name="Quote" msgtype="S" msgcat="app">
+      <field name="QuoteReqID" required="N"/>
+      <field name="QuoteID" required="Y"/>
+      <field name="Symbol" required="Y"/>
+      <field name="SymbolSfx" required="N"/>
+      <field name="SecurityID" required="N"/>
+      <field name="IDSource" required="N"/>
+      <field name="SecurityType" required="N"/>
+      <field name="MaturityMonthYear" required="N"/>
+      <field name="MaturityDay" required="N"/>
+      <field name="PutOrCall" required="N"/>
+      <field name="StrikePrice" required="N"/>
+      <field name="OptAttribute" required="N"/>
+      <field name="SecurityExchange" required="N"/>
+      <field name="Issuer" required="N"/>
+      <field name="SecurityDesc" required="N"/>
+      <field name="BidPx" required="N"/>
+      <field name="OfferPx" required="N"/>
+      <field name="BidSize" required="N"
