@@ -449,4 +449,39 @@
       <field name="CxlRejReason" required="N"/>
       <field name="Text" required="N"/>
     </message>
-    <message name="OrderStatusReq
+    <message name="OrderStatusRequest" msgtype="H" msgcat="app">
+      <field name="OrderID" required="N"/>
+      <field name="ClOrdID" required="Y"/>
+      <field name="ClientID" required="N"/>
+      <field name="ExecBroker" required="N"/>
+      <field name="Symbol" required="Y"/>
+      <field name="SymbolSfx" required="N"/>
+      <field name="SecurityID" required="N"/>
+      <field name="IDSource" required="N"/>
+      <field name="SecurityType" required="N"/>
+      <field name="MaturityMonthYear" required="N"/>
+      <field name="MaturityDay" required="N"/>
+      <field name="PutOrCall" required="N"/>
+      <field name="StrikePrice" required="N"/>
+      <field name="OptAttribute" required="N"/>
+      <field name="SecurityExchange" required="N"/>
+      <field name="Issuer" required="N"/>
+      <field name="SecurityDesc" required="N"/>
+      <field name="Side" required="Y"/>
+    </message>
+    <message name="Allocation" msgtype="J" msgcat="app">
+      <field name="AllocID" required="Y"/>
+      <field name="AllocTransType" required="Y"/>
+      <field name="RefAllocID" required="N"/>
+      <field name="AllocLinkID" required="N"/>
+      <field name="AllocLinkType" required="N"/>
+      <group name="NoOrders" required="Y">
+        <field name="ClOrdID" required="Y"/>
+        <field name="OrderID" required="N"/>
+        <field name="SecondaryOrderID" required="N"/>
+        <field name="ListID" required="N"/>
+        <field name="WaveNo" required="N"/>
+      </group>
+      <group name="NoExecs" required="N">
+        <field name="LastShares" required="N"/>
+    
