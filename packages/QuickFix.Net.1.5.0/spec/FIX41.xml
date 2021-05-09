@@ -720,4 +720,35 @@
       <value enum="C" description="CALL_FIRST"/>
       <value enum="D" description="PERCENT_OF_VOLUME"/>
       <value enum="E" description="DO_NOT_INCREASE_DNI"/>
-      <value enum="F" descriptio
+      <value enum="F" description="DO_NOT_REDUCE_DNR"/>
+      <value enum="G" description="ALL_OR_NONE_AON"/>
+      <value enum="I" description="INSTITUTIONS_ONLY"/>
+      <value enum="L" description="LAST_PEG"/>
+      <value enum="M" description="MIDPRICE_PEG"/>
+      <value enum="N" description="NONNEGOTIABLE"/>
+      <value enum="O" description="OPENING_PEG"/>
+      <value enum="P" description="MARKET_PEG"/>
+      <value enum="R" description="PRIMARY_PEG"/>
+      <value enum="S" description="SUSPEND"/>
+      <value enum="U" description="CUSTOMER_DISPLAY_INSTRUCTION"/>
+      <value enum="V" description="NETTING"/>
+    </field>
+    <field number="19" name="ExecRefID" type="STRING"/>
+    <field number="20" name="ExecTransType" type="STRING">
+      <value enum="0" description="NEW"/>
+      <value enum="1" description="CANCEL"/>
+      <value enum="2" description="CORRECT"/>
+      <value enum="3" description="STATUS"/>
+    </field>
+    <field number="21" name="HandlInst" type="STRING">
+      <value enum="1" description="AUTOMATED_EXECUTION_ORDER_PRIVATE_NO_BROKER_INTERVENTION"/>
+      <value enum="2" description="AUTOMATED_EXECUTION_ORDER_PUBLIC_BROKER_INTERVENTION_OK"/>
+      <value enum="3" description="MANUAL_ORDER_BEST_EXECUTION"/>
+    </field>
+    <field number="22" name="IDSource" type="STRING">
+      <value enum="1" description="CUSIP"/>
+      <value enum="2" description="SEDOL"/>
+      <value enum="3" description="QUIK"/>
+      <value enum="4" description="ISIN_NUMBER"/>
+      <value enum="5" description="RIC_CODE"/>
+      <value enum="6" des
