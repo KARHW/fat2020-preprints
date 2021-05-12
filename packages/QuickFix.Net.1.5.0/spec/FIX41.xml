@@ -818,4 +818,28 @@
       <value enum="H" description="FOREX_PREVIOUSLY_QUOTED"/>
       <value enum="P" description="PEGGED"/>
     </field>
-    <field number="41" name="OrigClOrdID" type
+    <field number="41" name="OrigClOrdID" type="STRING"/>
+    <field number="42" name="OrigTime" type="TIME"/>
+    <field number="43" name="PossDupFlag" type="STRING">
+      <value enum="Y" description="POSSIBLE_DUPLICATE"/>
+      <value enum="N" description="ORIGINAL_TRANSMISSION"/>
+    </field>
+    <field number="44" name="Price" type="FLOAT"/>
+    <field number="45" name="RefSeqNum" type="INT"/>
+    <field number="46" name="RelatdSym" type="STRING"/>
+    <field number="47" name="Rule80A" type="STRING">
+      <value enum="A" description="AGENCY_SINGLE_ORDER"/>
+      <value enum="B" description="SHORT_EXEMPT_TRANSACTION_B"/>
+      <value enum="C" description="PROGRAM_ORDER_NONINDEX_ARB_FOR_MEMBER_FIRMORG"/>
+      <value enum="D" description="PROGRAM_ORDER_INDEX_ARB_FOR_MEMBER_FIRMORG"/>
+      <value enum="E" description="REGISTERED_EQUITY_MARKET_MAKER_TRADES"/>
+      <value enum="F" description="SHORT_EXEMPT_TRANSACTION_F"/>
+      <value enum="H" description="SHORT_EXEMPT_TRANSACTION_H"/>
+      <value enum="J" description="PROGRAM_ORDER_INDEX_ARB_FOR_INDIVIDUAL_CUSTOMER"/>
+      <value enum="K" description="PROGRAM_ORDER_NONINDEX_ARB_FOR_INDIVIDUAL_CUSTOMER"/>
+      <value enum="L" description="SHORT_EXEMPT_AFFILIATED"/>
+      <value enum="M" description="PROGRAM_ORDER_INDEX_ARB_FOR_OTHER_MEMBER"/>
+      <value enum="N" description="PROGRAM_ORDER_NONINDEX_ARB_FOR_OTHER_MEMBER"/>
+      <value enum="O" description="COMPETING_DEALER_TRADES_O"/>
+      <value enum="P" description="PRINCIPAL"/>
+      <value enum="R" description="COMPETING_DEALER_T
