@@ -872,4 +872,37 @@
     <field number="58" name="Text" type="STRING"/>
     <field number="59" name="TimeInForce" type="STRING">
       <value enum="0" description="DAY"/>
-      <value enum="1" description="GOOD
+      <value enum="1" description="GOOD_TILL_CANCEL"/>
+      <value enum="2" description="AT_THE_OPENING"/>
+      <value enum="3" description="IMMEDIATE_OR_CANCEL"/>
+      <value enum="4" description="FILL_OR_KILL"/>
+      <value enum="5" description="GOOD_TILL_CROSSING"/>
+      <value enum="6" description="GOOD_TILL_DATE"/>
+    </field>
+    <field number="60" name="TransactTime" type="TIME"/>
+    <field number="61" name="Urgency" type="STRING">
+      <value enum="0" description="NORMAL"/>
+      <value enum="1" description="FLASH"/>
+      <value enum="2" description="BACKGROUND"/>
+    </field>
+    <field number="62" name="ValidUntilTime" type="TIME"/>
+    <field number="63" name="SettlmntTyp" type="STRING">
+      <value enum="0" description="REGULAR"/>
+      <value enum="1" description="CASH"/>
+      <value enum="2" description="NEXT_DAY"/>
+      <value enum="3" description="TPLUS2"/>
+      <value enum="4" description="TPLUS3"/>
+      <value enum="5" description="TPLUS4"/>
+      <value enum="6" description="FUTURE"/>
+      <value enum="7" description="WHEN_ISSUED"/>
+      <value enum="8" description="SELLERS_OPTION"/>
+      <value enum="9" description="TPLUS5"/>
+    </field>
+    <field number="64" name="FutSettDate" type="DATE"/>
+    <field number="65" name="SymbolSfx" type="STRING"/>
+    <field number="66" name="ListID" type="STRING"/>
+    <field number="67" name="ListSeqNo" type="INT"/>
+    <field number="68" name="ListNoOrds" type="INT"/>
+    <field number="69" name="ListExecInst" type="STRING"/>
+    <field number="70" name="AllocID" type="STRING"/>
+    <field numbe
