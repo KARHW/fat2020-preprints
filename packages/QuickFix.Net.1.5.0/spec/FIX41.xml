@@ -1030,4 +1030,34 @@
     <field number="121" name="ForexReq" type="STRING">
       <value enum="Y" description="YES"/>
       <value enum="N" description="NO"/>
- 
+    </field>
+    <field number="122" name="OrigSendingTime" type="TIME"/>
+    <field number="123" name="GapFillFlag" type="STRING">
+      <value enum="Y" description="GAP_FILL_MESSAGE_MSGSEQNUM_FIELD_VALID"/>
+      <value enum="N" description="SEQUENCE_RESET_IGNORE_MSGSEQNUM"/>
+    </field>
+    <field number="124" name="NoExecs" type="INT"/>
+    <field number="125" name="CxlType" type="STRING"/>
+    <field number="126" name="ExpireTime" type="TIME"/>
+    <field number="127" name="DKReason" type="STRING">
+      <value enum="A" description="UNKNOWN_SYMBOL"/>
+      <value enum="B" description="WRONG_SIDE"/>
+      <value enum="C" description="QUANTITY_EXCEEDS_ORDER"/>
+      <value enum="D" description="NO_MATCHING_ORDER"/>
+      <value enum="E" description="PRICE_EXCEEDS_LIMIT"/>
+      <value enum="Z" description="OTHER" />
+    </field>
+    <field number="128" name="DeliverToCompID" type="STRING"/>
+    <field number="129" name="DeliverToSubID" type="STRING"/>
+    <field number="130" name="IOINaturalFlag" type="STRING">
+      <value enum="Y" description="NATURAL"/>
+      <value enum="N" description="NOT_NATURAL"/>
+    </field>
+    <field number="131" name="QuoteReqID" type="STRING"/>
+    <field number="132" name="BidPx" type="FLOAT"/>
+    <field number="133" name="OfferPx" type="FLOAT"/>
+    <field number="134" name="BidSize" type="INT"/>
+    <field number="135" name="OfferSize" type="INT"/>
+    <field number="136" name="NoMiscFees" type="INT"/>
+    <field number="137" name="MiscFeeAmt" type="FLOAT"/>
+    <
