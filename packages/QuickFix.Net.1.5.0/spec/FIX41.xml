@@ -998,4 +998,36 @@
       <value enum="C" description="AT_THE_CLOSE"/>
       <value enum="S" description="PORTFOLIO_SHOWN"/>
       <value enum="I" description="IN_TOUCH_WITH"/>
-      <value enum="W" description="INDICATION_WORKI
+      <value enum="W" description="INDICATION_WORKING_AWAY"/>
+      <value enum="A" description="ALL_OR_NONE"/>
+      <value enum="L" description="LIMIT"/>
+      <value enum="T" description="THROUGH_THE_DAY"/>
+      <value enum="Y" description="AT_THE_MIDPOINT"/>
+      <value enum="Z" description="PREOPEN"/>
+    </field>
+    <field number="105" name="WaveNo" type="STRING"/>
+    <field number="106" name="Issuer" type="STRING"/>
+    <field number="107" name="SecurityDesc" type="STRING"/>
+    <field number="108" name="HeartBtInt" type="INT"/>
+    <field number="109" name="ClientID" type="STRING"/>
+    <field number="110" name="MinQty" type="INT"/>
+    <field number="111" name="MaxFloor" type="INT"/>
+    <field number="112" name="TestReqID" type="STRING"/>
+    <field number="113" name="ReportToExch" type="STRING">
+      <value enum="Y" description="YES"/>
+      <value enum="N" description="NO"/>
+    </field>
+    <field number="114" name="LocateReqd" type="STRING">
+      <value enum="Y" description="YES"/>
+      <value enum="N" description="NO"/>
+    </field>
+    <field number="115" name="OnBehalfOfCompID" type="STRING"/>
+    <field number="116" name="OnBehalfOfSubID" type="STRING"/>
+    <field number="117" name="QuoteID" type="STRING"/>
+    <field number="118" name="NetMoney" type="FLOAT"/>
+    <field number="119" name="SettlCurrAmt" type="FLOAT"/>
+    <field number="120" name="SettlCurrency" type="STRING"/>
+    <field number="121" name="ForexReq" type="STRING">
+      <value enum="Y" description="YES"/>
+      <value enum="N" description="NO"/>
+ 
