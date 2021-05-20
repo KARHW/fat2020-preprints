@@ -1147,4 +1147,33 @@
       <value enum="FHL" description="FEDERAL_HOME_LOAN"/>
       <value enum="FN" description="FEDERAL_NATIONAL_MORTGAGE_ASSOCIATION"/>
       <value enum="FOR" description="FOREIGN_EXCHANGE_CONTRACT"/>
-      
+      <value enum="FUT" description="FUTURE"/>
+      <value enum="GN" description="GOVERNMENT_NATIONAL_MORTGAGE_ASSOCIATION"/>
+      <value enum="GOVT" description="TREASURIES_PLUS_AGENCY_DEBENTURE"/>
+      <value enum="MF" description="MUTUAL_FUND"/>
+      <value enum="MIO" description="MORTGAGE_INTEREST_ONLY"/>
+      <value enum="MPO" description="MORTGAGE_PRINCIPLE_ONLY"/>
+      <value enum="MPP" description="MORTGAGE_PRIVATE_PLACEMENT"/>
+      <value enum="MPT" description="MISCELLANEOUS_PASSTHRU"/>
+      <value enum="MUNI" description="MUNICIPAL_BOND"/>
+      <value enum="NONE" description="NO_ISITC_SECURITY_TYPE"/>
+      <value enum="OPT" description="OPTION"/>
+      <value enum="PS" description="PREFERRED_STOCK"/>
+      <value enum="RP" description="REPURCHASE_AGREEMENT"/>
+      <value enum="RVRP" description="REVERSE_REPURCHASE_AGREEMENT"/>
+      <value enum="SL" description="STUDENT_LOAN_MARKETING_ASSOCIATION"/>
+      <value enum="TD" description="TIME_DEPOSIT"/>
+      <value enum="USTB" description="US_TREASURY_BILL"/>
+      <value enum="WAR" description="WARRANT"/>
+      <value enum="ZOO" description="CATS_TIGERS"/>
+    </field>
+    <field number="168" name="EffectiveTime" type="TIME"/>
+    <field number="169" name="StandInstDbType" type="INT">
+      <value enum="0" description="OTHER"/>
+      <value enum="1" description="DTC_SID"/>
+      <value enum="2" description="THOMSON_ALERT"/>
+      <value enum="3" description="A_GLOBAL_CUSTODIAN"/>
+    </field>
+    <field number="170" name="StandInstDbName" type="STRING"/>
+    <field number="171" name="StandInstDbID" type="STRING"/>
+    <field number="
