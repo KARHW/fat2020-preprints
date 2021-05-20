@@ -1118,4 +1118,33 @@
     <field number="162" name="SettlInstID" type="STRING"/>
     <field number="163" name="SettlInstTransType" type="STRING">
       <value enum="N" description="NEW"/>
-      <
+      <value enum="C" description="CANCEL"/>
+      <value enum="R" description="REPLACE"/>
+    </field>
+    <field number="164" name="EmailThreadID" type="STRING"/>
+    <field number="165" name="SettlInstSource" type="STRING">
+      <value enum="1" description="BROKER"/>
+      <value enum="2" description="INSTITUTION"/>
+    </field>
+    <field number="166" name="SettlLocation" type="STRING">
+      <value enum="CED" description="CEDEL"/>
+      <value enum="DTC" description="DEPOSITORY_TRUST_COMPANY"/>
+      <value enum="EUR" description="EUROCLEAR"/>
+      <value enum="FED" description="FEDERAL_BOOK_ENTRY"/>
+      <value enum="PNY" description="PHYSICAL"/>
+      <value enum="PTC" description="PARTICIPANT_TRUST_COMPANY"/>
+      <value enum="ISO" description="LOCAL_MARKET_SETTLE_LOCATION"/>
+    </field>
+    <field number="167" name="SecurityType" type="STRING">
+      <value enum="BA" description="BANKERS_ACCEPTANCE"/>
+      <value enum="CD" description="CERTIFICATE_OF_DEPOSIT"/>
+      <value enum="CMO" description="COLLATERALIZE_MORTGAGE_OBLIGATION"/>
+      <value enum="CORP" description="CORPORATE_BOND"/>
+      <value enum="CP" description="COMMERCIAL_PAPER"/>
+      <value enum="CPP" description="CORPORATE_PRIVATE_PLACEMENT"/>
+      <value enum="CS" description="COMMON_STOCK"/>
+      <value enum="FHA" description="FEDERAL_HOUSING_AUTHORITY"/>
+      <value enum="FHL" description="FEDERAL_HOME_LOAN"/>
+      <value enum="FN" description="FEDERAL_NATIONAL_MORTGAGE_ASSOCIATION"/>
+      <value enum="FOR" description="FOREIGN_EXCHANGE_CONTRACT"/>
+      
