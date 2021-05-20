@@ -1090,4 +1090,32 @@
       <value enum="2" description="FILL"/>
       <value enum="3" description="DONE_FOR_DAY"/>
       <value enum="4" description="CANCELLED"/>
-      <value enum
+      <value enum="5" description="REPLACE"/>
+      <value enum="6" description="PENDING_CANCELREPLACE"/>
+      <value enum="7" description="STOPPED"/>
+      <value enum="8" description="REJECTED"/>
+      <value enum="9" description="SUSPENDED"/>
+      <value enum="A" description="PENDING_NEW"/>
+      <value enum="B" description="CALCULATED"/>
+      <value enum="C" description="EXPIRED"/>
+    </field>
+    <field number="151" name="LeavesQty" type="INT"/>
+    <field number="152" name="CashOrderQty" type="FLOAT"/>
+    <field number="153" name="AllocAvgPx" type="FLOAT"/>
+    <field number="154" name="AllocNetMoney" type="FLOAT"/>
+    <field number="155" name="SettlCurrFxRate" type="FLOAT"/>
+    <field number="156" name="SettlCurrFxRateCalc" type="STRING"/>
+    <field number="157" name="NumDaysInterest" type="INT"/>
+    <field number="158" name="AccruedInterestRate" type="FLOAT"/>
+    <field number="159" name="AccruedInterestAmt" type="FLOAT"/>
+    <field number="160" name="SettlInstMode" type="STRING">
+      <value enum="0" description="DEFAULT"/>
+      <value enum="1" description="STANDING_INSTRUCTIONS_PROVIDED"/>
+      <value enum="2" description="SPECIFIC_ALLOCATION_ACCOUNT_OVERRIDING"/>
+      <value enum="3" description="SPECIFIC_ALLOCATION_ACCOUNT_STANDING"/>
+    </field>
+    <field number="161" name="AllocText" type="STRING"/>
+    <field number="162" name="SettlInstID" type="STRING"/>
+    <field number="163" name="SettlInstTransType" type="STRING">
+      <value enum="N" description="NEW"/>
+      <
