@@ -1230,4 +1230,10 @@
     </field>
     <field number="209" name="AllocHandlInst" type="INT">
       <value enum="1" description="MATCH"/>
-      <value enum
+      <value enum="2" description="FORWARD"/>
+      <value enum="3" description="FORWARD_AND_MATCH"/>
+    </field>
+    <field number="210" name="MaxShow" type="INT"/>
+    <field number="211" name="PegDifference" type="FLOAT"/>
+  </fields>
+</fix>
