@@ -421,4 +421,35 @@
       <field name="MaturityMonthYear" required="N"/>
       <field name="MaturityDay" required="N"/>
       <field name="PutOrCall" required="N"/>
-      <field name="StrikePrice" 
+      <field name="StrikePrice" required="N"/>
+      <field name="OptAttribute" required="N"/>
+      <field name="ContractMultiplier" required="N"/>
+      <field name="CouponRate" required="N"/>
+      <field name="SecurityExchange" required="N"/>
+      <field name="Issuer" required="N"/>
+      <field name="EncodedIssuerLen" required="N"/>
+      <field name="EncodedIssuer" required="N"/>
+      <field name="SecurityDesc" required="N"/>
+      <field name="EncodedSecurityDescLen" required="N"/>
+      <field name="EncodedSecurityDesc" required="N"/>
+      <field name="Side" required="N"/>
+      <field name="TradingSessionID" required="N"/>
+    </message>
+    <message name="QuoteAcknowledgement" msgtype="b" msgcat="app">
+      <field name="QuoteReqID" required="N"/>
+      <field name="QuoteID" required="N"/>
+      <field name="QuoteAckStatus" required="Y"/>
+      <field name="QuoteRejectReason" required="N"/>
+      <field name="QuoteResponseLevel" required="N"/>
+      <field name="TradingSessionID" required="N"/>
+      <field name="Text" required="N"/>
+      <group name="NoQuoteSets" required="N">
+        <field name="QuoteSetID" required="N"/>
+        <field name="UnderlyingSymbol" required="N"/>
+        <field name="UnderlyingSymbolSfx" required="N"/>
+        <field name="UnderlyingSecurityID" required="N"/>
+        <field name="UnderlyingIDSource" required="N"/>
+        <field name="UnderlyingSecurityType" required="N"/>
+        <field name="UnderlyingMaturityMonthYear" required="N"/>
+        <field name="UnderlyingMaturityDay" required="N"/>
+        <field name="Un
