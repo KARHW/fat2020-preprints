@@ -958,4 +958,37 @@
       <field name="Issuer" required="N"/>
       <field name="EncodedIssuerLen" required="N"/>
       <field name="EncodedIssuer" required="N"/>
-      <fie
+      <field name="SecurityDesc" required="N"/>
+      <field name="EncodedSecurityDescLen" required="N"/>
+      <field name="EncodedSecurityDesc" required="N"/>
+      <field name="Side" required="Y"/>
+      <field name="OrderQty" required="N"/>
+      <field name="CashOrderQty" required="N"/>
+      <field name="OrdType" required="N"/>
+      <field name="Price" required="N"/>
+      <field name="StopPx" required="N"/>
+      <field name="PegDifference" required="N"/>
+      <field name="DiscretionInst" required="N"/>
+      <field name="DiscretionOffset" required="N"/>
+      <field name="Currency" required="N"/>
+      <field name="ComplianceID" required="N"/>
+      <field name="SolicitedFlag" required="N"/>
+      <field name="TimeInForce" required="N"/>
+      <field name="EffectiveTime" required="N"/>
+      <field name="ExpireDate" required="N"/>
+      <field name="ExpireTime" required="N"/>
+      <field name="ExecInst" required="N"/>
+      <field name="Rule80A" required="N"/>
+      <field name="LastShares" required="N"/>
+      <field name="LastPx" required="N"/>
+      <field name="LastSpotRate" required="N"/>
+      <field name="LastForwardPoints" required="N"/>
+      <field name="LastMkt" required="N"/>
+      <field name="TradingSessionID" required="N"/>
+      <field name="LastCapacity" required="N"/>
+      <field name="LeavesQty" required="Y"/>
+      <field name="CumQty" required="Y"/>
+      <field name="AvgPx" required="Y"/>
+      <field name="DayOrderQty" required="N"/>
+      <field name="DayCumQty" required="N"/>
+      <field name="DayAvgPx" req
