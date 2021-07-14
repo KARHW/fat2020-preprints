@@ -1233,4 +1233,36 @@
       <field name="IDSource" required="N"/>
       <field name="SecurityType" required="N"/>
       <field name="MaturityMonthYear" required="N"/>
-     
+      <field name="MaturityDay" required="N"/>
+      <field name="PutOrCall" required="N"/>
+      <field name="StrikePrice" required="N"/>
+      <field name="OptAttribute" required="N"/>
+      <field name="ContractMultiplier" required="N"/>
+      <field name="CouponRate" required="N"/>
+      <field name="SecurityExchange" required="N"/>
+      <field name="Issuer" required="N"/>
+      <field name="EncodedIssuerLen" required="N"/>
+      <field name="EncodedIssuer" required="N"/>
+      <field name="SecurityDesc" required="N"/>
+      <field name="EncodedSecurityDescLen" required="N"/>
+      <field name="EncodedSecurityDesc" required="N"/>
+      <field name="Shares" required="Y"/>
+      <field name="LastMkt" required="N"/>
+      <field name="TradingSessionID" required="N"/>
+      <field name="AvgPx" required="Y"/>
+      <field name="Currency" required="N"/>
+      <field name="AvgPrxPrecision" required="N"/>
+      <field name="TradeDate" required="Y"/>
+      <field name="TransactTime" required="N"/>
+      <field name="SettlmntTyp" required="N"/>
+      <field name="FutSettDate" required="N"/>
+      <field name="GrossTradeAmt" required="N"/>
+      <field name="NetMoney" required="N"/>
+      <field name="OpenClose" required="N"/>
+      <field name="Text" required="N"/>
+      <field name="EncodedTextLen" required="N"/>
+      <field name="EncodedText" required="N"/>
+      <field name="NumDaysInterest" required="N"/>
+      <field name="AccruedInterestRate" required="N"/>
+      <group name="NoAllocs" required="Y">
+        <field name="AllocAcco
