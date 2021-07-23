@@ -1490,4 +1490,36 @@
         <field name="ExpireTime" required="N"/>
         <field name="GTBookingInst" required="N"/>
         <field name="Commission" required="N"/>
-        <field name="CommType" required="N"/
+        <field name="CommType" required="N"/>
+        <field name="Rule80A" required="N"/>
+        <field name="ForexReq" required="N"/>
+        <field name="SettlCurrency" required="N"/>
+        <field name="Text" required="N"/>
+        <field name="EncodedTextLen" required="N"/>
+        <field name="EncodedText" required="N"/>
+        <field name="FutSettDate2" required="N"/>
+        <field name="OrderQty2" required="N"/>
+        <field name="OpenClose" required="N"/>
+        <field name="CoveredOrUncovered" required="N"/>
+        <field name="CustomerOrFirm" required="N"/>
+        <field name="MaxShow" required="N"/>
+        <field name="PegDifference" required="N"/>
+        <field name="DiscretionInst" required="N"/>
+        <field name="DiscretionOffset" required="N"/>
+        <field name="ClearingFirm" required="N"/>
+        <field name="ClearingAccount" required="N"/>
+      </group>
+    </message>
+    <message name="ListStrikePrice" msgtype="m" msgcat="app">
+      <field name="ListID" required="Y" />
+      <field name="TotNoStrikes" required="Y" />
+      <group name="NoStrikes" required="Y">
+        <field name="Symbol" required="Y" />
+        <field name="SymbolSfx" required="N" />
+        <field name="SecurityID" required="N" />
+        <field name="IDSource" required="N" />
+        <field name="SecurityType" required="N" />
+        <field name="MaturityMonthYear" required="N" />
+        <field name="MaturityDay" required="N" />
+        <field name="PutOrCall" required="N" />
+        <field name=
