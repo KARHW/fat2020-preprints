@@ -1655,4 +1655,35 @@
       <value enum="O" description="OPENING_PEG"/>
       <value enum="P" description="MARKET_PEG"/>
       <value enum="R" description="PRIMARY_PEG"/>
-      <value enum
+      <value enum="S" description="SUSPEND"/>
+      <value enum="T" description="FIXED_PEG"/>
+      <value enum="U" description="CUSTOMER_DISPLAY_INSTRUCTION"/>
+      <value enum="V" description="NETTING"/>
+      <value enum="W" description="PEG_TO_VWAP"/>
+    </field>
+    <field number="19" name="ExecRefID" type="STRING"/>
+    <field number="20" name="ExecTransType" type="CHAR">
+      <value enum="0" description="NEW"/>
+      <value enum="1" description="CANCEL"/>
+      <value enum="2" description="CORRECT"/>
+      <value enum="3" description="STATUS"/>
+    </field>
+    <field number="21" name="HandlInst" type="CHAR">
+      <value enum="1" description="AUTOMATED_EXECUTION_ORDER_PRIVATE_NO_BROKER_INTERVENTION"/>
+      <value enum="2" description="AUTOMATED_EXECUTION_ORDER_PUBLIC_BROKER_INTERVENTION_OK"/>
+      <value enum="3" description="MANUAL_ORDER_BEST_EXECUTION"/>
+    </field>
+    <field number="22" name="IDSource" type="STRING">
+      <value enum="1" description="CUSIP"/>
+      <value enum="2" description="SEDOL"/>
+      <value enum="3" description="QUIK"/>
+      <value enum="4" description="ISIN_NUMBER"/>
+      <value enum="5" description="RIC_CODE"/>
+      <value enum="6" description="ISO_CURRENCY_CODE"/>
+      <value enum="7" description="ISO_COUNTRY_CODE"/>
+      <value enum="8" description="EXCHANGE_SYMBOL"/>
+      <value enum="9" description="CONSOLIDATED_TAPE_ASSOCIATION"/>
+    </field>
+    <field number="23" name="IOIid" type="STRING"/>
+    <field number="24" name="IOIOthSvc" type="CHAR"/>
+    <field number="25" name="IOIQltyInd
