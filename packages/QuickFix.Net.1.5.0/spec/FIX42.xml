@@ -2028,4 +2028,35 @@
     <field number="147" name="Subject" type="STRING"/>
     <field number="148" name="Headline" type="STRING"/>
     <field number="149" name="URLLink" type="STRING"/>
-    <field numbe
+    <field number="150" name="ExecType" type="CHAR">
+      <value enum="0" description="NEW"/>
+      <value enum="1" description="PARTIAL_FILL"/>
+      <value enum="2" description="FILL"/>
+      <value enum="3" description="DONE_FOR_DAY"/>
+      <value enum="4" description="CANCELED"/>
+      <value enum="5" description="REPLACE"/>
+      <value enum="6" description="PENDING_CANCEL"/>
+      <value enum="7" description="STOPPED"/>
+      <value enum="8" description="REJECTED"/>
+      <value enum="9" description="SUSPENDED"/>
+      <value enum="A" description="PENDING_NEW"/>
+      <value enum="B" description="CALCULATED"/>
+      <value enum="C" description="EXPIRED"/>
+      <value enum="D" description="RESTATED"/>
+      <value enum="E" description="PENDING_REPLACE"/>
+    </field>
+    <field number="151" name="LeavesQty" type="QTY"/>
+    <field number="152" name="CashOrderQty" type="QTY"/>
+    <field number="153" name="AllocAvgPx" type="PRICE"/>
+    <field number="154" name="AllocNetMoney" type="AMT"/>
+    <field number="155" name="SettlCurrFxRate" type="FLOAT"/>
+    <field number="156" name="SettlCurrFxRateCalc" type="CHAR">
+      <value enum="M" description="MULTIPLY"/>
+      <value enum="D" description="DIVIDE"/>
+    </field>
+    <field number="157" name="NumDaysInterest" type="INT"/>
+    <field number="158" name="AccruedInterestRate" type="FLOAT"/>
+    <field number="159" name="AccruedInterestAmt" type="AMT"/>
+    <field number="160" name="SettlInstMode" type="CHAR">
+      <value enum="0" description="DEFAULT"/>
+      <value enum="1" description=
