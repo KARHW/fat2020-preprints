@@ -2088,4 +2088,29 @@
       <value enum="BA" description="BANKERS_ACCEPTANCE"/>
       <value enum="CB" description="CONVERTIBLE_BOND"/>
       <value enum="CD" description="CERTIFICATE_OF_DEPOSIT"/>
-      <value enum="CMO" description="COLLATERALIZE
+      <value enum="CMO" description="COLLATERALIZE_MORTGAGE_OBLIGATION"/>
+      <value enum="CORP" description="CORPORATE_BOND"/>
+      <value enum="CP" description="COMMERCIAL_PAPER"/>
+      <value enum="CPP" description="CORPORATE_PRIVATE_PLACEMENT"/>
+      <value enum="CS" description="COMMON_STOCK"/>
+      <value enum="FHA" description="FEDERAL_HOUSING_AUTHORITY"/>
+      <value enum="FHL" description="FEDERAL_HOME_LOAN"/>
+      <value enum="FN" description="FEDERAL_NATIONAL_MORTGAGE_ASSOCIATION"/>
+      <value enum="FOR" description="FOREIGN_EXCHANGE_CONTRACT"/>
+      <value enum="FUT" description="FUTURE"/>
+      <value enum="GN" description="GOVERNMENT_NATIONAL_MORTGAGE_ASSOCIATION"/>
+      <value enum="GOVT" description="TREASURIES_PLUS_AGENCY_DEBENTURE"/>
+      <value enum="MF" description="MUTUAL_FUND"/>
+      <value enum="MIO" description="MORTGAGE_INTEREST_ONLY"/>
+      <value enum="MPO" description="MORTGAGE_PRINCIPAL_ONLY"/>
+      <value enum="MPP" description="MORTGAGE_PRIVATE_PLACEMENT"/>
+      <value enum="MPT" description="MISCELLANEOUS_PASSTHRU"/>
+      <value enum="MUNI" description="MUNICIPAL_BOND"/>
+      <value enum="NONE" description="NO_ISITC_SECURITY_TYPE"/>
+      <value enum="OPT" description="OPTION"/>
+      <value enum="PS" description="PREFERRED_STOCK"/>
+      <value enum="RP" description="REPURCHASE_AGREEMENT"/>
+      <value enum="RVRP" description="REVERSE_REPURCHASE_AGREEMENT"/>
+      <value enum="SL" description="STUDENT_LOAN_MARKETING_ASSOCIATION"/>
+      <value enum="TD" description="TIME_DEPOSIT"/>
+      <va
