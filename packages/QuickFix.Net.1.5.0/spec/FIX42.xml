@@ -2138,4 +2138,33 @@
     <field number="181" name="SecuritySettlAgentContactPhone" type="STRING"/>
     <field number="182" name="CashSettlAgentName" type="STRING"/>
     <field number="183" name="CashSettlAgentCode" type="STRING"/>
-    <field number="184" name="CashSettlA
+    <field number="184" name="CashSettlAgentAcctNum" type="STRING"/>
+    <field number="185" name="CashSettlAgentAcctName" type="STRING"/>
+    <field number="186" name="CashSettlAgentContactName" type="STRING"/>
+    <field number="187" name="CashSettlAgentContactPhone" type="STRING"/>
+    <field number="188" name="BidSpotRate" type="PRICE"/>
+    <field number="189" name="BidForwardPoints" type="PRICEOFFSET"/>
+    <field number="190" name="OfferSpotRate" type="PRICE"/>
+    <field number="191" name="OfferForwardPoints" type="PRICEOFFSET"/>
+    <field number="192" name="OrderQty2" type="QTY"/>
+    <field number="193" name="FutSettDate2" type="LOCALMKTDATE"/>
+    <field number="194" name="LastSpotRate" type="PRICE"/>
+    <field number="195" name="LastForwardPoints" type="PRICEOFFSET"/>
+    <field number="196" name="AllocLinkID" type="STRING"/>
+    <field number="197" name="AllocLinkType" type="INT">
+      <value enum="0" description="FX_NETTING"/>
+      <value enum="1" description="FX_SWAP"/>
+    </field>
+    <field number="198" name="SecondaryOrderID" type="STRING"/>
+    <field number="199" name="NoIOIQualifiers" type="INT"/>
+    <field number="200" name="MaturityMonthYear" type="MONTHYEAR"/>
+    <field number="201" name="PutOrCall" type="INT">
+      <value enum="0" description="PUT"/>
+      <value enum="1" description="CALL"/>
+    </field>
+    <field number="202" name="StrikePrice" type="PRICE"/>
+    <field number="203" name="CoveredOrUncovered" type="INT">
+      <value enum="0" description="COVERED"/>
+      <value enum="1" description="UNCOVERED"/>
+    </field>
+    <field number="204" name="Cust
