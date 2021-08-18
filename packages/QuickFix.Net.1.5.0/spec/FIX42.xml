@@ -2296,4 +2296,31 @@
       <value enum="0" description="UNKNOWN_SYMBOL"/>
       <value enum="1" description="DUPLICATE_MDREQID"/>
       <value enum="2" description="INSUFFICIENT_BANDWIDTH"/>
-    
+      <value enum="3" description="INSUFFICIENT_PERMISSIONS"/>
+      <value enum="4" description="UNSUPPORTED_SUBSCRIPTIONREQUESTTYPE"/>
+      <value enum="5" description="UNSUPPORTED_MARKETDEPTH"/>
+      <value enum="6" description="UNSUPPORTED_MDUPDATETYPE"/>
+      <value enum="7" description="UNSUPPORTED_AGGREGATEDBOOK"/>
+      <value enum="8" description="UNSUPPORTED_MDENTRYTYPE"/>
+    </field>
+    <field number="282" name="MDEntryOriginator" type="STRING"/>
+    <field number="283" name="LocationID" type="STRING"/>
+    <field number="284" name="DeskID" type="STRING"/>
+    <field number="285" name="DeleteReason" type="CHAR">
+      <value enum="0" description="CANCELATION_TRADE_BUST"/>
+      <value enum="1" description="ERROR"/>
+    </field>
+    <field number="286" name="OpenCloseSettleFlag" type="CHAR">
+      <value enum="0" description="DAILY_OPEN_CLOSE__SETTLEMENT_PRICE"/>
+      <value enum="1" description="SESSION_OPEN_CLOSE__SETTLEMENT_PRICE"/>
+      <value enum="2" description="DELIVERY_SETTLEMENT_PRICE"/>
+    </field>
+    <field number="287" name="SellerDays" type="INT"/>
+    <field number="288" name="MDEntryBuyer" type="STRING"/>
+    <field number="289" name="MDEntrySeller" type="STRING"/>
+    <field number="290" name="MDEntryPositionNo" type="INT"/>
+    <field number="291" name="FinancialStatus" type="CHAR">
+      <value enum="1" description="BANKRUPT"/>
+    </field>
+    <field number="292" name="CorporateAction" type="CHAR">
+      <value 
