@@ -2323,4 +2323,32 @@
       <value enum="1" description="BANKRUPT"/>
     </field>
     <field number="292" name="CorporateAction" type="CHAR">
-      <value 
+      <value enum="A" description="EXDIVIDEND"/>
+      <value enum="B" description="EXDISTRIBUTION"/>
+      <value enum="C" description="EXRIGHTS"/>
+      <value enum="D" description="NEW"/>
+      <value enum="E" description="EXINTEREST"/>
+    </field>
+    <field number="293" name="DefBidSize" type="QTY"/>
+    <field number="294" name="DefOfferSize" type="QTY"/>
+    <field number="295" name="NoQuoteEntries" type="INT"/>
+    <field number="296" name="NoQuoteSets" type="INT"/>
+    <field number="297" name="QuoteAckStatus" type="INT"/>
+    <field number="298" name="QuoteCancelType" type="INT"/>
+    <field number="299" name="QuoteEntryID" type="STRING"/>
+    <field number="300" name="QuoteRejectReason" type="INT">
+      <value enum="1" description="UNKNOWN_SYMBOL"/>
+      <value enum="2" description="EXCHANGE"/>
+      <value enum="3" description="QUOTE_REQUEST_EXCEEDS_LIMIT"/>
+      <value enum="4" description="TOO_LATE_TO_ENTER"/>
+      <value enum="5" description="UNKNOWN_QUOTE"/>
+      <value enum="6" description="DUPLICATE_QUOTE_7"/>
+      <value enum="8" description="INVALID_PRICE"/>
+      <value enum="9" description="NOT_AUTHORIZED_TO_QUOTE_SECURITY"/>
+    </field>
+    <field number="301" name="QuoteResponseLevel" type="INT"/>
+    <field number="302" name="QuoteSetID" type="STRING"/>
+    <field number="303" name="QuoteRequestType" type="INT"/>
+    <field number="304" name="TotQuoteEntries" type="INT"/>
+    <field number="305" name="UnderlyingIDSource" type="STRING"/>
+    <field number="306" name="UnderlyingIssu
