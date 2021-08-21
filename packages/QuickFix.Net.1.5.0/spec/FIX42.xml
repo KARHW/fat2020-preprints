@@ -2401,3 +2401,33 @@
       <value enum="12" description="NO_MARKET_IMBALANCE"/>
       <value enum="13" description="NO_MARKET_ON_CLOSE_IMBALANCE"/>
       <value enum="14" description="ITS_PREOPENING"/>
+      <value enum="15" description="NEW_PRICE_INDICATION"/>
+      <value enum="16" description="TRADE_DISSEMINATION_TIME"/>
+      <value enum="17" description="READY_TO_TRADE"/>
+      <value enum="18" description="NOT_AVAILABLE_FOR_TRADING"/>
+      <value enum="19" description="NOT_TRADED_ON_THIS_MARKET"/>
+      <value enum="20" description="UNKNOWN_OR_INVALID"/>
+    </field>
+    <field number="327" name="HaltReason" type="CHAR">
+      <value enum="I" description="ORDER_IMBALANCE"/>
+      <value enum="X" description="EQUIPMENT_CHANGEOVER"/>
+      <value enum="P" description="NEWS_PENDING"/>
+      <value enum="D" description="NEWS_DISSEMINATION"/>
+      <value enum="E" description="ORDER_INFLUX"/>
+      <value enum="M" description="ADDITIONAL_INFORMATION"/>
+    </field>
+    <field number="328" name="InViewOfCommon" type="BOOLEAN">
+      <value enum="Y" description="HALT_WAS_DUE_TO_COMMON_STOCK_BEING_HALTED"/>
+      <value enum="N" description="HALT_WAS_NOT_RELATED_TO_A_HALT_OF_THE_COMMON_STOCK"/>
+    </field>
+    <field number="329" name="DueToRelated" type="BOOLEAN">
+      <value enum="Y" description="HALT_WAS_DUE_TO_RELATED_SECURITY_BEING_HALTED"/>
+      <value enum="N" description="HALT_WAS_NOT_RELATED_TO_A_HALT_OF_THE_RELATED_SECURITY"/>
+    </field>
+    <field number="330" name="BuyVolume" type="QTY"/>
+    <field number="331" name="SellVolume" type="QTY"/>
+    <field number="332" name="HighPx" type="PRICE"/>
+    <field number="333" name="LowPx" type="PRICE"/>
+    <field number="334" name="Adjustment" type="INT">
+      <value enum="1" description="CANCEL"/>
+     
