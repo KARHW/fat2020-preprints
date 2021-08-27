@@ -2512,4 +2512,33 @@
     <field number="374" name="BidRequestTransType" type="CHAR">
       <value enum="N" description="NEW"/>
       <value enum="C" description="CANCEL"/>
-    
+    </field>
+    <field number="375" name="ContraBroker" type="STRING"/>
+    <field number="376" name="ComplianceID" type="STRING"/>
+    <field number="377" name="SolicitedFlag" type="BOOLEAN">
+      <value enum="Y" description="WAS_SOLCITIED"/>
+      <value enum="N" description="WAS_NOT_SOLICITED"/>
+    </field>
+    <field number="378" name="ExecRestatementReason" type="INT">
+      <value enum="0" description="GT_CORPORATE_ACTION"/>
+      <value enum="1" description="GT_RENEWAL_RESTATEMENT"/>
+      <value enum="2" description="VERBAL_CHANGE"/>
+      <value enum="3" description="REPRICING_OF_ORDER"/>
+      <value enum="4" description="BROKER_OPTION"/>
+      <value enum="5" description="PARTIAL_DECLINE_OF_ORDERQTY"/>
+    </field>
+    <field number="379" name="BusinessRejectRefID" type="STRING"/>
+    <field number="380" name="BusinessRejectReason" type="INT">
+      <value enum="0" description="OTHER"/>
+      <value enum="1" description="UNKOWN_ID"/>
+      <value enum="2" description="UNKNOWN_SECURITY"/>
+      <value enum="3" description="UNSUPPORTED_MESSAGE_TYPE"/>
+      <value enum="4" description="APPLICATION_NOT_AVAILABLE"/>
+      <value enum="5" description="CONDITIONALLY_REQUIRED_FIELD_MISSING"/>
+    </field>
+    <field number="381" name="GrossTradeAmt" type="AMT"/>
+    <field number="382" name="NoContraBrokers" type="INT"/>
+    <field number="383" name="MaxMessageSize" type="INT"/>
+    <field number="384" name="NoMsgTypes" type="INT"/>
+    <field number="385" name="MsgDirection" type="CHAR">
+      <va
