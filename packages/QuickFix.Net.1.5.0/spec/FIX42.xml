@@ -2595,4 +2595,27 @@
     <field number="424" name="DayOrderQty" type="QTY"/>
     <field number="425" name="DayCumQty" type="QTY"/>
     <field number="426" name="DayAvgPx" type="PRICE"/>
-    <field number="427" name="GTBookingInst
+    <field number="427" name="GTBookingInst" type="INT">
+      <value enum="0" description="BOOK_OUT_ALL_TRADES_ON_DAY_OF_EXECUTION"/>
+      <value enum="1" description="ACCUMULATE_EXECUTIONS_UNTIL_ORDER_IS_FILLED_OR_EXPIRES"/>
+      <value enum="2" description="ACCUMULATE_UNTIL_VERBALLY_NOTIFIED_OTHERWISE"/>
+    </field>
+    <field number="428" name="NoStrikes" type="INT"/>
+    <field number="429" name="ListStatusType" type="INT"/>
+    <field number="430" name="NetGrossInd" type="INT"/>
+    <field number="431" name="ListOrderStatus" type="INT"/>
+    <field number="432" name="ExpireDate" type="LOCALMKTDATE"/>
+    <field number="433" name="ListExecInstType" type="CHAR"/>
+    <field number="434" name="CxlRejResponseTo" type="CHAR"/>
+    <field number="435" name="UnderlyingCouponRate" type="FLOAT"/>
+    <field number="436" name="UnderlyingContractMultiplier" type="FLOAT"/>
+    <field number="437" name="ContraTradeQty" type="QTY"/>
+    <field number="438" name="ContraTradeTime" type="UTCTIMESTAMP"/>
+    <field number="439" name="ClearingFirm" type="STRING"/>
+    <field number="440" name="ClearingAccount" type="STRING"/>
+    <field number="441" name="LiquidityNumSecurities" type="INT"/>
+    <field number="442" name="MultiLegReportingType" type="CHAR"/>
+    <field number="443" name="StrikeTime" type="UTCTIMESTAMP"/>
+    <field number="444" name="ListStatusText" type="STRING"/>
+    <field number="445" name="EncodedListStatusTextLen" type="INT"/>
+    <field number="446" name="EncodedListStatusText" type="DA
