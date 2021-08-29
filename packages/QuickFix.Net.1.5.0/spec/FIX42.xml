@@ -2618,4 +2618,6 @@
     <field number="443" name="StrikeTime" type="UTCTIMESTAMP"/>
     <field number="444" name="ListStatusText" type="STRING"/>
     <field number="445" name="EncodedListStatusTextLen" type="INT"/>
-    <field number="446" name="EncodedListStatusText" type="DA
+    <field number="446" name="EncodedListStatusText" type="DATA"/>
+  </fields>
+</fix>

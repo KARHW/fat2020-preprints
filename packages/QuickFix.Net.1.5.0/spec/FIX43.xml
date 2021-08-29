@@ -1,0 +1,1528 @@
+
+<fix major="4" minor="3">
+  <header>
+    <field name="BeginString" required="Y" />
+    <field name="BodyLength" required="Y" />
+    <field name="MsgType" required="Y" />
+    <field name="SenderCompID" required="Y" />
+    <field name="TargetCompID" required="Y" />
+    <field name="OnBehalfOfCompID" required="N" />
+    <field name="DeliverToCompID" required="N" />
+    <field name="SecureDataLen" required="N" />
+    <field name="SecureData" required="N" />
+    <field name="MsgSeqNum" required="Y" />
+    <field name="SenderSubID" required="N" />
+    <field name="SenderLocationID" required="N" />
+    <field name="TargetSubID" required="N" />
+    <field name="TargetLocationID" required="N" />
+    <field name="OnBehalfOfSubID" required="N" />
+    <field name="OnBehalfOfLocationID" required="N" />
+    <field name="DeliverToSubID" required="N" />
+    <field name="DeliverToLocationID" required="N" />
+    <field name="PossDupFlag" required="N" />
+    <field name="PossResend" required="N" />
+    <field name="SendingTime" required="Y" />
+    <field name="OrigSendingTime" required="N" />
+    <field name="XmlDataLen" required="N" />
+    <field name="XmlData" required="N" />
+    <field name="MessageEncoding" required="N" />
+    <field name="LastMsgSeqNumProcessed" required="N" />
+    <field name="OnBehalfOfSendingTime" required="N" />
+    <group name="NoHops" required="N">
+      <field name="HopCompID" required="N" />
+      <field name="HopSendingTime" required="N" />    
+      <field name="HopRefID" required="N" />
+    </group>
+  </header>
+  <trailer>
+    <field name="SignatureLength" required="N" />
+    <field name="Signature" required="N" />
+    <field name="CheckSum" required="Y" />
+  </trailer>
+  <messages>
+    <message name="Heartbeat" msgtype="0" msgcat="admin">
+      <field name="TestReqID" required="N" />
+    </message>
+    <message name="Logon" msgtype="A" msgcat="admin">
+      <field name="EncryptMethod" required="Y" />
+      <field name="HeartBtInt" required="Y" />
+      <field name="RawDataLength" required="N" />
+      <field name="RawData" required="N" />
+      <field name="ResetSeqNumFlag" required="N" />
+      <field name="MaxMessageSize" required="N" />
+      <group name="NoMsgTypes" required="N">
+        <field name="RefMsgType" required="N" />
+        <field name="MsgDirection" required="N" />
+      </group>
+      <field name="TestMessageIndicator" required="N" />
+      <field name="Username" required="N" />
+      <field name="Password" required="N" />
+    </message>
+    <message name="TestRequest" msgtype="1" msgcat="admin">
+      <field name="TestReqID" required="Y" />
+    </message>
+    <message name="ResendRequest" msgtype="2" msgcat="admin">
+      <field name="BeginSeqNo" required="Y" />
+      <field name="EndSeqNo" required="Y" />
+    </message>
+    <message name="Reject" msgtype="3" msgcat="admin">
+      <field name="RefSeqNum" required="Y" />
+      <field name="RefTagID" required="N" />
+      <field name="RefMsgType" required="N" />
+      <field name="SessionRejectReason" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="SequenceReset" msgtype="4" msgcat="admin">
+      <field name="GapFillFlag" required="N" />
+      <field name="NewSeqNo" required="Y" />
+    </message>
+    <message name="Logout" msgtype="5" msgcat="admin">
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="BusinessMessageReject" msgtype="j" msgcat="admin">
+      <field name="RefSeqNum" required="N" />
+      <field name="RefMsgType" required="Y" />
+      <field name="BusinessRejectRefID" required="N" />
+      <field name="BusinessRejectReason" required="Y" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="Advertisement" msgtype="7" msgcat="app">
+      <field name="AdvId" required="Y" />
+      <field name="AdvTransType" required="Y" />
+      <field name="AdvRefID" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="AdvSide" required="Y" />
+      <field name="Quantity" required="Y" />
+      <field name="Price" required="N" />
+      <field name="Currency" required="N" />
+      <field name="TradeDate" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="URLLink" required="N" />
+      <field name="LastMkt" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </message>
+    <message name="IndicationOfInterest" msgtype="6" msgcat="app">
+      <field name="IOIid" required="Y" />
+      <field name="IOITransType" required="Y" />
+      <field name="IOIRefID" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="Side" required="Y" />
+      <field name="QuantityType" required="N" />
+      <field name="IOIQty" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ValidUntilTime" required="N" />
+      <field name="IOIQltyInd" required="N" />
+      <field name="IOINaturalFlag" required="N" />
+      <group name="NoIOIQualifiers" required="N">
+        <field name="IOIQualifier" required="N" />
+      </group>
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="URLLink" required="N" />
+      <group name="NoRoutingIDs" required="N">
+        <field name="RoutingType" required="N" />
+        <field name="RoutingID" required="N" />
+      </group>
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <field name="Benchmark" required="N" />
+    </message>
+    <message name="News" msgtype="B" msgcat="app">
+      <field name="OrigTime" required="N" />
+      <field name="Urgency" required="N" />
+      <field name="Headline" required="Y" />
+      <field name="EncodedHeadlineLen" required="N" />
+      <field name="EncodedHeadline" required="N" />
+      <group name="NoRoutingIDs" required="N">
+        <field name="RoutingType" required="N" />
+        <field name="RoutingID" required="N" />
+      </group>
+      <group name="NoRelatedSym" required="N">
+        <component name="Instrument" required="N" />
+      </group>
+      <group name="LinesOfText" required="Y">
+        <field name="Text" required="Y" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+      <field name="URLLink" required="N" />
+      <field name="RawDataLength" required="N" />
+      <field name="RawData" required="N" />
+    </message>
+    <message name="Email" msgtype="C" msgcat="app">
+      <field name="EmailThreadID" required="Y" />
+      <field name="EmailType" required="Y" />
+      <field name="OrigTime" required="N" />
+      <field name="Subject" required="Y" />
+      <field name="EncodedSubjectLen" required="N" />
+      <field name="EncodedSubject" required="N" />
+      <group name="NoRoutingIDs" required="N">
+        <field name="RoutingType" required="N" />
+        <field name="RoutingID" required="N" />
+      </group>
+      <group name="NoRelatedSym" required="N">
+        <component name="Instrument" required="N" />
+      </group>
+      <field name="OrderID" required="N" />
+      <field name="ClOrdID" required="N" />
+      <group name="LinesOfText" required="Y">
+        <field name="Text" required="Y" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+      <field name="RawDataLength" required="N" />
+      <field name="RawData" required="N" />
+    </message>
+    <message name="QuoteRequest" msgtype="R" msgcat="app">
+      <field name="QuoteReqID" required="Y" />
+      <field name="RFQReqID" required="N" />
+      <group name="NoRelatedSym" required="Y">
+        <component name="Instrument" required="Y" />
+        <field name="PrevClosePx" required="N" />
+        <field name="QuoteRequestType" required="N" />
+        <field name="QuoteType" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+        <field name="TradeOriginationDate" required="N" />
+        <component name="Stipulations" required="N" />
+        <field name="Side" required="N" />
+        <field name="QuantityType" required="N" />
+        <field name="OrderQty" required="N" />
+        <field name="CashOrderQty" required="N" />
+        <field name="SettlmntTyp" required="N" />
+        <field name="FutSettDate" required="N" />
+        <field name="OrdType" required="N" />
+        <field name="FutSettDate2" required="N" />
+        <field name="OrderQty2" required="N" />
+        <field name="ExpireTime" required="N" />
+        <field name="TransactTime" required="N" />
+        <field name="Currency" required="N" />
+        <component name="SpreadOrBenchmarkCurveData" required="N" />
+        <field name="PriceType" required="N" />
+        <field name="Price" required="N" />
+        <field name="Price2" required="N" />
+        <component name="YieldData" required="N" />
+      </group>
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="QuoteRequestReject" msgtype="AG" msgcat="app">
+      <field name="QuoteReqID" required="Y" />
+      <field name="RFQReqID" required="N" />
+      <field name="QuoteRequestRejectReason" required="Y" />
+      <group name="NoRelatedSym" required="Y">
+        <component name="Instrument" required="Y" />
+        <field name="PrevClosePx" required="N" />
+        <field name="QuoteRequestType" required="N" />
+        <field name="QuoteType" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+        <field name="TradeOriginationDate" required="N" />
+        <component name="Stipulations" required="N" />
+        <field name="Side" required="N" />
+        <field name="QuantityType" required="N" />
+        <field name="OrderQty" required="N" />
+        <field name="CashOrderQty" required="N" />
+        <field name="SettlmntTyp" required="N" />
+        <field name="FutSettDate" required="N" />
+        <field name="OrdType" required="N" />
+        <field name="FutSettDate2" required="N" />
+        <field name="OrderQty2" required="N" />
+        <field name="ExpireTime" required="N" />
+        <field name="TransactTime" required="N" />
+        <field name="Currency" required="N" />
+        <component name="SpreadOrBenchmarkCurveData" required="N" />
+        <field name="PriceType" required="N" />
+        <field name="Price" required="N" />
+        <field name="Price2" required="N" />
+        <component name="YieldData" required="N" />
+      </group>
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="RFQRequest" msgtype="AH" msgcat="app">
+      <field name="RFQReqID" required="Y" />
+      <group name="NoRelatedSym" required="Y">
+        <component name="Instrument" required="Y" />
+        <field name="PrevClosePx" required="N" />
+        <field name="QuoteRequestType" required="N" />
+        <field name="QuoteType" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="Quote" msgtype="S" msgcat="app">
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="Y" />
+      <field name="QuoteType" required="N" />
+      <field name="QuoteResponseLevel" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="BidPx" required="N" />
+      <field name="OfferPx" required="N" />
+      <field name="MktBidPx" required="N" />
+      <field name="MktOfferPx" required="N" />
+      <field name="MinBidSize" required="N" />
+      <field name="BidSize" required="N" />
+      <field name="MinOfferSize" required="N" />
+      <field name="OfferSize" required="N" />
+      <field name="ValidUntilTime" required="N" />
+      <field name="BidSpotRate" required="N" />
+      <field name="OfferSpotRate" required="N" />
+      <field name="BidForwardPoints" required="N" />
+      <field name="OfferForwardPoints" required="N" />
+      <field name="MidPx" required="N" />
+      <field name="BidYield" required="N" />
+      <field name="MidYield" required="N" />
+      <field name="OfferYield" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="OrdType" required="N" />
+      <field name="FutSettDate2" required="N" />
+      <field name="OrderQty2" required="N" />
+      <field name="BidForwardPoints2" required="N" />
+      <field name="OfferForwardPoints2" required="N" />
+      <field name="Currency" required="N" />
+      <field name="SettlCurrBidFxRate" required="N" />
+      <field name="SettlCurrOfferFxRate" required="N" />
+      <field name="SettlCurrFxRateCalc" required="N" />
+      <field name="CommType" required="N" />
+      <field name="Commission" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="ExDestination" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="QuoteCancel" msgtype="Z" msgcat="app">
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="Y" />
+      <field name="QuoteCancelType" required="Y" />
+      <field name="QuoteResponseLevel" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <group name="NoQuoteEntries" required="N">
+        <component name="Instrument" required="N" />
+      </group>
+    </message>
+    <message name="QuoteStatusRequest" msgtype="a" msgcat="app">
+      <field name="QuoteStatusReqID" required="N" />
+      <field name="QuoteID" required="N" />
+      <component name="Instrument" required="Y" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="QuoteStatusReport" msgtype="AI" msgcat="app">
+      <field name="QuoteStatusReqID" required="N" />
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="Y" />
+      <field name="QuoteType" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="BidPx" required="N" />
+      <field name="OfferPx" required="N" />
+      <field name="MktBidPx" required="N" />
+      <field name="MktOfferPx" required="N" />
+      <field name="MinBidSize" required="N" />
+      <field name="BidSize" required="N" />
+      <field name="MinOfferSize" required="N" />
+      <field name="OfferSize" required="N" />
+      <field name="ValidUntilTime" required="N" />
+      <field name="BidSpotRate" required="N" />
+      <field name="OfferSpotRate" required="N" />
+      <field name="BidForwardPoints" required="N" />
+      <field name="OfferForwardPoints" required="N" />
+      <field name="MidPx" required="N" />
+      <field name="BidYield" required="N" />
+      <field name="MidYield" required="N" />
+      <field name="OfferYield" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="OrdType" required="N" />
+      <field name="FutSettDate2" required="N" />
+      <field name="OrderQty2" required="N" />
+      <field name="BidForwardPoints2" required="N" />
+      <field name="OfferForwardPoints2" required="N" />
+      <field name="Currency" required="N" />
+      <field name="SettlCurrBidFxRate" required="N" />
+      <field name="SettlCurrOfferFxRate" required="N" />
+      <field name="SettlCurrFxRateCalc" required="N" />
+      <field name="CommType" required="N" />
+      <field name="Commission" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="ExDestination" required="N" />
+      <field name="QuoteStatus" required="N" />
+    </message>
+    <message name="MassQuote" msgtype="i" msgcat="app">
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="Y" />
+      <field name="QuoteType" required="N" />
+      <field name="QuoteResponseLevel" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="DefBidSize" required="N" />
+      <field name="DefOfferSize" required="N" />
+      <group name="NoQuoteSets" required="Y">
+        <field name="QuoteSetID" required="Y" />
+        <component name="UnderlyingInstrument" required="N" />
+        <field name="QuoteSetValidUntilTime" required="N" />
+        <field name="TotQuoteEntries" required="Y" />
+        <group name="NoQuoteEntries" required="N">
+          <field name="QuoteEntryID" required="Y" />
+          <component name="Instrument" required="N" />
+          <field name="BidPx" required="N" />
+          <field name="OfferPx" required="N" />
+          <field name="BidSize" required="N" />
+          <field name="OfferSize" required="N" />
+          <field name="ValidUntilTime" required="N" />
+          <field name="BidSpotRate" required="N" />
+          <field name="OfferSpotRate" required="N" />
+          <field name="BidForwardPoints" required="N" />
+          <field name="OfferForwardPoints" required="N" />
+          <field name="MidPx" required="N" />
+          <field name="BidYield" required="N" />
+          <field name="MidYield" required="N" />
+          <field name="OfferYield" required="N" />
+          <field name="TransactTime" required="N" />
+          <field name="TradingSessionID" required="N" />
+          <field name="TradingSessionSubID" required="N" />
+          <field name="FutSettDate" required="N" />
+          <field name="OrdType" required="N" />
+          <field name="FutSettDate2" required="N" />
+          <field name="OrderQty2" required="N" />
+          <field name="BidForwardPoints2" required="N" />
+          <field name="OfferForwardPoints2" required="N" />
+          <field name="Currency" required="N" />
+        </group>
+      </group>
+    </message>
+    <message name="MassQuoteAcknowledgement" msgtype="b" msgcat="app">
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="N" />
+      <field name="QuoteStatus" required="Y" />
+      <field name="QuoteRejectReason" required="N" />
+      <field name="QuoteResponseLevel" required="N" />
+      <field name="QuoteType" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="Text" required="N" />
+      <group name="NoQuoteSets" required="N">
+        <field name="QuoteSetID" required="N" />
+        <component name="UnderlyingInstrument" required="N" />
+        <field name="TotQuoteEntries" required="N" />
+        <group name="NoQuoteEntries" required="N">
+          <field name="QuoteEntryID" required="N" />
+          <component name="Instrument" required="N" />
+          <field name="BidPx" required="N" />
+          <field name="OfferPx" required="N" />
+          <field name="BidSize" required="N" />
+          <field name="OfferSize" required="N" />
+          <field name="ValidUntilTime" required="N" />
+          <field name="BidSpotRate" required="N" />
+          <field name="OfferSpotRate" required="N" />
+          <field name="BidForwardPoints" required="N" />
+          <field name="OfferForwardPoints" required="N" />
+          <field name="MidPx" required="N" />
+          <field name="BidYield" required="N" />
+          <field name="MidYield" required="N" />
+          <field name="OfferYield" required="N" />
+          <field name="TransactTime" required="N" />
+          <field name="TradingSessionID" required="N" />
+          <field name="TradingSessionSubID" required="N" />
+          <field name="FutSettDate" required="N" />
+          <field name="OrdType" required="N" />
+          <field name="FutSettDate2" required="N" />
+          <field name="OrderQty2" required="N" />
+          <field name="BidForwardPoints2" required="N" />
+          <field name="OfferForwardPoints2" required="N" />
+          <field name="Currency" required="N" />
+          <field name="QuoteEntryRejectReason" required="N" />
+        </group>
+      </group>
+    </message>
+    <message name="MarketDataRequest" msgtype="V" msgcat="app">
+      <field name="MDReqID" required="Y" />
+      <field name="SubscriptionRequestType" required="Y" />
+      <field name="MarketDepth" required="Y" />
+      <field name="MDUpdateType" required="N" />
+      <field name="AggregatedBook" required="N" />
+      <field name="OpenCloseSettleFlag" required="N" />
+      <field name="Scope" required="N" />
+      <field name="MDImplicitDelete" required="N" />
+      <group name="NoMDEntryTypes" required="Y">
+        <field name="MDEntryType" required="Y" />
+      </group>
+      <group name="NoRelatedSym" required="Y">
+        <component name="Instrument" required="Y" />
+      </group>
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+    </message>
+    <message name="MarketDataSnapshotFullRefresh" msgtype="W" msgcat="app">
+      <field name="MDReqID" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="FinancialStatus" required="N" />
+      <field name="CorporateAction" required="N" />
+      <field name="TotalVolumeTraded" required="N" />
+      <field name="TotalVolumeTradedDate" required="N" />
+      <field name="TotalVolumeTradedTime" required="N" />
+      <field name="NetChgPrevDay" required="N" />
+      <group name="NoMDEntries" required="Y">
+        <field name="MDEntryType" required="Y" />
+        <field name="MDEntryPx" required="N" />
+        <field name="Currency" required="N" />
+        <field name="MDEntrySize" required="N" />
+        <field name="MDEntryDate" required="N" />
+        <field name="MDEntryTime" required="N" />
+        <field name="TickDirection" required="N" />
+        <field name="MDMkt" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+        <field name="QuoteCondition" required="N" />
+        <field name="TradeCondition" required="N" />
+        <field name="MDEntryOriginator" required="N" />
+        <field name="LocationID" required="N" />
+        <field name="DeskID" required="N" />
+        <field name="OpenCloseSettleFlag" required="N" />
+        <field name="TimeInForce" required="N" />
+        <field name="ExpireDate" required="N" />
+        <field name="ExpireTime" required="N" />
+        <field name="MinQty" required="N" />
+        <field name="ExecInst" required="N" />
+        <field name="SellerDays" required="N" />
+        <field name="OrderID" required="N" />
+        <field name="QuoteEntryID" required="N" />
+        <field name="MDEntryBuyer" required="N" />
+        <field name="MDEntrySeller" required="N" />
+        <field name="NumberOfOrders" required="N" />
+        <field name="MDEntryPositionNo" required="N" />
+        <field name="Scope" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+    </message>
+    <message name="MarketDataIncrementalRefresh" msgtype="X" msgcat="app">
+      <field name="MDReqID" required="N" />
+      <group name="NoMDEntries" required="Y">
+        <field name="MDUpdateAction" required="Y" />
+        <field name="DeleteReason" required="N" />
+        <field name="MDEntryType" required="N" />
+        <field name="MDEntryID" required="N" />
+        <field name="MDEntryRefID" required="N" />
+        <component name="Instrument" required="N" />
+        <field name="FinancialStatus" required="N" />
+        <field name="CorporateAction" required="N" />
+        <field name="MDEntryPx" required="N" />
+        <field name="Currency" required="N" />
+        <field name="MDEntrySize" required="N" />
+        <field name="MDEntryDate" required="N" />
+        <field name="MDEntryTime" required="N" />
+        <field name="TickDirection" required="N" />
+        <field name="MDMkt" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+        <field name="QuoteCondition" required="N" />
+        <field name="TradeCondition" required="N" />
+        <field name="MDEntryOriginator" required="N" />
+        <field name="LocationID" required="N" />
+        <field name="DeskID" required="N" />
+        <field name="OpenCloseSettleFlag" required="N" />
+        <field name="TimeInForce" required="N" />
+        <field name="ExpireDate" required="N" />
+        <field name="ExpireTime" required="N" />
+        <field name="MinQty" required="N" />
+        <field name="ExecInst" required="N" />
+        <field name="SellerDays" required="N" />
+        <field name="OrderID" required="N" />
+        <field name="QuoteEntryID" required="N" />
+        <field name="MDEntryBuyer" required="N" />
+        <field name="MDEntrySeller" required="N" />
+        <field name="NumberOfOrders" required="N" />
+        <field name="MDEntryPositionNo" required="N" />
+        <field name="Scope" required="N" />
+        <field name="TotalVolumeTraded" required="N" />
+        <field name="TotalVolumeTradedDate" required="N" />
+        <field name="TotalVolumeTradedTime" required="N" />
+        <field name="NetChgPrevDay" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+    </message>
+    <message name="MarketDataRequestReject" msgtype="Y" msgcat="app">
+      <field name="MDReqID" required="Y" />
+      <field name="MDReqRejReason" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="SecurityDefinitionRequest" msgtype="c" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityRequestType" required="Y" />
+      <component name="Instrument" required="N" />
+      <field name="Currency" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegCurrency" required="N" />
+      </group>
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="SecurityDefinition" msgtype="d" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityResponseID" required="Y" />
+      <field name="SecurityResponseType" required="Y" />
+      <component name="Instrument" required="N" />
+      <field name="Currency" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegCurrency" required="N" />
+      </group>
+      <field name="RoundLot" required="N" />
+      <field name="MinTradeVol" required="N" />
+    </message>
+    <message name="SecurityTypeRequest" msgtype="v" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </message>
+    <message name="SecurityTypes" msgtype="w" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityResponseID" required="Y" />
+      <field name="SecurityResponseType" required="Y" />
+      <field name="TotalNumSecurityTypes" required="N" />
+      <group name="NoSecurityTypes" required="N">
+        <field name="SecurityType" required="N" />
+        <field name="Product" required="N" />
+        <field name="CFICode" required="N" />
+      </group>
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="SecurityListRequest" msgtype="x" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityListRequestType" required="Y" />
+      <component name="Instrument" required="N" />
+      <field name="Currency" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="SecurityList" msgtype="y" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityResponseID" required="Y" />
+      <field name="SecurityRequestResult" required="Y" />
+      <field name="TotalNumSecurities" required="N" />
+      <group name="NoRelatedSym" required="N">
+        <component name="Instrument" required="N" />
+        <field name="Currency" required="N" />
+        <group name="NoLegs" required="N">
+          <component name="InstrumentLeg" required="N" />
+          <field name="LegCurrency" required="N" />
+        </group>
+        <field name="RoundLot" required="N" />
+        <field name="MinTradeVol" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+    </message>
+    <message name="DerivativeSecurityListRequest" msgtype="z" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityListRequestType" required="Y" />
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="Currency" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="DerivativeSecurityList" msgtype="AA" msgcat="app">
+      <field name="SecurityReqID" required="Y" />
+      <field name="SecurityResponseID" required="Y" />
+      <field name="SecurityRequestResult" required="Y" />
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="TotalNumSecurities" required="N" />
+      <group name="NoRelatedSym" required="N">
+        <component name="Instrument" required="N" />
+        <field name="Currency" required="N" />
+        <group name="NoLegs" required="N">
+          <component name="InstrumentLeg" required="N" />
+          <field name="LegCurrency" required="N" />
+        </group>
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+    </message>
+    <message name="SecurityStatusRequest" msgtype="e" msgcat="app">
+      <field name="SecurityStatusReqID" required="Y" />
+      <component name="Instrument" required="Y" />
+      <field name="Currency" required="N" />
+      <field name="SubscriptionRequestType" required="Y" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </message>
+    <message name="SecurityStatus" msgtype="f" msgcat="app">
+      <field name="SecurityStatusReqID" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="Currency" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="UnsolicitedIndicator" required="N" />
+      <field name="SecurityTradingStatus" required="N" />
+      <field name="FinancialStatus" required="N" />
+      <field name="CorporateAction" required="N" />
+      <field name="HaltReason" required="N" />
+      <field name="InViewOfCommon" required="N" />
+      <field name="DueToRelated" required="N" />
+      <field name="BuyVolume" required="N" />
+      <field name="SellVolume" required="N" />
+      <field name="HighPx" required="N" />
+      <field name="LowPx" required="N" />
+      <field name="LastPx" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="Adjustment" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="TradingSessionStatusRequest" msgtype="g" msgcat="app">
+      <field name="TradSesReqID" required="Y" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="TradSesMethod" required="N" />
+      <field name="TradSesMode" required="N" />
+      <field name="SubscriptionRequestType" required="Y" />
+    </message>
+    <message name="TradingSessionStatus" msgtype="h" msgcat="app">
+      <field name="TradSesReqID" required="N" />
+      <field name="TradingSessionID" required="Y" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="TradSesMethod" required="N" />
+      <field name="TradSesMode" required="N" />
+      <field name="UnsolicitedIndicator" required="N" />
+      <field name="TradSesStatus" required="Y" />
+      <field name="TradSesStatusRejReason" required="N" />
+      <field name="TradSesStartTime" required="N" />
+      <field name="TradSesOpenTime" required="N" />
+      <field name="TradSesPreCloseTime" required="N" />
+      <field name="TradSesCloseTime" required="N" />
+      <field name="TradSesEndTime" required="N" />
+      <field name="TotalVolumeTraded" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="NewOrderSingle" msgtype="D" msgcat="app">
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <component name="Parties" required="N" />
+      <field name="TradeOriginationDate" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="DayBookingInst" required="N" />
+      <field name="BookingUnit" required="N" />
+      <field name="PreallocMethod" required="N" />
+      <group name="NoAllocs" required="N">
+        <field name="AllocAccount" required="N" />
+        <field name="IndividualAllocID" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="AllocQty" required="N" />
+      </group>
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="HandlInst" required="Y" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="ProcessCode" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="PrevClosePx" required="N" />
+      <field name="Side" required="Y" />
+      <field name="LocateReqd" required="N" />
+      <field name="TransactTime" required="Y" />
+      <component name="Stipulations" required="N" />
+      <field name="QuantityType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="OrdType" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <component name="YieldData" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="SolicitedFlag" required="N" />
+      <field name="IOIid" required="N" />
+      <field name="QuoteID" required="N" />
+      <field name="TimeInForce" required="N" />
+      <field name="EffectiveTime" required="N" />
+      <field name="ExpireDate" required="N" />
+      <field name="ExpireTime" required="N" />
+      <field name="GTBookingInst" required="N" />
+      <component name="CommissionData" required="N" />
+      <field name="OrderCapacity" required="N" />
+      <field name="OrderRestrictions" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="Rule80A" required="N" />
+      <field name="ForexReq" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="FutSettDate2" required="N" />
+      <field name="OrderQty2" required="N" />
+      <field name="Price2" required="N" />
+      <field name="PositionEffect" required="N" />
+      <field name="CoveredOrUncovered" required="N" />
+      <field name="MaxShow" required="N" />
+      <field name="PegDifference" required="N" />
+      <field name="DiscretionInst" required="N" />
+      <field name="DiscretionOffset" required="N" />
+      <field name="CancellationRights" required="N" />
+      <field name="MoneyLaunderingStatus" required="N" />
+      <field name="RegistID" required="N" />
+      <field name="Designation" required="N" />
+      <field name="AccruedInterestRate" required="N" />
+      <field name="AccruedInterestAmt" required="N" />
+      <field name="NetMoney" required="N" />
+    </message>
+    <message name="ExecutionReport" msgtype="8" msgcat="app">
+      <field name="OrderID" required="Y" />
+      <field name="SecondaryOrderID" required="N" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="SecondaryExecID" required="N" />
+      <field name="ClOrdID" required="N" />
+      <field name="OrigClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <component name="Parties" required="N" />
+      <field name="TradeOriginationDate" required="N" />
+      <group name="NoContraBrokers" required="N">
+        <field name="ContraBroker" required="N" />
+        <field name="ContraTrader" required="N" />
+        <field name="ContraTradeQty" required="N" />
+        <field name="ContraTradeTime" required="N" />
+        <field name="ContraLegRefID" required="N" />
+      </group>
+      <field name="ListID" required="N" />
+      <field name="CrossID" required="N" />
+      <field name="OrigCrossID" required="N" />
+      <field name="CrossType" required="N" />
+      <field name="ExecID" required="Y" />
+      <field name="ExecRefID" required="N" />
+      <field name="ExecType" required="Y" />
+      <field name="OrdStatus" required="Y" />
+      <field name="WorkingIndicator" required="N" />
+      <field name="OrdRejReason" required="N" />
+      <field name="ExecRestatementReason" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="DayBookingInst" required="N" />
+      <field name="BookingUnit" required="N" />
+      <field name="PreallocMethod" required="N" />
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="Side" required="Y" />
+      <component name="Stipulations" required="N" />
+      <field name="QuantityType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="OrdType" required="N" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <field name="PegDifference" required="N" />
+      <field name="DiscretionInst" required="N" />
+      <field name="DiscretionOffset" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="SolicitedFlag" required="N" />
+      <field name="TimeInForce" required="N" />
+      <field name="EffectiveTime" required="N" />
+      <field name="ExpireDate" required="N" />
+      <field name="ExpireTime" required="N" />
+      <field name="ExecInst" required="N" />
+      <field name="OrderCapacity" required="N" />
+      <field name="OrderRestrictions" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="Rule80A" required="N" />
+      <field name="LastQty" required="N" />
+      <field name="UnderlyingLastQty" required="N" />
+      <field name="LastPx" required="N" />
+      <field name="UnderlyingLastPx" required="N" />
+      <field name="LastSpotRate" required="N" />
+      <field name="LastForwardPoints" required="N" />
+      <field name="LastMkt" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="LastCapacity" required="N" />
+      <field name="LeavesQty" required="Y" />
+      <field name="CumQty" required="Y" />
+      <field name="AvgPx" required="Y" />
+      <field name="DayOrderQty" required="N" />
+      <field name="DayCumQty" required="N" />
+      <field name="DayAvgPx" required="N" />
+      <field name="GTBookingInst" required="N" />
+      <field name="TradeDate" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="ReportToExch" required="N" />
+      <component name="CommissionData" required="N" />
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <component name="YieldData" required="N" />
+      <field name="GrossTradeAmt" required="N" />
+      <field name="NumDaysInterest" required="N" />
+      <field name="ExDate" required="N" />
+      <field name="AccruedInterestRate" required="N" />
+      <field name="AccruedInterestAmt" required="N" />
+      <field name="TradedFlatSwitch" required="N" />
+      <field name="BasisFeatureDate" required="N" />
+      <field name="BasisFeaturePrice" required="N" />
+      <field name="Concession" required="N" />
+      <field name="TotalTakedown" required="N" />
+      <field name="NetMoney" required="N" />
+      <field name="SettlCurrAmt" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="SettlCurrFxRate" required="N" />
+      <field name="SettlCurrFxRateCalc" required="N" />
+      <field name="HandlInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="PositionEffect" required="N" />
+      <field name="MaxShow" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="FutSettDate2" required="N" />
+      <field name="OrderQty2" required="N" />
+      <field name="LastForwardPoints2" required="N" />
+      <field name="MultiLegReportingType" required="N" />
+      <field name="CancellationRights" required="N" />
+      <field name="MoneyLaunderingStatus" required="N" />
+      <field name="RegistID" required="N" />
+      <field name="Designation" required="N" />
+      <field name="TransBkdTime" required="N" />
+      <field name="ExecValuationPoint" required="N" />
+      <field name="ExecPriceType" required="N" />
+      <field name="ExecPriceAdjustment" required="N" />
+      <field name="PriorityIndicator" required="N" />
+      <field name="PriceImprovement" required="N" />
+      <group name="NoContAmts" required="N">
+        <field name="ContAmtType" required="N" />
+        <field name="ContAmtValue" required="N" />
+        <field name="ContAmtCurr" required="N" />
+      </group>
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegPositionEffect" required="N" />
+        <field name="LegCoveredOrUncovered" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="LegRefID" required="N" />
+        <field name="LegPrice" required="N" />
+        <field name="LegSettlmntTyp" required="N" />
+        <field name="LegFutSettDate" required="N" />
+        <field name="LegLastPx" required="N" />
+      </group>
+    </message>
+    <message name="DontKnowTrade" msgtype="Q" msgcat="app">
+      <field name="OrderID" required="Y" />
+      <field name="ExecID" required="Y" />
+      <field name="DKReason" required="Y" />
+      <component name="Instrument" required="Y" />
+      <field name="Side" required="Y" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="LastQty" required="N" />
+      <field name="LastPx" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="OrderCancelReplaceRequest" msgtype="G" msgcat="app">
+      <field name="OrderID" required="N" />
+      <component name="Parties" required="N" />
+      <field name="TradeOriginationDate" required="N" />
+      <field name="OrigClOrdID" required="Y" />
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <field name="ListID" required="N" />
+      <field name="OrigOrdModTime" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="DayBookingInst" required="N" />
+      <field name="BookingUnit" required="N" />
+      <field name="PreallocMethod" required="N" />
+      <group name="NoAllocs" required="N">
+        <field name="AllocAccount" required="N" />
+        <field name="IndividualAllocID" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="AllocQty" required="N" />
+      </group>
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="HandlInst" required="Y" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <component name="Instrument" required="Y" />
+      <field name="Side" required="Y" />
+      <field name="TransactTime" required="Y" />
+      <field name="QuantityType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="OrdType" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <component name="YieldData" required="N" />
+      <field name="PegDifference" required="N" />
+      <field name="DiscretionInst" required="N" />
+      <field name="DiscretionOffset" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="SolicitedFlag" required="N" />
+      <field name="Currency" required="N" />
+      <field name="TimeInForce" required="N" />
+      <field name="EffectiveTime" required="N" />
+      <field name="ExpireDate" required="N" />
+      <field name="ExpireTime" required="N" />
+      <field name="GTBookingInst" required="N" />
+      <component name="CommissionData" required="N" />
+      <field name="OrderCapacity" required="N" />
+      <field name="OrderRestrictions" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="Rule80A" required="N" />
+      <field name="ForexReq" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="FutSettDate2" required="N" />
+      <field name="OrderQty2" required="N" />
+      <field name="Price2" required="N" />
+      <field name="PositionEffect" required="N" />
+      <field name="CoveredOrUncovered" required="N" />
+      <field name="MaxShow" required="N" />
+      <field name="LocateReqd" required="N" />
+      <field name="CancellationRights" required="N" />
+      <field name="MoneyLaunderingStatus" required="N" />
+      <field name="RegistID" required="N" />
+      <field name="Designation" required="N" />
+      <field name="AccruedInterestRate" required="N" />
+      <field name="AccruedInterestAmt" required="N" />
+      <field name="NetMoney" required="N" />
+    </message>
+    <message name="OrderCancelRequest" msgtype="F" msgcat="app">
+      <field name="OrigClOrdID" required="Y" />
+      <field name="OrderID" required="N" />
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <field name="ListID" required="N" />
+      <field name="OrigOrdModTime" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <component name="Parties" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="Side" required="Y" />
+      <field name="TransactTime" required="Y" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="ComplianceID" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="OrderCancelReject" msgtype="9" msgcat="app">
+      <field name="OrderID" required="Y" />
+      <field name="SecondaryOrderID" required="N" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdID" required="Y" />
+      <field name="ClOrdLinkID" required="N" />
+      <field name="OrigClOrdID" required="Y" />
+      <field name="OrdStatus" required="Y" />
+      <field name="WorkingIndicator" required="N" />
+      <field name="OrigOrdModTime" required="N" />
+      <field name="ListID" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="TradeOriginationDate" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="CxlRejResponseTo" required="Y" />
+      <field name="CxlRejReason" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="OrderStatusRequest" msgtype="H" msgcat="app">
+      <field name="OrderID" required="N" />
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <component name="Instrument" required="Y" />
+      <field name="Side" required="Y" />
+    </message>
+    <message name="OrderMassCancelRequest" msgtype="q" msgcat="app">
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="MassCancelRequestType" required="Y" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="N" />
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="Side" required="N" />
+      <field name="TransactTime" required="Y" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="OrderMassCancelReport" msgtype="r" msgcat="app">
+      <field name="ClOrdID" required="N" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="OrderID" required="Y" />
+      <field name="SecondaryOrderID" required="N" />
+      <field name="MassCancelRequestType" required="Y" />
+      <field name="MassCancelResponse" required="Y" />
+      <field name="MassCancelRejectReason" required="N" />
+      <field name="TotalAffectedOrders" required="N" />
+      <group name="NoAffectedOrders" required="N">
+        <field name="OrigClOrdID" required="N" />
+        <field name="AffectedOrderID" required="N" />
+        <field name="AffectedSecondaryOrderID" required="N" />
+      </group>
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="N" />
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="Side" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="OrderMassStatusRequest" msgtype="AF" msgcat="app">
+      <field name="MassStatusReqID" required="Y" />
+      <field name="MassStatusReqType" required="Y" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="N" />
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="Side" required="N" />
+    </message>
+    <message name="NewOrderCross" msgtype="s" msgcat="app">
+      <field name="CrossID" required="Y" />
+      <field name="CrossType" required="Y" />
+      <field name="CrossPrioritization" required="Y" />
+      <group name="NoSides" required="Y">
+        <field name="Side" required="Y" />
+        <field name="ClOrdID" required="Y" />
+        <field name="SecondaryClOrdID" required="N" />
+        <field name="ClOrdLinkID" required="N" />
+        <component name="Parties" required="N" />
+        <field name="TradeOriginationDate" required="N" />
+        <field name="Account" required="N" />
+        <field name="AccountType" required="N" />
+        <field name="DayBookingInst" required="N" />
+        <field name="BookingUnit" required="N" />
+        <field name="PreallocMethod" required="N" />
+        <group name="NoAllocs" required="N">
+          <field name="AllocAccount" required="N" />
+          <field name="IndividualAllocID" required="N" />
+          <component name="NestedParties" required="N" />
+          <field name="AllocQty" required="N" />
+        </group>
+        <field name="QuantityType" required="N" />
+        <component name="OrderQtyData" required="Y" />
+        <component name="CommissionData" required="N" />
+        <field name="OrderCapacity" required="N" />
+        <field name="OrderRestrictions" required="N" />
+        <field name="CustOrderCapacity" required="N" />
+        <field name="ForexReq" required="N" />
+        <field name="SettlCurrency" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+        <field name="PositionEffect" required="N" />
+        <field name="CoveredOrUncovered" required="N" />
+        <field name="CashMargin" required="N" />
+        <field name="ClearingFeeIndicator" required="N" />
+        <field name="SolicitedFlag" required="N" />
+        <field name="SideComplianceID" required="N" />
+      </group>
+      <component name="Instrument" required="Y" />
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="HandlInst" required="Y" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="ProcessCode" required="N" />
+      <field name="PrevClosePx" required="N" />
+      <field name="LocateReqd" required="N" />
+      <field name="TransactTime" required="Y" />
+      <component name="Stipulations" required="N" />
+      <field name="OrdType" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <component name="YieldData" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="IOIid" required="N" />
+      <field name="QuoteID" required="N" />
+      <field name="TimeInForce" required="N" />
+      <field name="EffectiveTime" required="N" />
+      <field name="ExpireDate" required="N" />
+      <field name="ExpireTime" required="N" />
+      <field name="GTBookingInst" required="N" />
+      <field name="MaxShow" required="N" />
+      <field name="PegDifference" required="N" />
+      <field name="DiscretionInst" required="N" />
+      <field name="DiscretionOffset" required="N" />
+      <field name="CancellationRights" required="N" />
+      <field name="MoneyLaunderingStatus" required="N" />
+      <field name="RegistID" required="N" />
+      <field name="Designation" required="N" />
+      <field name="AccruedInterestRate" required="N" />
+      <field name="AccruedInterestAmt" required="N" />
+      <field name="NetMoney" required="N" />
+    </message>
+    <message name="CrossOrderCancelReplaceRequest" msgtype="t" msgcat="app">
+      <field name="OrderID" required="N" />
+      <field name="CrossID" required="Y" />
+      <field name="OrigCrossID" required="Y" />
+      <field name="CrossType" required="Y" />
+      <field name="CrossPrioritization" required="Y" />
+      <group name="NoSides" required="Y">
+        <field name="Side" required="Y" />
+        <field name="OrigClOrdID" required="N" />
+        <field name="ClOrdID" required="Y" />
+        <field name="SecondaryClOrdID" required="N" />
+        <field name="ClOrdLinkID" required="N" />
+        <field name="OrigOrdModTime" required="N" />
+        <component name="Parties" required="N" />
+        <field name="TradeOriginationDate" required="N" />
+        <field name="Account" required="N" />
+        <field name="AccountType" required="N" />
+        <field name="DayBookingInst" required="N" />
+        <field name="BookingUnit" required="N" />
+        <field name="PreallocMethod" required="N" />
+        <group name="NoAllocs" required="N">
+          <field name="AllocAccount" required="N" />
+          <field name="IndividualAllocID" required="N" />
+          <component name="NestedParties" required="N" />
+          <field name="AllocQty" required="N" />
+        </group>
+        <field name="QuantityType" required="N" />
+        <component name="OrderQtyData" required="Y" />
+        <component name="CommissionData" required="N" />
+        <field name="OrderCapacity" required="N" />
+        <field name="OrderRestrictions" required="N" />
+        <field name="CustOrderCapacity" required="N" />
+        <field name="ForexReq" required="N" />
+        <field name="SettlCurrency" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+        <field name="PositionEffect" required="N" />
+        <field name="CoveredOrUncovered" required="N" />
+        <field name="CashMargin" required="N" />
+        <field name="ClearingFeeIndicator" required="N" />
+        <field name="SolicitedFlag" required="N" />
+        <field name="SideComplianceID" required="N" />
+      </group>
+      <component name="Instrument" required="Y" />
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="HandlInst" required="Y" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="ProcessCode" required="N" />
+      <field name="PrevClosePx" required="N" />
+      <field name="LocateReqd" required="N" />
+      <field name="TransactTime" required="Y" />
+      <component name="Stipulations" required="N" />
+      <field name="OrdType" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <component name="YieldData" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="IOIid" required="N" />
+      <field name="QuoteID" required="N" />
+      <field name="TimeInForce" required="N" />
+      <field name="EffectiveTime" required="N" />
+      <field name="ExpireDate" required="N" />
+      <field name="ExpireTime" required="N" />
+      <field name="GTBookingInst" required="N" />
+      <field name="MaxShow" required="N" />
+      <field name="PegDifference" required="N" />
+      <field name="DiscretionInst" required="N" />
+      <field name="DiscretionOffset" required="N" />
+      <field name="CancellationRights" required="N" />
+      <field name="MoneyLaunderingStatus" required="N" />
+      <field name="RegistID" required="N" />
+      <field name="Designation" required="N" />
+      <field name="AccruedInterestRate" required="N" />
+      <field name="AccruedInterestAmt" required="N" />
+      <field name="NetMoney" required="N" />
+    </message>
+    <message name="CrossOrderCancelRequest" msgtype="u" msgcat="app">
+      <field name="OrderID" required="N" />
+      <field name="CrossID" required="Y" />
+      <field name="OrigCrossID" required="Y" />
+      <field name="CrossType" required="Y" />
+      <field name="CrossPrioritization" required="Y" />
+      <group name="NoSides" required="Y">
+        <field name="Side" required="Y" />
+        <field name="OrigClOrdID" required="N" />
+        <field name="ClOrdID" required="Y" />
+        <field name="SecondaryClOrdID" required="N" />
+        <field name="ClOrdLinkID" required="N" />
+        <field name="OrigOrdModTime" required="N" />
+        <component name="Parties" required="N" />
+        <field name="TradeOriginationDate" required="N" />
+        <component name="OrderQtyData" required="Y" />
+        <field name="ComplianceID" required="N" />
+        <field name="Text" required="N" />
+        <field name="EncodedTextLen" required="N" />
+        <field name="EncodedText" required="N" />
+      </group>
+      <component name="Instrument" required="Y" />
+      <field name="TransactTime" required="Y" />
+    </message>
+    <message name="NewOrderMultileg" msgtype="AB" msgcat="app">
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="DayBookingInst" required="N" />
+      <field name="BookingUnit" required="N" />
+      <field name="PreallocMethod" required="N" />
+      <group name="NoAllocs" required="N">
+        <field name="AllocAccount" required="N" />
+        <field name="IndividualAllocID" required="N" />
+        <field name="AllocQty" required="N" />
+      </group>
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="HandlInst" required="Y" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="ProcessCode" required="N" />
+      <field name="Side" required="Y" />
+      <component name="Instrument" required="Y" />
+      <field name="PrevClosePx" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegPositionEffect" required="N" />
+        <field name="LegCoveredOrUncovered" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="LegRefID" required="N" />
+        <field name="LegPrice" required="N" />
+        <field name="LegSettlmntTyp" required="N" />
+        <field name="LegFutSettDate" required="N" />
+      </group>
+      <field name="LocateReqd" required="N" />
+      <field name="TransactTime" required="Y" />
+      <field name="QuantityType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="OrdType" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="SolicitedFlag" required="N" />
+      <field name="IOIid" required="N" />
+      <field name="QuoteID" required="N" />
+      <field name="TimeInForce" required="N" />
+      <field name="EffectiveTime" required="N" />
+      <field name="ExpireDate" required="N" />
+      <field name="ExpireTime" required="N" />
+      <field name="GTBookingInst" required="N" />
+      <component name="CommissionData" required="N" />
+      <field name="OrderCapacity" required="N" />
+      <field name="OrderRestrictions" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="ForexReq" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="PositionEffect" required="N" />
+      <field name="CoveredOrUncovered" required="N" />
+      <field name="MaxShow" required="N" />
+      <field name="PegDifference" required="N" />
+      <field name="DiscretionInst" required="N" />
+      <field name="DiscretionOffset" required="N" />
+      <field name="CancellationRights" required="N" />
+      <field name="MoneyLaunderingStatus" required="N" />
+      <field name="RegistID" required="N" />
+      <field name="Designation" required="N" />
+      <field name="MultiLegRptTypeReq" required="N" />
+      <field name="NetMoney" required="N" />
+    </message>
+    <message name="MultilegOrderCancelReplaceRequest" msgtype="AC" msgcat="app">
+      <field name="OrderID" required="N" />
+      <field name="OrigClOrdID" required="Y" />
+      <field name="ClOrdID" required="Y" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ClOrdLinkID" required="N" />
+      <field name="OrigOrdModTime" required="N" />
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="DayBookingInst" required="N" />
+      <field name="BookingUnit" required="N" />
+      <field name="PreallocMethod" required="N" />
+      <group name="NoAllocs" required="N">
+        <field name="AllocAccount" required="N" />
+        <field name="IndividualAllocID" required="N" />
+        <field name="AllocQty" required="N" />
+      </group>
+      <field name="SettlmntTyp" required="N" />
+      <field name="FutSettDate" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="HandlInst" required="Y" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="ProcessCode" required="N" />
+      <field name="Side" required="Y" />
+      <component name="Instrument" required="Y" />
+      <field name="PrevClosePx" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegPositionEffect" required="N" />
+        <field name="LegCoveredOrUncovered" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="LegRefID" required="N" />
+        <field name="LegPrice" required="N" />
+        <field name="LegSettlmntTyp" required="N" />
+        <field name="LegFutSettDate" required="N" />
+      </group>
+      <field name="LocateReqd" required="N" />
+      <field name="TransactTime" required="Y" />
+      <field name="QuantityType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="OrdType" required="Y" />
+      <field name="PriceType" required="N" />
+      <field name="Price" required="N" />
+      <field name="StopPx" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ComplianceID" required="N" />
+      <field name="SolicitedFlag" required="N" />
+      <field name="IOIid" required="N" />
+      <field name="QuoteID" required="N" />
