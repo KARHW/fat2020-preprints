@@ -11,4 +11,40 @@
     <field name="SecureData" required="N" />
     <field name="MsgSeqNum" required="Y" />
     <field name="SenderSubID" required="N" />
-    <field name="Sen
+    <field name="SenderLocationID" required="N" />
+    <field name="TargetSubID" required="N" />
+    <field name="TargetLocationID" required="N" />
+    <field name="OnBehalfOfSubID" required="N" />
+    <field name="OnBehalfOfLocationID" required="N" />
+    <field name="DeliverToSubID" required="N" />
+    <field name="DeliverToLocationID" required="N" />
+    <field name="PossDupFlag" required="N" />
+    <field name="PossResend" required="N" />
+    <field name="SendingTime" required="Y" />
+    <field name="OrigSendingTime" required="N" />
+    <field name="XmlDataLen" required="N" />
+    <field name="XmlData" required="N" />
+    <field name="MessageEncoding" required="N" />
+    <field name="LastMsgSeqNumProcessed" required="N" />
+    <group name="NoHops" required="N">
+      <field name="HopCompID" required="N" />
+      <field name="HopSendingTime" required="N" />
+      <field name="HopRefID" required="N" />
+    </group>
+  </header>
+  <trailer>
+    <field name="SignatureLength" required="N" />
+    <field name="Signature" required="N" />
+    <field name="CheckSum" required="Y" />
+  </trailer>
+  <messages>
+    <message name="Heartbeat" msgtype="0" msgcat="admin">
+      <field name="TestReqID" required="N" />
+    </message>
+    <message name="Logon" msgtype="A" msgcat="admin">
+      <field name="EncryptMethod" required="Y" />
+      <field name="HeartBtInt" required="Y" />
+      <field name="RawDataLength" required="N" />
+      <field name="RawData" required="N" />
+      <field name="ResetSeqNumFlag" required="N" />
+      <field name="Nex
