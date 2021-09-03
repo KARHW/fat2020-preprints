@@ -83,4 +83,39 @@
       <field name="EncodedText" required="N" />
     </message>
     <message name="BusinessMessageReject" msgtype="j" msgcat="app">
-      <field name="RefSe
+      <field name="RefSeqNum" required="N" />
+      <field name="RefMsgType" required="Y" />
+      <field name="BusinessRejectRefID" required="N" />
+      <field name="BusinessRejectReason" required="Y" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="UserRequest" msgtype="BE" msgcat="app">
+      <field name="UserRequestID" required="Y" />
+      <field name="UserRequestType" required="Y" />
+      <field name="Username" required="Y" />
+      <field name="Password" required="N" />
+      <field name="NewPassword" required="N" />
+      <field name="RawDataLength" required="N" />
+      <field name="RawData" required="N" />
+    </message>
+    <message name="UserResponse" msgtype="BF" msgcat="app">
+      <field name="UserRequestID" required="Y" />
+      <field name="Username" required="Y" />
+      <field name="UserStatus" required="N" />
+      <field name="UserStatusText" required="N" />
+    </message>
+    <message name="Advertisement" msgtype="7" msgcat="app">
+      <field name="AdvId" required="Y" />
+      <field name="AdvTransType" required="Y" />
+      <field name="AdvRefID" required="N" />
+      <component name="Instrument" required="Y" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+      </group>
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="Y" />
+      </group>
+      <field name="AdvSide" required="Y" />
+    
