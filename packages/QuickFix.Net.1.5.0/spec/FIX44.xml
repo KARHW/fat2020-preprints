@@ -118,4 +118,36 @@
         <component name="UnderlyingInstrument" required="Y" />
       </group>
       <field name="AdvSide" required="Y" />
-    
+      <field name="Quantity" required="Y" />
+      <field name="QtyType" required="N" />
+      <field name="Price" required="N" />
+      <field name="Currency" required="N" />
+      <field name="TradeDate" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="URLLink" required="N" />
+      <field name="LastMkt" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </message>
+    <message name="IndicationOfInterest" msgtype="6" msgcat="app">
+      <field name="IOIid" required="Y" />
+      <field name="IOITransType" required="Y" />
+      <field name="IOIRefID" required="N" />
+      <component name="Instrument" required="Y" />
+      <component name="FinancingDetails" required="N" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <field name="Side" required="Y" />
+      <field name="QtyType" required="N" />
+      <component name="OrderQtyData" required="N" />
+      <field name="IOIQty" required="Y" />
+      <field name="Currency" required="N" />
+      <component name="Stipulations" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegIOIQty" required="N" />
+        <component name="LegStipulations" requ
