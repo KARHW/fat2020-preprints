@@ -255,4 +255,37 @@
         <field name="SettlDate2" required="N" />
         <field name="OrderQty2" required="N" />
         <field name="Currency" required="N" />
-        <compone
+        <component name="Stipulations" required="N" />
+        <field name="Account" required="N" />
+        <field name="AcctIDSource" required="N" />
+        <field name="AccountType" required="N" />
+        <group name="NoLegs" required="N">
+          <component name="InstrumentLeg" required="N" />
+          <field name="LegQty" required="N" />
+          <field name="LegSwapType" required="N" />
+          <field name="LegSettlType" required="N" />
+          <field name="LegSettlDate" required="N" />
+          <component name="LegStipulations" required="N" />
+          <component name="NestedParties" required="N" />
+          <component name="LegBenchmarkCurveData" required="N" />
+        </group>
+        <group name="NoQuoteQualifiers" required="N">
+          <field name="QuoteQualifier" required="N" />
+        </group>
+        <field name="QuotePriceType" required="N" />
+        <field name="OrdType" required="N" />
+        <field name="ValidUntilTime" required="N" />
+        <field name="ExpireTime" required="N" />
+        <field name="TransactTime" required="N" />
+        <component name="SpreadOrBenchmarkCurveData" required="N" />
+        <field name="PriceType" required="N" />
+        <field name="Price" required="N" />
+        <field name="Price2" required="N" />
+        <component name="YieldData" required="N" />
+        <component name="Parties" required="N" />
+      </group>
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+   
