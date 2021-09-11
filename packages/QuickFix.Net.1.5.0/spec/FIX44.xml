@@ -414,4 +414,37 @@
         <field name="ExpireTime" required="N" />
         <field name="TransactTime" required="N" />
         <component name="SpreadOrBenchmarkCurveData" required="N" />
-  
+        <field name="PriceType" required="N" />
+        <field name="Price" required="N" />
+        <field name="Price2" required="N" />
+        <component name="YieldData" required="N" />
+        <component name="Parties" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </message>
+    <message name="RFQRequest" msgtype="AH" msgcat="app">
+      <field name="RFQReqID" required="Y" />
+      <group name="NoRelatedSym" required="Y">
+        <component name="Instrument" required="Y" />
+        <group name="NoUnderlyings" required="N">
+          <component name="UnderlyingInstrument" required="N" />
+        </group>
+        <group name="NoLegs" required="N">
+          <component name="InstrumentLeg" required="N" />
+        </group>
+        <field name="PrevClosePx" required="N" />
+        <field name="QuoteRequestType" required="N" />
+        <field name="QuoteType" required="N" />
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="Quote" msgtype="S" msgcat="app">
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="Y" />
+      <field name="QuoteRespID" required="N" />
+      <field name="QuoteType" required="N" />
+      <group name="NoQuoteQualifiers" required="N">
+        <field name="QuoteQualifier" requ
