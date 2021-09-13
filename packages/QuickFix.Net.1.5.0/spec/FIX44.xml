@@ -447,4 +447,36 @@
       <field name="QuoteRespID" required="N" />
       <field name="QuoteType" required="N" />
       <group name="NoQuoteQualifiers" required="N">
-        <field name="QuoteQualifier" requ
+        <field name="QuoteQualifier" required="N" />
+      </group>
+      <field name="QuoteResponseLevel" required="N" />
+      <component name="Parties" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="Y" />
+      <component name="FinancingDetails" required="N" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <field name="Side" required="N" />
+      <component name="OrderQtyData" required="N" />
+      <field name="SettlType" required="N" />
+      <field name="SettlDate" required="N" />
+      <field name="SettlDate2" required="N" />
+      <field name="OrderQty2" required="N" />
+      <field name="Currency" required="N" />
+      <component name="Stipulations" required="N" />
+      <field name="Account" required="N" />
+      <field name="AcctIDSource" required="N" />
+      <field name="AccountType" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegQty" required="N" />
+        <field name="LegSwapType" required="N" />
+        <field name="LegSettlType" required="N" />
+        <field name="LegSettlDate" required="N" />
+        <component name="LegStipulations" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="LegPriceType" required="N" />
+        <field name="LegBidPx" required="N" />
+        <field name="LegOfferPx" required="N" 
