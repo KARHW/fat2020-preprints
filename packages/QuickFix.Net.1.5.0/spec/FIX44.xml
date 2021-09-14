@@ -544,4 +544,36 @@
       <field name="QuoteStatusReqID" required="N" />
       <field name="QuoteID" required="N" />
       <component name="Instrument" required="Y" />
-      <component name="FinancingDetails" requir
+      <component name="FinancingDetails" required="N" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+      </group>
+      <component name="Parties" required="N" />
+      <field name="Account" required="N" />
+      <field name="AcctIDSource" required="N" />
+      <field name="AccountType" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="SubscriptionRequestType" required="N" />
+    </message>
+    <message name="QuoteStatusReport" msgtype="AI" msgcat="app">
+      <field name="QuoteStatusReqID" required="N" />
+      <field name="QuoteReqID" required="N" />
+      <field name="QuoteID" required="Y" />
+      <field name="QuoteRespID" required="N" />
+      <field name="QuoteType" required="N" />
+      <component name="Parties" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <component name="Instrument" required="Y" />
+      <component name="FinancingDetails" required="N" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <field name="Side" required="N" />
+      <component name="OrderQtyData" required="N" />
+      <field name="SettlType" required="N" />
+      <field name="Sett
