@@ -479,4 +479,36 @@
         <component name="NestedParties" required="N" />
         <field name="LegPriceType" required="N" />
         <field name="LegBidPx" required="N" />
-        <field name="LegOfferPx" required="N" 
+        <field name="LegOfferPx" required="N" />
+        <component name="LegBenchmarkCurveData" required="N" />
+      </group>
+      <field name="BidPx" required="N" />
+      <field name="OfferPx" required="N" />
+      <field name="MktBidPx" required="N" />
+      <field name="MktOfferPx" required="N" />
+      <field name="MinBidSize" required="N" />
+      <field name="BidSize" required="N" />
+      <field name="MinOfferSize" required="N" />
+      <field name="OfferSize" required="N" />
+      <field name="ValidUntilTime" required="N" />
+      <field name="BidSpotRate" required="N" />
+      <field name="OfferSpotRate" required="N" />
+      <field name="BidForwardPoints" required="N" />
+      <field name="OfferForwardPoints" required="N" />
+      <field name="MidPx" required="N" />
+      <field name="BidYield" required="N" />
+      <field name="MidYield" required="N" />
+      <field name="OfferYield" required="N" />
+      <field name="TransactTime" required="N" />
+      <field name="OrdType" required="N" />
+      <field name="BidForwardPoints2" required="N" />
+      <field name="OfferForwardPoints2" required="N" />
+      <field name="SettlCurrBidFxRate" required="N" />
+      <field name="SettlCurrOfferFxRate" required="N" />
+      <field name="SettlCurrFxRateCalc" required="N" />
+      <field name="CommType" required="N" />
+      <field name="Commission" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="ExDestination" required="N" />
+      <field name="OrderCapacity" required="N" />
+      <field name="PriceType" r
