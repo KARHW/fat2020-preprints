@@ -741,4 +741,40 @@
     <field name="MarketDepth" required="Y" />
     <field name="MDUpdateType" required="N" />
     <field name="AggregatedBook" required="N" />
-    <field n
+    <field name="OpenCloseSettlFlag" required="N" />
+    <field name="Scope" required="N" />
+    <field name="MDImplicitDelete" required="N" />
+    <group name="NoMDEntryTypes" required="Y">
+      <field name="MDEntryType" required="Y" />
+    </group>
+    <group name="NoRelatedSym" required="Y">
+      <component name="Instrument" required="Y" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+      </group>
+    </group>
+    <group name="NoTradingSessions" required="N">
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </group>
+    <field name="ApplQueueAction" required="N" />
+    <field name="ApplQueueMax" required="N" />
+  </message>
+  <message name="MarketDataSnapshotFullRefresh" msgtype="W" msgcat="app">
+    <field name="MDReqID" required="N" />
+    <component name="Instrument" required="Y" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <field name="FinancialStatus" required="N" />
+    <field name="CorporateAction" required="N" />
+    <field name="NetChgPrevDay" required="N" />
+    <group name="NoMDEntries" required="Y">
+      <field name="MDEntryType" required="Y" />
+      <field name="MDEntryPx" require
