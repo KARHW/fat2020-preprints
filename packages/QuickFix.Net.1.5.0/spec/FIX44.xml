@@ -808,4 +808,37 @@
       <field name="PriceDelta" required="N" />
       <field name="Text" required="N" />
       <field name="EncodedTextLen" required="N" />
-      <field name="EncodedText
+      <field name="EncodedText" required="N" />
+    </group>
+    <field name="ApplQueueDepth" required="N" />
+    <field name="ApplQueueResolution" required="N" />
+  </message>
+  <message name="MarketDataIncrementalRefresh" msgtype="X" msgcat="app">
+    <field name="MDReqID" required="N" />
+    <group name="NoMDEntries" required="Y">
+      <field name="MDUpdateAction" required="Y" />
+      <field name="DeleteReason" required="N" />
+      <field name="MDEntryType" required="N" />
+      <field name="MDEntryID" required="N" />
+      <field name="MDEntryRefID" required="N" />
+      <component name="Instrument" required="N" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+      </group>
+      <field name="FinancialStatus" required="N" />
+      <field name="CorporateAction" required="N" />
+      <field name="MDEntryPx" required="N" />
+      <field name="Currency" required="N" />
+      <field name="MDEntrySize" required="N" />
+      <field name="MDEntryDate" required="N" />
+      <field name="MDEntryTime" required="N" />
+      <field name="TickDirection" required="N" />
+      <field name="MDMkt" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="QuoteCondition" required="N" />
+      <field name="TradeCondition" required="N" />
+      <field name="MDEntryOriginator" required="N"
