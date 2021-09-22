@@ -908,4 +908,41 @@
     </group>
     <field name="Currency" required="N" />
     <field name="TradingSessionID" required="N" />
-    <field name="TradingSessionSu
+    <field name="TradingSessionSubID" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <field name="ExpirationCycle" required="N" />
+    <field name="RoundLot" required="N" />
+    <field name="MinTradeVol" required="N" />
+  </message>
+  <message name="SecurityTypeRequest" msgtype="v" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="Product" required="N" />
+    <field name="SecurityType" required="N" />
+    <field name="SecuritySubType" required="N" />
+  </message>
+  <message name="SecurityTypes" msgtype="w" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityResponseID" required="Y" />
+    <field name="SecurityResponseType" required="Y" />
+    <field name="TotNoSecurityTypes" required="N" />
+    <field name="LastFragment" required="N" />
+    <group name="NoSecurityTypes" required="N">
+      <field name="SecurityType" required="N" />
+      <field name="SecuritySubType" required="N" />
+      <field name="Product" required="N" />
+      <field name="CFICode" required="N" />
+    </group>
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <f
