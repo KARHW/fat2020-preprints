@@ -875,4 +875,37 @@
     </group>
     <field name="Text" required="N" />
     <field name="EncodedTextLen" required="N" />
-    <field name="EncodedText" required="N" 
+    <field name="EncodedText" required="N" />  
+  </message>
+  <message name="SecurityDefinitionRequest" msgtype="c" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityRequestType" required="Y" />
+    <component name="Instrument" required="N" />
+    <component name="InstrumentExtension" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="Currency" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <field name="ExpirationCycle" required="N" />
+    <field name="SubscriptionRequestType" required="N" />
+  </message>
+  <message name="SecurityDefinition" msgtype="d" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityResponseID" required="Y" />
+    <field name="SecurityResponseType" required="Y" />
+    <component name="Instrument" required="N" />
+    <component name="InstrumentExtension" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="Currency" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSu
