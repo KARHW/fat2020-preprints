@@ -978,4 +978,37 @@
     <group name="NoRelatedSym" required="N">
       <component name="Instrument" required="N" />
       <component name="InstrumentExtension" required="N" />
-      <component name="FinancingDetails" required="N" 
+      <component name="FinancingDetails" required="N" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <field name="Currency" required="N" />
+      <component name="Stipulations" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+        <field name="LegSwapType" required="N" />
+        <field name="LegSettlType" required="N" />
+        <component name="LegStipulations" required="N" />
+        <component name="LegBenchmarkCurveData" required="N" />
+      </group>
+      <component name="SpreadOrBenchmarkCurveData" required="N" />
+      <component name="YieldData" required="N" />
+      <field name="RoundLot" required="N" />
+      <field name="MinTradeVol" required="N" />
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="ExpirationCycle" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </group>
+  </message>
+  <message name="DerivativeSecurityListRequest" msgtype="z" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityListRequestType" required="Y" />
+    <component name="UnderlyingInstrument" required="N" />
+    <field name="SecuritySubType" required="N" />
+    <field name="Currency" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    
