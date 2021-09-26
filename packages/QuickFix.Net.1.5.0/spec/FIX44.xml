@@ -945,4 +945,37 @@
     <field name="Text" required="N" />
     <field name="EncodedTextLen" required="N" />
     <field name="EncodedText" required="N" />
-    <f
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="SubscriptionRequestType" required="N" />
+  </message>
+  <message name="SecurityListRequest" msgtype="x" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityListRequestType" required="Y" />
+    <component name="Instrument" required="N" />
+    <component name="InstrumentExtension" required="N" />
+    <component name="FinancingDetails" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <field name="Currency" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="SubscriptionRequestType" required="N" />
+  </message>
+  <message name="SecurityList" msgtype="y" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityResponseID" required="Y" />
+    <field name="SecurityRequestResult" required="Y" />
+    <field name="TotNoRelatedSym" required="N" />
+    <field name="LastFragment" required="N" />
+    <group name="NoRelatedSym" required="N">
+      <component name="Instrument" required="N" />
+      <component name="InstrumentExtension" required="N" />
+      <component name="FinancingDetails" required="N" 
