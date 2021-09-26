@@ -1011,4 +1011,36 @@
     <field name="Currency" required="N" />
     <field name="Text" required="N" />
     <field name="EncodedTextLen" required="N" />
-    
+    <field name="EncodedText" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="SubscriptionRequestType" required="N" />
+  </message>
+  <message name="DerivativeSecurityList" msgtype="AA" msgcat="app">
+    <field name="SecurityReqID" required="Y" />
+    <field name="SecurityResponseID" required="Y" />
+    <field name="SecurityRequestResult" required="Y" />
+    <component name="UnderlyingInstrument" required="N" />
+    <field name="TotNoRelatedSym" required="N" />
+    <field name="LastFragment" required="N" />
+    <group name="NoRelatedSym" required="N">
+      <component name="Instrument" required="N" />
+      <field name="Currency" required="N" />
+      <field name="ExpirationCycle" required="N" />
+      <component name="InstrumentExtension" required="N" />
+      <group name="NoLegs" required="N">
+        <component name="InstrumentLeg" required="N" />
+      </group>
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+    </group>
+  </message>
+  <message name="SecurityStatusRequest" msgtype="e" msgcat="app">
+    <field name="SecurityStatusReqID" required="Y" />
+    <component name="Instrument" required="Y" />
+    <component name="InstrumentExtension" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" 
