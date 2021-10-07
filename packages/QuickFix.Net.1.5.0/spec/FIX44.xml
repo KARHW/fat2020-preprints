@@ -1179,4 +1179,36 @@
     <field name="OrderCapacity" required="N" />
     <field name="OrderRestrictions" required="N" />
     <field name="CustOrderCapacity" required="N" />
-    <field name="ForexReq
+    <field name="ForexReq" required="N" />
+    <field name="SettlCurrency" required="N" />
+    <field name="BookingType" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <field name="SettlDate2" required="N" />
+    <field name="OrderQty2" required="N" />
+    <field name="Price2" required="N" />
+    <field name="PositionEffect" required="N" />
+    <field name="CoveredOrUncovered" required="N" />
+    <field name="MaxShow" required="N" />
+    <component name="PegInstructions" required="N" />
+    <component name="DiscretionInstructions" required="N" />
+    <field name="TargetStrategy" required="N" />
+    <field name="TargetStrategyParameters" required="N" />
+    <field name="ParticipationRate" required="N" />
+    <field name="CancellationRights" required="N" />
+    <field name="MoneyLaunderingStatus" required="N" />
+    <field name="RegistID" required="N" />
+    <field name="Designation" required="N" />
+  </message>
+  <message name="ExecutionReport" msgtype="8" msgcat="app">
+    <field name="OrderID" required="Y" />
+    <field name="SecondaryOrderID" required="N" />
+    <field name="SecondaryClOrdID" required="N" />
+    <field name="SecondaryExecID" required="N" />
+    <field name="ClOrdID" required="N" />
+    <field name="OrigClOrdID" required="N" />
+    <field name="ClOrdLinkID" required="N" />
+    <field name="QuoteRespID" required="N" />
+    <field name="OrdStatusReqID" required="N" />
+    <field name="MassStatus
