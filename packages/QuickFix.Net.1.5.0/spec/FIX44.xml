@@ -1342,4 +1342,40 @@
     <field name="ExecPriceType" required="N" />
     <field name="ExecPriceAdjustment" required="N" />
     <field name="PriorityIndicator" required="N" />
-    <field name="PriceImprovement" required="N"
+    <field name="PriceImprovement" required="N" />
+    <field name="LastLiquidityInd" required="N" />
+    <group name="NoContAmts" required="N">
+      <field name="ContAmtType" required="N" />
+      <field name="ContAmtValue" required="N" />
+      <field name="ContAmtCurr" required="N" />
+    </group>
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+      <field name="LegQty" required="N" />
+      <field name="LegSwapType" required="N" />
+      <component name="LegStipulations" required="N" />
+      <field name="LegPositionEffect" required="N" />
+      <field name="LegCoveredOrUncovered" required="N" />
+      <component name="NestedParties" required="N" />
+      <field name="LegRefID" required="N" />
+      <field name="LegPrice" required="N" />
+      <field name="LegSettlType" required="N" />
+      <field name="LegSettlDate" required="N" />
+      <field name="LegLastPx" required="N" />
+    </group>
+    <field name="CopyMsgIndicator" required="N" />
+    <group name="NoMiscFees" required="N">
+      <field name="MiscFeeAmt" required="N" />
+      <field name="MiscFeeCurr" required="N" />
+      <field name="MiscFeeType" required="N" />
+      <field name="MiscFeeBasis" required="N" />
+    </group>
+  </message>
+  <message name="DontKnowTrade" msgtype="Q" msgcat="app">
+    <field name="OrderID" required="Y" />
+    <field name="SecondaryOrderID" required="N" />
+    <field name="ExecID" required="Y" />
+    <field name="DKReason" required="Y" />
+    <component name="Instrument" required="Y" />
+    <group name="NoUnderlyings" required="N">
+    
