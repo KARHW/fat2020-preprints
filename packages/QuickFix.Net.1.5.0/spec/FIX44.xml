@@ -1476,4 +1476,39 @@
     <field name="MaxShow" required="N" />
     <field name="LocateReqd" required="N" />
     <field name="CancellationRights" required="N" />
-    <field name="MoneyLaunderingSta
+    <field name="MoneyLaunderingStatus" required="N" />
+    <field name="RegistID" required="N" />
+    <field name="Designation" required="N" />
+  </message>
+  <message name="OrderCancelRequest" msgtype="F" msgcat="app">
+    <field name="OrigClOrdID" required="Y" />
+    <field name="OrderID" required="N" />
+    <field name="ClOrdID" required="Y" />
+    <field name="SecondaryClOrdID" required="N" />
+    <field name="ClOrdLinkID" required="N" />
+    <field name="ListID" required="N" />
+    <field name="OrigOrdModTime" required="N" />
+    <field name="Account" required="N" />
+    <field name="AcctIDSource" required="N" />
+    <field name="AccountType" required="N" />
+    <component name="Parties" required="N" />
+    <component name="Instrument" required="Y" />
+    <component name="FinancingDetails" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="Side" required="Y" />
+    <field name="TransactTime" required="Y" />
+    <component name="OrderQtyData" required="Y" />
+    <field name="ComplianceID" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="OrderCancelReject" msgtype="9" msgcat="app">
+    <field name="OrderID" required="Y" />
+    <field name="SecondaryOrderID" required="N" />
+    <field name="SecondaryClOrdID" required="N" />
+    <field name="ClOrdID" required="Y" />
+    <field name="ClOrdLinkID" required="N" />
+    <field name="OrigClOrd
