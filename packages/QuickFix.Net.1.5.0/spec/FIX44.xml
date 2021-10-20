@@ -1610,4 +1610,37 @@
       <field name="AcctIDSource" required="N" />
       <field name="AccountType" required="N" />
       <field name="DayBookingInst" required="N" />
-      <field name="Bo
+      <field name="BookingUnit" required="N" />
+      <field name="PreallocMethod" required="N" />
+      <field name="AllocID" required="N" />
+      <group name="NoAllocs" required="N">
+        <field name="AllocAccount" required="N" />
+        <field name="AllocAcctIDSource" required="N" />
+        <field name="AllocSettlCurrency" required="N" />
+        <field name="IndividualAllocID" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="AllocQty" required="N" />
+      </group>
+      <field name="QtyType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <component name="CommissionData" required="N" />
+      <field name="OrderCapacity" required="N" />
+      <field name="OrderRestrictions" required="N" />
+      <field name="CustOrderCapacity" required="N" />
+      <field name="ForexReq" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="BookingType" required="N" />
+      <field name="Text" required="N" />
+      <field name="EncodedTextLen" required="N" />
+      <field name="EncodedText" required="N" />
+      <field name="PositionEffect" required="N" />
+      <field name="CoveredOrUncovered" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="SolicitedFlag" required="N" />
+      <field name="SideComplianceID" required="N" />
+    </group>
+    <component name="Instrument" required="Y" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    <
