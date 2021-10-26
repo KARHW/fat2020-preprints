@@ -1745,4 +1745,38 @@
     </group>
     <group name="NoLegs" required="N">
       <component name="InstrumentLeg" required="N" />
-  
+    </group>
+    <field name="SettlType" required="N" />
+    <field name="SettlDate" required="N" />
+    <field name="HandlInst" required="N" />
+    <field name="ExecInst" required="N" />
+    <field name="MinQty" required="N" />
+    <field name="MaxFloor" required="N" />
+    <field name="ExDestination" required="N" />
+    <group name="NoTradingSessions" required="N">
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </group>
+    <field name="ProcessCode" required="N" />
+    <field name="PrevClosePx" required="N" />
+    <field name="LocateReqd" required="N" />
+    <field name="TransactTime" required="Y" />
+    <component name="Stipulations" required="N" />
+    <field name="OrdType" required="Y" />
+    <field name="PriceType" required="N" />
+    <field name="Price" required="N" />
+    <field name="StopPx" required="N" />
+    <component name="SpreadOrBenchmarkCurveData" required="N" />
+    <component name="YieldData" required="N" />
+    <field name="Currency" required="N" />
+    <field name="ComplianceID" required="N" />
+    <field name="IOIid" required="N" />
+    <field name="QuoteID" required="N" />
+    <field name="TimeInForce" required="N" />
+    <field name="EffectiveTime" required="N" />
+    <field name="ExpireDate" required="N" />
+    <field name="ExpireTime" required="N" />
+    <field name="GTBookingInst" required="N" />
+    <field name="MaxShow" required="N" />
+    <component name="PegInstructions" required="N" />
+    <component name="DiscretionInstructions" required="N"
