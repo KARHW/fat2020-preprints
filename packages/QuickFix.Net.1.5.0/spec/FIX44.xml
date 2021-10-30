@@ -1848,4 +1848,38 @@
     <field name="HandlInst" required="N" />
     <field name="ExecInst" required="N" />
     <field name="MinQty" required="N" />
-    <field name="M
+    <field name="MaxFloor" required="N" />
+    <field name="ExDestination" required="N" />
+    <group name="NoTradingSessions" required="N">
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </group>
+    <field name="ProcessCode" required="N" />
+    <field name="Side" required="Y" />
+    <component name="Instrument" required="Y" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="PrevClosePx" required="N" />
+    <group name="NoLegs" required="Y">
+      <component name="InstrumentLeg" required="N" />
+      <field name="LegQty" required="N" />
+      <field name="LegSwapType" required="N" />
+      <component name="LegStipulations" required="N" />
+      <group name="NoLegAllocs" required="N">
+        <field name="LegAllocAccount" required="N" />
+        <field name="LegIndividualAllocID" required="N" />
+        <component name="NestedParties2" required="N" />
+        <field name="LegAllocQty" required="N" />
+        <field name="LegAllocAcctIDSource" required="N" />
+        <field name="LegSettlCurrency" required="N" />
+      </group>
+      <field name="LegPositionEffect" required="N" />
+      <field name="LegCoveredOrUncovered" required="N" />
+      <component name="NestedParties" required="N" />
+      <field name="LegRefID" required="N" />
+      <field name="LegPrice" required="N" />
+      <field name="LegSettlType" required="N" />
+      <field name="LegSettlDate" required="N" />
+    </group>
+    <field name="LocateReqd" req
