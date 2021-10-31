@@ -1947,4 +1947,36 @@
       <field name="AllocSettlCurrency" required="N" />
       <field name="IndividualAllocID" required="N" />
       <component name="NestedParties3" required="N" />
- 
+      <field name="AllocQty" required="N" />
+    </group>
+    <field name="SettlType" required="N" />
+    <field name="SettlDate" required="N" />
+    <field name="CashMargin" required="N" />
+    <field name="ClearingFeeIndicator" required="N" />
+    <field name="HandlInst" required="N" />
+    <field name="ExecInst" required="N" />
+    <field name="MinQty" required="N" />
+    <field name="MaxFloor" required="N" />
+    <field name="ExDestination" required="N" />
+    <group name="NoTradingSessions" required="N">
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </group>
+    <field name="ProcessCode" required="N" />
+    <field name="Side" required="Y" />
+    <component name="Instrument" required="Y" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="PrevClosePx" required="N" />
+    <group name="NoLegs" required="Y">
+      <component name="InstrumentLeg" required="N" />
+      <field name="LegQty" required="N" />
+      <field name="LegSwapType" required="N" />
+      <component name="LegStipulations" required="N" />
+      <group name="NoLegAllocs" required="N">
+        <field name="LegAllocAccount" required="N" />
+        <field name="LegIndividualAllocID" required="N" />
+        <component name="NestedParties2" required="N" />
+        <field name="LegAllocQty" required="N" />
+        <field name="LegAllocAcctIDSource" 
