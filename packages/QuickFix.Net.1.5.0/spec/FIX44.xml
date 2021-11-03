@@ -2013,4 +2013,36 @@
     <field name="OrderRestrictions" required="N" />
     <field name="CustOrderCapacity" required="N" />
     <field name="ForexReq" required="N" />
-    <field name="SettlCurrency" required="N" /
+    <field name="SettlCurrency" required="N" />
+    <field name="BookingType" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <field name="PositionEffect" required="N" />
+    <field name="CoveredOrUncovered" required="N" />
+    <field name="MaxShow" required="N" />
+    <component name="PegInstructions" required="N" />
+    <component name="DiscretionInstructions" required="N" />
+    <field name="TargetStrategy" required="N" />
+    <field name="TargetStrategyParameters" required="N" />
+    <field name="ParticipationRate" required="N" />
+    <field name="CancellationRights" required="N" />
+    <field name="MoneyLaunderingStatus" required="N" />
+    <field name="RegistID" required="N" />
+    <field name="Designation" required="N" />
+    <field name="MultiLegRptTypeReq" required="N" />
+  </message>
+  <message name="BidRequest" msgtype="k" msgcat="app">
+    <field name="BidID" required="N" />
+    <field name="ClientBidID" required="Y" />
+    <field name="BidRequestTransType" required="Y" />
+    <field name="ListName" required="N" />
+    <field name="TotNoRelatedSym" required="Y" />
+    <field name="BidType" required="Y" />
+    <field name="NumTickets" required="N" />
+    <field name="Currency" required="N" />
+    <field name="SideValue1" required="N" />
+    <field name="SideValue2" required="N" />
+    <group name="NoBidDescriptors" required="N">
+      <field name="BidDescriptorType" required="N" />
+      <field name="BidDescriptor" required="N"
