@@ -2144,4 +2144,36 @@
       <group name="NoAllocs" required="N">
         <field name="AllocAccount" required="N" />
         <field name="AllocAcctIDSource" required="N" />
-        
+        <field name="AllocSettlCurrency" required="N" />
+        <field name="IndividualAllocID" required="N" />
+        <component name="NestedParties" required="N" />
+        <field name="AllocQty" required="N" />
+      </group>
+      <field name="SettlType" required="N" />
+      <field name="SettlDate" required="N" />
+      <field name="CashMargin" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="HandlInst" required="N" />
+      <field name="ExecInst" required="N" />
+      <field name="MinQty" required="N" />
+      <field name="MaxFloor" required="N" />
+      <field name="ExDestination" required="N" />
+      <group name="NoTradingSessions" required="N">
+        <field name="TradingSessionID" required="N" />
+        <field name="TradingSessionSubID" required="N" />
+      </group>
+      <field name="ProcessCode" required="N" />
+      <component name="Instrument" required="Y" />
+      <group name="NoUnderlyings" required="N">
+        <component name="UnderlyingInstrument" required="N" />
+      </group>
+      <field name="PrevClosePx" required="N" />
+      <field name="Side" required="Y" />
+      <field name="SideValueInd" required="N" />
+      <field name="LocateReqd" required="N" />
+      <field name="TransactTime" required="N" />
+      <component name="Stipulations" required="N" />
+      <field name="QtyType" required="N" />
+      <component name="OrderQtyData" required="Y" />
+      <field name="OrdType" required="N" />
+      <field name="PriceType" r
