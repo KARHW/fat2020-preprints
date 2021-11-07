@@ -2376,4 +2376,35 @@
       <field name="MatchStatus" required="N" />
       <field name="AllocPrice" required="N" />
       <field name="AllocQty" required="N" />
-      <field na
+      <field name="IndividualAllocID" required="N" />
+      <field name="ProcessCode" required="N" />
+      <component name="NestedParties" required="N" />
+      <field name="NotifyBrokerOfCredit" required="N" />
+      <field name="AllocHandlInst" required="N" />
+      <field name="AllocText" required="N" />
+      <field name="EncodedAllocTextLen" required="N" />
+      <field name="EncodedAllocText" required="N" />
+      <component name="CommissionData" required="N" />
+      <field name="AllocAvgPx" required="N" />
+      <field name="AllocNetMoney" required="N" />
+      <field name="SettlCurrAmt" required="N" />
+      <field name="AllocSettlCurrAmt" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="AllocSettlCurrency" required="N" />
+      <field name="SettlCurrFxRate" required="N" />
+      <field name="SettlCurrFxRateCalc" required="N" />
+      <field name="AccruedInterestAmt" required="N" />
+      <field name="AllocAccruedInterestAmt" required="N" />
+      <field name="AllocInterestAtMaturity" required="N" />
+      <field name="SettlInstMode" required="N" />
+      <group name="NoMiscFees" required="N">
+        <field name="MiscFeeAmt" required="N" />
+        <field name="MiscFeeCurr" required="N" />
+        <field name="MiscFeeType" required="N" />
+        <field name="MiscFeeBasis" required="N" />
+      </group>
+      <field name="NoClearingInstructions" required="N" />
+      <field name="ClearingInstruction" required="N" />
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="AllocSettlInstType" required="N" />
+      <component name="SettlI
