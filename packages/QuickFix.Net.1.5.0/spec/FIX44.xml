@@ -2407,4 +2407,39 @@
       <field name="ClearingInstruction" required="N" />
       <field name="ClearingFeeIndicator" required="N" />
       <field name="AllocSettlInstType" required="N" />
-      <component name="SettlI
+      <component name="SettlInstructionsData" required="N" />
+    </group>
+  </message>
+  <message name="AllocationInstructionAck" msgtype="P" msgcat="app">
+    <field name="AllocID" required="Y" />
+    <component name="Parties" required="N" />
+    <field name="SecondaryAllocID" required="N" />
+    <field name="TradeDate" required="N" />
+    <field name="TransactTime" required="Y" />
+    <field name="AllocStatus" required="Y" />
+    <field name="AllocRejCode" required="N" />
+    <field name="AllocType" required="N" />
+    <field name="AllocIntermedReqType" required="N" />
+    <field name="MatchStatus" required="N" />
+    <field name="Product" required="N" />
+    <field name="SecurityType" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <group name="NoAllocs" required="N">
+      <field name="AllocAccount" required="N" />
+      <field name="AllocAcctIDSource" required="N" />
+      <field name="AllocPrice" required="N" />
+      <field name="IndividualAllocID" required="N" />
+      <field name="IndividualAllocRejCode" required="N" />
+      <field name="AllocText" required="N" />
+      <field name="EncodedAllocTextLen" required="N" />
+      <field name="EncodedAllocText" required="N" />
+    </group>
+  </message>
+  <message name="AllocationReport" msgtype="AS" msgcat="app">
+    <field name="AllocReportID" required="Y" />
+    <field name="AllocID" required="N" />
+    <field name="AllocTransType" required="Y" />
+    <field name="AllocReportRefID" required="N" />
+    <field name="AllocCancReplac
