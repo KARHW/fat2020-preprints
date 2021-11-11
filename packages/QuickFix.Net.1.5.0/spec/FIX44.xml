@@ -2442,4 +2442,37 @@
     <field name="AllocID" required="N" />
     <field name="AllocTransType" required="Y" />
     <field name="AllocReportRefID" required="N" />
-    <field name="AllocCancReplac
+    <field name="AllocCancReplaceReason" required="N" />
+    <field name="SecondaryAllocID" required="N" />
+    <field name="AllocReportType" required="Y" />
+    <field name="AllocStatus" required="Y" />
+    <field name="AllocRejCode" required="N" />
+    <field name="RefAllocID" required="N" />
+    <field name="AllocIntermedReqType" required="N" />
+    <field name="AllocLinkID" required="N" />
+    <field name="AllocLinkType" required="N" />
+    <field name="BookingRefID" required="N" />
+    <field name="AllocNoOrdersType" required="Y" />
+    <group name="NoOrders" required="N">
+      <field name="ClOrdID" required="N" />
+      <field name="OrderID" required="N" />
+      <field name="SecondaryOrderID" required="N" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ListID" required="N" />
+      <component name="NestedParties2" required="N" />
+      <field name="OrderQty" required="N" />
+      <field name="OrderAvgPx" required="N" />
+      <field name="OrderBookingQty" required="N" />
+    </group>
+    <group name="NoExecs" required="N">
+      <field name="LastQty" required="N" />
+      <field name="ExecID" required="N" />
+      <field name="SecondaryExecID" required="N" />
+      <field name="LastPx" required="N" />
+      <field name="LastParPx" required="N" />
+      <field name="LastCapacity" required="N" />
+    </group>
+    <field name="PreviouslyReported" required="N" />
+    <field name="ReversalIndicator" required="N" />
+    <field name="MatchType" required="N" />
+    <field na
