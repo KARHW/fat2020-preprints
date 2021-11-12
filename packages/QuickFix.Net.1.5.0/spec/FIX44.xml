@@ -2608,4 +2608,39 @@
       <field name="SecondaryOrderID" required="N" />
       <field name="SecondaryClOrdID" required="N" />
       <field name="ListID" required="N" />
-      <component name=
+      <component name="NestedParties2" required="N" />
+      <field name="OrderQty" required="N" />
+      <field name="OrderAvgPx" required="N" />
+      <field name="OrderBookingQty" required="N" />
+    </group>
+    <field name="AllocID" required="N" />
+    <field name="SecondaryAllocID" required="N" />
+    <field name="IndividualAllocID" required="N" />
+    <field name="TransactTime" required="Y" />
+    <field name="TradeDate" required="Y" />
+    <component name="TrdRegTimestamps" required="N" />
+    <component name="Instrument" required="Y" />
+    <component name="InstrumentExtension" required="N" />
+    <component name="FinancingDetails" required="N" />
+    <group name="NoUnderlyings" required="Y">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <group name="NoLegs" required="Y">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <component name="YieldData" required="N" />
+    <field name="AllocQty" required="Y" />
+    <field name="QtyType" required="N" />
+    <field name="Side" required="Y" />
+    <field name="Currency" required="N" />
+    <field name="LastMkt" required="N" />
+    <group name="NoCapacities" required="Y">
+      <field name="OrderCapacity" required="Y" />
+      <field name="OrderRestrictions" required="N" />
+      <field name="OrderCapacityQty" required="Y" />
+    </group>
+    <field name="AllocAccount" required="Y" />
+    <field name="AllocAcctIDSource" required="N" />
+    <field name="AllocAccountType" required="N" />
+    <field name="AvgPx" required="Y" />
+    <field name="AvgPxPrecision"
