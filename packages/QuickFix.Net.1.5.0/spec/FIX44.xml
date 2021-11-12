@@ -2574,4 +2574,38 @@
     <field name="AllocStatus" required="Y" />
     <field name="AllocRejCode" required="N" />
     <field name="AllocReportType" required="N" />
-    <field name="A
+    <field name="AllocIntermedReqType" required="N" />
+    <field name="MatchStatus" required="N" />
+    <field name="Product" required="N" />
+    <field name="SecurityType" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+    <group name="NoAllocs" required="N">
+      <field name="AllocAccount" required="N" />
+      <field name="AllocAcctIDSource" required="N" />
+      <field name="AllocPrice" required="N" />
+      <field name="IndividualAllocID" required="N" />
+      <field name="IndividualAllocRejCode" required="N" />
+      <field name="AllocText" required="N" />
+      <field name="EncodedAllocTextLen" required="N" />
+      <field name="EncodedAllocText" required="N" />
+    </group>
+  </message>
+  <message name="Confirmation" msgtype="AK" msgcat="app">
+    <field name="ConfirmID" required="Y" />
+    <field name="ConfirmRefID" required="N" />
+    <field name="ConfirmReqID" required="N" />
+    <field name="ConfirmTransType" required="Y" />
+    <field name="ConfirmType" required="Y" />
+    <field name="CopyMsgIndicator" required="N" />
+    <field name="LegalConfirm" required="N" />
+    <field name="ConfirmStatus" required="Y" />
+    <component name="Parties" required="N" />
+    <group name="NoOrders" required="N">
+      <field name="ClOrdID" required="N" />
+      <field name="OrderID" required="N" />
+      <field name="SecondaryOrderID" required="N" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ListID" required="N" />
+      <component name=
