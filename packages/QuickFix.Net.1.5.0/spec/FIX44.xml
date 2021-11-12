@@ -2540,4 +2540,38 @@
       <field name="EncodedAllocTextLen" required="N" />
       <field name="EncodedAllocText" required="N" />
       <component name="CommissionData" required="N" />
-      <field name="AllocAvgPx" required
+      <field name="AllocAvgPx" required="N" />
+      <field name="AllocNetMoney" required="N" />
+      <field name="SettlCurrAmt" required="N" />
+      <field name="AllocSettlCurrAmt" required="N" />
+      <field name="SettlCurrency" required="N" />
+      <field name="AllocSettlCurrency" required="N" />
+      <field name="SettlCurrFxRate" required="N" />
+      <field name="SettlCurrFxRateCalc" required="N" />
+      <field name="AllocAccruedInterestAmt" required="N" />
+      <field name="AllocInterestAtMaturity" required="N" />
+      <group name="NoMiscFees" required="N">
+        <field name="MiscFeeAmt" required="N" />
+        <field name="MiscFeeCurr" required="N" />
+        <field name="MiscFeeType" required="N" />
+        <field name="MiscFeeBasis" required="N" />
+      </group>
+      <group name="NoClearingInstructions" required="N">
+        <field name="ClearingInstruction" required="N" />
+      </group>
+      <field name="ClearingFeeIndicator" required="N" />
+      <field name="AllocSettlInstType" required="N" />
+      <component name="SettlInstructionsData" required="N" />
+    </group>
+  </message>
+  <message name="AllocationReportAck" msgtype="AT" msgcat="app">
+    <field name="AllocReportID" required="Y" />
+    <field name="AllocID" required="Y" />
+    <component name="Parties" required="N" />
+    <field name="SecondaryAllocID" required="N" />
+    <field name="TradeDate" required="N" />
+    <field name="TransactTime" required="Y" />
+    <field name="AllocStatus" required="Y" />
+    <field name="AllocRejCode" required="N" />
+    <field name="AllocReportType" required="N" />
+    <field name="A
