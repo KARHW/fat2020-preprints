@@ -2674,4 +2674,40 @@
     <component name="SettlInstructionsData" required="N" />
     <component name="CommissionData" required="N" />
     <field name="SharedCommission" required="N" />
-    <component name="Stipulat
+    <component name="Stipulations" required="N" />
+    <group name="NoMiscFees" required="N">
+      <field name="MiscFeeAmt" required="N" />
+      <field name="MiscFeeCurr" required="N" />
+      <field name="MiscFeeType" required="N" />
+      <field name="MiscFeeBasis" required="N" />
+    </group>
+  </message>
+  <message name="ConfirmationAck" msgtype="AU" msgcat="app">
+    <field name="ConfirmID" required="Y" />
+    <field name="TradeDate" required="Y" />
+    <field name="TransactTime" required="Y" />
+    <field name="AffirmStatus" required="Y" />
+    <field name="ConfirmRejReason" required="N" />
+    <field name="MatchStatus" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="ConfirmationRequest" msgtype="BH" msgcat="app">
+    <field name="ConfirmReqID" required="Y" />
+    <field name="ConfirmType" required="Y" />
+    <group name="NoOrders" required="N">
+      <field name="ClOrdID" required="N" />
+      <field name="OrderID" required="N" />
+      <field name="SecondaryOrderID" required="N" />
+      <field name="SecondaryClOrdID" required="N" />
+      <field name="ListID" required="N" />
+      <component name="NestedParties2" required="N" />
+      <field name="OrderQty" required="N" />
+      <field name="OrderAvgPx" required="N" />
+      <field name="OrderBookingQty" required="N" />
+    </group>
+    <field name="AllocID" required="N" />
+    <field name="SecondaryAllocID" required="N" />
+    <field name="IndividualAllocID" required="N" />
+    <field nam
