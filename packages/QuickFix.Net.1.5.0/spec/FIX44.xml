@@ -2743,4 +2743,37 @@
       <field name="LastUpdateTime" required="N" />
       <component name="SettlInstructionsData" required="N" />
       <field name="PaymentMethod" required="N" />
-      <field name="PaymentRef" required="N" /
+      <field name="PaymentRef" required="N" />
+      <field name="CardHolderName" required="N" />
+      <field name="CardNumber" required="N" />
+      <field name="CardStartDate" required="N" />
+      <field name="CardExpDate" required="N" />
+      <field name="CardIssNum" required="N" />
+      <field name="PaymentDate" required="N" />
+      <field name="PaymentRemitterID" required="N" />
+    </group>
+  </message>
+  <message name="SettlementInstructionRequest" msgtype="AV" msgcat="app">
+    <field name="SettlInstReqID" required="Y" />
+    <field name="TransactTime" required="Y" />
+    <component name="Parties" required="N" />
+    <field name="AllocAccount" required="N" />
+    <field name="AllocAcctIDSource" required="N" />
+    <field name="Side" required="N" />
+    <field name="Product" required="N" />
+    <field name="SecurityType" required="N" />
+    <field name="CFICode" required="N" />
+    <field name="EffectiveTime" required="N" />
+    <field name="ExpireTime" required="N" />
+    <field name="LastUpdateTime" required="N" />
+    <field name="StandInstDbType" required="N" />
+    <field name="StandInstDbName" required="N" />
+    <field name="StandInstDbID" required="N" />
+  </message>
+  <message name="TradeCaptureReportRequest" msgtype="AD" msgcat="app">
+    <field name="TradeRequestID" required="Y" />
+    <field name="TradeRequestType" required="Y" />
+    <field name="SubscriptionRequestType" required="N" />
+    <field name="TradeReportID" required="N" />
+    <field name="SecondaryTradeReportID" required="N" />
+    <field name="ExecID" required="N" />
