@@ -2777,3 +2777,39 @@
     <field name="TradeReportID" required="N" />
     <field name="SecondaryTradeReportID" required="N" />
     <field name="ExecID" required="N" />
+    <field name="ExecType" required="N" />
+    <field name="OrderID" required="N" />
+    <field name="ClOrdID" required="N" />
+    <field name="MatchStatus" required="N" />
+    <field name="TrdType" required="N" />
+    <field name="TrdSubType" required="N" />
+    <field name="TransferReason" required="N" />
+    <field name="SecondaryTrdType" required="N" />
+    <field name="TradeLinkID" required="N" />
+    <field name="TrdMatchID" required="N" />
+    <component name="Parties" required="N" />
+    <component name="Instrument" required="N" />
+    <component name="InstrumentExtension" required="N" />
+    <component name="FinancingDetails" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <group name="NoDates" required="N">
+      <field name="TradeDate" required="N" />
+      <field name="TransactTime" required="N" />
+    </group>
+    <field name="ClearingBusinessDate" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="TimeBracket" required="N" />
+    <field name="Side" required="N" />
+    <field name="MultiLegReportingType" required="N" />
+    <field name="TradeInputSource" required="N" />
+    <field name="TradeInputDevice" required="N" />
+    <field name="ResponseTransportType" required="N" />
+    <field name="ResponseDestination" required="N" />
+    <field name="Text" required="N" />
+   
