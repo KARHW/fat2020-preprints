@@ -2812,4 +2812,36 @@
     <field name="ResponseTransportType" required="N" />
     <field name="ResponseDestination" required="N" />
     <field name="Text" required="N" />
-   
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="TradeCaptureReportRequestAck" msgtype="AQ" msgcat="app">
+    <field name="TradeRequestID" required="Y" />
+    <field name="TradeRequestType" required="Y" />
+    <field name="SubscriptionRequestType" required="N" />
+    <field name="TotNumTradeReports" required="N" />
+    <field name="TradeRequestResult" required="Y" />
+    <field name="TradeRequestStatus" required="Y" />
+    <component name="Instrument" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <field name="MultiLegReportingType" required="N" />
+    <field name="ResponseTransportType" required="N" />
+    <field name="ResponseDestination" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="TradeCaptureReport" msgtype="AE" msgcat="app">
+    <field name="TradeReportID" required="Y" />
+    <field name="TradeReportTransType" required="N" />
+    <field name="TradeReportType" required="N" />
+    <field name="TradeRequestID" required="N" />
+    <field name="TrdType" required="N" />
+    <field name="TrdSubType" required="N" />
+    <field name="SecondaryTrdType" required="N" />
+    <field name="Transfer
