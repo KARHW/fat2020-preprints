@@ -2875,4 +2875,36 @@
     <field name="LastPx" required="Y" />
     <field name="LastParPx" required="N" />
     <field name="LastSpotRate" required="N" />
-    <field name="LastForwardPoints" required
+    <field name="LastForwardPoints" required="N" />
+    <field name="LastMkt" required="N" />
+    <field name="TradeDate" required="Y" />
+    <field name="ClearingBusinessDate" required="N" />
+    <field name="AvgPx" required="N" />
+    <component name="SpreadOrBenchmarkCurveData" required="N" />
+    <field name="AvgPxIndicator" required="N" />
+    <component name="PositionAmountData" required="N" />
+    <field name="MultiLegReportingType" required="N" />
+    <field name="TradeLegRefID" required="N" />
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+      <field name="LegQty" required="N" />
+      <field name="LegSwapType" required="N" />
+      <component name="LegStipulations" required="N" />
+      <field name="LegPositionEffect" required="N" />
+      <field name="LegCoveredOrUncovered" required="N" />
+      <component name="NestedParties" required="N" />
+      <field name="LegRefID" required="N" />
+      <field name="LegPrice" required="N" />
+      <field name="LegSettlType" required="N" />
+      <field name="LegSettlDate" required="N" />
+      <field name="LegLastPx" required="N" />
+    </group>
+    <field name="TransactTime" required="Y" />
+    <component name="TrdRegTimestamps" required="N" />
+    <field name="SettlType" required="N" />
+    <field name="SettlDate" required="N" />
+    <field name="MatchStatus" required="N" />
+    <field name="MatchType" required="N" />
+    <group name="NoSides" required="Y">
+      <field name="Side" required="Y" />
+      <field name="OrderID" requi
