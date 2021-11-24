@@ -3069,4 +3069,37 @@
       <field name="InvestorCountryOfResidence" required="N" />
     </group>
     <group name="NoDistribInsts" required="N">
-      <field name="DistribPaymentMeth
+      <field name="DistribPaymentMethod" required="N" />
+      <field name="DistribPercentage" required="N" />
+      <field name="CashDistribCurr" required="N" />
+      <field name="CashDistribAgentName" required="N" />
+      <field name="CashDistribAgentCode" required="N" />
+      <field name="CashDistribAgentAcctNumber" required="N" />
+      <field name="CashDistribPayRef" required="N" />
+      <field name="CashDistribAgentAcctName" required="N" />
+    </group>
+  </message>
+  <message name="RegistrationInstructionsResponse" msgtype="p" msgcat="app">
+    <field name="RegistID" required="Y" />
+    <field name="RegistTransType" required="Y" />
+    <field name="RegistRefID" required="Y" />
+    <field name="ClOrdID" required="N" />
+    <component name="Parties" required="N" />
+    <field name="Account" required="N" />
+    <field name="AcctIDSource" required="N" />
+    <field name="RegistStatus" required="Y" />
+    <field name="RegistRejReasonCode" required="N" />
+    <field name="RegistRejReasonText" required="N" />
+  </message>
+  <message name="PositionMaintenanceRequest" msgtype="AL" msgcat="app">
+    <field name="PosReqID" required="Y" />
+    <field name="PosTransType" required="Y" />
+    <field name="PosMaintAction" required="Y" />
+    <field name="OrigPosReqRefID" required="N" />
+    <field name="PosMaintRptRefID" required="N" />
+    <field name="ClearingBusinessDate" required="Y" />
+    <field name="SettlSessID" required="N" />
+    <field name="SettlSessSubID" required="N" />
+    <component name="Parties" required="Y" />
+    <field name="Account" required="Y" />
+    <field 
