@@ -3171,4 +3171,37 @@
     <field name="Account" required="Y" />
     <field name="AcctIDSource" required="N" />
     <field name="AccountType" required="Y" />
-    <
+    <component name="Instrument" required="N" />
+    <field name="Currency" required="N" />
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="ClearingBusinessDate" required="Y" />
+    <field name="SettlSessID" required="N" />
+    <field name="SettlSessSubID" required="N" />
+    <group name="NoTradingSessions" required="N">
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </group>
+    <field name="TransactTime" required="Y" />
+    <field name="ResponseTransportType" required="N" />
+    <field name="ResponseDestination" required="N" />
+    <field name="Text" required="N" />   
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="RequestForPositionsAck" msgtype="AO" msgcat="app">
+    <field name="PosMaintRptID" required="Y" />
+    <field name="PosReqID" required="N" />
+    <field name="TotalNumPosReports" required="N" />
+    <field name="UnsolicitedIndicator" required="N" />
+    <field name="PosReqResult" required="Y" />
+    <field name="PosReqStatus" required="Y" />
+    <component name="Parties" required="Y" />
+    <field name="Account" required="Y" />
+    <field name="AcctIDSource" required="N" />
+    <field name="AccountType" required="Y" />
+    <component name="Instru
