@@ -3135,4 +3135,40 @@
     <field name="PosMaintStatus" required="Y" />
     <field name="PosMaintResult" required="N" />
     <field name="ClearingBusinessDate" required="Y" />
-    <field name="SettlSessID" require
+    <field name="SettlSessID" required="N" />
+    <field name="SettlSessSubID" required="N" />
+    <component name="Parties" required="N" />
+    <field name="Account" required="Y" />
+    <field name="AcctIDSource" required="N" />
+    <field name="AccountType" required="Y" />
+    <component name="Instrument" required="Y" />
+    <field name="Currency" required="N" />
+    <group name="NoLegs" required="N">
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <group name="NoTradingSessions" required="N">
+      <field name="TradingSessionID" required="N" />
+      <field name="TradingSessionSubID" required="N" />
+    </group>
+    <field name="TransactTime" required="Y" />
+    <component name="PositionQty" required="Y" />
+    <component name="PositionAmountData" required="Y" />
+    <field name="AdjustmentType" required="N" />
+    <field name="ThresholdAmount" required="N" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="RequestForPositions" msgtype="AN" msgcat="app">
+    <field name="PosReqID" required="Y" />
+    <field name="PosReqType" required="Y" />
+    <field name="MatchStatus" required="N" />
+    <field name="SubscriptionRequestType" required="N" />
+    <component name="Parties" required="Y" />
+    <field name="Account" required="Y" />
+    <field name="AcctIDSource" required="N" />
+    <field name="AccountType" required="Y" />
+    <
