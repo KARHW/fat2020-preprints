@@ -3273,4 +3273,39 @@
     <field name="ThresholdAmount" required="N" />
     <field name="SettlPrice" required="Y" />
     <field name="SettlPriceType" required="Y" />
-    <field name="UnderlyingSettlPrice
+    <field name="UnderlyingSettlPrice" required="Y" />
+    <field name="ExpireDate" required="N" />
+    <field name="AssignmentMethod" required="Y" />
+    <field name="AssignmentUnit" required="N" />
+    <field name="OpenInterest" required="Y" />
+    <field name="ExerciseMethod" required="Y" />
+    <field name="SettlSessID" required="Y" />
+    <field name="SettlSessSubID" required="Y" />
+    <field name="ClearingBusinessDate" required="Y" />
+    <field name="Text" required="N" />
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="CollateralRequest" msgtype="AX" msgcat="app">
+    <field name="CollReqID" required="Y" />
+    <field name="CollAsgnReason" required="Y" />
+    <field name="TransactTime" required="Y" />
+    <field name="ExpireTime" required="N" />
+    <component name="Parties" required="N" />
+    <field name="Account" required="N" />
+    <field name="AccountType" required="N" />
+    <field name="ClOrdID" required="N" />
+    <field name="OrderID" required="N" />
+    <field name="SecondaryOrderID" required="N" />
+    <field name="SecondaryClOrdID" required="N" />
+    <group name="NoExecs" required="N">
+      <field name="ExecID" required="N" />
+    </group>
+    <group name="NoTrades" required="N">
+      <field name="TradeReportID" required="N" />
+      <field name="SecondaryTradeReportID" required="N" /> 
+    </group>
+    <component name="Instrument" required="N" />
+    <component name="FinancingDetails" required="N" />
+    <field name="SettlDate" required="N" />
+    <fie
