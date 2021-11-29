@@ -3239,4 +3239,38 @@
     <field name="SettlPriceType" required="Y" />
     <field name="PriorSettlPrice" required="Y" />   
     <group name="NoLegs" required="N">
-      <component
+      <component name="InstrumentLeg" required="N" />
+    </group>
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="UnderlyingSettlPrice" required="Y" />
+      <field name="UnderlyingSettlPriceType" required="Y" />
+    </group>
+    <component name="PositionQty" required="Y" />
+    <component name="PositionAmountData" required="Y" />
+    <field name="RegistStatus" required="N" />
+    <field name="DeliveryDate" required="N" />   
+    <field name="Text" required="N" />   
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="AssignmentReport" msgtype="AW" msgcat="app">
+    <field name="AsgnRptID" required="Y" />
+    <field name="TotNumAssignmentReports" required="N" />
+    <field name="LastRptRequested" required="N" />
+    <component name="Parties" required="Y" />
+    <field name="Account" required="N" />
+    <field name="AccountType" required="Y" />
+    <component name="Instrument" required="N" />
+    <field name="Currency" required="N" />
+    <field name="NoLegs" required="N" />
+    <component name="InstrumentLeg" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <component name="PositionQty" required="Y" />
+    <component name="PositionAmountData" required="Y" />
+    <field name="ThresholdAmount" required="N" />
+    <field name="SettlPrice" required="Y" />
+    <field name="SettlPriceType" required="Y" />
+    <field name="UnderlyingSettlPrice
