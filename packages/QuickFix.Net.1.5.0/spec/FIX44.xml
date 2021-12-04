@@ -3376,4 +3376,36 @@
     <field name="NoLegs" required="N" />
     <component name="InstrumentLeg" required="N" />
     <group name="NoUnderlyings" required="N">
-      <component name="UnderlyingInstrument" required="N
+      <component name="UnderlyingInstrument" required="N" />
+      <field name="CollAction" required="N" />
+    </group>
+    <field name="MarginExcess" required="N" />   
+    <field name="TotalNetValue" required="N" />   
+    <field name="CashOutstanding" required="N" />   
+    <component name="TrdRegTimestamps" required="N" />
+    <field name="Side" required="N" />               
+    <group name="NoMiscFees" required="N">
+      <field name="MiscFeeAmt" required="N" />
+      <field name="MiscFeeCurr" required="N" /> 
+      <field name="MiscFeeType" required="N" />
+      <field name="MiscFeeBasis" required="N" /> 
+    </group>
+    <field name="Price" required="N" />   
+    <field name="PriceType" required="N" />   
+    <field name="AccruedInterestAmt" required="N" />   
+    <field name="EndAccruedInterestAmt" required="N" />   
+    <field name="StartCash" required="N" />   
+    <field name="EndCash" required="N" />   
+  <component name="SpreadOrBenchmarkCurveData" required="N" />
+    <component name="Stipulations" required="N" />
+    <component name="SettlInstructionsData" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="SettlSessID" required="N" />   
+    <field name="SettlSessSubID" required="N" />   
+    <field name="ClearingBusinessDate" required="N" />   
+    <field name="Text" required="N" />   
+    <field name="EncodedTextLen" required="N" />
+    <field name="EncodedText" required="N" />
+  </message>
+  <message name="CollateralResponse" msgtype="AZ" msgcat="
