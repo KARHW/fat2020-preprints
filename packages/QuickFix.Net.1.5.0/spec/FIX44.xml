@@ -3476,4 +3476,39 @@
     <field name="Account" required="N" />
     <field name="AccountType" required="N" />
     <field name="ClOrdID" required="N" />
-    <field name="Or
+    <field name="OrderID" required="N" />
+    <field name="SecondaryOrderID" required="N" />
+    <field name="SecondaryClOrdID" required="N" />
+    <group name="NoExecs" required="N">
+      <field name="ExecID" required="N" />
+    </group>
+    <group name="NoTrades" required="N">
+      <field name="TradeReportID" required="N" />
+      <field name="SecondaryTradeReportID" required="N" /> 
+    </group>
+    <component name="Instrument" required="N" />
+    <component name="FinancingDetails" required="N" />
+    <field name="SettlDate" required="N" />
+    <field name="Quantity" required="N" />
+    <field name="QtyType" required="N" />
+    <field name="Currency" required="N" />
+    <field name="NoLegs" required="N" />
+    <component name="InstrumentLeg" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="MarginExcess" required="N" />   
+    <field name="TotalNetValue" required="N" />   
+    <field name="CashOutstanding" required="N" />   
+    <component name="TrdRegTimestamps" required="N" />
+    <field name="Side" required="N" />   
+    <group name="NoMiscFees" required="N">
+      <field name="MiscFeeAmt" required="N" />
+      <field name="MiscFeeCurr" required="N" /> 
+      <field name="MiscFeeType" required="N" />
+      <field name="MiscFeeBasis" required="N" /> 
+    </group>
+    <field name="Price" required="N" />   
+    <field name="PriceType" required="N" />   
+    <field name="AccruedInterestAmt" required="N" />   
+    <field name="EndAcc
