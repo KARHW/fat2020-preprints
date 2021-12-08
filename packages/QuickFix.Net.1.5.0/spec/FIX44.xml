@@ -3544,4 +3544,36 @@
     <group name="NoExecs" required="N">
       <field name="ExecID" required="N" />
     </group>
-    <group name="NoTrades" required="
+    <group name="NoTrades" required="N">
+      <field name="TradeReportID" required="N" />
+      <field name="SecondaryTradeReportID" required="N" /> 
+    </group>
+    <component name="Instrument" required="N" />
+    <component name="FinancingDetails" required="N" />
+    <field name="SettlDate" required="N" />
+    <field name="Quantity" required="N" />
+    <field name="QtyType" required="N" />
+    <field name="Currency" required="N" />
+    <field name="NoLegs" required="N" />
+    <component name="InstrumentLeg" required="N" />
+    <group name="NoUnderlyings" required="N">
+      <component name="UnderlyingInstrument" required="N" />
+    </group>
+    <field name="MarginExcess" required="N" />   
+    <field name="TotalNetValue" required="N" />   
+    <field name="CashOutstanding" required="N" />   
+    <component name="TrdRegTimestamps" required="N" />
+    <field name="Side" required="N" />               
+    <field name="Price" required="N" />   
+    <field name="PriceType" required="N" />   
+    <field name="AccruedInterestAmt" required="N" />   
+    <field name="EndAccruedInterestAmt" required="N" />   
+    <field name="StartCash" required="N" />   
+    <field name="EndCash" required="N" />   
+    <component name="SpreadOrBenchmarkCurveData" required="N" />
+    <component name="Stipulations" required="N" />
+    <component name="SettlInstructionsData" required="N" />
+    <field name="TradingSessionID" required="N" />
+    <field name="TradingSessionSubID" required="N" />
+    <field name="SettlSessID" required="N" />   
+    <field name="SettlSessSubID" 
