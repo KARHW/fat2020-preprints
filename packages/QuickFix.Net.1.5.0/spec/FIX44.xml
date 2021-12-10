@@ -3739,4 +3739,34 @@
       <field name="UnderlyingContractMultiplier" required="N" />
       <field name="UnderlyingCouponRate" required="N" />
       <field name="UnderlyingSecurityExchange" required="N" />
-   
+      <field name="UnderlyingIssuer" required="N" />
+      <field name="EncodedUnderlyingIssuerLen" required="N" />
+      <field name="EncodedUnderlyingIssuer" required="N" />
+      <field name="UnderlyingSecurityDesc" required="N" />
+      <field name="EncodedUnderlyingSecurityDescLen" required="N" />
+      <field name="EncodedUnderlyingSecurityDesc" required="N" />
+      <field name="UnderlyingCPProgram" required="N" />
+      <field name="UnderlyingCPRegType" required="N" />
+      <field name="UnderlyingCurrency" required="N" />
+      <field name="UnderlyingQty" required="N" />
+      <field name="UnderlyingPx" required="N" />
+      <field name="UnderlyingDirtyPrice" required="N" />
+      <field name="UnderlyingEndPrice" required="N" />
+      <field name="UnderlyingStartValue" required="N" />
+      <field name="UnderlyingCurrentValue" required="N" />
+      <field name="UnderlyingEndValue" required="N" />
+      <component name="UnderlyingStipulations" required="N" />
+    </component>
+    <component name="InstrumentLeg">
+      <field name="LegSymbol" required="N" />
+      <field name="LegSymbolSfx" required="N" />
+      <field name="LegSecurityID" required="N" />
+      <field name="LegSecurityIDSource" required="N" />
+      <group name="NoLegSecurityAltID" required="N">
+        <field name="LegSecurityAltID" required="N" />
+        <field name="LegSecurityAltIDSource" required="N" />
+      </group>
+      <field name="LegProduct" required="N" />
+      <field name="LegCFICode" required="N" />
+      <field name="LegSecurityType" required="N" />
+      <f
