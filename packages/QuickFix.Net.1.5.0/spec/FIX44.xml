@@ -3681,4 +3681,35 @@
       <field name="LocaleOfIssue" required="N" />
       <field name="RedemptionDate" required="N" />
       <field name="StrikePrice" required="N" />
-      <field name="StrikeCurrency" 
+      <field name="StrikeCurrency" required="N" />
+      <field name="OptAttribute" required="N" />
+      <field name="ContractMultiplier" required="N" />
+      <field name="CouponRate" required="N" />
+      <field name="SecurityExchange" required="N" />
+      <field name="Issuer" required="N" />
+      <field name="EncodedIssuerLen" required="N" />
+      <field name="EncodedIssuer" required="N" />
+      <field name="SecurityDesc" required="N" />
+      <field name="EncodedSecurityDescLen" required="N" />
+      <field name="EncodedSecurityDesc" required="N" />
+      <field name="Pool" required="N" />
+      <field name="ContractSettlMonth" required="N" />
+      <field name="CPProgram" required="N" />
+      <field name="CPRegType" required="N" />
+      <group name="NoEvents" required="N">
+        <field name="EventType" required="N" />
+        <field name="EventDate" required="N" />
+        <field name="EventPx" required="N" />
+        <field name="EventText" required="N" />
+      </group>
+      <field name="DatedDate" required="N" />
+      <field name="InterestAccrualDate" required="N" />
+    </component>
+    <component name="UnderlyingInstrument">
+      <field name="UnderlyingSymbol" required="Y" />
+      <field name="UnderlyingSymbolSfx" required="N" />
+      <field name="UnderlyingSecurityID" required="N" />
+      <field name="UnderlyingSecurityIDSource" required="N" />
+      <group name="NoUnderlyingSecurityAltID" required="N">
+        <field name="UnderlyingSecurityAltID" required="N" />
+        <field name="UnderlyingSecurityAltIDSource" re
