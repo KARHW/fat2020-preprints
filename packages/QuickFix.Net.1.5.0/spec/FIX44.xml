@@ -3833,4 +3833,41 @@
         <group name="NoPartySubIDs" required="N">
           <field name="PartySubID" required="N" />
           <field name="PartySubIDType" required="N" />
-        </grou
+        </group>
+      </group>
+    </component>
+    <component name="NestedParties">
+      <group name="NoNestedPartyIDs" required="N">
+        <field name="NestedPartyID" required="N" />
+        <field name="NestedPartyIDSource" required="N" />
+        <field name="NestedPartyRole" required="N" />
+        <group name="NoNestedPartySubIDs" required="N">
+          <field name="NestedPartySubID" required="N" />
+          <field name="NestedPartySubIDType" required="N" />
+        </group>
+      </group>
+    </component>
+    <component name="NestedParties2">
+      <group name="NoNested2PartyIDs" required="N">
+        <field name="Nested2PartyID" required="N" />
+        <field name="Nested2PartyIDSource" required="N" />
+        <field name="Nested2PartyRole" required="N" />
+        <group name="NoNested2PartySubIDs" required="N">
+          <field name="Nested2PartySubID" required="N" />
+          <field name="Nested2PartySubIDType" required="N" />
+        </group>
+      </group>
+    </component>
+    <component name="NestedParties3">
+      <group name="NoNested3PartyIDs" required="N">
+        <field name="Nested3PartyID" required="N" />
+        <field name="Nested3PartyIDSource" required="N" />
+        <field name="Nested3PartyRole" required="N" />
+        <group name="NoNested3PartySubIDs" required="N">
+          <field name="Nested3PartySubID" required="N" />
+          <field name="Nested3PartySubIDType" required="N" />
+          </group>
+      </group>
+    </component>
+    <component name="SettlParties">
+      <group name="NoSettlPartyIDs" requi
