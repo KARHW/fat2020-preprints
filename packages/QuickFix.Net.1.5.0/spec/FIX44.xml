@@ -3796,4 +3796,41 @@
       <field name="LegSecurityDesc" required="N" />
       <field name="EncodedLegSecurityDescLen" required="N" />
       <field name="EncodedLegSecurityDesc" required="N" />
-      <field name="LegRatioQ
+      <field name="LegRatioQty" required="N" />
+      <field name="LegSide" required="N" />
+      <field name="LegCurrency" required="N" />
+      <field name="LegPool" required="N" />
+      <field name="LegDatedDate" required="N" />
+      <field name="LegContractSettlMonth" required="N" />
+      <field name="LegInterestAccrualDate" required="N" />
+    </component>
+    <component name="InstrumentExtension">
+      <field name="DeliveryForm" required="N" />
+      <field name="PctAtRisk" required="N" />
+      <group name="NoInstrAttrib" required="N">
+        <field name="InstrAttribType" required="N" />
+        <field name="InstrAttribValue" required="N" />
+      </group>
+    </component>
+    <component name="OrderQtyData">
+      <field name="OrderQty" required="N" />
+      <field name="CashOrderQty" required="N" />
+      <field name="OrderPercent" required="N" />
+      <field name="RoundingDirection" required="N" />
+      <field name="RoundingModulus" required="N" />
+    </component>
+    <component name="CommissionData">
+      <field name="Commission" required="N" />
+      <field name="CommType" required="N" />
+      <field name="CommCurrency" required="N" />
+      <field name="FundRenewWaiv" required="N" />
+    </component>
+    <component name="Parties">
+      <group name="NoPartyIDs" required="N">
+        <field name="PartyID" required="N" />
+        <field name="PartyIDSource" required="N" />
+        <field name="PartyRole" required="N" />
+        <group name="NoPartySubIDs" required="N">
+          <field name="PartySubID" required="N" />
+          <field name="PartySubIDType" required="N" />
+        </grou
