@@ -3905,4 +3905,43 @@
     </component>
     <component name="UnderlyingStipulations">
       <group name="NoUnderlyingStips" required="N">
-        <field name="
+        <field name="UnderlyingStipType" required="N" />
+        <field name="UnderlyingStipValue" required="N" />
+      </group>
+    </component>
+    <component name="LegStipulations">
+      <group name="NoLegStipulations" required="N">
+        <field name="LegStipulationType" required="N" />
+        <field name="LegStipulationValue" required="N" />
+      </group>
+    </component>
+    <component name="YieldData">
+      <field name="YieldType" required="N" />
+      <field name="Yield" required="N" />
+      <field name="YieldCalcDate" required="N" />
+      <field name="YieldRedemptionDate" required="N" />
+      <field name="YieldRedemptionPrice" required="N" />
+      <field name="YieldRedemptionPriceType" required="N" />
+    </component>
+    <component name="PositionQty">
+      <group name="NoPositions" required="Y">
+        <field name="PosType" required="N" />
+        <field name="LongQty" required="N" />   
+        <field name="ShortQty" required="N" />   
+        <field name="PosQtyStatus" required="N" />   
+        <component name="NestedParties" required="N" />
+      </group>
+    </component>
+    <component name="PositionAmountData">
+      <group name="NoPosAmt" required="Y">
+        <field name="PosAmtType" required="Y" />
+        <field name="PosAmt" required="Y" />
+      </group>
+    </component>
+    <component name="TrdRegTimestamps">
+      <group name="NoTrdRegTimestamps" required="Y">
+        <field name="TrdRegTimestamp" required="N" />
+        <field name="TrdRegTimestampType" required="N" />
+        <field name="TrdRegTimestampOrigin" required="N" />
+      </group>
+    
