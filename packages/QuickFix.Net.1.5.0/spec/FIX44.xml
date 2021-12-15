@@ -3870,4 +3870,39 @@
       </group>
     </component>
     <component name="SettlParties">
-      <group name="NoSettlPartyIDs" requi
+      <group name="NoSettlPartyIDs" required="N">
+        <field name="SettlPartyID" required="N" />
+        <field name="SettlPartyIDSource" required="N" />
+        <field name="SettlPartyRole" required="N" />
+        <group name="NoSettlPartySubIDs" required="N">
+          <field name="SettlPartySubID" required="N" />
+          <field name="SettlPartySubIDType" required="N" />
+        </group>
+      </group>
+    </component>
+    <component name="SpreadOrBenchmarkCurveData">
+      <field name="Spread" required="N" />
+      <field name="BenchmarkCurveCurrency" required="N" />
+      <field name="BenchmarkCurveName" required="N" />
+      <field name="BenchmarkCurvePoint" required="N" />
+      <field name="BenchmarkPrice" required="N" />
+      <field name="BenchmarkPriceType" required="N" />
+      <field name="BenchmarkSecurityID" required="N" />
+      <field name="BenchmarkSecurityIDSource" required="N" />
+    </component>
+    <component name="LegBenchmarkCurveData">
+      <field name="LegBenchmarkCurveCurrency" required="N" />
+      <field name="LegBenchmarkCurveName" required="N" />
+      <field name="LegBenchmarkCurvePoint" required="N" />
+      <field name="LegBenchmarkPrice" required="N" />
+      <field name="LegBenchmarkPriceType" required="N" />
+    </component>
+    <component name="Stipulations">
+      <group name="NoStipulations" required="N">
+        <field name="StipulationType" required="N" />
+        <field name="StipulationValue" required="N" />
+      </group>
+    </component>
+    <component name="UnderlyingStipulations">
+      <group name="NoUnderlyingStips" required="N">
+        <field name="
