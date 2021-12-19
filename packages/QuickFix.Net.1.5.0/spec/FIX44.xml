@@ -4178,4 +4178,30 @@
       <value enum="AC" description="MULTILEG_ORDER_CANCEL_REPLACE" />
       <value enum="AD" description="TRADE_CAPTURE_REPORT_REQUEST" />
       <value enum="AE" description="TRADE_CAPTURE_REPORT" />
-      <value enum="AF" description="ORDER_MASS_STATUS_REQUEST" 
+      <value enum="AF" description="ORDER_MASS_STATUS_REQUEST" />
+      <value enum="AG" description="QUOTE_REQUEST_REJECT" />
+      <value enum="AH" description="RFQ_REQUEST" />
+      <value enum="AI" description="QUOTE_STATUS_REPORT" />
+      <value enum="AJ" description="QUOTE_RESPONSE" />
+      <value enum="AK" description="CONFIRMATION" />
+      <value enum="AL" description="POSITION_MAINTENANCE_REQUEST" />
+      <value enum="AM" description="POSITION_MAINTENANCE_REPORT" />
+      <value enum="AN" description="REQUEST_FOR_POSITIONS" />
+      <value enum="AO" description="REQUEST_FOR_POSITIONS_ACK" />
+      <value enum="AP" description="POSITION_REPORT" />
+      <value enum="AQ" description="TRADE_CAPTURE_REPORT_REQUEST_ACK" />
+      <value enum="AR" description="TRADE_CAPTURE_REPORT_ACK" />
+      <value enum="AS" description="ALLOCATION_REPORT" />
+      <value enum="AT" description="ALLOCATION_REPORT_ACK" />
+      <value enum="AU" description="CONFIRMATION_ACK" />
+      <value enum="AV" description="SETTLEMENT_INSTRUCTION_REQUEST" />
+      <value enum="AW" description="ASSIGNMENT_REPORT" />
+      <value enum="AX" description="COLLATERAL_REQUEST" />
+      <value enum="AY" description="COLLATERAL_ASSIGNMENT" />
+      <value enum="AZ" description="COLLATERAL_RESPONSE" />
+      <value enum="BA" description="COLLATERAL_REPORT" />
+      <value enum="BB" description="COLLATERAL_INQUIRY" />
+      <value enum="BC" description="NETWORK_STATUS_REQUEST" />
+      <value enum="BD" description="NETWORK_STATUS_RESPONSE" />
+      <value enum="BE" description="USER_REQUEST" />
+      <
