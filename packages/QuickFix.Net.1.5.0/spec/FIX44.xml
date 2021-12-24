@@ -4357,4 +4357,32 @@
     <field number="85" name="NoDlvyInst" type="NUMINGROUP" />
     <field number="87" name="AllocStatus" type="INT">
       <value enum="0" description="ACCEPTED" />
+      <value enum="1" description="BLOCK_LEVEL_REJECT" />
+      <value enum="2" description="ACCOUNT_LEVEL_REJECT" />
+      <value enum="3" description="RECEIVED" />
+      <value enum="4" description="INCOMPLETE" />
+      <value enum="5" description="REJECTED_BY_INTERMEDIARY" />
+    </field>
+    <field number="88" name="AllocRejCode" type="INT">
+      <value enum="0" description="UNKNOWN_ACCOUNT" />
+      <value enum="1" description="INCORRECT_QUANTITY" />
+      <value enum="2" description="INCORRECT_AVERAGE_PRICE" />
+      <value enum="3" description="UNKNOWN_EXECUTING_BROKER_MNEMONIC" />
+      <value enum="4" description="COMMISSION_DIFFERENCE" />
+      <value enum="5" description="UNKNOWN_ORDERID" />
+      <value enum="6" description="UNKNOWN_LISTID" />
+      <value enum="7" description="OTHER" />
+      <value enum="8" description="INCORRECT_ALLOCATED_QUANTITY" />
+      <value enum="9" description="CALCULATION_DIFFERENCE" />
+      <value enum="10" description="UNKNOWN_OR_STALE_EXEC_ID"/>
+      <value enum="11" description="MISMATCHED_DATA_VALUE"/>
+      <value enum="12" description="UNKNOWN_CLORDID"/>
+      <value enum="13" description="WAREHOUSE_REQUEST_REJECTED"/>
+    </field>
+    <field number="89" name="Signature" type="DATA" />
+    <field number="90" name="SecureDataLen" type="LENGTH" />
+    <field number="91" name="SecureData" type="DATA" />
+    <field number="93" name="SignatureLength" type="LENGTH" />
+    <field number="94" name="EmailType" type="CHAR">
+      <value enum="0" description="NEW" />
       <value enum="1
