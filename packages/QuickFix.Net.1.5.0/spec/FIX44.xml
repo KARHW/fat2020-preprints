@@ -4385,4 +4385,31 @@
     <field number="93" name="SignatureLength" type="LENGTH" />
     <field number="94" name="EmailType" type="CHAR">
       <value enum="0" description="NEW" />
-      <value enum="1
+      <value enum="1" description="REPLY" />
+      <value enum="2" description="ADMIN_REPLY" />
+    </field>
+    <field number="95" name="RawDataLength" type="LENGTH" />
+    <field number="96" name="RawData" type="DATA" />
+    <field number="97" name="PossResend" type="BOOLEAN" />
+    <field number="98" name="EncryptMethod" type="INT">
+      <value enum="0" description="NONE_OTHER" />
+      <value enum="1" description="PKCS" />
+      <value enum="2" description="DES" />
+      <value enum="3" description="PKCS_DES" />
+      <value enum="4" description="PGP_DES" />
+      <value enum="5" description="PGP_DES_MD5" />
+      <value enum="6" description="PEM_DES_MD5" />
+    </field>
+    <field number="99" name="StopPx" type="PRICE" />
+    <field number="100" name="ExDestination" type="EXCHANGE" />
+    <field number="102" name="CxlRejReason" type="INT">
+      <value enum="0" description="TOO_LATE_TO_CANCEL" />
+      <value enum="1" description="UNKNOWN_ORDER" />
+      <value enum="2" description="BROKER_EXCHANGE_OPTION" />
+      <value enum="3" description="ORDER_ALREADY_IN_PENDING_CANCEL_OR_PENDING_REPLACE_STATUS" />
+      <value enum="4" description="UNABLE_TO_PROCESS_ORDER_MASS_CANCEL_REQUEST" />
+      <value enum="5" description="ORIGORDMODTIME_DID_NOT_MATCH_LAST_TRANSACTTIME_OF_ORDER" />
+      <value enum="6" description="DUPLICATE_CLORDID_RECEIVED" />
+      <value enum="99" description="OTHER" />
+    </field>
+    <field number="103" name="OrdR
