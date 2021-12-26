@@ -4466,4 +4466,32 @@
     <field number="118" name="NetMoney" type="AMT" />
     <field number="119" name="SettlCurrAmt" type="AMT" />
     <field number="120" name="SettlCurrency" type="CURRENCY" />
-    <field number="121" name="ForexReq" ty
+    <field number="121" name="ForexReq" type="BOOLEAN" />
+    <field number="122" name="OrigSendingTime" type="UTCTIMESTAMP" />
+    <field number="123" name="GapFillFlag" type="BOOLEAN" />
+    <field number="124" name="NoExecs" type="NUMINGROUP" />
+    <field number="126" name="ExpireTime" type="UTCTIMESTAMP" />
+    <field number="127" name="DKReason" type="CHAR">
+      <value enum="A" description="UNKNOWN_SYMBOL" />
+      <value enum="B" description="WRONG_SIDE" />
+      <value enum="C" description="QUANTITY_EXCEEDS_ORDER" />
+      <value enum="D" description="NO_MATCHING_ORDER" />
+      <value enum="E" description="PRICE_EXCEEDS_LIMIT" />
+      <value enum="F" description="CALCULATION_DIFFERENCE" />
+      <value enum="Z" description="OTHER" />
+    </field>
+    <field number="128" name="DeliverToCompID" type="STRING" />
+    <field number="129" name="DeliverToSubID" type="STRING" />
+    <field number="130" name="IOINaturalFlag" type="BOOLEAN" />
+    <field number="131" name="QuoteReqID" type="STRING" />
+    <field number="132" name="BidPx" type="PRICE" />
+    <field number="133" name="OfferPx" type="PRICE" />
+    <field number="134" name="BidSize" type="QTY" />
+    <field number="135" name="OfferSize" type="QTY" />
+    <field number="136" name="NoMiscFees" type="NUMINGROUP" />
+    <field number="137" name="MiscFeeAmt" type="AMT" />
+    <field number="138" name="MiscFeeCurr" type="CURRENCY" />
+    <field number="139" name="MiscFeeType" type="CHAR">
+      <value enum="1" description="REGULATORY" />
+      <value enum="2" description="TAX" />
+      <value enum="3" descripti
