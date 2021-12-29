@@ -4582,4 +4582,29 @@
       <value enum="DUAL" description="DUAL_CURRENCY" />
       <value enum="EUCORP" description="EURO_CORPORATE_BOND" />
       <value enum="XLINKD" description="INDEXED_LINKED" />
-      <value enum="STRUC
+      <value enum="STRUCT" description="STRUCTURED_NOTES" />
+      <value enum="YANK" description="YANKEE_CORPORATE_BOND" />
+      <value enum="FOR" description="FOREIGN_EXCHANGE_CONTRACT" />
+      <value enum="CS" description="COMMON_STOCK" />
+      <value enum="PS" description="PREFERRED_STOCK" />
+      <value enum="BRADY" description="BRADY_BOND" />
+      <value enum="EUSOV" description="EURO_SOVEREIGNS" />
+      <value enum="TBOND" description="US_TREASURY_BOND" />
+      <value enum="TINT" description="INTEREST_STRIP_FROM_ANY_BOND_OR_NOTE" />
+      <value enum="TIPS" description="TREASURY_INFLATION_PROTECTED_SECURITIES" />
+      <value enum="TCAL" description="PRINCIPAL_STRIP_OF_A_CALLABLE_BOND_OR_NOTE" />
+      <value enum="TPRN" description="PRINCIPAL_STRIP_FROM_A_NON_CALLABLE_BOND_OR_NOTE" />
+      <value enum="TNOTE" description="US_TREASURY_NOTE" />
+      <value enum="TBILL" description="US_TREASURY_BILL" />
+      <value enum="REPO" description="REPURCHASE" />
+      <value enum="FORWARD" description="FORWARD" />
+      <value enum="BUYSELL" description="BUY_SELLBACK" />
+      <value enum="SECLOAN" description="SECURITIES_LOAN" />
+      <value enum="SECPLEDGE" description="SECURITIES_PLEDGE" />
+      <value enum="TERM" description="TERM_LOAN" />
+      <value enum="RVLV" description="REVOLVER_LOAN" />
+      <value enum="RVLVTRM" description="REVOLVER_TERM_LOAN" />
+      <value enum="BRIDGE" description="BRIDGE_LOAN" />
+      <value enum="LOFC" description="LETTER_OF_CREDIT" />
+      <value enum="SWING" description="SWING_LINE_FACILITY" />
+      <value enum="DINP" d
