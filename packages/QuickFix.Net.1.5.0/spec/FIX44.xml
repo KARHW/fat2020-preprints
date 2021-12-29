@@ -4656,4 +4656,35 @@
       <value enum="TAN" description="TAX_ANTICIPATION_NOTE" />
       <value enum="TAXA" description="TAX_ALLOCATION" />
       <value enum="TECP" description="TAX_EXEMPT_COMMERCIAL_PAPER" />
-      <value enum="TRAN" description="TAX_AND_REVENUE_ANTICIPATION_NOTE
+      <value enum="TRAN" description="TAX_AND_REVENUE_ANTICIPATION_NOTE" />
+      <value enum="VRDN" description="VARIABLE_RATE_DEMAND_NOTE" />
+      <value enum="WAR" description="WARRANT" />
+      <value enum="MF" description="MUTUAL_FUND" />
+      <value enum="MLEG" description="MULTI_LEG_INSTRUMENT" />
+      <value enum="NONE" description="NO_SECURITY_TYPE" />
+      <value enum="?" description="WILDCARD" />
+    </field>
+    <field number="168" name="EffectiveTime" type="UTCTIMESTAMP" />
+    <field number="169" name="StandInstDbType" type="INT">
+      <value enum="0" description="OTHER" />
+      <value enum="1" description="DTC_SID" />
+      <value enum="2" description="THOMSON_ALERT" />
+      <value enum="3" description="A_GLOBAL_CUSTODIAN" />
+      <value enum="4" description="ACCOUNTNET" />
+    </field>
+    <field number="170" name="StandInstDbName" type="STRING" />
+    <field number="171" name="StandInstDbID" type="STRING" />
+    <field number="172" name="SettlDeliveryType" type="INT">
+      <value enum="0" description="VERSUS_PAYMENT" />
+      <value enum="1" description="FREE" />
+      <value enum="2" description="TRI_PARTY" />
+      <value enum="3" description="HOLD_IN_CUSTODY" />
+    </field>
+    <field number="188" name="BidSpotRate" type="PRICE" />
+    <field number="189" name="BidForwardPoints" type="PRICEOFFSET" />
+    <field number="190" name="OfferSpotRate" type="PRICE" />
+    <field number="191" name="OfferForwardPoints" type="PRICEOFFSET" />
+    <field number="192" name="OrderQty2" type="QTY" />
+    <field number="193" name="SettlDate2" type="LOCALMKTDATE" />
+    <field number="194" name="LastSpotRate" type="PRICE" />
+    <field number="195" name="LastForwar
