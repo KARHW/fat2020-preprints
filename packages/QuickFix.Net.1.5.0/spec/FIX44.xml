@@ -4607,4 +4607,30 @@
       <value enum="BRIDGE" description="BRIDGE_LOAN" />
       <value enum="LOFC" description="LETTER_OF_CREDIT" />
       <value enum="SWING" description="SWING_LINE_FACILITY" />
-      <value enum="DINP" d
+      <value enum="DINP" description="DEBTOR_IN_POSSESSION" />
+      <value enum="DEFLTED" description="DEFAULTED" />
+      <value enum="WITHDRN" description="WITHDRAWN" />
+      <value enum="REPLACD" description="REPLACED" />
+      <value enum="MATURED" description="MATURED" />
+      <value enum="AMENDED" description="AMENDED_AND_RESTATED" />
+      <value enum="RETIRED" description="RETIRED" />
+      <value enum="BA" description="BANKERS_ACCEPTANCE" />
+      <value enum="BN" description="BANK_NOTES" />
+      <value enum="BOX" description="BILL_OF_EXCHANGES" />
+      <value enum="CD" description="CERTIFICATE_OF_DEPOSIT" />
+      <value enum="CL" description="CALL_LOANS" />
+      <value enum="CP" description="COMMERCIAL_PAPER" />
+      <value enum="DN" description="DEPOSIT_NOTES" />
+      <value enum="EUCD" description="EURO_CERTIFICATE_OF_DEPOSIT" />
+      <value enum="EUCP" description="EURO_COMMERCIAL_PAPER" />
+      <value enum="LQN" description="LIQUIDITY_NOTE" />
+      <value enum="MTN" description="MEDIUM_TERM_NOTES" />
+      <value enum="ONITE" description="OVERNIGHT" />
+      <value enum="PN" description="PROMISSORY_NOTE" />
+      <value enum="PZFJ" description="PLAZOS_FIJOS" />
+      <value enum="STN" description="SHORT_TERM_LOAN_NOTE" />
+      <value enum="TD" description="TIME_DEPOSIT" />
+      <value enum="XCN" description="EXTENDED_COMM_NOTE" />
+      <value enum="YCD" description="YANKEE_CERTIFICATE_OF_DEPOSIT" />
+      <value enum="ABS" description="ASSET_BACKED_SECURITIES" />
+      <value enum="CMBS" descripti
