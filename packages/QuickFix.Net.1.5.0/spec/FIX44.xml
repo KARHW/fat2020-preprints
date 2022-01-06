@@ -4820,4 +4820,30 @@
       <value enum="CC" description="SPECIAL_CUM_COUPON" />
       <value enum="XC" description="SPECIAL_EX_COUPON" />
       <value enum="CB" description="SPECIAL_CUM_BONUS" />
-      <value en
+      <value enum="XB" description="SPECIAL_EX_BONUS" />
+      <value enum="CR" description="SPECIAL_CUM_RIGHTS" />
+      <value enum="XR" description="SPECIAL_EX_RIGHTS" />
+      <value enum="CP" description="SPECIAL_CUM_CAPITAL_REPAYMENTS" />
+      <value enum="XP" description="SPECIAL_EX_CAPITAL_REPAYMENTS" />
+      <value enum="CS" description="CASH_SETTLEMENT" />
+      <value enum="SP" description="SPECIAL_PRICE" />
+      <value enum="TR" description="REPORT_FOR_EUROPEAN_EQUITY_MARKET_SECURITIES" />
+      <value enum="GD" description="GUARANTEED_DELIVERY" />
+    </field>
+    <field number="235" name="YieldType" type="STRING">
+      <value enum="AFTERTAX" description="AFTER_TAX_YIELD" />
+      <value enum="ANNUAL" description="ANNUAL_YIELD" />
+      <value enum="ATISSUE" description="YIELD_AT_ISSUE" />
+      <value enum="AVGMATURITY" description="YIELD_TO_AVERAGE_MATURITY" />
+      <value enum="BOOK" description="BOOK_YIELD" />
+      <value enum="CALL" description="YIELD_TO_NEXT_CALL" />
+      <value enum="CHANGE" description="YIELD_CHANGE_SINCE_CLOSE" />
+      <value enum="CLOSE" description="CLOSING_YIELD" />
+      <value enum="COMPOUND" description="COMPOUND_YIELD" />
+      <value enum="CURRENT" description="CURRENT_YIELD" />
+      <value enum="GROSS" description="TRUE_GROSS_YIELD" />
+      <value enum="GOVTEQUIV" description="GOVERNMENT_EQUIVALENT_YIELD" />
+      <value enum="INFLATION" description="YIELD_WITH_INFLATION_ASSUMPTION" />
+      <value enum="INVERSEFLOATER" description="INVERSE_FLOATER_BOND_YIELD" />
+      <value enum="LASTCLOSE" description="MOST_RECENT_CLOSING_YIELD" />
+      <value enum="LAS
