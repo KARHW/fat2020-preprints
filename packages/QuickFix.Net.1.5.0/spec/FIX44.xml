@@ -4795,4 +4795,29 @@
       <value enum="STRUCT" description="STRUCTURE" />
       <value enum="SUBSFREQ" description="SUBSTITUTIONS_FREQUENCY" />
       <value enum="SUBSLEFT" description="SUBSTITUTIONS_LEFT" />
-      <value enum="TEXT" description="FREEFORM_TEXT" /
+      <value enum="TEXT" description="FREEFORM_TEXT" />
+      <value enum="TRDVAR" description="TRADE_VARIANCE" />
+      <value enum="WAC" description="WEIGHTED_AVERAGE_COUPON" />
+      <value enum="WAL" description="WEIGHTED_AVERAGE_LIFE_COUPON" />
+      <value enum="WALA" description="WEIGHTED_AVERAGE_LOAN_AGE" />
+      <value enum="WAM" description="WEIGHTED_AVERAGE_MATURITY" />
+      <value enum="WHOLE" description="WHOLE_POOL" />
+      <value enum="YIELD" description="YIELD_RANGE" />
+      <value enum="SMM" description="SINGLE_MONTHLY_MORTALITY" />
+      <value enum="CPR" description="CONSTANT_PREPAYMENT_RATE" />
+      <value enum="CPY" description="CONSTANT_PREPAYMENT_YIELD" />
+      <value enum="CPP" description="CONSTANT_PREPAYMENT_PENALTY" />
+      <value enum="ABS" description="ABSOLUTE_PREPAYMENT_SPEED" />
+      <value enum="MPR" description="MONTHLY_PREPAYMENT_RATE" />
+      <value enum="PSA" description="PERCENT_OF_BMA_PREPAYMENT_CURVE" />
+      <value enum="PPC" description="PERCENT_OF_PROSPECTUS_PREPAYMENT_CURVE" />
+      <value enum="MHP" description="PERCENT_OF_MANUFACTURED_HOUSING_PREPAYMENT_CURVE" />
+      <value enum="HEP" description="FINAL_CPR_OF_HOME_EQUITY_PREPAYMENT_CURVE" />
+    </field>
+    <field number="234" name="StipulationValue" type="STRING">
+      <value enum="CD" description="SPECIAL_CUM_DIVIDEND" />
+      <value enum="XD" description="SPECIAL_EX_DIVIDEND" />
+      <value enum="CC" description="SPECIAL_CUM_COUPON" />
+      <value enum="XC" description="SPECIAL_EX_COUPON" />
+      <value enum="CB" description="SPECIAL_CUM_BONUS" />
+      <value en
