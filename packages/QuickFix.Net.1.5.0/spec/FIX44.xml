@@ -5072,4 +5072,28 @@
       <value enum="1" description="MANUAL" />
       <value enum="2" description="AUTOMATIC" />
     </field>
-    <field number="304" name="TotNoQuot
+    <field number="304" name="TotNoQuoteEntries" type="INT" />
+    <field number="305" name="UnderlyingSecurityIDSource" type="STRING" />
+    <field number="306" name="UnderlyingIssuer" type="STRING" />
+    <field number="307" name="UnderlyingSecurityDesc" type="STRING" />
+    <field number="308" name="UnderlyingSecurityExchange" type="EXCHANGE" />
+    <field number="309" name="UnderlyingSecurityID" type="STRING" />
+    <field number="310" name="UnderlyingSecurityType" type="STRING" />
+    <field number="311" name="UnderlyingSymbol" type="STRING" />
+    <field number="312" name="UnderlyingSymbolSfx" type="STRING" />
+    <field number="313" name="UnderlyingMaturityMonthYear" type="MONTHYEAR" />
+    <field number="315" name="UnderlyingPutOrCall" type="INT">
+      <value enum="0" description="PUT"/>
+      <value enum="1" description="CALL"/>
+    </field>
+    <field number="316" name="UnderlyingStrikePrice" type="PRICE" />
+    <field number="317" name="UnderlyingOptAttribute" type="CHAR" />
+    <field number="318" name="UnderlyingCurrency" type="CURRENCY" />
+    <field number="320" name="SecurityReqID" type="STRING" />
+    <field number="321" name="SecurityRequestType" type="INT">
+      <value enum="0" description="REQUEST_SECURITY_IDENTITY_AND_SPECIFICATIONS" />
+      <value enum="1" description="REQUEST_SECURITY_IDENTITY_FOR_THE_SPECIFICATIONS_PROVIDED" />
+      <value enum="2" description="REQUEST_LIST_SECURITY_TYPES" />
+      <value enum="3" description="REQUEST_LIST_SECURITIES" />
+    </field>
+    <field num
