@@ -5120,4 +5120,33 @@
       <value enum="10" description="MARKET_ON_CLOSE_IMBALANCE_SELL" />
       <value enum="11" description="NOT_ASSIGNED" />
       <value enum="12" description="NO_MARKET_IMBALANCE" />
-      <value enum="13" description="NO_MARKET_ON_CLOSE_IMBALANCE" 
+      <value enum="13" description="NO_MARKET_ON_CLOSE_IMBALANCE" />
+      <value enum="14" description="ITS_PRE_OPENING" />
+      <value enum="15" description="NEW_PRICE_INDICATION" />
+      <value enum="16" description="TRADE_DISSEMINATION_TIME" />
+      <value enum="17" description="READY_TO_TRADE_START_OF_SESSION" />
+      <value enum="18" description="NOT_AVAILABLE_FOR_TRADING_END_OF_SESSION" />
+      <value enum="19" description="NOT_TRADED_ON_THIS_MARKET" />
+      <value enum="20" description="UNKNOWN_OR_INVALID" />
+      <value enum="21" description="PRE_OPEN" />
+      <value enum="22" description="OPENING_ROTATION" />
+      <value enum="23" description="FAST_MARKET" />
+    </field>
+    <field number="327" name="HaltReason" type="CHAR">
+      <value enum="I" description="ORDER_IMBALANCE" />
+      <value enum="X" description="EQUIPMENT_CHANGEOVER" />
+      <value enum="P" description="NEWS_PENDING" />
+      <value enum="D" description="NEWS_DISSEMINATION" />
+      <value enum="E" description="ORDER_INFLUX" />
+      <value enum="M" description="ADDITIONAL_INFORMATION" />
+    </field>
+    <field number="328" name="InViewOfCommon" type="BOOLEAN" />
+    <field number="329" name="DueToRelated" type="BOOLEAN" />
+    <field number="330" name="BuyVolume" type="QTY" />
+    <field number="331" name="SellVolume" type="QTY" />
+    <field number="332" name="HighPx" type="PRICE" />
+    <field number="333" name="LowPx" type="PRICE" />
+    <field number="334" name="Adjustment" type="INT">
+      <value enum="1" description="CANCEL" />
+      <value enum="2" description="ERROR" />
+  
