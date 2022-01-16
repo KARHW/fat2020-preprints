@@ -5231,4 +5231,32 @@
       <value enum="8" description="SIGNATURE_PROBLEM" />
       <value enum="9" description="COMPID_PROBLEM" />
       <value enum="10" description="SENDINGTIME_ACCURACY_PROBLEM" />
-      <val
+      <value enum="11" description="INVALID_MSGTYPE" />
+      <value enum="12" description="XML_VALIDATION_ERROR" />
+      <value enum="13" description="TAG_APPEARS_MORE_THAN_ONCE" />
+      <value enum="14" description="TAG_SPECIFIED_OUT_OF_REQUIRED_ORDER" />
+      <value enum="15" description="REPEATING_GROUP_FIELDS_OUT_OF_ORDER" />
+      <value enum="16" description="INCORRECT_NUMINGROUP_COUNT_FOR_REPEATING_GROUP" />
+      <value enum="17" description="NON_DATA_VALUE_INCLUDES_FIELD_DELIMITER" />
+      <value enum="99" description="OTHER" />
+    </field>
+    <field number="374" name="BidRequestTransType" type="CHAR">
+      <value enum="N" description="NEW" />
+      <value enum="C" description="CANCEL" />
+    </field>
+    <field number="375" name="ContraBroker" type="STRING" />
+    <field number="376" name="ComplianceID" type="STRING" />
+    <field number="377" name="SolicitedFlag" type="BOOLEAN" />
+    <field number="378" name="ExecRestatementReason" type="INT">
+      <value enum="0" description="GT_CORPORATE_ACTION" />
+      <value enum="1" description="GT_RENEWAL_RESTATEMENT" />
+      <value enum="2" description="VERBAL_CHANGE" />
+      <value enum="3" description="REPRICING_OF_ORDER" />
+      <value enum="4" description="BROKER_OPTION" />
+      <value enum="5" description="PARTIAL_DECLINE_OF_ORDERQTY" />
+      <value enum="6" description="CANCEL_ON_TRADING_HALT" />
+      <value enum="7" description="CANCEL_ON_SYSTEM_FAILURE" />
+      <value enum="8" description="MARKET_OPTION" />
+      <value enum="9" description="CANCELED_NOT_BEST" />
+    </field>
+ 
