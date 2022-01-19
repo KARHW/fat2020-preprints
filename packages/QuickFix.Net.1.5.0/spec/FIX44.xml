@@ -5343,4 +5343,34 @@
     <field number="417" name="NumBidders" type="INT" />
     <field number="418" name="BidTradeType" type="CHAR">
       <value enum="R" description="RISK_TRADE" />
-      <value enum="G" description="VWAP_GUARANTE
+      <value enum="G" description="VWAP_GUARANTEE" />
+      <value enum="A" description="AGENCY" />
+      <value enum="J" description="GUARANTEED_CLOSE" />
+    </field>
+    <field number="419" name="BasisPxType" type="CHAR">
+      <value enum="2" description="CLOSING_PRICE_AT_MORNING_SESSION" />
+      <value enum="3" description="CLOSING_PRICE" />
+      <value enum="4" description="CURRENT_PRICE" />
+      <value enum="5" description="SQ" />
+      <value enum="6" description="VWAP_THROUGH_A_DAY" />
+      <value enum="7" description="VWAP_THROUGH_A_MORNING_SESSION" />
+      <value enum="8" description="VWAP_THROUGH_AN_AFTERNOON_SESSION" />
+      <value enum="9" description="VWAP_THROUGH_A_DAY_EXCEPT_YORI" />
+      <value enum="A" description="VWAP_THROUGH_A_MORNING_SESSION_EXCEPT_YORI" />
+      <value enum="B" description="VWAP_THROUGH_AN_AFTERNOON_SESSION_EXCEPT_YORI" />
+      <value enum="C" description="STRIKE" />
+      <value enum="D" description="OPEN" />
+      <value enum="Z" description="OTHERS" />
+    </field>
+    <field number="420" name="NoBidComponents" type="NUMINGROUP" />
+    <field number="421" name="Country" type="COUNTRY" />
+    <field number="422" name="TotNoStrikes" type="INT" />
+    <field number="423" name="PriceType" type="INT">
+      <value enum="1" description="PERCENTAGE" />
+      <value enum="2" description="PER_UNIT" />
+      <value enum="3" description="FIXED_AMOUNT" />
+      <value enum="4" description="DISCOUNT" />
+      <value enum="5" description="PREMIUM" />
+      <value enum="6" description="SPREAD" />
+      <value enum="7" description="TED_PRICE" />
+      <value
