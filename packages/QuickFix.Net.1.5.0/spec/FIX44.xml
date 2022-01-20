@@ -5403,4 +5403,31 @@
       <value enum="1" description="INBIDDINGPROCESS" />
       <value enum="2" description="RECEIVEDFOREXECUTION" />
       <value enum="3" description="EXECUTING" />
- 
+      <value enum="4" description="CANCELING" />
+      <value enum="5" description="ALERT" />
+      <value enum="6" description="ALL_DONE" />
+      <value enum="7" description="REJECT" />
+    </field>
+    <field number="432" name="ExpireDate" type="LOCALMKTDATE" />
+    <field number="433" name="ListExecInstType" type="CHAR">
+      <value enum="1" description="IMMEDIATE" />
+      <value enum="2" description="WAIT_FOR_EXECUTE_INSTRUCTION" />
+      <value enum="3" description="EXCHANGE_SWITCH_CIV_ORDER_SELL_DRIVEN" />
+      <value enum="4" description="EXCHANGE_SWITCH_CIV_ORDER_BUY_DRIVEN_CASH_TOP_UP" />
+      <value enum="5" description="EXCHANGE_SWITCH_CIV_ORDER_BUY_DRIVEN_CASH_WITHDRAW" />
+    </field>
+    <field number="434" name="CxlRejResponseTo" type="CHAR">
+      <value enum="1" description="ORDER_CANCEL_REQUEST" />
+      <value enum="2" description="ORDER_CANCEL_REPLACE_REQUEST" />
+    </field>
+    <field number="435" name="UnderlyingCouponRate" type="PERCENTAGE" />
+    <field number="436" name="UnderlyingContractMultiplier" type="FLOAT" />
+    <field number="437" name="ContraTradeQty" type="QTY" />
+    <field number="438" name="ContraTradeTime" type="UTCTIMESTAMP" />
+    <field number="441" name="LiquidityNumSecurities" type="INT" />
+    <field number="442" name="MultiLegReportingType" type="CHAR">
+      <value enum="1" description="SINGLE_SECURITY" />
+      <value enum="2" description="INDIVIDUAL_LEG_OF_A_MULTI_LEG_SECURITY" />
+      <value enum="3" description="MULTI_LEG_SECURITY" />
+    </field>
+    <field number
