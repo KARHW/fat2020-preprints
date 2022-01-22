@@ -5567,4 +5567,32 @@
       <value enum="Y" description="YES"/>
       <value enum="N" description="NO_EXECUTION_ONLY" />
       <value enum="M" description="NO_WAIVER_AGREEMENT" />
-      <value enum="O" description
+      <value enum="O" description="NO_INSTITUTIONAL" />
+    </field>
+    <field number="481" name="MoneyLaunderingStatus" type="CHAR">
+      <value enum="Y" description="PASSED" />
+      <value enum="N" description="NOT_CHECKED" />
+      <value enum="1" description="EXEMPT_BELOW_THE_LIMIT" />
+      <value enum="2" description="EXEMPT_CLIENT_MONEY_TYPE_EXEMPTION" />
+      <value enum="3" description="EXEMPT_AUTHORISED_CREDIT_OR_FINANCIAL_INSTITUTION" />
+    </field>
+    <field number="482" name="MailingInst" type="STRING" />
+    <field number="483" name="TransBkdTime" type="UTCTIMESTAMP" />
+    <field number="484" name="ExecPriceType" type="CHAR">
+      <value enum="B" description="BID_PRICE" />
+      <value enum="C" description="CREATION_PRICE" />
+      <value enum="D" description="CREATION_PRICE_PLUS_ADJUSTMENT_PERCENT" />
+      <value enum="E" description="CREATION_PRICE_PLUS_ADJUSTMENT_AMOUNT" />
+      <value enum="O" description="OFFER_PRICE" />
+      <value enum="P" description="OFFER_PRICE_MINUS_ADJUSTMENT_PERCENT" />
+      <value enum="Q" description="OFFER_PRICE_MINUS_ADJUSTMENT_AMOUNT" />
+      <value enum="S" description="SINGLE_PRICE" />
+    </field>
+    <field number="485" name="ExecPriceAdjustment" type="FLOAT" />
+    <field number="486" name="DateOfBirth" type="LOCALMKTDATE" />
+    <field number="487" name="TradeReportTransType" type="INT">
+      <value enum="0" description="NEW" />
+      <value enum="1" description="CANCEL" />
+      <value enum="2" description="REPLACE" />
+      <value enum="3" description="RELEASE" />
+      <value enum="4" description="R
