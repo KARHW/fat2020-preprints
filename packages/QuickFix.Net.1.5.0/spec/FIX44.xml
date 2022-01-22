@@ -5595,4 +5595,35 @@
       <value enum="1" description="CANCEL" />
       <value enum="2" description="REPLACE" />
       <value enum="3" description="RELEASE" />
-      <value enum="4" description="R
+      <value enum="4" description="REVERSE" />
+    </field>
+    <field number="488" name="CardHolderName" type="STRING" />
+    <field number="489" name="CardNumber" type="STRING" />
+    <field number="490" name="CardExpDate" type="LOCALMKTDATE" />
+    <field number="491" name="CardIssNum" type="STRING" />
+    <field number="492" name="PaymentMethod" type="INT">
+      <value enum="1" description="CREST" />
+      <value enum="2" description="NSCC" />
+      <value enum="3" description="EUROCLEAR" />
+      <value enum="4" description="CLEARSTREAM" />
+      <value enum="5" description="CHEQUE" />
+      <value enum="6" description="TELEGRAPHIC_TRANSFER" />
+      <value enum="7" description="FEDWIRE" />
+      <value enum="8" description="DEBIT_CARD" />
+      <value enum="9" description="DIRECT_DEBIT" />
+      <value enum="10" description="DIRECT_CREDIT"/>
+      <value enum="11" description="CREDIT_CARD"/>
+      <value enum="12" description="ACH_DEBIT"/>
+      <value enum="13" description="ACH_CREDIT"/>
+      <value enum="14" description="BPAY"/>
+      <value enum="15" description="HIGH_VALUE_CLEARING_SYSTEM"/>
+    </field>
+    <field number="493" name="RegistAcctType" type="STRING" />
+    <field number="494" name="Designation" type="STRING" />
+    <field number="495" name="TaxAdvantageType" type="INT">
+      <value enum="0" description="NONE" />
+      <value enum="1" description="MAXI_ISA" />
+      <value enum="2" description="TESSA" />
+      <value enum="3" description="MINI_CASH_ISA" />
+      <value enum="4" description="MINI_STOCKS_AND_SHARES_ISA" />
+      <value enum="5" descript
