@@ -5861,4 +5861,31 @@
       <value enum="3" description="UNREPORTED_TRADES_THAT_MATCH_CRITERIA" />
       <value enum="4" description="ADVISORIES_THAT_MATCH_CRITERIA" />
     </field>
-    <field
+    <field number="570" name="PreviouslyReported" type="BOOLEAN" />
+    <field number="571" name="TradeReportID" type="STRING" />
+    <field number="572" name="TradeReportRefID" type="STRING" />
+    <field number="573" name="MatchStatus" type="CHAR">
+      <value enum="0" description="COMPARED_MATCHED_OR_AFFIRMED" />
+      <value enum="1" description="UNCOMPARED_UNMATCHED_OR_UNAFFIRMED" />
+      <value enum="2" description="ADVISORY_OR_ALERT" />
+    </field>
+    <field number="574" name="MatchType" type="STRING" />
+    <field number="575" name="OddLot" type="BOOLEAN" />
+    <field number="576" name="NoClearingInstructions" type="INT" />
+    <field number="577" name="ClearingInstruction" type="INT">
+      <value enum="0" description="PROCESS_NORMALLY" />
+      <value enum="1" description="EXCLUDE_FROM_ALL_NETTING" />
+      <value enum="2" description="BILATERAL_NETTING_ONLY" />
+      <value enum="3" description="EX_CLEARING" />
+      <value enum="4" description="SPECIAL_TRADE" />
+      <value enum="5" description="MULTILATERAL_NETTING" />
+      <value enum="6" description="CLEAR_AGAINST_CENTRAL_COUNTERPARTY" />
+      <value enum="7" description="EXCLUDE_FROM_CENTRAL_COUNTERPARTY" />
+      <value enum="8" description="MANUAL_MODE" />
+      <value enum="9" description="AUTOMATIC_POSTING_MODE" />
+      <value enum="10" description="AUTOMATIC_GIVE_UP_MODE"/>
+      <value enum="11" description="QUALIFIED_SERVICE_REPRESENTATIVE"/>
+      <value enum="12" description="CUSTOMER_TRADE"/>
+      <value enum="13" description="SELF_CLEARING"/>
+    </field>
+    <fie
