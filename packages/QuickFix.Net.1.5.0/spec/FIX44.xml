@@ -5935,4 +5935,29 @@
       <value enum="0" description="PRO_RATA" />
       <value enum="1" description="DO_NOT_PRO_RATA" />
     </field>
-    <field number="592" name="UnderlyingCountryOfIssue" type="COUNT
+    <field number="592" name="UnderlyingCountryOfIssue" type="COUNTRY" />
+    <field number="593" name="UnderlyingStateOrProvinceOfIssue" type="STRING" />
+    <field number="594" name="UnderlyingLocaleOfIssue" type="STRING" />
+    <field number="595" name="UnderlyingInstrRegistry" type="STRING" />
+    <field number="596" name="LegCountryOfIssue" type="COUNTRY" />
+    <field number="597" name="LegStateOrProvinceOfIssue" type="STRING" />
+    <field number="598" name="LegLocaleOfIssue" type="STRING" />
+    <field number="599" name="LegInstrRegistry" type="STRING" />
+    <field number="600" name="LegSymbol" type="STRING" />
+    <field number="601" name="LegSymbolSfx" type="STRING" />
+    <field number="602" name="LegSecurityID" type="STRING" />
+    <field number="603" name="LegSecurityIDSource" type="STRING" />
+    <field number="604" name="NoLegSecurityAltID" type="NUMINGROUP" />
+    <field number="605" name="LegSecurityAltID" type="STRING" />
+    <field number="606" name="LegSecurityAltIDSource" type="STRING" />
+    <field number="607" name="LegProduct" type="INT" />
+    <field number="608" name="LegCFICode" type="STRING" />
+    <field number="609" name="LegSecurityType" type="STRING" />
+    <field number="610" name="LegMaturityMonthYear" type="MONTHYEAR" />
+    <field number="611" name="LegMaturityDate" type="LOCALMKTDATE" />
+    <field number="612" name="LegStrikePrice" type="PRICE" />
+    <field number="613" name="LegOptAttribute" type="CHAR" />
+    <field number="614" name="LegContractMultiplier" type="FLOAT" />
+    <field number="615" name="LegCouponRate" type="PERCENTAGE" />
+    <field number="616" name="LegSecurityExchange" type="EXCHANGE" />
+ 
