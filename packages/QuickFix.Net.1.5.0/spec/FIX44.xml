@@ -6011,4 +6011,32 @@
     <field number="647" name="MinBidSize" type="QTY" />
     <field number="648" name="MinOfferSize" type="QTY" />
     <field number="649" name="QuoteStatusReqID" type="STRING" />
-    <field number="6
+    <field number="650" name="LegalConfirm" type="BOOLEAN" />
+    <field number="651" name="UnderlyingLastPx" type="PRICE" />
+    <field number="652" name="UnderlyingLastQty" type="QTY" />
+    <field number="654" name="LegRefID" type="STRING" />
+    <field number="655" name="ContraLegRefID" type="STRING" />
+    <field number="656" name="SettlCurrBidFxRate" type="FLOAT" />
+    <field number="657" name="SettlCurrOfferFxRate" type="FLOAT" />
+    <field number="658" name="QuoteRequestRejectReason" type="INT">
+      <value enum="1" description="UNKNOWN_SYMBOL" />
+      <value enum="2" description="EXCHANGE_CLOSED" />
+      <value enum="3" description="QUOTE_REQUEST_EXCEEDS_LIMIT" />
+      <value enum="4" description="TOO_LATE_TO_ENTER" />
+      <value enum="5" description="INVALID_PRICE" />
+      <value enum="6" description="NOT_AUTHORIZED_TO_REQUEST_QUOTE" />
+      <value enum="7" description="NO_MATCH_FOR_INQUIRY" />
+      <value enum="8" description="NO_MARKET_FOR_INSTRUMENT" />
+      <value enum="9" description="NO_INVENTORY" />
+      <value enum="10" description="PASS"/>
+      <value enum="99" description="OTHER"/>
+    </field>
+    <field number="659" name="SideComplianceID" type="STRING" />
+    <field number="660" name="AcctIDSource" type="INT">
+      <value enum="1" description="BIC" />
+      <value enum="2" description="SID_CODE" />
+      <value enum="3" description="TFM" />
+      <value enum="4" description="OMGEO" />
+      <value enum="5" description="DTCC_CODE" />
+      <value enum="99" description="OTHER"/>
+    </
