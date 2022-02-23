@@ -6097,4 +6097,32 @@
       <value enum="5" description="PREMIUM" />
       <value enum="6" description="BASIS_POINTS_RELATIVE_TO_BENCHMARK" />
       <value enum="7" description="TED_PRICE" />
- 
+      <value enum="8" description="TED_YIELD" />
+      <value enum="9" description="YIELD_SPREAD" />
+      <value enum="10" description="YIELD"/>
+    </field>
+    <field number="693" name="QuoteRespID" type="STRING" />
+    <field number="694" name="QuoteRespType" type="INT">
+      <value enum="1" description="HIT_LIFT" />
+      <value enum="2" description="COUNTER" />
+      <value enum="3" description="EXPIRED" />
+      <value enum="4" description="COVER" />
+      <value enum="5" description="DONE_AWAY" />
+      <value enum="6" description="PASS" />
+    </field>
+    <field number="695" name="QuoteQualifier" type="CHAR" />
+    <field number="696" name="YieldRedemptionDate" type="LOCALMKTDATE" />
+    <field number="697" name="YieldRedemptionPrice" type="PRICE" />
+    <field number="698" name="YieldRedemptionPriceType" type="INT" />
+    <field number="699" name="BenchmarkSecurityID" type="STRING" />
+    <field number="700" name="ReversalIndicator" type="BOOLEAN" />
+    <field number="701" name="YieldCalcDate" type="LOCALMKTDATE" />
+    <field number="702" name="NoPositions" type="NUMINGROUP" />
+    <field number="703" name="PosType" type="STRING">
+      <value enum="TQ" description="TRANSACTION_QUANTITY" />
+      <value enum="IAS" description="INTRA_SPREAD_QTY" />
+      <value enum="IES" description="INTER_SPREAD_QTY" />
+      <value enum="FIN" description="END_OF_DAY_QTY" />
+      <value enum="SOD" description="START_OF_DAY_QTY" />
+      <value enum="EX" description="OPTION_EXERCISE_QTY" />
+      <value enum="AS" descrip
