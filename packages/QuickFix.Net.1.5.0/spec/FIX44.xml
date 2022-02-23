@@ -6125,4 +6125,31 @@
       <value enum="FIN" description="END_OF_DAY_QTY" />
       <value enum="SOD" description="START_OF_DAY_QTY" />
       <value enum="EX" description="OPTION_EXERCISE_QTY" />
-      <value enum="AS" descrip
+      <value enum="AS" description="OPTION_ASSIGNMENT" />
+      <value enum="TX" description="TRANSACTION_FROM_EXERCISE" />
+      <value enum="TA" description="TRANSACTION_FROM_ASSIGNMENT" />
+      <value enum="PIT" description="PIT_TRADE_QTY" />
+      <value enum="TRF" description="TRANSFER_TRADE_QTY" />
+      <value enum="ETR" description="ELECTRONIC_TRADE_QTY" />
+      <value enum="ALC" description="ALLOCATION_TRADE_QTY" />
+      <value enum="PA" description="ADJUSTMENT_QTY" />
+      <value enum="ASF" description="AS_OF_TRADE_QTY" />
+      <value enum="DLV" description="DELIVERY_QTY" />
+      <value enum="TOT" description="TOTAL_TRANSACTION_QTY" />
+      <value enum="XM" description="CROSS_MARGIN_QTY" />
+      <value enum="SPL" description="INTEGRAL_SPLIT" />
+    </field>
+    <field number="704" name="LongQty" type="QTY" />
+    <field number="705" name="ShortQty" type="QTY" />
+    <field number="706" name="PosQtyStatus" type="INT">
+      <value enum="0" description="SUBMITTED" />
+      <value enum="1" description="ACCEPTED" />
+      <value enum="2" description="REJECTED" />
+    </field>
+    <field number="707" name="PosAmtType" type="STRING">
+      <value enum="FMTM" description="FINAL_MARK_TO_MARKET_AMOUNT" />
+      <value enum="IMTM" description="INCREMENTAL_MARK_TO_MARKET_AMOUNT" />
+      <value enum="TVAR" description="TRADE_VARIATION_AMOUNT" />
+      <value enum="SMTM" description="START_OF_DAY_MARK_TO_MARKET_AMOUNT" />
+      <value enum="PREM" description="PREMIUM_AMOUNT" />
+      <value enum="CRES" descrip
