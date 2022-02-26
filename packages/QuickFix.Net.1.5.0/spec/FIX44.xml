@@ -6239,4 +6239,34 @@
     <field number="741" name="AllocInterestAtMaturity" type="AMT" />
     <field number="742" name="AllocAccruedInterestAmt" type="AMT" />
     <field number="743" name="DeliveryDate" type="LOCALMKTDATE" />
-    <field number="744" name=
+    <field number="744" name="AssignmentMethod" type="CHAR">
+      <value enum="R" description="RANDOM" />
+      <value enum="P" description="PRORATA" />
+    </field>
+    <field number="745" name="AssignmentUnit" type="QTY" />
+    <field number="746" name="OpenInterest" type="AMT" />
+    <field number="747" name="ExerciseMethod" type="CHAR">
+      <value enum="A" description="AUTOMATIC" />
+      <value enum="M" description="MANUAL" />
+    </field>
+    <field number="748" name="TotNumTradeReports" type="INT" />
+    <field number="749" name="TradeRequestResult" type="INT">
+      <value enum="0" description="SUCCESSFUL" />
+      <value enum="1" description="INVALID_OR_UNKNOWN_INSTRUMENT" />
+      <value enum="2" description="INVALID_TYPE_OF_TRADE_REQUESTED" />
+      <value enum="3" description="INVALID_PARTIES" />
+      <value enum="4" description="INVALID_TRANSPORT_TYPE_REQUESTED" />
+      <value enum="5" description="INVALID_DESTINATION_REQUESTED" />
+      <value enum="8" description="TRADEREQUESTTYPE_NOT_SUPPORTED" />
+      <value enum="9" description="UNAUTHORIZED_FOR_TRADE_CAPTURE_REPORT_REQUEST" />
+      <value enum="10" description="YIELD"/>
+    </field>
+    <field number="750" name="TradeRequestStatus" type="INT">
+      <value enum="0" description="ACCEPTED" />
+      <value enum="1" description="COMPLETED" />
+      <value enum="2" description="REJECTED" />
+    </field>
+    <field number="751" name="TradeReportRejectReason" type="INT">
+      <value enum="0" description="SUCCESSFUL" />
+      <value enum="1" description="INVALID_PARTY_INFORMATION" />
+   
