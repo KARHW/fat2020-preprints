@@ -6352,4 +6352,30 @@
     <field number="791" name="SettlInstReqID" type="STRING" />
     <field number="792" name="SettlInstReqRejCode" type="INT">
       <value enum="0" description="UNABLE_TO_PROCESS_REQUEST" />
-      <value enum="1" des
+      <value enum="1" description="UNKNOWN_ACCOUNT" />
+      <value enum="2" description="NO_MATCHING_SETTLEMENT_INSTRUCTIONS_FOUND" />
+      <value enum="99" description="OTHER" />
+    </field>
+    <field number="793" name="SecondaryAllocID" type="STRING" />
+    <field number="794" name="AllocReportType" type="INT">
+      <value enum="3" description="SELLSIDE_CALCULATED_USING_PRELIMINARY" />
+      <value enum="4" description="SELLSIDE_CALCULATED_WITHOUT_PRELIMINARY" />
+      <value enum="5" description="WAREHOUSE_RECAP" />
+      <value enum="8" description="REQUEST_TO_INTERMEDIARY" />
+    </field>
+    <field number="795" name="AllocReportRefID" type="STRING" />
+    <field number="796" name="AllocCancReplaceReason" type="INT">
+      <value enum="1" description="ORIGINAL_DETAILS_INCOMPLETE_INCORRECT" />
+      <value enum="2" description="CHANGE_IN_UNDERLYING_ORDER_DETAILS" />
+    </field>
+    <field number="797" name="CopyMsgIndicator" type="BOOLEAN" />
+    <field number="798" name="AllocAccountType" type="INT">
+      <value enum="1" description="ACCOUNT_IS_CARRIED_ON_CUSTOMER_SIDE_OF_BOOKS" />
+      <value enum="2" description="ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS" />
+      <value enum="3" description="HOUSE_TRADER" />
+      <value enum="4" description="FLOOR_TRADER" />
+      <value enum="6" description="ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS_AND_IS_CROSS_MARGINED" />
+      <value enum="7" description="ACCOUNT_IS_HOUSE_TRADER_AND_IS_CROSS_MARGINED" />
+      <value enum="8" description="JOINT_BACKOFFICE_ACCOUNT" />
+    </field>
+    <field number=
