@@ -6495,4 +6495,32 @@
       <value enum="2" description="OR_WORSE" />
     </field>
     <field number="844" name="DiscretionRoundDirection" type="INT">
-      <value enum="1" description="MORE_AGGRESSI
+      <value enum="1" description="MORE_AGGRESSIVE" />
+      <value enum="2" description="MORE_PASSIVE" />
+    </field>
+    <field number="845" name="DiscretionPrice" type="PRICE" />
+    <field number="846" name="DiscretionScope" type="INT">
+      <value enum="1" description="LOCAL" />
+      <value enum="2" description="NATIONAL" />
+      <value enum="3" description="GLOBAL" />
+      <value enum="4" description="NATIONAL_EXCLUDING_LOCAL" />
+    </field>
+    <field number="847" name="TargetStrategy" type="INT" />
+    <field number="848" name="TargetStrategyParameters" type="STRING" />
+    <field number="849" name="ParticipationRate" type="PERCENTAGE" />
+    <field number="850" name="TargetStrategyPerformance" type="FLOAT" />
+    <field number="851" name="LastLiquidityInd" type="INT">
+      <value enum="1" description="ADDED_LIQUIDITY" />
+      <value enum="2" description="REMOVED_LIQUIDITY" />
+      <value enum="3" description="LIQUIDITY_ROUTED_OUT" />
+    </field>
+    <field number="852" name="PublishTrdIndicator" type="BOOLEAN" />
+    <field number="853" name="ShortSaleReason" type="INT">
+      <value enum="0" description="DEALER_SOLD_SHORT" />
+      <value enum="1" description="DEALER_SOLD_SHORT_EXEMPT" />
+      <value enum="2" description="SELLING_CUSTOMER_SOLD_SHORT" />
+      <value enum="3" description="SELLING_CUSTOMER_SOLD_SHORT_EXEMPT" />
+      <value enum="4" description="QUALIFED_SERVICE_REPRESENTATIVE_OR_AUTOMATIC_GIVEUP_CONTRA_SIDE_SOLD_SHORT" />
+      <value enum="5" description="QSR_OR_AGU_CONTRA_SIDE_SOLD_SHORT_EXEMPT" />
+    </field>
+    <field number="854" name="QtyType" type="INT">
