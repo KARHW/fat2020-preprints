@@ -6698,4 +6698,32 @@
     </field>
     <field number="925" name="NewPassword" type="STRING" />
     <field number="926" name="UserStatus" type="INT">
-      <value enum="1" description="LOGGE
+      <value enum="1" description="LOGGED_IN" />
+      <value enum="2" description="NOT_LOGGED_IN" />
+      <value enum="3" description="USER_NOT_RECOGNISED" />
+      <value enum="4" description="PASSWORD_INCORRECT" />
+      <value enum="5" description="PASSWORD_CHANGED" />
+      <value enum="6" description="OTHER" />
+    </field>
+    <field number="927" name="UserStatusText" type="STRING" />
+    <field number="928" name="StatusValue" type="INT">
+      <value enum="1" description="CONNECTED" />
+      <value enum="2" description="NOT_CONNECTED_DOWN_EXPECTED_UP" />
+      <value enum="3" description="NOT_CONNECTED_DOWN_EXPECTED_DOWN" />
+      <value enum="4" description="IN_PROCESS" />
+    </field>
+    <field number="929" name="StatusText" type="STRING" />
+    <field number="930" name="RefCompID" type="STRING" />
+    <field number="931" name="RefSubID" type="STRING" />
+    <field number="932" name="NetworkResponseID" type="STRING" />
+    <field number="933" name="NetworkRequestID" type="STRING" />
+    <field number="934" name="LastNetworkResponseID" type="STRING" />
+    <field number="935" name="NetworkRequestType" type="INT">
+      <value enum="1" description="SNAPSHOT" />
+      <value enum="2" description="SUBSCRIBE" />
+      <value enum="4" description="STOP_SUBSCRIBING" />
+      <value enum="8" description="LEVEL_OF_DETAIL" />
+    </field>
+    <field number="936" name="NoCompIDs" type="NUMINGROUP" />
+    <field number="937" name="NetworkStatusResponseType" type="INT">
+      <value enum="1" descript
