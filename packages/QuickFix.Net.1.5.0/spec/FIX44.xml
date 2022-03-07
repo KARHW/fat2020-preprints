@@ -6668,4 +6668,34 @@
     <field number="910" name="CollStatus" type="INT">
       <value enum="0" description="UNASSIGNED" />
       <value enum="1" description="PARTIALLY_ASSIGNED" />
-      <value enum="2" description="ASSIGNME
+      <value enum="2" description="ASSIGNMENT_PROPOSED" />
+      <value enum="3" description="ASSIGNED" />
+      <value enum="4" description="CHALLENGED" />
+    </field>
+    <field number="911" name="TotNumReports" type="INT" />
+    <field number="912" name="LastRptRequested" type="BOOLEAN" />
+    <field number="913" name="AgreementDesc" type="STRING" />
+    <field number="914" name="AgreementID" type="STRING" />
+    <field number="915" name="AgreementDate" type="LOCALMKTDATE" />
+    <field number="916" name="StartDate" type="LOCALMKTDATE" />
+    <field number="917" name="EndDate" type="LOCALMKTDATE" />
+    <field number="918" name="AgreementCurrency" type="CURRENCY" />
+    <field number="919" name="DeliveryType" type="INT">
+      <value enum="0" description="VERSUS_PAYMENT" />
+      <value enum="1" description="FREE" />
+      <value enum="2" description="TRI_PARTY" />
+      <value enum="3" description="HOLD_IN_CUSTODY" />
+    </field>
+    <field number="920" name="EndAccruedInterestAmt" type="AMT" />
+    <field number="921" name="StartCash" type="AMT" />
+    <field number="922" name="EndCash" type="AMT" />
+    <field number="923" name="UserRequestID" type="STRING" />
+    <field number="924" name="UserRequestType" type="INT">
+      <value enum="1" description="LOGONUSER" />
+      <value enum="2" description="LOGOFFUSER" />
+      <value enum="3" description="CHANGEPASSWORDFORUSER" />
+      <value enum="4" description="REQUEST_INDIVIDUAL_USER_STATUS" />
+    </field>
+    <field number="925" name="NewPassword" type="STRING" />
+    <field number="926" name="UserStatus" type="INT">
+      <value enum="1" description="LOGGE
