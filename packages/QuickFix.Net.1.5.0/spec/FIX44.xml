@@ -6726,4 +6726,36 @@
     </field>
     <field number="936" name="NoCompIDs" type="NUMINGROUP" />
     <field number="937" name="NetworkStatusResponseType" type="INT">
-      <value enum="1" descript
+      <value enum="1" description="FULL" />
+      <value enum="2" description="INCREMENTAL_UPDATE" />
+    </field>
+    <field number="938" name="NoCollInquiryQualifier" type="NUMINGROUP" />
+    <field number="939" name="TrdRptStatus" type="INT">
+      <value enum="0" description="ACCEPTED" />
+      <value enum="1" description="REJECTED" />
+    </field>
+    <field number="940" name="AffirmStatus" type="INT">
+      <value enum="1" description="RECEIVED" />
+      <value enum="2" description="CONFIRM_REJECTED" />
+      <value enum="3" description="AFFIRMED" />
+    </field>
+    <field number="941" name="UnderlyingStrikeCurrency" type="CURRENCY" />
+    <field number="942" name="LegStrikeCurrency" type="CURRENCY" />
+    <field number="943" name="TimeBracket" type="STRING" />
+    <field number="944" name="CollAction" type="INT">
+      <value enum="0" description="RETAIN" />
+      <value enum="1" description="ADD" />
+      <value enum="2" description="REMOVE" />
+    </field>
+    <field number="945" name="CollInquiryStatus" type="INT">
+      <value enum="0" description="ACCEPTED" />
+      <value enum="1" description="ACCEPTED_WITH_WARNINGS" />
+      <value enum="2" description="COMPLETED" />
+      <value enum="3" description="COMPLETED_WITH_WARNINGS" />
+      <value enum="4" description="REJECTED" />
+    </field>
+    <field number="946" name="CollInquiryResult" type="INT">
+      <value enum="0" description="SUCCESSFUL" />
+      <value enum="1" description="INVALID_OR_UNKNOWN_INSTRUMENT" />
+      <value enum="2" description="INVALID_OR_UNKNOWN_COLLATERAL_TYPE" />
+      <
