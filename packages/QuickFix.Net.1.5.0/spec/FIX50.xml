@@ -8116,3 +8116,158 @@
    <value enum='4' description='INDICATIVE_AND_TRADEABLE' />
   </field>
   <field number='1071' name='LastSwapPoints' type='PRICEOFFSET' />
+  <field number='1072' name='SideGrossTradeAmt' type='AMT' />
+  <field number='1073' name='LegLastForwardPoints' type='PRICEOFFSET' />
+  <field number='1074' name='LegCalculatedCcyLastQty' type='QTY' />
+  <field number='1075' name='LegGrossTradeAmt' type='AMT' />
+  <field number='1079' name='MaturityTime' type='TZTIMEONLY' />
+  <field number='1080' name='RefOrderID' type='STRING' />
+  <field number='1081' name='RefOrderIDSource' type='CHAR'>
+   <value enum='0' description='SECONDARYORDEID' />
+   <value enum='1' description='ORDEID' />
+   <value enum='2' description='MENTRYID' />
+   <value enum='3' description='QUOTENTRYID' />
+  </field>
+  <field number='1082' name='SecondaryDisplayQty' type='QTY' />
+  <field number='1083' name='DisplayWhen' type='CHAR'>
+   <value enum='1' description='IMMEDIATE' />
+   <value enum='2' description='EXHAUST' />
+  </field>
+  <field number='1084' name='DisplayMethod' type='CHAR'>
+   <value enum='1' description='INITIAL' />
+   <value enum='2' description='NEW' />
+   <value enum='3' description='RANDOM' />
+  </field>
+  <field number='1085' name='DisplayLowQty' type='QTY' />
+  <field number='1086' name='DisplayHighQty' type='QTY' />
+  <field number='1087' name='DisplayMinIncr' type='QTY' />
+  <field number='1088' name='RefreshQty' type='QTY' />
+  <field number='1089' name='MatchIncrement' type='QTY' />
+  <field number='1090' name='MaxPriceLevels' type='INT' />
+  <field number='1091' name='PreTradeAnonymity' type='BOOLEAN' />
+  <field number='1092' name='PriceProtectionScope' type='CHAR'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='LOCAL' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+  </field>
+  <field number='1093' name='LotType' type='CHAR'>
+   <value enum='1' description='ODD_LOT' />
+   <value enum='2' description='ROUND_LOT' />
+   <value enum='3' description='BLOCK_LOT' />
+  </field>
+  <field number='1094' name='PegPriceType' type='INT'>
+   <value enum='1' description='LAST_PEG' />
+   <value enum='2' description='MID_PRICE_PEG' />
+   <value enum='3' description='OPENING_PEG' />
+   <value enum='4' description='MARKET_PEG' />
+   <value enum='5' description='PRIMARY_PEG' />
+   <value enum='6' description='FIXED_PEG_TO_LOCAL_BEST_BID_OR_OFFER_AT_TIME_OF_ORDER' />
+   <value enum='7' description='PEG_TO_VWAP' />
+   <value enum='8' description='TRAILING_STOP_PEG' />
+   <value enum='9' description='PEG_TO_LIMIT_PRICE' />
+  </field>
+  <field number='1095' name='PeggedRefPrice' type='PRICE' />
+  <field number='1096' name='PegSecurityIDSource' type='STRING' />
+  <field number='1097' name='PegSecurityID' type='STRING' />
+  <field number='1098' name='PegSymbol' type='STRING' />
+  <field number='1099' name='PegSecurityDesc' type='STRING' />
+  <field number='1100' name='TriggerType' type='CHAR'>
+   <value enum='1' description='PARTIAL_EXECUTION' />
+   <value enum='2' description='SPECIFIED_TRADING_SESSION' />
+   <value enum='3' description='NEXT_AUCTION' />
+   <value enum='4' description='PRICE_MOVEMENT' />
+  </field>
+  <field number='1101' name='TriggerAction' type='CHAR'>
+   <value enum='1' description='ACTIVATE' />
+   <value enum='2' description='MODIFY' />
+   <value enum='3' description='CANCEL' />
+  </field>
+  <field number='1102' name='TriggerPrice' type='PRICE' />
+  <field number='1103' name='TriggerSymbol' type='STRING' />
+  <field number='1104' name='TriggerSecurityID' type='STRING' />
+  <field number='1105' name='TriggerSecurityIDSource' type='STRING' />
+  <field number='1106' name='TriggerSecurityDesc' type='STRING' />
+  <field number='1107' name='TriggerPriceType' type='CHAR'>
+   <value enum='1' description='BEST_OFFER' />
+   <value enum='2' description='LAST_TRADE' />
+   <value enum='3' description='BEST_BID' />
+   <value enum='4' description='BEST_BID_OR_LAST_TRADE' />
+   <value enum='5' description='BEST_OFFER_OR_LAST_TRADE' />
+   <value enum='6' description='BEST_MID' />
+  </field>
+  <field number='1108' name='TriggerPriceTypeScope' type='CHAR'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='LOCAL' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+  </field>
+  <field number='1109' name='TriggerPriceDirection' type='CHAR'>
+   <value enum='U' description='TRIGGER_IF_THE_PRICE_OF_THE_SPECIFIED_TYPE_GOES_UP_TO_OR_THROUGH_THE_SPECIFIED_TRIGGER_PRICE' />
+   <value enum='D' description='TRIGGER_IF_THE_PRICE_OF_THE_SPECIFIED_TYPE_GOES_DOWN_TO_OR_THROUGH_THE_SPECIFIED_TRIGGER_PRICE' />
+  </field>
+  <field number='1110' name='TriggerNewPrice' type='PRICE' />
+  <field number='1111' name='TriggerOrderType' type='CHAR'>
+   <value enum='1' description='MARKET' />
+   <value enum='2' description='LIMIT' />
+  </field>
+  <field number='1112' name='TriggerNewQty' type='QTY' />
+  <field number='1113' name='TriggerTradingSessionID' type='STRING' />
+  <field number='1114' name='TriggerTradingSessionSubID' type='STRING' />
+  <field number='1115' name='OrderCategory' type='CHAR'>
+   <value enum='1' description='ORDER' />
+   <value enum='2' description='QUOTE' />
+   <value enum='3' description='PRIVATELY_NEGOTIATED_TRADE' />
+   <value enum='4' description='MULTILEG_ORDER' />
+   <value enum='5' description='LINKED_ORDER' />
+   <value enum='6' description='QUOTE_REQUEST' />
+   <value enum='7' description='IMPLIED_ORDER' />
+   <value enum='8' description='CROSS_ORDER' />
+  </field>
+  <field number='1116' name='NoRootPartyIDs' type='NUMINGROUP' />
+  <field number='1117' name='RootPartyID' type='STRING' />
+  <field number='1118' name='RootPartyIDSource' type='CHAR' />
+  <field number='1119' name='RootPartyRole' type='INT' />
+  <field number='1120' name='NoRootPartySubIDs' type='NUMINGROUP' />
+  <field number='1121' name='RootPartySubID' type='STRING' />
+  <field number='1122' name='RootPartySubIDType' type='INT' />
+  <field number='1123' name='TradeHandlingInstr' type='CHAR'>
+   <value enum='0' description='TRADE_CONFIRMATION' />
+   <value enum='1' description='TWO_PARTY_REPORT' />
+   <value enum='2' description='ONE_PARTY_REPORT_FOR_MATCHING' />
+   <value enum='3' description='ONE_PARTY_REPORT_FOR_PASS_THROUGH' />
+   <value enum='4' description='AUTOMATED_FLOOR_ORDER_ROUTING' />
+  </field>
+  <field number='1124' name='OrigTradeHandlingInstr' type='CHAR' />
+  <field number='1125' name='OrigTradeDate' type='LOCALMKTDATE' />
+  <field number='1126' name='OrigTradeID' type='STRING' />
+  <field number='1127' name='OrigSecondaryTradeID' type='STRING' />
+  <field number='1128' name='ApplVerID' type='STRING'>
+   <value enum='0' description='FIX27' />
+   <value enum='1' description='FIX30' />
+   <value enum='2' description='FIX40' />
+   <value enum='3' description='FIX41' />
+   <value enum='4' description='FIX42' />
+   <value enum='5' description='FIX43' />
+   <value enum='6' description='FIX44' />
+   <value enum='7' description='FIX50' />
+  </field>
+  <field number='1129' name='CstmApplVerID' type='STRING' />
+  <field number='1130' name='RefApplVerID' type='STRING' />
+  <field number='1131' name='RefCstmApplVerID' type='STRING' />
+  <field number='1132' name='TZTransactTime' type='TZTIMESTAMP' />
+  <field number='1133' name='ExDestinationIDSource' type='CHAR'>
+   <value enum='B' description='BIC' />
+   <value enum='C' description='GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER' />
+   <value enum='D' description='PROPRIETARY' />
+   <value enum='E' description='ISO_COUNTRY_CODE' />
+   <value enum='G' description='MIC' />
+  </field>
+  <field number='1134' name='ReportedPxDiff' type='BOOLEAN' />
+  <field number='1135' name='RptSys' type='STRING' />
+  <field number='1136' name='AllocClearingFeeIndicator' type='STRING' />
+  <field number='1137' name='DefaultApplVerID' type='STRING' />
+  <field number='1138' name='DisplayQty' type='QTY' />
+  <field number='1139' name='ExchangeSpecialInstructions' type='STRING' />
+ </fields>
+</fix>
