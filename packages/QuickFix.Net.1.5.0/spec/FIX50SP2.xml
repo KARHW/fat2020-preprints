@@ -253,4 +253,37 @@
   </message>
   <message name='News' msgcat='app' msgtype='B'>
    <field name='OrigTime' required='N' />
-   <field name='Urgency' requi
+   <field name='Urgency' required='N' />
+   <field name='Headline' required='Y' />
+   <field name='EncodedHeadlineLen' required='N' />
+   <field name='EncodedHeadline' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <component name='InstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='LinesOfTextGrp' required='Y' />
+   <field name='URLLink' required='N' />
+   <field name='RawDataLength' required='N' />
+   <field name='RawData' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='NewsID' required='N' />
+   <component name='NewsRefGrp' required='N' />
+   <field name='NewsCategory' required='N' />
+   <field name='LanguageCode' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+  </message>
+  <message name='Email' msgcat='app' msgtype='C'>
+   <field name='EmailThreadID' required='Y' />
+   <field name='EmailType' required='Y' />
+   <field name='OrigTime' required='N' />
+   <field name='Subject' required='Y' />
+   <field name='EncodedSubjectLen' required='N' />
+   <field name='EncodedSubject' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <component name='InstrmtGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='OrderID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <component name=
