@@ -514,4 +514,37 @@
    <field name='OrderHandlingInstSource' required='N' />
    <component name='TrdRegTimestamps' required='N' />
    <field name='MatchIncrement' required='N' />
-   <field
+   <field name='MaxPriceLevels' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='PriceProtectionScope' required='N' />
+   <component name='TriggeringInstruction' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+  </message>
+  <message name='OrderStatusRequest' msgcat='app' msgtype='H'>
+   <field name='OrderID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='ClOrdLinkID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='OrdStatusReqID' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Side' required='Y' />
+  </message>
+  <message name='AllocationInstruction' msgcat='app' msgtype='J'>
+   <field name='AllocID' required='Y' />
+   <field name='AllocTransType' required='Y' />
+   <field name='AllocType' required='Y' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='RefAllocID' required='N' />
+   <field name='AllocCancReplaceReason' required='N' />
+   <field name='AllocIntermedReqType' required='N' />
+   <field name='AllocLinkID' required='N' />
+   <field name='AllocLinkType' required='N' />
+   <field name='BookingRefID' required='N' />
+   <field name='AllocNoOrdersType' required='N' />
+   <component name='OrdAllocGrp
