@@ -822,4 +822,39 @@
    <field name='MDSubBookType' required='N' />
    <field name='MarketDepth' required='N' />
    <field name='TotNumReports' required='N' />
-   <field name='RefreshIndicator' required='N' /
+   <field name='RefreshIndicator' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='MDStreamID' required='N' />
+  </message>
+  <message name='MarketDataIncrementalRefresh' msgcat='app' msgtype='X'>
+   <field name='MDReqID' required='N' />
+   <component name='MDIncGrp' required='Y' />
+   <field name='ApplQueueDepth' required='N' />
+   <field name='ApplQueueResolution' required='N' />
+   <field name='MDBookType' required='N' />
+   <field name='MDFeedType' required='N' />
+   <field name='TradeDate' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='MarketDataRequestReject' msgcat='app' msgtype='Y'>
+   <field name='MDReqID' required='Y' />
+   <field name='MDReqRejReason' required='N' />
+   <component name='MDRjctGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='Parties' required='N' />
+  </message>
+  <message name='QuoteCancel' msgcat='app' msgtype='Z'>
+   <field name='QuoteReqID' required='N' />
+   <field name='QuoteID' required='N' />
+   <field name='QuoteCancelType' required='Y' />
+   <field name='QuoteResponseLevel' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='QuotCxl
