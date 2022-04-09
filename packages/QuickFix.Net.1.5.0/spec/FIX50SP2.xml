@@ -789,4 +789,37 @@
    <field name='MDReqID' required='Y' />
    <field name='SubscriptionRequestType' required='Y' />
    <field name='MarketDepth' required='Y' />
-   <field name='MDUpdateType' requir
+   <field name='MDUpdateType' required='N' />
+   <field name='AggregatedBook' required='N' />
+   <field name='OpenCloseSettlFlag' required='N' />
+   <field name='Scope' required='N' />
+   <field name='MDImplicitDelete' required='N' />
+   <component name='MDReqGrp' required='Y' />
+   <component name='InstrmtMDReqGrp' required='Y' />
+   <component name='TrdgSesGrp' required='N' />
+   <field name='ApplQueueAction' required='N' />
+   <field name='ApplQueueMax' required='N' />
+   <field name='MDQuoteType' required='N' />
+   <component name='Parties' required='N' />
+  </message>
+  <message name='MarketDataSnapshotFullRefresh' msgcat='app' msgtype='W'>
+   <field name='MDReqID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='FinancialStatus' required='N' />
+   <field name='CorporateAction' required='N' />
+   <field name='NetChgPrevDay' required='N' />
+   <component name='MDFullGrp' required='Y' />
+   <field name='ApplQueueDepth' required='N' />
+   <field name='ApplQueueResolution' required='N' />
+   <field name='MDReportID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='MDBookType' required='N' />
+   <field name='MDFeedType' required='N' />
+   <field name='TradeDate' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <field name='MDSubBookType' required='N' />
+   <field name='MarketDepth' required='N' />
+   <field name='TotNumReports' required='N' />
+   <field name='RefreshIndicator' required='N' /
