@@ -954,3 +954,36 @@
   </message>
   <message name='SecurityStatus' msgcat='app' msgtype='f'>
    <field name='SecurityStatusReqID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Currency' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='UnsolicitedIndicator' required='N' />
+   <field name='SecurityTradingStatus' required='N' />
+   <field name='FinancialStatus' required='N' />
+   <field name='CorporateAction' required='N' />
+   <field name='HaltReasonInt' required='N' />
+   <field name='InViewOfCommon' required='N' />
+   <field name='DueToRelated' required='N' />
+   <field name='BuyVolume' required='N' />
+   <field name='SellVolume' required='N' />
+   <field name='HighPx' required='N' />
+   <field name='LowPx' required='N' />
+   <field name='LastPx' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='Adjustment' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='FirstPx' required='N' />
+   <field name='SecurityTradingEvent' required='N' />
+   <field name='MDBookType' required='N' />
+   <field name='MarketDepth' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='TradingSessionStatusReque
