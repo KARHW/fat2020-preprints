@@ -1054,4 +1054,38 @@
    <field name='TotNoRelatedSym' required='Y' />
    <field name='BidType' required='Y' />
    <field name='NumTickets' required='N' />
-   <field name='Currency' req
+   <field name='Currency' required='N' />
+   <field name='SideValue1' required='N' />
+   <field name='SideValue2' required='N' />
+   <component name='BidDescReqGrp' required='N' />
+   <component name='BidCompReqGrp' required='N' />
+   <field name='LiquidityIndType' required='N' />
+   <field name='WtAverageLiquidity' required='N' />
+   <field name='ExchangeForPhysical' required='N' />
+   <field name='OutMainCntryUIndex' required='N' />
+   <field name='CrossPercent' required='N' />
+   <field name='ProgRptReqs' required='N' />
+   <field name='ProgPeriodInterval' required='N' />
+   <field name='IncTaxInd' required='N' />
+   <field name='ForexReq' required='N' />
+   <field name='NumBidders' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='BidTradeType' required='Y' />
+   <field name='BasisPxType' required='Y' />
+   <field name='StrikeTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='BidResponse' msgcat='app' msgtype='l'>
+   <field name='BidID' required='N' />
+   <field name='ClientBidID' required='N' />
+   <component name='BidCompRspGrp' required='Y' />
+  </message>
+  <message name='ListStrikePrice' msgcat='app' msgtype='m'>
+   <field name='ListID' required='Y' />
+   <field name='TotNoStrikes' required='Y' />
+   <field name='LastFragment' required='N' />
+   <component name='InstrmtStrkPxGrp' required='Y' />
+  </message>
+  <message name='RegistrationInstructions' msgcat=
