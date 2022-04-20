@@ -1256,4 +1256,36 @@
    <component name='PegInstructions' required='N' />
    <component name='DiscretionInstructions' required='N' />
    <field name='TargetStrategy' required='N' />
-   <field name='Ta
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <component name='StrategyParametersGrp' required='N' />
+   <field name='HostCrossID' required='N' />
+   <field name='TransBkdTime' required='N' />
+   <component name='RootParties' required='N' />
+   <field name='MatchIncrement' required='N' />
+   <field name='MaxPriceLevels' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='PriceProtectionScope' required='N' />
+   <component name='TriggeringInstruction' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+  </message>
+  <message name='CrossOrderCancelRequest' msgcat='app' msgtype='u'>
+   <field name='OrderID' required='N' />
+   <field name='CrossID' required='Y' />
+   <field name='OrigCrossID' required='Y' />
+   <field name='CrossType' required='Y' />
+   <field name='CrossPrioritization' required='Y' />
+   <component name='SideCrossOrdCxlGrp' required='Y' />
+   <component name='Instrument' required='Y' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='HostCrossID' required='N' />
+   <component name='RootParties' required='N' />
+  </message>
+  <message name='SecurityTypeRequest' msgcat='app' msgtype='v'>
+   <field name='SecurityReqID' required='Y' 
