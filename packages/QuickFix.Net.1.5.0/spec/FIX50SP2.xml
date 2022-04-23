@@ -1451,4 +1451,35 @@
    <field name='PositionEffect' required='N' />
    <field name='CoveredOrUncovered' required='N' />
    <field name='MaxShow' required='N' />
-  
+   <component name='PegInstructions' required='N' />
+   <component name='DiscretionInstructions' required='N' />
+   <field name='TargetStrategy' required='N' />
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <field name='MultiLegRptTypeReq' required='N' />
+   <component name='StrategyParametersGrp' required='N' />
+   <field name='SwapPoints' required='N' />
+   <field name='MatchIncrement' required='N' />
+   <field name='MaxPriceLevels' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='PriceProtectionScope' required='N' />
+   <component name='TriggeringInstruction' required='N' />
+   <field name='RefOrderID' required='N' />
+   <field name='RefOrderIDSource' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+   <field name='MultilegModel' required='N' />
+   <field name='MultilegPriceMethod' required='N' />
+   <field name='RiskFreeRate' required='N' />
+  </message>
+  <message name='MultilegOrderCancelReplace' msgcat='app' msgtype='AC'>
+   <field name='OrderID' required='N' />
+   <field name='OrigClOrdID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='ClOrdLinkID' required='N' />
+   <field 
