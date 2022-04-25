@@ -1643,4 +1643,37 @@
    <field name='LastPx' required='Y' />
    <field name='LastParPx' required='N' />
    <field name='LastSpotRate' required='N' />
-   <field name='LastForwardPoints'
+   <field name='LastForwardPoints' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='AvgPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <field name='AvgPxIndicator' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='TradeLegRefID' required='N' />
+   <component name='TrdInstrmtLegGrp' required='N' />
+   <field name='TransactTime' required='N' />
+   <component name='TrdRegTimestamps' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='MatchType' required='N' />
+   <component name='TrdCapRptSideGrp' required='Y' />
+   <field name='CopyMsgIndicator' required='N' />
+   <field name='PublishTrdIndicator' required='N' />
+   <field name='ShortSaleReason' required='N' />
+   <field name='TrdRptStatus' required='N' />
+   <field name='AsOfIndicator' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='TierCode' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <field name='LastUpdateTime' required='N' />
+   <field name='RndPx' required='N' />
+   <field name='TradeID' required='N' />
+   <field name='SecondaryTradeID' required='N' />
+   <field name='FirmTradeID' required='N' />
+   <field name='SecondaryFirmTradeID' required='N' />
+   <field nam
