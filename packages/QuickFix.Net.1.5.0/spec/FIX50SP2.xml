@@ -1880,4 +1880,37 @@
    <field name='ConfirmID' required='Y' />
    <field name='ConfirmRefID' required='N' />
    <field name='ConfirmReqID' required='N' />
-   <field name='ConfirmTransType' requi
+   <field name='ConfirmTransType' required='Y' />
+   <field name='ConfirmType' required='Y' />
+   <field name='CopyMsgIndicator' required='N' />
+   <field name='LegalConfirm' required='N' />
+   <field name='ConfirmStatus' required='Y' />
+   <component name='Parties' required='N' />
+   <component name='OrdAllocGrp' required='N' />
+   <field name='AllocID' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='IndividualAllocID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='TradeDate' required='Y' />
+   <component name='TrdRegTimestamps' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='AllocQty' required='Y' />
+   <field name='QtyType' required='N' />
+   <field name='Side' required='Y' />
+   <field name='Currency' required='N' />
+   <field name='LastMkt' required='N' />
+   <component name='CpctyConfGrp' required='Y' />
+   <field name='AllocAccount' required='Y' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='AllocAccountType' required='N' />
+   <field name='AvgPx' required='Y' />
+   <field name='AvgPxPrecision' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AvgParPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <field name='ReportedPx' requ
