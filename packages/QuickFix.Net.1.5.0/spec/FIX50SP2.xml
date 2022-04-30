@@ -2076,4 +2076,35 @@
    <field name='AccountType' required='N' />
    <component name='Instrument' required='N' />
    <field name='Currency' required='N' />
-   <field name='SettlPrice
+   <field name='SettlPrice' required='N' />
+   <field name='SettlPriceType' required='N' />
+   <field name='PriorSettlPrice' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='PosUndInstrmtGrp' required='N' />
+   <component name='PositionQty' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='RegistStatus' required='N' />
+   <field name='DeliveryDate' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='ModelType' required='N' />
+   <field name='PriceDelta' required='N' />
+  </message>
+  <message name='TradeCaptureReportRequestAck' msgcat='app' msgtype='AQ'>
+   <field name='TradeRequestID' required='Y' />
+   <field name='TradeRequestType' required='Y' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='TotNumTradeReports' required='N' />
+   <field name='TradeRequestResult' required='Y' />
+   <field name='TradeRequestStatus' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='ResponseT
