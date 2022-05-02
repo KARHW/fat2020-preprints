@@ -2170,4 +2170,37 @@
    <field name='MatchType' required='N' />
    <field name='CopyMsgIndicator' required='N' />
    <field name='PublishTrdIndicator' required='N' />
-   <field name='ShortSaleReason' required='N' /
+   <field name='ShortSaleReason' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='TierCode' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <field name='LastUpdateTime' required='N' />
+   <field name='RndPx' required='N' />
+   <component name='TrdCapRptAckSideGrp' required='N' />
+   <field name='AsOfIndicator' required='N' />
+   <field name='TradeID' required='N' />
+   <field name='SecondaryTradeID' required='N' />
+   <field name='FirmTradeID' required='N' />
+   <field name='SecondaryFirmTradeID' required='N' />
+   <field name='CalculatedCcyLastQty' required='N' />
+   <field name='LastSwapPoints' required='N' />
+   <field name='GrossTradeAmt' required='N' />
+   <component name='RootParties' required='N' />
+   <field name='TradeHandlingInstr' required='N' />
+   <field name='OrigTradeHandlingInstr' required='N' />
+   <field name='OrigTradeDate' required='N' />
+   <field name='OrigTradeID' required='N' />
+   <field name='OrigSecondaryTradeID' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='RptSys' required='N' />
+   <field name='Currency' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='FeeMultiplier' required='N' />
+   <component name='TrdRepIndicatorsGrp' required='N' />
+   <field name='TradePublishIndicator' required='N' />
+   <field name='VenueType' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='MarketID' required='N'
