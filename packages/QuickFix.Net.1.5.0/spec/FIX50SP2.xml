@@ -2203,4 +2203,38 @@
    <field name='TradePublishIndicator' required='N' />
    <field name='VenueType' required='N' />
    <field name='MarketSegmentID' required='N' />
-   <field name='MarketID' required='N'
+   <field name='MarketID' required='N' />
+  </message>
+  <message name='AllocationReport' msgcat='app' msgtype='AS'>
+   <field name='AllocReportID' required='Y' />
+   <field name='AllocID' required='N' />
+   <field name='AllocTransType' required='Y' />
+   <field name='AllocReportRefID' required='N' />
+   <field name='AllocCancReplaceReason' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='AllocReportType' required='Y' />
+   <field name='AllocStatus' required='Y' />
+   <field name='AllocRejCode' required='N' />
+   <field name='RefAllocID' required='N' />
+   <field name='AllocIntermedReqType' required='N' />
+   <field name='AllocLinkID' required='N' />
+   <field name='AllocLinkType' required='N' />
+   <field name='BookingRefID' required='N' />
+   <field name='AllocNoOrdersType' required='N' />
+   <component name='OrdAllocGrp' required='N' />
+   <component name='ExecAllocGrp' required='N' />
+   <field name='PreviouslyReported' required='N' />
+   <field name='ReversalIndicator' required='N' />
+   <field name='MatchType' required='N' />
+   <field name='Side' required='Y' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Quantity' required='Y' />
+   <field name='QtyType' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradeOriginationDate' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field
