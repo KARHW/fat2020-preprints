@@ -2303,4 +2303,40 @@
    <field name='Text' required='N' />
    <field name='EncodedTextLen' required='N' />
    <field name='EncodedText' required='N' />
-   <component name='AllocAckGrp' require
+   <component name='AllocAckGrp' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='AvgPxIndicator' required='N' />
+   <field name='Quantity' required='N' />
+   <field name='AllocTransType' required='N' />
+  </message>
+  <message name='ConfirmationAck' msgcat='app' msgtype='AU'>
+   <field name='ConfirmID' required='Y' />
+   <field name='TradeDate' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <field name='AffirmStatus' required='Y' />
+   <field name='ConfirmRejReason' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='SettlementInstructionRequest' msgcat='app' msgtype='AV'>
+   <field name='SettlInstReqID' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <component name='Parties' required='N' />
+   <field name='AllocAccount' required='N' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='Side' required='N' />
+   <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='CFICode' required='N' />
+   <field name='EffectiveTime' required='N' />
+   <field name='ExpireTime' required='N' />
+   <field name='LastUpdateTime' required='N' />
+   <field name='StandInstDbType' required='N' />
+   <field name='StandInstDbName' required='N' />
+   <field name='StandInstDbID' required='N' />
+   <field name='SettlCurrency' required='N' />
+  </message>
+  <message name='AssignmentReport' msgcat='app' msgtype='AW'>
+   <field name='AsgnRpt
