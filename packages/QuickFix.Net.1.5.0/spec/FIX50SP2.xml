@@ -2538,4 +2538,36 @@
    <field name='TotalNetValue' required='N' />
    <field name='CashOutstanding' required='N' />
    <component name='TrdRegTimestamps' required='N' />
-   
+   <field name='Side' required='N' />
+   <component name='MiscFeesGrp' required='N' />
+   <field name='Price' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='SettlInstructionsData' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='CollApplType' required='N' />
+   <field name='FinancialStatus' required='N' />
+  </message>
+  <message name='CollateralInquiry' msgcat='app' msgtype='BB'>
+   <field name='CollInquiryID' required='Y' />
+   <component name='CollInqQualGrp' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AccountType' required='N' />
+   <field 
