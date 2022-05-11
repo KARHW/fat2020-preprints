@@ -2701,4 +2701,35 @@
    <field name='EncodedTextLen' required='N' />
    <field name='EncodedText' required='N' />
    <component name='UndInstrmtGrp' required='N' />
-   <component name='ApplicationS
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='SecurityDefinitionUpdateReport' msgcat='app' msgtype='BP'>
+   <field name='SecurityReportID' required='N' />
+   <field name='SecurityReqID' required='N' />
+   <field name='SecurityResponseID' required='N' />
+   <field name='SecurityResponseType' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='SecurityUpdateAction' required='N' />
+   <field name='CorporateAction' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Currency' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <component name='MarketSegmentGrp' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='TransactTime' required='N' />
+  </message>
+  <message name='SecurityListUpdateReport' msgcat='app' msgtype='BK'>
+   <field name='SecurityReportID' required='N' />
+   <field name='SecurityReqID' required='N' />
+   <field name='SecurityResponseID' required='N' />
+   <field name='SecurityRequestResult' required='N' />
+   <field name='TotNoRelatedSym' required='N' />
+   <
