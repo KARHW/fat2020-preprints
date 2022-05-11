@@ -2667,4 +2667,38 @@
    <field name='SettlSessID' required='N' />
    <field name='SettlSessSubID' required='N' />
    <field name='ClearingBusinessDate' required='N' />
-   <field name='ResponseTransportType' 
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='ConfirmationRequest' msgcat='app' msgtype='BH'>
+   <field name='ConfirmReqID' required='Y' />
+   <field name='ConfirmType' required='Y' />
+   <component name='OrdAllocGrp' required='N' />
+   <field name='AllocID' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='IndividualAllocID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='AllocAccount' required='N' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='AllocAccountType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='ContraryIntentionReport' msgcat='app' msgtype='BO'>
+   <field name='ContIntRptID' required='Y' />
+   <field name='TransactTime' required='N' />
+   <field name='LateIndicator' required='N' />
+   <field name='InputSource' required='N' />
+   <field name='ClearingBusinessDate' required='Y' />
+   <component name='Parties' required='Y' />
+   <component name='ExpirationQty' required='Y' />
+   <component name='Instrument' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='ApplicationS
