@@ -2764,4 +2764,37 @@
   <message name='AllocationInstructionAlert' msgcat='app' msgtype='BM'>
    <field name='AllocID' required='Y' />
    <field name='AllocTransType' required='Y' />
-   <field name='AllocType' required='Y'
+   <field name='AllocType' required='Y' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='RefAllocID' required='N' />
+   <field name='AllocCancReplaceReason' required='N' />
+   <field name='AllocIntermedReqType' required='N' />
+   <field name='AllocLinkID' required='N' />
+   <field name='AllocLinkType' required='N' />
+   <field name='BookingRefID' required='N' />
+   <field name='AllocNoOrdersType' required='N' />
+   <component name='OrdAllocGrp' required='N' />
+   <component name='ExecAllocGrp' required='N' />
+   <field name='PreviouslyReported' required='N' />
+   <field name='ReversalIndicator' required='N' />
+   <field name='MatchType' required='N' />
+   <field name='Side' required='Y' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Quantity' required='Y' />
+   <field name='QtyType' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradeOriginationDate' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AvgPx' required='N' />
+   <field name='AvgParPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <field name='Currency' required='N' />
+   <field name='AvgPxPrecision' required='N' />
+   <component name='Parties' required='N' />
+ 
