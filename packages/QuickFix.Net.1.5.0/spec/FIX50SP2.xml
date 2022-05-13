@@ -2926,4 +2926,37 @@
    <component name='TimeInForceRules' required='N' />
    <component name='ExecInstRules' required='N' />
    <field name='TransactTime' required='N' />
-   <field name='Text' required=
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='MarketDefinitionUpdateReport' msgcat='app' msgtype='BV'>
+   <field name='MarketReportID' required='Y' />
+   <field name='MarketReqID' required='N' />
+   <field name='MarketUpdateAction' required='N' />
+   <field name='MarketID' required='Y' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='MarketSegmentDesc' required='N' />
+   <field name='EncodedMktSegmDescLen' required='N' />
+   <field name='EncodedMktSegmDesc' required='N' />
+   <field name='ParentMktSegmID' required='N' />
+   <field name='Currency' required='N' />
+   <component name='BaseTradingRules' required='N' />
+   <component name='OrdTypeRules' required='N' />
+   <component name='TimeInForceRules' required='N' />
+   <component name='ExecInstRules' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='ApplicationMessageRequest' msgcat='app' msgtype='BW'>
+   <field name='ApplReqID' required='Y' />
+   <field name='ApplReqType' required='Y' />
+   <component name='ApplIDRequestGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component n
