@@ -3058,4 +3058,41 @@
    <component name='Parties' required='N' />
    <component name='RequestedPartyRoleGrp' required='N' />
    <component name='PartyRelationships' required='N' />
-   
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='PartyDetailsListReport' msgcat='app' msgtype='CG'>
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='PartyDetailsListReportID' required='Y' />
+   <field name='PartyDetailsListRequestID' required='N' />
+   <field name='PartyDetailsRequestResult' required='N' />
+   <field name='TotNoPartyList' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='PartyListGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+ </messages>
+ <trailer />
+ <components>
+  <component name='RelatedAltPtysSubGrp'>
+   <group name='NoRelatedPartyAltSubIDs' required='N'>
+    <field name='RelatedPartyAltSubID' required='N' />
+    <field name='RelatedPartyAltSubIDType' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeSecurityXML'>
+   <field name='DerivativeSecurityXMLLen' required='N' />
+   <field name='DerivativeSecurityXML' required='N' />
+   <field name='DerivativeSecurityXMLSchema' required='N' />
+  </component>
+  <component name='InstrumentLeg'>
+   <field name='LegSymbol' required='N' />
+   <field name='LegSymbolSfx' required='N' />
+   <field name='LegSecurityID' required='N' />
+   <field name='LegSecurityIDSource' required='N' />
+   <component name='LegSecAltIDGrp' required='N' />
+   <field name='LegProduct' required='
