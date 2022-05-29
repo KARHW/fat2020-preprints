@@ -3224,4 +3224,45 @@
     <field name='SideReasonCd' required='N' />
     <field name='RptSeq' required='N' />
     <field name='SideTrdSubTyp' required='N' />
-    <component name='SideTrdRegTS' required='N' /
+    <component name='SideTrdRegTS' required='N' />
+    <field name='SideGrossTradeAmt' required='N' />
+    <field name='AggressorIndicator' required='N' />
+    <field name='ExchangeSpecialInstructions' required='N' />
+    <field name='NetGrossInd' required='N' />
+    <field name='SideCurrency' required='N' />
+    <field name='SideSettlCurrency' required='N' />
+    <component name='SettlDetails' required='N' />
+    <field name='OrderCategory' required='N' />
+    <component name='TradeReportOrderDetail' required='N' />
+    <field name='SideExecID' required='N' />
+    <field name='OrderDelay' required='N' />
+    <field name='OrderDelayUnit' required='N' />
+    <field name='SideLiquidityInd' required='N' />
+   </group>
+  </component>
+  <component name='PositionAmountData'>
+   <group name='NoPosAmt' required='N'>
+    <field name='PosAmtType' required='N' />
+    <field name='PosAmt' required='N' />
+    <field name='PositionCurrency' required='N' />
+   </group>
+  </component>
+  <component name='ApplicationSequenceControl'>
+   <field name='ApplID' required='N' />
+   <field name='ApplSeqNum' required='N' />
+   <field name='ApplLastSeqNum' required='N' />
+   <field name='ApplResendFlag' required='N' />
+  </component>
+  <component name='Stipulations'>
+   <group name='NoStipulations' required='N'>
+    <field name='StipulationType' required='N' />
+    <field name='StipulationValue' required='N' />
+   </group>
+  </component>
+  <component name='MDReqGrp'>
+   <group name='NoMDEntryTypes' required='Y'>
+    <field name='MDEntryType' required='Y' />
+   </group>
+  </component>
+  <component name='PartyListResponseTypeGrp'>
+   <group
