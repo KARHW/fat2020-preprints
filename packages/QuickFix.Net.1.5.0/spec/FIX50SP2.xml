@@ -3400,4 +3400,48 @@
     <field name='RiskLimitCurrency' required='N' />
     <field name='RiskLimitPlatform' required='N' />
     <component name='RiskInstrumentScope' required='N' />
-    <comp
+    <component name='RiskWarningLevels' required='N' />
+   </group>
+  </component>
+  <component name='AltPtysSubGrp'>
+   <group name='NoPartyAltSubIDs' required='N'>
+    <field name='PartyAltSubID' required='N' />
+    <field name='PartyAltSubIDType' required='N' />
+   </group>
+  </component>
+  <component name='PartyDetail'>
+   <field name='PartyID' required='Y' />
+   <field name='PartyIDSource' required='Y' />
+   <field name='PartyRole' required='Y' />
+   <component name='PtysSubGrp' required='N' />
+   <component name='PartyAltIDs' required='N' />
+   <component name='ContextParties' required='N' />
+   <component name='RiskLimits' required='N' />
+  </component>
+  <component name='MatchRules'>
+   <group name='NoMatchRules' required='N'>
+    <field name='MatchAlgorithm' required='N' />
+    <field name='MatchType' required='N' />
+   </group>
+  </component>
+  <component name='LotTypeRules'>
+   <group name='NoLotTypeRules' required='N'>
+    <field name='LotType' required='N' />
+    <field name='MinLotSize' required='N' />
+   </group>
+  </component>
+  <component name='BidCompReqGrp'>
+   <group name='NoBidComponents' required='N'>
+    <field name='ListID' required='N' />
+    <field name='Side' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='NetGrossInd' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+   </group>
+  </component>
+  <component name='TargetParties'>
+   <group name='NoTargetPartyIDs' required='N
