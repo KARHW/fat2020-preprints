@@ -3553,4 +3553,42 @@
   <component name='InstrmtLegIOIGrp'>
    <group name='NoLegs' required='N'>
     <component name='InstrumentLeg' required='N' />
-    <field name='LegIOIQty' requi
+    <field name='LegIOIQty' required='N' />
+    <component name='LegStipulations' required='N' />
+   </group>
+  </component>
+  <component name='RelationshipRiskWarningLevels'>
+   <group name='NoRelationshipRiskWarningLevels' required='N'>
+    <field name='RelationshipRiskWarningLevelPercent' required='N' />
+    <field name='RelationshipRiskWarningLevelName' required='N' />
+   </group>
+  </component>
+  <component name='BaseTradingRules'>
+   <component name='TickRules' required='N' />
+   <component name='LotTypeRules' required='N' />
+   <component name='PriceLimits' required='N' />
+   <field name='ExpirationCycle' required='N' />
+   <field name='MinTradeVol' required='N' />
+   <field name='MaxTradeVol' required='N' />
+   <field name='MaxPriceVariation' required='N' />
+   <field name='ImpliedMarketIndicator' required='N' />
+   <field name='TradingCurrency' required='N' />
+   <field name='RoundLot' required='N' />
+   <field name='MultilegModel' required='N' />
+   <field name='MultilegPriceMethod' required='N' />
+   <field name='PriceType' required='N' />
+  </component>
+  <component name='InstrumentExtension'>
+   <field name='DeliveryForm' required='N' />
+   <field name='PctAtRisk' required='N' />
+   <component name='AttrbGrp' required='N' />
+  </component>
+  <component name='LinesOfTextGrp'>
+   <group name='NoLinesOfText' required='Y'>
+    <field name='Text' required='Y' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='BidDescReqGrp'>
+   <group name='NoBidDescri
