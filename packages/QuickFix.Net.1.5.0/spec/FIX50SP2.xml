@@ -3591,4 +3591,39 @@
    </group>
   </component>
   <component name='BidDescReqGrp'>
-   <group name='NoBidDescri
+   <group name='NoBidDescriptors' required='N'>
+    <field name='BidDescriptorType' required='N' />
+    <field name='BidDescriptor' required='N' />
+    <field name='SideValueInd' required='N' />
+    <field name='LiquidityValue' required='N' />
+    <field name='LiquidityNumSecurities' required='N' />
+    <field name='LiquidityPctLow' required='N' />
+    <field name='LiquidityPctHigh' required='N' />
+    <field name='EFPTrackingError' required='N' />
+    <field name='FairValue' required='N' />
+    <field name='OutsideIndexPct' required='N' />
+    <field name='ValueOfFutures' required='N' />
+   </group>
+  </component>
+  <component name='ContextPtysSubGrp'>
+   <group name='NoContextPartySubIDs' required='N'>
+    <field name='ContextPartySubID' required='N' />
+    <field name='ContextPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='MaturityRules'>
+   <group name='NoMaturityRules' required='N'>
+    <field name='MaturityRuleID' required='N' />
+    <field name='MaturityMonthYearFormat' required='N' />
+    <field name='MaturityMonthYearIncrementUnits' required='N' />
+    <field name='StartMaturityMonthYear' required='N' />
+    <field name='EndMaturityMonthYear' required='N' />
+    <field name='MaturityMonthYearIncrement' required='N' />
+   </group>
+  </component>
+  <component name='StrikeRules'>
+   <group name='NoStrikeRules' required='N'>
+    <field name='StrikeRuleID' required='N' />
+    <field name='StartStrikePxRange' required='N' />
+    <field name='EndStrikePxRange' required='N' />
+    <field name
