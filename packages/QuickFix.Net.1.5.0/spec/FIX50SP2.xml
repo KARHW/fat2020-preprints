@@ -3626,4 +3626,43 @@
     <field name='StrikeRuleID' required='N' />
     <field name='StartStrikePxRange' required='N' />
     <field name='EndStrikePxRange' required='N' />
-    <field name
+    <field name='StrikeIncrement' required='N' />
+    <field name='StrikeExerciseStyle' required='N' />
+    <component name='MaturityRules' required='N' />
+   </group>
+  </component>
+  <component name='QuotQualGrp'>
+   <group name='NoQuoteQualifiers' required='N'>
+    <field name='QuoteQualifier' required='N' />
+   </group>
+  </component>
+  <component name='PreAllocGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='AllocQty' required='N' />
+   </group>
+  </component>
+  <component name='MDRjctGrp'>
+   <group name='NoAltMDSource' required='N'>
+    <field name='AltMDSourceID' required='N' />
+   </group>
+  </component>
+  <component name='Instrument'>
+   <field name='Symbol' required='N' />
+   <field name='SymbolSfx' required='N' />
+   <field name='SecurityID' required='N' />
+   <field name='SecurityIDSource' required='N' />
+   <component name='SecAltIDGrp' required='N' />
+   <field name='Product' required='N' />
+   <field name='CFICode' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='SecuritySubType' required='N' />
+   <field name='MaturityMonthYear' required='N' />
+   <field name='MaturityDate' required='N' />
+   <field name='CouponPaymentDate' required='N' />
+   <field name='IssueDate' required='N' />
+   <field name='RepoCollate
