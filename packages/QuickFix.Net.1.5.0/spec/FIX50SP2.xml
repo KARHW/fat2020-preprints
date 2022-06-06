@@ -3763,4 +3763,41 @@
     <field name='EncodedAllocText' required='N' />
     <field name='SecondaryIndividualAllocID' required='N' />
     <field name='AllocCustomerCapacity' required='N' />
-    <field name='Individ
+    <field name='IndividualAllocType' required='N' />
+    <field name='AllocQty' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='AllocPositionEffect' required='N' />
+   </group>
+  </component>
+  <component name='QuotReqLegsGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <component name='LegStipulations' required='N' />
+    <component name='NestedParties' required='N' />
+    <component name='LegBenchmarkCurveData' required='N' />
+    <field name='LegOrderQty' required='N' />
+    <field name='LegRefID' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties2'>
+   <group name='NoNested2PartyIDs' required='N'>
+    <field name='Nested2PartyID' required='N' />
+    <field name='Nested2PartyIDSource' required='N' />
+    <field name='Nested2PartyRole' required='N' />
+    <component name='NstdPtys2SubGrp' required='N' />
+   </group>
+  </component>
+  <component name='InstrmtMDReqGrp'>
+   <group name='NoRelatedSym' required='Y'>
+    <component name='Instrument' required='Y' />
+    <component name='UndInstrmtGrp' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+    <field name='Currency' required='N' />
+    <field name='QuoteType' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    
