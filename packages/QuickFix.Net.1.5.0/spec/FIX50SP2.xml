@@ -3729,4 +3729,38 @@
    <field name='RestructuringType' required='N' />
    <field name='Seniority' required='N' />
    <field name='NotionalPercentageOutstanding' required='N' />
-   <field name='OriginalNotionalPercentageOutstanding' requ
+   <field name='OriginalNotionalPercentageOutstanding' required='N' />
+   <field name='AttachmentPoint' required='N' />
+   <field name='DetachmentPoint' required='N' />
+   <field name='StrikePriceDeterminationMethod' required='N' />
+   <field name='StrikePriceBoundaryMethod' required='N' />
+   <field name='StrikePriceBoundaryPrecision' required='N' />
+   <field name='UnderlyingPriceDeterminationMethod' required='N' />
+   <field name='OptPayoutType' required='N' />
+   <component name='ComplexEvents' required='N' />
+  </component>
+  <component name='TradeCapLegUnderlyingsGrp'>
+   <group name='NoOfLegUnderlyings' required='N'>
+    <component name='UnderlyingLegInstrument' required='N' />
+   </group>
+  </component>
+  <component name='HopGrp'>
+   <group name='NoHops' required='N'>
+    <field name='HopCompID' required='N' />
+    <field name='HopSendingTime' required='N' />
+    <field name='HopRefID' required='N' />
+   </group>
+  </component>
+  <component name='AllocAckGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocPrice' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <field name='IndividualAllocRejCode' required='N' />
+    <field name='AllocText' required='N' />
+    <field name='EncodedAllocTextLen' required='N' />
+    <field name='EncodedAllocText' required='N' />
+    <field name='SecondaryIndividualAllocID' required='N' />
+    <field name='AllocCustomerCapacity' required='N' />
+    <field name='Individ
