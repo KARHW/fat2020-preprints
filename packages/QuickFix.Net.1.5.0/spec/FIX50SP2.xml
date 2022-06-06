@@ -3698,4 +3698,35 @@
    <field name='SettleOnOpenFlag' required='N' />
    <field name='InstrmtAssignmentMethod' required='N' />
    <field name='StrikeMultiplier' required='N' />
-   <field name
+   <field name='StrikeValue' required='N' />
+   <field name='MinPriceIncrement' required='N' />
+   <field name='PositionLimit' required='N' />
+   <field name='NTPositionLimit' required='N' />
+   <component name='InstrumentParties' required='N' />
+   <field name='UnitOfMeasure' required='N' />
+   <field name='TimeUnit' required='N' />
+   <field name='MaturityTime' required='N' />
+   <field name='SecurityGroup' required='N' />
+   <field name='MinPriceIncrementAmount' required='N' />
+   <field name='UnitOfMeasureQty' required='N' />
+   <component name='SecurityXML' required='N' />
+   <field name='ProductComplex' required='N' />
+   <field name='PriceUnitOfMeasure' required='N' />
+   <field name='PriceUnitOfMeasureQty' required='N' />
+   <field name='SettlMethod' required='N' />
+   <field name='ExerciseStyle' required='N' />
+   <field name='OptPayoutAmount' required='N' />
+   <field name='PriceQuoteMethod' required='N' />
+   <field name='ListMethod' required='N' />
+   <field name='CapPrice' required='N' />
+   <field name='FloorPrice' required='N' />
+   <field name='PutOrCall' required='N' />
+   <field name='FlexibleIndicator' required='N' />
+   <field name='FlexProductEligibilityIndicator' required='N' />
+   <field name='ValuationMethod' required='N' />
+   <field name='ContractMultiplierUnit' required='N' />
+   <field name='FlowScheduleType' required='N' />
+   <field name='RestructuringType' required='N' />
+   <field name='Seniority' required='N' />
+   <field name='NotionalPercentageOutstanding' required='N' />
+   <field name='OriginalNotionalPercentageOutstanding' requ
