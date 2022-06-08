@@ -3873,4 +3873,41 @@
   </component>
   <component name='RelationshipRiskLimits'>
    <group name='NoRelationshipRiskLimits' required='N'>
-    <field name='RelationshipRiskLimitType' requ
+    <field name='RelationshipRiskLimitType' required='N' />
+    <field name='RelationshipRiskLimitAmount' required='N' />
+    <field name='RelationshipRiskLimitCurrency' required='N' />
+    <field name='RelationshipRiskLimitPlatform' required='N' />
+    <component name='RelationshipRiskInstrumentScope' required='N' />
+    <component name='RelationshipRiskWarningLevels' required='N' />
+   </group>
+  </component>
+  <component name='PartyRelationships'>
+   <group name='NoPartyRelationships' required='N'>
+    <field name='PartyRelationship' required='N' />
+   </group>
+  </component>
+  <component name='StrmAsgnRptInstrmtGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='StreamAsgnType' required='N' />
+    <field name='MDStreamID' required='N' />
+    <field name='StreamAsgnRejReason' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='StrmAsgnReqInstrmtGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='MDEntrySize' required='N' />
+    <field name='MDStreamID' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties4'>
+   <group name='NoNested4PartyIDs' required='N'>
+    <field name='Nested4PartyID' required='N' />
+    <field name='Nested4PartyIDSource' required='N' />
+    <field name='Nested4Party
