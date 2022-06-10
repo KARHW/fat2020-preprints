@@ -3981,4 +3981,31 @@
    <field name='UnderlyingCouponPaymentDate' required='N' />
    <field name='UnderlyingIssueDate' required='N' />
    <field name='UnderlyingRepoCollateralSecurityType' required='N' />
-   <field name='UnderlyingR
+   <field name='UnderlyingRepurchaseTerm' required='N' />
+   <field name='UnderlyingRepurchaseRate' required='N' />
+   <field name='UnderlyingFactor' required='N' />
+   <field name='UnderlyingCreditRating' required='N' />
+   <field name='UnderlyingInstrRegistry' required='N' />
+   <field name='UnderlyingCountryOfIssue' required='N' />
+   <field name='UnderlyingStateOrProvinceOfIssue' required='N' />
+   <field name='UnderlyingLocaleOfIssue' required='N' />
+   <field name='UnderlyingRedemptionDate' required='N' />
+   <field name='UnderlyingStrikePrice' required='N' />
+   <field name='UnderlyingStrikeCurrency' required='N' />
+   <field name='UnderlyingOptAttribute' required='N' />
+   <field name='UnderlyingContractMultiplier' required='N' />
+   <field name='UnderlyingCouponRate' required='N' />
+   <field name='UnderlyingSecurityExchange' required='N' />
+   <field name='UnderlyingIssuer' required='N' />
+   <field name='EncodedUnderlyingIssuerLen' required='N' />
+   <field name='EncodedUnderlyingIssuer' required='N' />
+   <field name='UnderlyingSecurityDesc' required='N' />
+   <field name='EncodedUnderlyingSecurityDescLen' required='N' />
+   <field name='EncodedUnderlyingSecurityDesc' required='N' />
+   <field name='UnderlyingCPProgram' required='N' />
+   <field name='UnderlyingCPRegType' required='N' />
+   <field name='UnderlyingCurrency' required='N' />
+   <field name='UnderlyingQty' required='N' />
+   <field name='UnderlyingPx' required='N' />
+   <field name='UnderlyingDirtyPrice' required='N' />
+   <field nam
