@@ -4034,4 +4034,36 @@
    <field name='UnderlyingContractMultiplierUnit' required='N' />
    <field name='UnderlyingFlowScheduleType' required='N' />
    <field name='UnderlyingRestructuringType' required='N' />
-   <field name='
+   <field name='UnderlyingSeniority' required='N' />
+   <field name='UnderlyingNotionalPercentageOutstanding' required='N' />
+   <field name='UnderlyingOriginalNotionalPercentageOutstanding' required='N' />
+   <field name='UnderlyingAttachmentPoint' required='N' />
+   <field name='UnderlyingDetachmentPoint' required='N' />
+  </component>
+  <component name='QuotSetGrp'>
+   <group name='NoQuoteSets' required='Y'>
+    <field name='QuoteSetID' required='Y' />
+    <component name='UnderlyingInstrument' required='N' />
+    <field name='QuoteSetValidUntilTime' required='N' />
+    <field name='TotNoQuoteEntries' required='Y' />
+    <field name='LastFragment' required='N' />
+    <component name='QuotEntryGrp' required='Y' />
+   </group>
+  </component>
+  <component name='AllocGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='MatchStatus' required='N' />
+    <field name='AllocPrice' required='N' />
+    <field name='AllocQty' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <field name='ProcessCode' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='NotifyBrokerOfCredit' required='N' />
+    <field name='AllocHandlInst' required='N' />
+    <field name='AllocText' required='N' />
+    <field name='EncodedAllocTextLen' required='N' />
+    <field name='EncodedAllocText' required='N' />
+    <component name='CommissionData' required='N' />
+    <field name='AllocAvgPx' required='N' 
