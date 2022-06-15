@@ -4170,4 +4170,48 @@
     <component name='InstrmtLegGrp' required='N' />
     <field name='PrevClosePx' required='N' />
     <field name='QuoteRequestType' required='N' />
-    <field name='Quot
+    <field name='QuoteType' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+   </group>
+  </component>
+  <component name='ApplIDReportGrp'>
+   <group name='NoApplIDs' required='N'>
+    <field name='RefApplID' required='N' />
+    <field name='ApplNewSeqNum' required='N' />
+    <field name='RefApplLastSeqNum' required='N' />
+   </group>
+  </component>
+  <component name='CpctyConfGrp'>
+   <group name='NoCapacities' required='Y'>
+    <field name='OrderCapacity' required='Y' />
+    <field name='OrderRestrictions' required='N' />
+    <field name='OrderCapacityQty' required='Y' />
+   </group>
+  </component>
+  <component name='UndInstrmtGrp'>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+  </component>
+  <component name='Parties'>
+   <group name='NoPartyIDs' required='N'>
+    <field name='PartyID' required='N' />
+    <field name='PartyIDSource' required='N' />
+    <field name='PartyRole' required='N' />
+    <component name='PtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='RequestedPartyRoleGrp'>
+   <group name='NoRequestedPartyRoles' required='N'>
+    <field name='RequestedPartyRole' required='N' />
+   </group>
+  </component>
+  <component name='TradingSessionRulesGrp'>
+   <group name='NoTradingSessionRules' required='N'>
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <component name='TradingSessionRules' required='N' />
+   </group>
+  </component>
+  <component name='UndlyInst
