@@ -4214,4 +4214,40 @@
     <component name='TradingSessionRules' required='N' />
    </group>
   </component>
-  <component name='UndlyInst
+  <component name='UndlyInstrumentPtysSubGrp'>
+   <group name='NoUndlyInstrumentPartySubIDs' required='N'>
+    <field name='UnderlyingInstrumentPartySubID' required='N' />
+    <field name='UnderlyingInstrumentPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties'>
+   <group name='NoNestedPartyIDs' required='N'>
+    <field name='NestedPartyID' required='N' />
+    <field name='NestedPartyIDSource' required='N' />
+    <field name='NestedPartyRole' required='N' />
+    <component name='NstdPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='TrdgSesGrp'>
+   <group name='NoTradingSessions' required='N'>
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+   </group>
+  </component>
+  <component name='AffectedOrdGrp'>
+   <group name='NoAffectedOrders' required='N'>
+    <field name='OrigClOrdID' required='N' />
+    <field name='AffectedOrderID' required='N' />
+    <field name='AffectedSecondaryOrderID' required='N' />
+   </group>
+  </component>
+  <component name='CommissionData'>
+   <field name='Commission' required='N' />
+   <field name='CommType' required='N' />
+   <field name='CommCurrency' required='N' />
+   <field name='FundRenewWaiv' required='N' />
+  </component>
+  <component name='RelationshipRiskSecAltIDGrp'>
+   <group name='NoRelationshipRiskSecurityAltID' required='N'>
+    <field name='RelationshipRiskSecurityAltID' required='N' />
+    <fi
