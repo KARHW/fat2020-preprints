@@ -4284,4 +4284,30 @@
    <field name='DerivativeMaturityMonthYear' required='N' />
    <field name='DerivativeMaturityDate' required='N' />
    <field name='DerivativeMaturityTime' required='N' />
-   <field name='DerivativeSettleOnOpenFlag' re
+   <field name='DerivativeSettleOnOpenFlag' required='N' />
+   <field name='DerivativeInstrmtAssignmentMethod' required='N' />
+   <field name='DerivativeSecurityStatus' required='N' />
+   <field name='DerivativeIssueDate' required='N' />
+   <field name='DerivativeInstrRegistry' required='N' />
+   <field name='DerivativeCountryOfIssue' required='N' />
+   <field name='DerivativeStateOrProvinceOfIssue' required='N' />
+   <field name='DerivativeStrikePrice' required='N' />
+   <field name='DerivativeLocaleOfIssue' required='N' />
+   <field name='DerivativeStrikeCurrency' required='N' />
+   <field name='DerivativeStrikeMultiplier' required='N' />
+   <field name='DerivativeStrikeValue' required='N' />
+   <field name='DerivativeOptAttribute' required='N' />
+   <field name='DerivativeContractMultiplier' required='N' />
+   <field name='DerivativeMinPriceIncrement' required='N' />
+   <field name='DerivativeMinPriceIncrementAmount' required='N' />
+   <field name='DerivativeUnitOfMeasure' required='N' />
+   <field name='DerivativeUnitOfMeasureQty' required='N' />
+   <field name='DerivativePriceUnitOfMeasure' required='N' />
+   <field name='DerivativePriceUnitOfMeasureQty' required='N' />
+   <field name='DerivativeExerciseStyle' required='N' />
+   <field name='DerivativeOptPayAmount' required='N' />
+   <field name='DerivativeTimeUnit' required='N' />
+   <field name='DerivativeSecurityExchange' required='N' />
+   <field name='DerivativePositionLimit' required='N' />
+   <field name='DerivativeNTPositionLimit' required='N' />
+   <field name='DerivativeIssuer' required='N' />
