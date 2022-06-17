@@ -4455,4 +4455,39 @@
     <field name='RateSourceType' required='N' />
     <field name='ReferencePage' required='N' />
    </group>
-  </co
+  </component>
+  <component name='TradeReportOrderDetail'>
+   <field name='OrderID' required='N' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='ListID' required='N' />
+   <field name='RefOrderID' required='N' />
+   <field name='RefOrderIDSource' required='N' />
+   <field name='RefOrdIDReason' required='N' />
+   <field name='OrdType' required='N' />
+   <field name='Price' required='N' />
+   <field name='StopPx' required='N' />
+   <field name='ExecInst' required='N' />
+   <field name='OrdStatus' required='N' />
+   <component name='OrderQtyData' required='N' />
+   <field name='LeavesQty' required='N' />
+   <field name='CumQty' required='N' />
+   <field name='TimeInForce' required='N' />
+   <field name='ExpireTime' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='OrderRestrictions' required='N' />
+   <field name='OrigCustOrderCapacity' required='N' />
+   <field name='OrderInputDevice' required='N' />
+   <field name='LotType' required='N' />
+   <field name='TransBkdTime' required='N' />
+   <field name='OrigOrdModTime' required='N' />
+   <field name='BookingType' required='N' />
+  </component>
+  <component name='CompIDStatGrp'>
+   <group name='NoCompIDs' required='Y'>
+    <field name='RefCompID' required='Y' />
+    <field name='RefSubID' required='N' />
+    <field name='LocationID' required='N' />
+    <fiel
