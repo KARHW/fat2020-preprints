@@ -4600,4 +4600,35 @@
   </component>
   <component name='RiskInstrumentScope'>
    <group name='NoRiskInstruments' required='N'>
-    <fi
+    <field name='RiskInstrumentOperator' required='N' />
+    <field name='RiskSymbol' required='N' />
+    <field name='RiskSymbolSfx' required='N' />
+    <field name='RiskSecurityID' required='N' />
+    <field name='RiskSecurityIDSource' required='N' />
+    <component name='RiskSecAltIDGrp' required='N' />
+    <field name='RiskProduct' required='N' />
+    <field name='RiskProductComplex' required='N' />
+    <field name='RiskSecurityGroup' required='N' />
+    <field name='RiskCFICode' required='N' />
+    <field name='RiskSecurityType' required='N' />
+    <field name='RiskSecuritySubType' required='N' />
+    <field name='RiskMaturityMonthYear' required='N' />
+    <field name='RiskMaturityTime' required='N' />
+    <field name='RiskRestructuringType' required='N' />
+    <field name='RiskSeniority' required='N' />
+    <field name='RiskPutOrCall' required='N' />
+    <field name='RiskFlexibleIndicator' required='N' />
+    <field name='RiskCouponRate' required='N' />
+    <field name='RiskSecurityExchange' required='N' />
+    <field name='RiskSecurityDesc' required='N' />
+    <field name='RiskEncodedSecurityDescLen' required='N' />
+    <field name='RiskEncodedSecurityDesc' required='N' />
+    <field name='RiskInstrumentSettlType' required='N' />
+    <field name='RiskInstrumentMultiplier' required='N' />
+   </group>
+  </component>
+  <component name='ContextParties'>
+   <group name='NoContextPartyIDs' required='N'>
+    <field name='ContextPartyID' required='N' />
+    <field name='ContextPartyIDSource' required='N' />
+    <field n
