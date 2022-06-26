@@ -4807,4 +4807,41 @@
     <component name='Stipulations' required='N' />
     <field name='Account' required='N' />
     <field name='AcctIDSource' required='N' />
-    <f
+    <field name='AccountType' required='N' />
+    <component name='QuotReqLegsGrp' required='N' />
+    <component name='QuotQualGrp' required='N' />
+    <field name='QuotePriceType' required='N' />
+    <field name='OrdType' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='TransactTime' required='N' />
+    <component name='SpreadOrBenchmarkCurveData' required='N' />
+    <field name='PriceType' required='N' />
+    <field name='Price' required='N' />
+    <field name='Price2' required='N' />
+    <component name='YieldData' required='N' />
+    <component name='Parties' required='N' />
+   </group>
+  </component>
+  <component name='PegInstructions'>
+   <field name='PegOffsetValue' required='N' />
+   <field name='PegMoveType' required='N' />
+   <field name='PegOffsetType' required='N' />
+   <field name='PegLimitType' required='N' />
+   <field name='PegRoundDirection' required='N' />
+   <field name='PegScope' required='N' />
+   <field name='PegPriceType' required='N' />
+   <field name='PegSecurityIDSource' required='N' />
+   <field name='PegSecurityID' required='N' />
+   <field name='PegSymbol' required='N' />
+   <field name='PegSecurityDesc' required='N' />
+  </component>
+  <component name='InstrumentParties'>
+   <group name='NoInstrumentParties' required='N'>
+    <field name='InstrumentPartyID' required='N' />
+    <field name='InstrumentPartyIDSource' required='N' />
+    <field name='InstrumentPartyRole' required='N' />
+    <component name='InstrumentPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='RiskSecAltIDGrp'>
+   <group name='NoRiskSecurity
