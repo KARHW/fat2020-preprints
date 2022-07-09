@@ -5062,4 +5062,39 @@
    </group>
   </component>
   <component name='UnderlyingLegSecurityAltIDGrp'>
-   <group 
+   <group name='NoUnderlyingLegSecurityAltID' required='N'>
+    <field name='UnderlyingLegSecurityAltID' required='N' />
+    <field name='UnderlyingLegSecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='DisplayInstruction'>
+   <field name='SecondaryDisplayQty' required='N' />
+   <field name='DisplayWhen' required='N' />
+   <field name='DisplayMethod' required='N' />
+   <field name='DisplayLowQty' required='N' />
+   <field name='DisplayHighQty' required='N' />
+   <field name='DisplayMinIncr' required='N' />
+   <field name='RefreshQty' required='N' />
+   <field name='DisplayQty' required='N' />
+  </component>
+  <component name='QuotEntryGrp'>
+   <group name='NoQuoteEntries' required='Y'>
+    <field name='QuoteEntryID' required='Y' />
+    <component name='Instrument' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+    <field name='BidPx' required='N' />
+    <field name='OfferPx' required='N' />
+    <field name='BidSize' required='N' />
+    <field name='OfferSize' required='N' />
+    <field name='ValidUntilTime' required='N' />
+    <field name='BidSpotRate' required='N' />
+    <field name='OfferSpotRate' required='N' />
+    <field name='BidForwardPoints' required='N' />
+    <field name='OfferForwardPoints' required='N' />
+    <field name='MidPx' required='N' />
+    <field name='BidYield' required='N' />
+    <field name='MidYield' required='N' />
+    <field name='OfferYield' required='N' />
+    <field name='TransactTime' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <f
