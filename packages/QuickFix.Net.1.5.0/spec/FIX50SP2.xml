@@ -5351,4 +5351,39 @@
     <component name='PegInstructions' required='N' />
     <component name='DiscretionInstructions' required='N' />
     <field name='TargetStrategy' required='N' />
-    <field name='TargetStrategyPar
+    <field name='TargetStrategyParameters' required='N' />
+    <field name='ParticipationRate' required='N' />
+    <field name='Designation' required='N' />
+    <component name='StrategyParametersGrp' required='N' />
+    <field name='MatchIncrement' required='N' />
+    <field name='MaxPriceLevels' required='N' />
+    <component name='DisplayInstruction' required='N' />
+    <field name='PriceProtectionScope' required='N' />
+    <component name='TriggeringInstruction' required='N' />
+    <field name='RefOrderID' required='N' />
+    <field name='RefOrderIDSource' required='N' />
+    <field name='PreTradeAnonymity' required='N' />
+    <field name='ExDestinationIDSource' required='N' />
+   </group>
+  </component>
+  <component name='PtysSubGrp'>
+   <group name='NoPartySubIDs' required='N'>
+    <field name='PartySubID' required='N' />
+    <field name='PartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='TrdInstrmtLegGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <field name='LegPositionEffect' required='N' />
+    <field name='LegCoveredOrUncovered' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <field name='LegLastPx' required='N' />
+    <field name='LegReportID' required='N' />
+    <field name='
