@@ -5386,4 +5386,39 @@
     <field name='LegSettlDate' required='N' />
     <field name='LegLastPx' required='N' />
     <field name='LegReportID' required='N' />
-    <field name='
+    <field name='LegSettlCurrency' required='N' />
+    <field name='LegLastForwardPoints' required='N' />
+    <field name='LegCalculatedCcyLastQty' required='N' />
+    <field name='LegGrossTradeAmt' required='N' />
+    <field name='LegNumber' required='N' />
+    <component name='TradeCapLegUnderlyingsGrp' required='N' />
+    <field name='LegVolatility' required='N' />
+    <field name='LegDividendYield' required='N' />
+    <field name='LegCurrencyRatio' required='N' />
+    <field name='LegExecInst' required='N' />
+    <field name='LegLastQty' required='N' />
+   </group>
+  </component>
+  <component name='TrdAllocGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <component name='NestedParties2' required='N' />
+    <field name='AllocQty' required='N' />
+    <field name='AllocCustomerCapacity' required='N' />
+    <field name='AllocMethod' required='N' />
+    <field name='SecondaryIndividualAllocID' required='N' />
+    <field name='AllocClearingFeeIndicator' required='N' />
+   </group>
+  </component>
+  <component name='StrmAsgnReqGrp'>
+   <group name='NoAsgnReqs' required='N'>
+    <component name='Parties' required='N' />
+    <component name='StrmAsgnReqInstrmtGrp' required='N' />
+   </group>
+  </component>
+  <component name='ApplIDRequestGrp'>
+   <group name='NoApplIDs' required='N'>
+    <fiel
