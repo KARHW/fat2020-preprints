@@ -5499,4 +5499,43 @@
     <field name='FairValue' required='N' />
     <field name='NetGrossInd' required='N' />
     <field name='SettlType' required='N' />
-    <field name
+    <field name='SettlDate' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='OrdTypeRules'>
+   <group name='NoOrdTypeRules' required='N'>
+    <field name='OrdType' required='N' />
+   </group>
+  </component>
+  <component name='SideCrossOrdCxlGrp'>
+   <group name='NoSides' required='Y'>
+    <field name='Side' required='Y' />
+    <field name='OrigClOrdID' required='N' />
+    <field name='ClOrdID' required='Y' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='ClOrdLinkID' required='N' />
+    <field name='OrigOrdModTime' required='N' />
+    <component name='Parties' required='N' />
+    <field name='TradeOriginationDate' required='N' />
+    <field name='TradeDate' required='N' />
+    <component name='OrderQtyData' required='Y' />
+    <field name='ComplianceID' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='RelatedContextParties'>
+   <group name='NoRelatedContextPartyIDs' required='N'>
+    <field name='RelatedContextPartyID' required='N' />
+    <field name='RelatedContextPartyIDSource' required='N' />
+    <field name='RelatedContextPartyRole' required='N' />
+    <component name='RelatedContextPtysSubGrp' required='N' />
+   </group>
+  </component>
+ 
