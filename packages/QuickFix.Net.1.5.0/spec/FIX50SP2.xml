@@ -5706,4 +5706,33 @@
    <value enum='n' description='REINSTATE_ON_CONNECTION_LOSS' />
    <value enum='o' description='CANCEL_ON_CONNECTION_LOSS' />
    <value enum='p' description='SUSPEND_ON_CONNECTION_LOSS' />
-   <value enum='q' description='RELEASE_
+   <value enum='q' description='RELEASE_FROM_SUSPENSION' />
+   <value enum='r' description='EXECUTE_AS_DELTA_NEUTRAL_USING_VOLATILITY_PROVIDED' />
+   <value enum='s' description='EXECUTE_AS_DURATION_NEUTRAL' />
+   <value enum='t' description='EXECUTE_AS_FX_NEUTRAL' />
+  </field>
+  <field number='19' name='ExecRefID' type='STRING' />
+  <field number='20' name='ExecTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='CANCEL' />
+   <value enum='2' description='CORRECT' />
+   <value enum='3' description='STATUS' />
+  </field>
+  <field number='21' name='HandlInst' type='CHAR'>
+   <value enum='1' description='AUTOMATED_EXECUTION_ORDER_PRIVATE_NO_BROKER_INTERVENTION' />
+   <value enum='2' description='AUTOMATED_EXECUTION_ORDER_PUBLIC_BROKER_INTERVENTION_OK' />
+   <value enum='3' description='MANUAL_ORDER_BEST_EXECUTION' />
+  </field>
+  <field number='22' name='SecurityIDSource' type='STRING'>
+   <value enum='1' description='CUSIP' />
+   <value enum='2' description='SEDOL' />
+   <value enum='3' description='QUIK' />
+   <value enum='4' description='ISIN_NUMBER' />
+   <value enum='5' description='RIC_CODE' />
+   <value enum='6' description='ISO_CURRENCY_CODE' />
+   <value enum='7' description='ISO_COUNTRY_CODE' />
+   <value enum='8' description='EXCHANGE_SYMBOL' />
+   <value enum='9' description='CONSOLIDATED_TAPE_ASSOCIATION' />
+   <value enum='A' description='BLOOMBERG_SYMBOL' />
+   <value enum='B' description='WERTPAPIER' />
+   <value enum='C' description='DUTCH
