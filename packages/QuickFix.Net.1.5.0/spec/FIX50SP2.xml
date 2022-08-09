@@ -5735,4 +5735,37 @@
    <value enum='9' description='CONSOLIDATED_TAPE_ASSOCIATION' />
    <value enum='A' description='BLOOMBERG_SYMBOL' />
    <value enum='B' description='WERTPAPIER' />
-   <value enum='C' description='DUTCH
+   <value enum='C' description='DUTCH' />
+   <value enum='D' description='VALOREN' />
+   <value enum='E' description='SICOVAM' />
+   <value enum='F' description='BELGIAN' />
+   <value enum='G' description='COMMON' />
+   <value enum='H' description='CLEARING_HOUSE' />
+   <value enum='I' description='ISDA_FPML_PRODUCT_SPECIFICATION' />
+   <value enum='J' description='OPTION_PRICE_REPORTING_AUTHORITY' />
+   <value enum='L' description='LETTER_OF_CREDIT' />
+   <value enum='K' description='ISDA_FPML_PRODUCT_URL' />
+   <value enum='M' description='MARKETPLACE_ASSIGNED_IDENTIFIER' />
+  </field>
+  <field number='23' name='IOIID' type='STRING' />
+  <field number='24' name='IOIOthSvc' type='CHAR' />
+  <field number='25' name='IOIQltyInd' type='CHAR'>
+   <value enum='H' description='HIGH' />
+   <value enum='L' description='LOW' />
+   <value enum='M' description='MEDIUM' />
+  </field>
+  <field number='26' name='IOIRefID' type='STRING' />
+  <field number='27' name='IOIQty' type='STRING'>
+   <value enum='0' description='1000000000' />
+   <value enum='S' description='SMALL' />
+   <value enum='M' description='MEDIUM' />
+   <value enum='L' description='LARGE' />
+   <value enum='U' description='UNDISCLOSED_QUANTITY' />
+  </field>
+  <field number='28' name='IOITransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPLACE' />
+  </field>
+  <field number='29' name='LastCapacity' type='CHAR'>
+   <value enum='1' description='AG
