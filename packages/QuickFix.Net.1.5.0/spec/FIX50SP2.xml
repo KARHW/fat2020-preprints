@@ -5798,4 +5798,31 @@
    <value enum='AF' description='ORDERMASSSTATUSREQUEST' />
    <value enum='AG' description='QUOTEREQUESTREJECT' />
    <value enum='AH' description='RFQREQUEST' />
-   <value enum='AI' description='QUOTESTATUSREPO
+   <value enum='AI' description='QUOTESTATUSREPORT' />
+   <value enum='AJ' description='QUOTERESPONSE' />
+   <value enum='AK' description='CONFIRMATION' />
+   <value enum='AL' description='POSITIONMAINTENANCEREQUEST' />
+   <value enum='AM' description='POSITIONMAINTENANCEREPORT' />
+   <value enum='AN' description='REQUESTFORPOSITIONS' />
+   <value enum='AO' description='REQUESTFORPOSITIONSACK' />
+   <value enum='AP' description='POSITIONREPORT' />
+   <value enum='AQ' description='TRADECAPTUREREPORTREQUESTACK' />
+   <value enum='AR' description='TRADECAPTUREREPORTACK' />
+   <value enum='AS' description='ALLOCATIONREPORT' />
+   <value enum='AT' description='ALLOCATIONREPORTACK' />
+   <value enum='AU' description='CONFIRMATION_ACK' />
+   <value enum='AV' description='SETTLEMENTINSTRUCTIONREQUEST' />
+   <value enum='AW' description='ASSIGNMENTREPORT' />
+   <value enum='AX' description='COLLATERALREQUEST' />
+   <value enum='AY' description='COLLATERALASSIGNMENT' />
+   <value enum='AZ' description='COLLATERALRESPONSE' />
+   <value enum='B' description='NEWS' />
+   <value enum='BA' description='COLLATERALREPORT' />
+   <value enum='BB' description='COLLATERALINQUIRY' />
+   <value enum='BC' description='NETWORKCOUNTERPARTYSYSTEMSTATUSREQUEST' />
+   <value enum='BD' description='NETWORKCOUNTERPARTYSYSTEMSTATUSRESPONSE' />
+   <value enum='BE' description='USERREQUEST' />
+   <value enum='BF' description='USERRESPONSE' />
+   <value enum='BG' description='COLLATERALINQUIRYACK' />
+   <value enum='BH' description='CONFIRMATIONREQUEST' />
+   <value enum='BI' description='TRADINGSESSIO
