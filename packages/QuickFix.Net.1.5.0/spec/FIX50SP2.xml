@@ -6178,4 +6178,39 @@
   </field>
   <field number='104' name='IOIQualifier' type='CHAR'>
    <value enum='A' description='ALL_OR_NONE' />
-   <value enum='B' description='MARKET_ON_CL
+   <value enum='B' description='MARKET_ON_CLOSE' />
+   <value enum='C' description='AT_THE_CLOSE' />
+   <value enum='D' description='VWAP' />
+   <value enum='I' description='IN_TOUCH_WITH' />
+   <value enum='L' description='LIMIT' />
+   <value enum='M' description='MORE_BEHIND' />
+   <value enum='O' description='AT_THE_OPEN' />
+   <value enum='P' description='TAKING_A_POSITION' />
+   <value enum='Q' description='AT_THE_MARKET' />
+   <value enum='R' description='READY_TO_TRADE' />
+   <value enum='S' description='PORTFOLIO_SHOWN' />
+   <value enum='T' description='THROUGH_THE_DAY' />
+   <value enum='V' description='VERSUS' />
+   <value enum='W' description='INDICATION' />
+   <value enum='X' description='CROSSING_OPPORTUNITY' />
+   <value enum='Y' description='AT_THE_MIDPOINT' />
+   <value enum='Z' description='PRE_OPEN' />
+  </field>
+  <field number='105' name='WaveNo' type='STRING' />
+  <field number='106' name='Issuer' type='STRING' />
+  <field number='107' name='SecurityDesc' type='STRING' />
+  <field number='108' name='HeartBtInt' type='INT' />
+  <field number='109' name='ClientID' type='STRING' />
+  <field number='110' name='MinQty' type='QTY' />
+  <field number='111' name='MaxFloor' type='QTY' />
+  <field number='112' name='TestReqID' type='STRING' />
+  <field number='113' name='ReportToExch' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='114' name='LocateReqd' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='115' name='OnBehalfOfCompID' type='STRING' />
+  <field number='116' name='
