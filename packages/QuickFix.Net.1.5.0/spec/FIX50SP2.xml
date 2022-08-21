@@ -6422,4 +6422,29 @@
    <value enum='SWING' description='SWING_LINE_FACILITY' />
    <value enum='TAN' description='TAX_ANTICIPATION_NOTE' />
    <value enum='TAXA' description='TAX_ALLOCATION' />
-   <value
+   <value enum='TBA' description='TO_BE_ANNOUNCED' />
+   <value enum='TBILL' description='US_TREASURY_BILL_TBILL' />
+   <value enum='TBOND' description='US_TREASURY_BOND' />
+   <value enum='TCAL' description='PRINCIPAL_STRIP_OF_A_CALLABLE_BOND_OR_NOTE' />
+   <value enum='TD' description='TIME_DEPOSIT' />
+   <value enum='TECP' description='TAX_EXEMPT_COMMERCIAL_PAPER' />
+   <value enum='TERM' description='TERM_LOAN' />
+   <value enum='TINT' description='INTEREST_STRIP_FROM_ANY_BOND_OR_NOTE' />
+   <value enum='TIPS' description='TREASURY_INFLATION_PROTECTED_SECURITIES' />
+   <value enum='TNOTE' description='US_TREASURY_NOTE_TNOTE' />
+   <value enum='TPRN' description='PRINCIPAL_STRIP_FROM_A_NON_CALLABLE_BOND_OR_NOTE' />
+   <value enum='TRAN' description='TAX_REVENUE_ANTICIPATION_NOTE' />
+   <value enum='UST' description='US_TREASURY_NOTE_UST' />
+   <value enum='USTB' description='US_TREASURY_BILL_USTB' />
+   <value enum='VRDN' description='VARIABLE_RATE_DEMAND_NOTE' />
+   <value enum='WAR' description='WARRANT' />
+   <value enum='WITHDRN' description='WITHDRAWN' />
+   <value enum='?' description='WILDCARD_ENTRY_FOR_USE_ON_SECURITY_DEFINITION_REQUEST' />
+   <value enum='XCN' description='EXTENDED_COMM_NOTE' />
+   <value enum='XLINKD' description='INDEXED_LINKED' />
+   <value enum='YANK' description='YANKEE_CORPORATE_BOND' />
+   <value enum='YCD' description='YANKEE_CERTIFICATE_OF_DEPOSIT' />
+   <value enum='OOP' description='OPTIONS_ON_PHYSICAL' />
+   <value enum='OOF' description='OPTIONS_ON_FUTURES' />
+   <value enum='CASH' description='CASH' />
+   <value enum='OOC' descri
