@@ -6341,4 +6341,31 @@
   <field number='166' name='SettlLocation' type='STRING'>
    <value enum='CED' description='CEDEL' />
    <value enum='DTC' description='DEPOSITORY_TRUST_COMPANY' />
-   <value enum='EUR' description='EURO_CLEAR
+   <value enum='EUR' description='EURO_CLEAR' />
+   <value enum='FED' description='FEDERAL_BOOK_ENTRY' />
+   <value enum='ISO_Country_Code' description='LOCAL_MARKET_SETTLE_LOCATION' />
+   <value enum='PNY' description='PHYSICAL' />
+   <value enum='PTC' description='PARTICIPANT_TRUST_COMPANY' />
+  </field>
+  <field number='167' name='SecurityType' type='STRING'>
+   <value enum='ABS' description='ASSET_BACKED_SECURITIES' />
+   <value enum='AMENDED' description='AMENDED_RESTATED' />
+   <value enum='AN' description='OTHER_ANTICIPATION_NOTES' />
+   <value enum='BA' description='BANKERS_ACCEPTANCE' />
+   <value enum='BN' description='BANK_NOTES' />
+   <value enum='BOX' description='BILL_OF_EXCHANGES' />
+   <value enum='BRADY' description='BRADY_BOND' />
+   <value enum='BRIDGE' description='BRIDGE_LOAN' />
+   <value enum='BUYSELL' description='BUY_SELLBACK' />
+   <value enum='CB' description='CONVERTIBLE_BOND' />
+   <value enum='CD' description='CERTIFICATE_OF_DEPOSIT' />
+   <value enum='CL' description='CALL_LOANS' />
+   <value enum='CMBS' description='CORP_MORTGAGE_BACKED_SECURITIES' />
+   <value enum='CMO' description='COLLATERALIZED_MORTGAGE_OBLIGATION' />
+   <value enum='COFO' description='CERTIFICATE_OF_OBLIGATION' />
+   <value enum='COFP' description='CERTIFICATE_OF_PARTICIPATION' />
+   <value enum='CORP' description='CORPORATE_BOND' />
+   <value enum='CP' description='COMMERCIAL_PAPER' />
+   <value enum='CPP' description='CORPORATE_PRIVATE_PLACEMENT' />
+   <value enum='CS' description='COMMON_STOCK' />
+   <value enu
