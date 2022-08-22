@@ -6447,4 +6447,33 @@
    <value enum='OOP' description='OPTIONS_ON_PHYSICAL' />
    <value enum='OOF' description='OPTIONS_ON_FUTURES' />
    <value enum='CASH' description='CASH' />
-   <value enum='OOC' descri
+   <value enum='OOC' description='OPTIONS_ON_COMBO' />
+   <value enum='IRS' description='INTEREST_RATE_SWAP' />
+   <value enum='BDN' description='BANK_DEPOSITORY_NOTE' />
+   <value enum='CAMM' description='CANADIAN_MONEY_MARKETS' />
+   <value enum='CAN' description='CANADIAN_TREASURY_NOTES' />
+   <value enum='CTB' description='CANADIAN_TREASURY_BILLS' />
+   <value enum='CDS' description='CREDIT_DEFAULT_SWAP' />
+   <value enum='CMB' description='CANADIAN_MORTGAGE_BONDS' />
+   <value enum='EUFRN' description='EURO_CORPORATE_FLOATING_RATE_NOTES' />
+   <value enum='FRN' description='US_CORPORATE_FLOATING_RATE_NOTES' />
+   <value enum='PROV' description='CANADIAN_PROVINCIAL_BONDS' />
+   <value enum='SLQN' description='SECURED_LIQUIDITY_NOTE' />
+   <value enum='TB' description='TREASURY_BILL' />
+   <value enum='TLQN' description='TERM_LIQUIDITY_NOTE' />
+   <value enum='TMCP' description='TAXABLE_MUNICIPAL_CP' />
+   <value enum='FXNDF' description='NON_DELIVERABLE_FORWARD' />
+   <value enum='FXSPOT' description='FX_SPOT' />
+   <value enum='FXFWD' description='FX_FORWARD' />
+   <value enum='FXSWAP' description='FX_SWAP' />
+  </field>
+  <field number='168' name='EffectiveTime' type='UTCTIMESTAMP' />
+  <field number='169' name='StandInstDbType' type='INT'>
+   <value enum='0' description='OTHER' />
+   <value enum='1' description='DTC_SID' />
+   <value enum='2' description='THOMSON_ALERT' />
+   <value enum='3' description='A_GLOBAL_CUSTODIAN' />
+   <value enum='4' description='ACCOUNTNET' />
+  </field>
+  <field number='170' name='StandInstDbName' type='STRING' />
+  <field number='171' nam
