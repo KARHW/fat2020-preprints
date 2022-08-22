@@ -6476,4 +6476,29 @@
    <value enum='4' description='ACCOUNTNET' />
   </field>
   <field number='170' name='StandInstDbName' type='STRING' />
-  <field number='171' nam
+  <field number='171' name='StandInstDbID' type='STRING' />
+  <field number='172' name='SettlDeliveryType' type='INT'>
+   <value enum='0' description='VERSUS_PAYMENT_DELIVER' />
+   <value enum='1' description='FREE_DELIVER' />
+   <value enum='2' description='TRI_PARTY' />
+   <value enum='3' description='HOLD_IN_CUSTODY' />
+  </field>
+  <field number='173' name='SettlDepositoryCode' type='STRING' />
+  <field number='174' name='SettlBrkrCode' type='STRING' />
+  <field number='175' name='SettlInstCode' type='STRING' />
+  <field number='176' name='SecuritySettlAgentName' type='STRING' />
+  <field number='177' name='SecuritySettlAgentCode' type='STRING' />
+  <field number='178' name='SecuritySettlAgentAcctNum' type='STRING' />
+  <field number='179' name='SecuritySettlAgentAcctName' type='STRING' />
+  <field number='180' name='SecuritySettlAgentContactName' type='STRING' />
+  <field number='181' name='SecuritySettlAgentContactPhone' type='STRING' />
+  <field number='182' name='CashSettlAgentName' type='STRING' />
+  <field number='183' name='CashSettlAgentCode' type='STRING' />
+  <field number='184' name='CashSettlAgentAcctNum' type='STRING' />
+  <field number='185' name='CashSettlAgentAcctName' type='STRING' />
+  <field number='186' name='CashSettlAgentContactName' type='STRING' />
+  <field number='187' name='CashSettlAgentContactPhone' type='STRING' />
+  <field number='188' name='BidSpotRate' type='PRICE' />
+  <field number='189' name='BidForwardPoints' type='PRICEOFFSET' />
+  <field number='190' name='OfferSpotRate' type='PRICE' />
+  <field number='191' name='OfferForwardPoints' type='
