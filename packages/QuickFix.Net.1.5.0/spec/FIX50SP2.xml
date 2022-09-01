@@ -6568,4 +6568,30 @@
   <field number='221' name='BenchmarkCurveName' type='STRING'>
    <value enum='EONIA' description='EONIA' />
    <value enum='EUREPO' description='EUREPO' />
-   <value en
+   <value enum='Euribor' description='EURIBOR' />
+   <value enum='FutureSWAP' description='FUTURESWAP' />
+   <value enum='LIBID' description='LIBID' />
+   <value enum='LIBOR' description='LIBOR' />
+   <value enum='MuniAAA' description='MUNIAAA' />
+   <value enum='OTHER' description='OTHER' />
+   <value enum='Pfandbriefe' description='PFANDBRIEFE' />
+   <value enum='SONIA' description='SONIA' />
+   <value enum='SWAP' description='SWAP' />
+   <value enum='Treasury' description='TREASURY' />
+  </field>
+  <field number='222' name='BenchmarkCurvePoint' type='STRING' />
+  <field number='223' name='CouponRate' type='PERCENTAGE' />
+  <field number='224' name='CouponPaymentDate' type='LOCALMKTDATE' />
+  <field number='225' name='IssueDate' type='LOCALMKTDATE' />
+  <field number='226' name='RepurchaseTerm' type='INT' />
+  <field number='227' name='RepurchaseRate' type='PERCENTAGE' />
+  <field number='228' name='Factor' type='FLOAT' />
+  <field number='229' name='TradeOriginationDate' type='LOCALMKTDATE' />
+  <field number='230' name='ExDate' type='LOCALMKTDATE' />
+  <field number='231' name='ContractMultiplier' type='FLOAT' />
+  <field number='232' name='NoStipulations' type='NUMINGROUP' />
+  <field number='233' name='StipulationType' type='STRING'>
+   <value enum='ABS' description='ABSOLUTE_PREPAYMENT_SPEED' />
+   <value enum='AMT' description='ALTERNATIVE_MINIMUM_TAX' />
+   <value enum='AUTOREINV' description='AUTO_REINVESTMENT_AT_RATE_OR_BETTER' />
+   <value enum='BANKQUAL' description='BANK_
