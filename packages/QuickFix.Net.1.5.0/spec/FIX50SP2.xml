@@ -6594,4 +6594,29 @@
    <value enum='ABS' description='ABSOLUTE_PREPAYMENT_SPEED' />
    <value enum='AMT' description='ALTERNATIVE_MINIMUM_TAX' />
    <value enum='AUTOREINV' description='AUTO_REINVESTMENT_AT_RATE_OR_BETTER' />
-   <value enum='BANKQUAL' description='BANK_
+   <value enum='BANKQUAL' description='BANK_QUALIFIED' />
+   <value enum='BGNCON' description='BARGAIN_CONDITIONS' />
+   <value enum='COUPON' description='COUPON_RANGE' />
+   <value enum='CPP' description='CONSTANT_PREPAYMENT_PENALTY' />
+   <value enum='CPR' description='CONSTANT_PREPAYMENT_RATE' />
+   <value enum='CPY' description='CONSTANT_PREPAYMENT_YIELD' />
+   <value enum='CURRENCY' description='ISO_CURRENCY_CODE' />
+   <value enum='CUSTOMDATE' description='CUSTOM_START_END_DATE' />
+   <value enum='GEOG' description='GEOGRAPHICS_AND_RANGE' />
+   <value enum='HAIRCUT' description='VALUATION_DISCOUNT' />
+   <value enum='HEP' description='FINAL_CPR_OF_HOME_EQUITY_PREPAYMENT_CURVE' />
+   <value enum='INSURED' description='INSURED' />
+   <value enum='ISSUE' description='YEAR_OR_YEAR_MONTH_OF_ISSUE' />
+   <value enum='ISSUER' description='ISSUERS_TICKER' />
+   <value enum='ISSUESIZE' description='ISSUE_SIZE_RANGE' />
+   <value enum='LOOKBACK' description='LOOKBACK_DAYS' />
+   <value enum='LOT' description='EXPLICIT_LOT_IDENTIFIER' />
+   <value enum='LOTVAR' description='LOT_VARIANCE' />
+   <value enum='MAT' description='MATURITY_YEAR_AND_MONTH' />
+   <value enum='MATURITY' description='MATURITY_RANGE' />
+   <value enum='MAXSUBS' description='MAXIMUM_SUBSTITUTIONS' />
+   <value enum='MHP' description='PERCENT_OF_MANUFACTURED_HOUSING_PREPAYMENT_CURVE' />
+   <value enum='MINDNOM' description='MINIMUM_DENOMINATION' />
+   <value enum='MININCR' description='MINIMUM_INCREMENT' />
+   <value enum='MINQTY' description='MINIMUM_QUANTITY' />
+   <value enum='MPR' desc
