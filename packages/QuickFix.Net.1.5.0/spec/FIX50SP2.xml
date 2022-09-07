@@ -6667,4 +6667,30 @@
    <value enum='MAXORDQTY' description='MAXIMUM_ORDER_SIZE' />
    <value enum='ORDRINCR' description='ORDER_QUANTITY_INCREMENT' />
    <value enum='PRIMARY' description='PRIMARY_OR_SECONDARY_MARKET_INDICATOR' />
-   <value enum='SALESCREDITOVR' description='BROKER_SALES_CREDIT
+   <value enum='SALESCREDITOVR' description='BROKER_SALES_CREDIT_OVERRIDE' />
+   <value enum='TRADERCREDIT' description='TRADERS_CREDIT' />
+   <value enum='DISCOUNT' description='DISCOUNT_RATE' />
+   <value enum='YTM' description='YIELD_TO_MATURITY' />
+  </field>
+  <field number='234' name='StipulationValue' type='STRING' />
+  <field number='235' name='YieldType' type='STRING'>
+   <value enum='AFTERTAX' description='AFTER_TAX_YIELD' />
+   <value enum='ANNUAL' description='ANNUAL_YIELD' />
+   <value enum='ATISSUE' description='YIELD_AT_ISSUE' />
+   <value enum='AVGMATURITY' description='YIELD_TO_AVG_MATURITY' />
+   <value enum='BOOK' description='BOOK_YIELD' />
+   <value enum='CALL' description='YIELD_TO_NEXT_CALL' />
+   <value enum='CHANGE' description='YIELD_CHANGE_SINCE_CLOSE' />
+   <value enum='CLOSE' description='CLOSING_YIELD' />
+   <value enum='COMPOUND' description='COMPOUND_YIELD' />
+   <value enum='CURRENT' description='CURRENT_YIELD' />
+   <value enum='GOVTEQUIV' description='GVNT_EQUIVALENT_YIELD' />
+   <value enum='GROSS' description='TRUE_GROSS_YIELD' />
+   <value enum='INFLATION' description='YIELD_WITH_INFLATION_ASSUMPTION' />
+   <value enum='INVERSEFLOATER' description='INVERSE_FLOATER_BOND_YIELD' />
+   <value enum='LASTCLOSE' description='MOST_RECENT_CLOSING_YIELD' />
+   <value enum='LASTMONTH' description='CLOSING_YIELD_MOST_RECENT_MONTH' />
+   <value enum='LASTQUARTER' description='CLOSING_YIELD_MOST_RECENT_QUARTER' />
+   <value enum='LASTYEAR' description='CLOSING_YIELD_MOST_RECENT_YEAR' />
+   <value enum='LONGAVGLIFE' description='YIELD_TO_LONGEST_AVERAGE_LIFE' />
+   <value enum='MARK' 
