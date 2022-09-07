@@ -6718,4 +6718,31 @@
   <field number='242' name='UnderlyingIssueDate' type='LOCALMKTDATE' />
   <field number='243' name='UnderlyingRepoCollateralSecurityType' type='INT' />
   <field number='244' name='UnderlyingRepurchaseTerm' type='INT' />
-  <fie
+  <field number='245' name='UnderlyingRepurchaseRate' type='PERCENTAGE' />
+  <field number='246' name='UnderlyingFactor' type='FLOAT' />
+  <field number='247' name='UnderlyingRedemptionDate' type='LOCALMKTDATE' />
+  <field number='248' name='LegCouponPaymentDate' type='LOCALMKTDATE' />
+  <field number='249' name='LegIssueDate' type='LOCALMKTDATE' />
+  <field number='250' name='LegRepoCollateralSecurityType' type='INT' />
+  <field number='251' name='LegRepurchaseTerm' type='INT' />
+  <field number='252' name='LegRepurchaseRate' type='PERCENTAGE' />
+  <field number='253' name='LegFactor' type='FLOAT' />
+  <field number='254' name='LegRedemptionDate' type='LOCALMKTDATE' />
+  <field number='255' name='CreditRating' type='STRING' />
+  <field number='256' name='UnderlyingCreditRating' type='STRING' />
+  <field number='257' name='LegCreditRating' type='STRING' />
+  <field number='258' name='TradedFlatSwitch' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='259' name='BasisFeatureDate' type='LOCALMKTDATE' />
+  <field number='260' name='BasisFeaturePrice' type='PRICE' />
+  <field number='262' name='MDReqID' type='STRING' />
+  <field number='263' name='SubscriptionRequestType' type='CHAR'>
+   <value enum='0' description='SNAPSHOT' />
+   <value enum='1' description='SNAPSHOT_PLUS_UPDATES' />
+   <value enum='2' description='DISABLE_PREVIOUS_SNAPSHOT_PLUS_UPDATE_REQUEST' />
+  </field>
+  <field number='264' name='MarketDepth' type='INT' />
+  <field number='265' name='MDUpdateType' type='INT'>
+   <value enum='0' descript
