@@ -6644,4 +6644,27 @@
    <value enum='SUBSFREQ' description='SUBSTITUTIONS_FREQUENCY' />
    <value enum='SUBSLEFT' description='SUBSTITUTIONS_LEFT' />
    <value enum='TEXT' description='FREEFORM_TEXT' />
-   <value enum='TRDVAR' description='TRADE_V
+   <value enum='TRDVAR' description='TRADE_VARIANCE' />
+   <value enum='WAC' description='WEIGHTED_AVERAGE_COUPON' />
+   <value enum='WAL' description='WEIGHTED_AVERAGE_LIFE_COUPON' />
+   <value enum='WALA' description='WEIGHTED_AVERAGE_LOAN_AGE' />
+   <value enum='WAM' description='WEIGHTED_AVERAGE_MATURITY' />
+   <value enum='WHOLE' description='WHOLE_POOL' />
+   <value enum='YIELD' description='YIELD_RANGE' />
+   <value enum='AVFICO' description='AVERAGE_FICO_SCORE' />
+   <value enum='AVSIZE' description='AVERAGE_LOAN_SIZE' />
+   <value enum='MAXBAL' description='MAXIMUM_LOAN_BALANCE' />
+   <value enum='POOL' description='POOL_IDENTIFIER' />
+   <value enum='ROLLTYPE' description='TYPE_OF_ROLL_TRADE' />
+   <value enum='REFTRADE' description='REFERENCE_TO_ROLLING_OR_CLOSING_TRADE' />
+   <value enum='REFPRIN' description='PRINCIPAL_OF_ROLLING_OR_CLOSING_TRADE' />
+   <value enum='REFINT' description='INTEREST_OF_ROLLING_OR_CLOSING_TRADE' />
+   <value enum='AVAILQTY' description='AVAILABLE_OFFER_QUANTITY_TO_BE_SHOWN_TO_THE_STREET' />
+   <value enum='BROKERCREDIT' description='BROKERS_SALES_CREDIT' />
+   <value enum='INTERNALPX' description='OFFER_PRICE_TO_BE_SHOWN_TO_INTERNAL_BROKERS' />
+   <value enum='INTERNALQTY' description='OFFER_QUANTITY_TO_BE_SHOWN_TO_INTERNAL_BROKERS' />
+   <value enum='LEAVEQTY' description='THE_MINIMUM_RESIDUAL_OFFER_QUANTITY' />
+   <value enum='MAXORDQTY' description='MAXIMUM_ORDER_SIZE' />
+   <value enum='ORDRINCR' description='ORDER_QUANTITY_INCREMENT' />
+   <value enum='PRIMARY' description='PRIMARY_OR_SECONDARY_MARKET_INDICATOR' />
+   <value enum='SALESCREDITOVR' description='BROKER_SALES_CREDIT
