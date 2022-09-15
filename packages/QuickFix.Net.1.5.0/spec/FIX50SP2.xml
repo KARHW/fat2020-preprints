@@ -6776,4 +6776,32 @@
    <value enum='J' description='EMPTY_BOOK' />
    <value enum='K' description='SETTLE_HIGH_PRICE' />
    <value enum='L' description='SETTLE_LOW_PRICE' />
-   <value enum='M
+   <value enum='M' description='PRIOR_SETTLE_PRICE' />
+   <value enum='N' description='SESSION_HIGH_BID' />
+   <value enum='O' description='SESSION_LOW_OFFER' />
+   <value enum='P' description='EARLY_PRICES' />
+   <value enum='Q' description='AUCTION_CLEARING_PRICE' />
+   <value enum='S' description='SWAP_VALUE_FACTOR' />
+   <value enum='R' description='DAILY_VALUE_ADJUSTMENT_FOR_LONG_POSITIONS' />
+   <value enum='T' description='CUMULATIVE_VALUE_ADJUSTMENT_FOR_LONG_POSITIONS' />
+   <value enum='U' description='DAILY_VALUE_ADJUSTMENT_FOR_SHORT_POSITIONS' />
+   <value enum='V' description='CUMULATIVE_VALUE_ADJUSTMENT_FOR_SHORT_POSITIONS' />
+   <value enum='Y' description='RECOVERY_RATE' />
+   <value enum='Z' description='RECOVERY_RATE_FOR_LONG' />
+   <value enum='a' description='RECOVERY_RATE_FOR_SHORT' />
+   <value enum='W' description='FIXING_PRICE' />
+   <value enum='X' description='CASH_RATE' />
+  </field>
+  <field number='270' name='MDEntryPx' type='PRICE' />
+  <field number='271' name='MDEntrySize' type='QTY' />
+  <field number='272' name='MDEntryDate' type='UTCDATEONLY' />
+  <field number='273' name='MDEntryTime' type='UTCTIMEONLY' />
+  <field number='274' name='TickDirection' type='CHAR'>
+   <value enum='0' description='PLUS_TICK' />
+   <value enum='1' description='ZERO_PLUS_TICK' />
+   <value enum='2' description='MINUS_TICK' />
+   <value enum='3' description='ZERO_MINUS_TICK' />
+  </field>
+  <field number='275' name='MDMkt' type='EXCHANGE' />
+  <field number='276' name='QuoteCondition' type='MULTIPLESTRINGVALUE'>
+   <value enum='A' description=
