@@ -6954,4 +6954,32 @@
    <value enum='5' description='OVERLAY' />
   </field>
   <field number='280' name='MDEntryRefID' type='STRING' />
-  <field number='28
+  <field number='281' name='MDReqRejReason' type='CHAR'>
+   <value enum='0' description='UNKNOWN_SYMBOL' />
+   <value enum='1' description='DUPLICATE_MDREQID' />
+   <value enum='2' description='INSUFFICIENT_BANDWIDTH' />
+   <value enum='3' description='INSUFFICIENT_PERMISSIONS' />
+   <value enum='4' description='UNSUPPORTED_SUBSCRIPTIONREQUESTTYPE' />
+   <value enum='5' description='UNSUPPORTED_MARKETDEPTH' />
+   <value enum='6' description='UNSUPPORTED_MDUPDATETYPE' />
+   <value enum='7' description='UNSUPPORTED_AGGREGATEDBOOK' />
+   <value enum='8' description='UNSUPPORTED_MDENTRYTYPE' />
+   <value enum='9' description='UNSUPPORTED_TRADINGSESSIONID' />
+   <value enum='A' description='UNSUPPORTED_SCOPE' />
+   <value enum='B' description='UNSUPPORTED_OPENCLOSESETTLEFLAG' />
+   <value enum='C' description='UNSUPPORTED_MDIMPLICITDELETE' />
+   <value enum='D' description='INSUFFICIENT_CREDIT' />
+  </field>
+  <field number='282' name='MDEntryOriginator' type='STRING' />
+  <field number='283' name='LocationID' type='STRING' />
+  <field number='284' name='DeskID' type='STRING' />
+  <field number='285' name='DeleteReason' type='CHAR'>
+   <value enum='0' description='CANCELLATION' />
+   <value enum='1' description='ERROR' />
+  </field>
+  <field number='286' name='OpenCloseSettlFlag' type='MULTIPLECHARVALUE'>
+   <value enum='0' description='DAILY_OPEN' />
+   <value enum='1' description='SESSION_OPEN' />
+   <value enum='2' description='DELIVERY_SETTLEMENT_ENTRY' />
+   <value enum='3' description='EXPECTED_ENTRY' />
+   <value enum='4' description='ENTRY_FROM_PREVIOUS_B
