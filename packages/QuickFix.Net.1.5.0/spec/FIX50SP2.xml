@@ -6982,4 +6982,34 @@
    <value enum='1' description='SESSION_OPEN' />
    <value enum='2' description='DELIVERY_SETTLEMENT_ENTRY' />
    <value enum='3' description='EXPECTED_ENTRY' />
-   <value enum='4' description='ENTRY_FROM_PREVIOUS_B
+   <value enum='4' description='ENTRY_FROM_PREVIOUS_BUSINESS_DAY' />
+   <value enum='5' description='THEORETICAL_PRICE_VALUE' />
+  </field>
+  <field number='287' name='SellerDays' type='INT' />
+  <field number='288' name='MDEntryBuyer' type='STRING' />
+  <field number='289' name='MDEntrySeller' type='STRING' />
+  <field number='290' name='MDEntryPositionNo' type='INT' />
+  <field number='291' name='FinancialStatus' type='MULTIPLECHARVALUE'>
+   <value enum='1' description='BANKRUPT' />
+   <value enum='2' description='PENDING_DELISTING' />
+   <value enum='3' description='RESTRICTED' />
+  </field>
+  <field number='292' name='CorporateAction' type='MULTIPLECHARVALUE'>
+   <value enum='A' description='EX_DIVIDEND' />
+   <value enum='B' description='EX_DISTRIBUTION' />
+   <value enum='C' description='EX_RIGHTS' />
+   <value enum='D' description='NEW' />
+   <value enum='E' description='EX_INTEREST' />
+   <value enum='F' description='CASH_DIVIDEND' />
+   <value enum='G' description='STOCK_DIVIDEND' />
+   <value enum='H' description='NON_INTEGER_STOCK_SPLIT' />
+   <value enum='I' description='REVERSE_STOCK_SPLIT' />
+   <value enum='J' description='STANDARD_INTEGER_STOCK_SPLIT' />
+   <value enum='K' description='POSITION_CONSOLIDATION' />
+   <value enum='L' description='LIQUIDATION_REORGANIZATION' />
+   <value enum='M' description='MERGER_REORGANIZATION' />
+   <value enum='N' description='RIGHTS_OFFERING' />
+   <value enum='O' description='SHAREHOLDER_MEETING' />
+   <value enum='P' description='SPINOFF' />
+   <value enum='Q' description='TENDER_OFFER' />
+   
