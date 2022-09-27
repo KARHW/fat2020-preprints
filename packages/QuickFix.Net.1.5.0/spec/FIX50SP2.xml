@@ -7095,4 +7095,29 @@
   <field number='312' name='UnderlyingSymbolSfx' type='STRING' />
   <field number='313' name='UnderlyingMaturityMonthYear' type='MONTHYEAR' />
   <field number='314' name='UnderlyingMaturityDay' type='DAYOFMONTH' />
-  <field number='315' name='UnderlyingPutOrCall' typ
+  <field number='315' name='UnderlyingPutOrCall' type='INT' />
+  <field number='316' name='UnderlyingStrikePrice' type='PRICE' />
+  <field number='317' name='UnderlyingOptAttribute' type='CHAR' />
+  <field number='318' name='UnderlyingCurrency' type='CURRENCY' />
+  <field number='319' name='RatioQty' type='QTY' />
+  <field number='320' name='SecurityReqID' type='STRING' />
+  <field number='321' name='SecurityRequestType' type='INT'>
+   <value enum='0' description='REQUEST_SECURITY_IDENTITY_AND_SPECIFICATIONS' />
+   <value enum='1' description='REQUEST_SECURITY_IDENTITY_FOR_THE_SPECIFICATIONS_PROVIDED' />
+   <value enum='2' description='REQUEST_LIST_SECURITY_TYPES' />
+   <value enum='3' description='REQUEST_LIST_SECURITIES' />
+   <value enum='4' description='SYMBOL' />
+   <value enum='5' description='SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='6' description='PRODUCT' />
+   <value enum='7' description='TRADINGSESSIONID' />
+   <value enum='8' description='ALL_SECURITIES' />
+   <value enum='9' description='MARKETID_OR_MARKETID_PLUS_MARKETSEGMENTID' />
+  </field>
+  <field number='322' name='SecurityResponseID' type='STRING' />
+  <field number='323' name='SecurityResponseType' type='INT'>
+   <value enum='1' description='ACCEPT_SECURITY_PROPOSAL_AS_IS' />
+   <value enum='2' description='ACCEPT_SECURITY_PROPOSAL_WITH_REVISIONS_AS_INDICATED_IN_THE_MESSAGE' />
+   <value enum='3' description='LIST_OF_SECURITY_TYPES_RETURNED_PER_REQUEST' />
+   <value enum='4' description='LIST_OF_SECURITIES_RETURNED_PER_REQUEST' />
+   <value enum='5' description='REJECT_SECURITY_PROPOSAL' />
+   <
