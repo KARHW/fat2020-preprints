@@ -7217,4 +7217,28 @@
   <field number='346' name='NumberOfOrders' type='INT' />
   <field number='347' name='MessageEncoding' type='STRING' />
   <field number='348' name='EncodedIssuerLen' type='LENGTH' />
-  
+  <field number='349' name='EncodedIssuer' type='DATA' />
+  <field number='350' name='EncodedSecurityDescLen' type='LENGTH' />
+  <field number='351' name='EncodedSecurityDesc' type='DATA' />
+  <field number='352' name='EncodedListExecInstLen' type='LENGTH' />
+  <field number='353' name='EncodedListExecInst' type='DATA' />
+  <field number='354' name='EncodedTextLen' type='LENGTH' />
+  <field number='355' name='EncodedText' type='DATA' />
+  <field number='356' name='EncodedSubjectLen' type='LENGTH' />
+  <field number='357' name='EncodedSubject' type='DATA' />
+  <field number='358' name='EncodedHeadlineLen' type='LENGTH' />
+  <field number='359' name='EncodedHeadline' type='DATA' />
+  <field number='360' name='EncodedAllocTextLen' type='LENGTH' />
+  <field number='361' name='EncodedAllocText' type='DATA' />
+  <field number='362' name='EncodedUnderlyingIssuerLen' type='LENGTH' />
+  <field number='363' name='EncodedUnderlyingIssuer' type='DATA' />
+  <field number='364' name='EncodedUnderlyingSecurityDescLen' type='LENGTH' />
+  <field number='365' name='EncodedUnderlyingSecurityDesc' type='DATA' />
+  <field number='366' name='AllocPrice' type='PRICE' />
+  <field number='367' name='QuoteSetValidUntilTime' type='UTCTIMESTAMP' />
+  <field number='368' name='QuoteEntryRejectReason' type='INT' />
+  <field number='369' name='LastMsgSeqNumProcessed' type='SEQNUM' />
+  <field number='370' name='OnBehalfOfSendingTime' type='UTCTIMESTAMP' />
+  <field number='371' name='RefTagID' type='INT' />
+  <field number='372' name='RefMsgType' type='STRING' />
+  <field number='373' name='SessionRejectRe
