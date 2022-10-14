@@ -7300,4 +7300,34 @@
    <value enum='7' description='DELIVERTO_FIRM_NOT_AVAILABLE_AT_THIS_TIME' />
    <value enum='18' description='INVALID_PRICE_INCREMENT' />
   </field>
-  <field number='381' name='GrossTradeAmt' type='AMT'
+  <field number='381' name='GrossTradeAmt' type='AMT' />
+  <field number='382' name='NoContraBrokers' type='NUMINGROUP' />
+  <field number='383' name='MaxMessageSize' type='LENGTH' />
+  <field number='384' name='NoMsgTypes' type='NUMINGROUP' />
+  <field number='385' name='MsgDirection' type='CHAR'>
+   <value enum='R' description='RECEIVE' />
+   <value enum='S' description='SEND' />
+  </field>
+  <field number='386' name='NoTradingSessions' type='NUMINGROUP' />
+  <field number='387' name='TotalVolumeTraded' type='QTY' />
+  <field number='388' name='DiscretionInst' type='CHAR'>
+   <value enum='0' description='RELATED_TO_DISPLAYED_PRICE' />
+   <value enum='1' description='RELATED_TO_MARKET_PRICE' />
+   <value enum='2' description='RELATED_TO_PRIMARY_PRICE' />
+   <value enum='3' description='RELATED_TO_LOCAL_PRIMARY_PRICE' />
+   <value enum='4' description='RELATED_TO_MIDPOINT_PRICE' />
+   <value enum='5' description='RELATED_TO_LAST_TRADE_PRICE' />
+   <value enum='6' description='RELATED_TO_VWAP' />
+   <value enum='7' description='AVERAGE_PRICE_GUARANTEE' />
+  </field>
+  <field number='389' name='DiscretionOffsetValue' type='FLOAT' />
+  <field number='390' name='BidID' type='STRING' />
+  <field number='391' name='ClientBidID' type='STRING' />
+  <field number='392' name='ListName' type='STRING' />
+  <field number='393' name='TotNoRelatedSym' type='INT' />
+  <field number='394' name='BidType' type='INT'>
+   <value enum='1' description='NON_DISCLOSED_STYLE' />
+   <value enum='2' description='DISCLOSED_SYTLE' />
+   <value enum='3' description='NO_BIDDING_PROCESS' />
+  </field>
+  <field number='395
