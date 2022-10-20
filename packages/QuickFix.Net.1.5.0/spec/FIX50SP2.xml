@@ -7360,3 +7360,33 @@
   <field number='410' name='WtAverageLiquidity' type='PERCENTAGE' />
   <field number='411' name='ExchangeForPhysical' type='BOOLEAN'>
    <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='412' name='OutMainCntryUIndex' type='AMT' />
+  <field number='413' name='CrossPercent' type='PERCENTAGE' />
+  <field number='414' name='ProgRptReqs' type='INT'>
+   <value enum='1' description='BUY_SIDE_EXPLICITLY_REQUESTS_STATUS_USING_STATUE_REQUEST' />
+   <value enum='2' description='SELL_SIDE_PERIODICALLY_SENDS_STATUS_USING_LIST_STATUS_PERIOD_OPTIONALLY_SPECIFIED_IN_PROGRESSPERIOD' />
+   <value enum='3' description='REAL_TIME_EXECUTION_REPORTS' />
+  </field>
+  <field number='415' name='ProgPeriodInterval' type='INT' />
+  <field number='416' name='IncTaxInd' type='INT'>
+   <value enum='1' description='NET' />
+   <value enum='2' description='GROSS' />
+  </field>
+  <field number='417' name='NumBidders' type='INT' />
+  <field number='418' name='BidTradeType' type='CHAR'>
+   <value enum='A' description='AGENCY' />
+   <value enum='G' description='VWAP_GUARANTEE' />
+   <value enum='J' description='GUARANTEED_CLOSE' />
+   <value enum='R' description='RISK_TRADE' />
+  </field>
+  <field number='419' name='BasisPxType' type='CHAR'>
+   <value enum='2' description='CLOSING_PRICE_AT_MORNINGN_SESSION' />
+   <value enum='3' description='CLOSING_PRICE' />
+   <value enum='4' description='CURRENT_PRICE' />
+   <value enum='5' description='SQ' />
+   <value enum='6' description='VWAP_THROUGH_A_DAY' />
+   <value enum='7' description='VWAP_THROUGH_A_MORNING_SESSION' />
+   <value enum='8' description='VWAP_THROUGH_AN_AFTERNOON_SESSION' />
+   <value enum='9' description='V
