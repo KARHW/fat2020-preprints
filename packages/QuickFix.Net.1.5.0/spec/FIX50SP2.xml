@@ -7560,4 +7560,31 @@
    <value enum='58' description='ENTERING_UNIT' />
    <value enum='59' description='EXECUTING_UNIT' />
    <value enum='39' description='CONTRA_INVESTOR_ID' />
-  
+   <value enum='40' description='TRANSFER_TO_FIRM' />
+   <value enum='61' description='QUOTE_ORIGINATOR' />
+   <value enum='62' description='REPORT_ORIGINATOR' />
+   <value enum='63' description='SYSTEMATIC_INTERNALISER' />
+   <value enum='64' description='MULTILATERAL_TRADING_FACILITY' />
+   <value enum='65' description='REGULATED_MARKET' />
+   <value enum='66' description='MARKET_MAKER' />
+   <value enum='67' description='INVESTMENT_FIRM' />
+   <value enum='68' description='HOST_COMPETENT_AUTHORITY' />
+   <value enum='69' description='HOME_COMPETENT_AUTHORITY' />
+   <value enum='70' description='COMPETENT_AUTHORITY_OF_THE_MOST_RELEVANT_MARKET_IN_TERMS_OF_LIQUIDITY' />
+   <value enum='71' description='COMPETENT_AUTHORITY_OF_THE_TRANSACTION' />
+   <value enum='72' description='REPORTING_INTERMEDIARY' />
+   <value enum='73' description='EXECUTION_VENUE' />
+   <value enum='74' description='MARKET_DATA_ENTRY_ORIGINATOR' />
+   <value enum='75' description='LOCATION_ID' />
+   <value enum='76' description='DESK_ID' />
+   <value enum='77' description='MARKET_DATA_MARKET' />
+   <value enum='78' description='ALLOCATION_ENTITY' />
+   <value enum='79' description='PRIME_BROKER_PROVIDING_GENERAL_TRADE_SERVICES' />
+   <value enum='80' description='STEP_OUT_FIRM' />
+   <value enum='81' description='BROKERCLEARINGID' />
+   <value enum='82' description='CENTRAL_REGISTRATION_DEPOSITORY' />
+   <value enum='83' description='CLEARING_ACCOUNT' />
+   <value enum='84' description='ACCEPTABLE_SETTLING_COUNTERPARTY' />
+   <value enum='85' description='UNACCEPTABLE_SETTLING_COUNTERPARTY' />
+  </field>
+  <field number='453' 
