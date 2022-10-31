@@ -7649,4 +7649,35 @@
    <value enum='2' description='NSCC' />
    <value enum='3' description='EUROCLEAR' />
    <value enum='4' description='CLEARSTREAM' />
-   <v
+   <value enum='5' description='CHEQUE' />
+   <value enum='6' description='TELEGRAPHIC_TRANSFER' />
+   <value enum='7' description='FED_WIRE' />
+   <value enum='8' description='DIRECT_CREDIT' />
+   <value enum='9' description='ACH_CREDIT' />
+  </field>
+  <field number='478' name='CashDistribCurr' type='CURRENCY' />
+  <field number='479' name='CommCurrency' type='CURRENCY' />
+  <field number='480' name='CancellationRights' type='CHAR'>
+   <value enum='M' description='NO_M' />
+   <value enum='N' description='NO_N' />
+   <value enum='O' description='NO_O' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='481' name='MoneyLaunderingStatus' type='CHAR'>
+   <value enum='1' description='EXEMPT_1' />
+   <value enum='2' description='EXEMPT_2' />
+   <value enum='3' description='EXEMPT_3' />
+   <value enum='N' description='NOT_CHECKED' />
+   <value enum='Y' description='PASSED' />
+  </field>
+  <field number='482' name='MailingInst' type='STRING' />
+  <field number='483' name='TransBkdTime' type='UTCTIMESTAMP' />
+  <field number='484' name='ExecPriceType' type='CHAR'>
+   <value enum='B' description='BID_PRICE' />
+   <value enum='C' description='CREATION_PRICE' />
+   <value enum='D' description='CREATION_PRICE_PLUS_ADJUSTMENT_PERCENT' />
+   <value enum='E' description='CREATION_PRICE_PLUS_ADJUSTMENT_AMOUNT' />
+   <value enum='O' description='OFFER_PRICE' />
+   <value enum='P' description='OFFER_PRICE_MINUS_ADJUSTMENT_PERCENT' />
+   <value enum='Q' description='OFFER_PRICE_MINUS_ADJUSTMENT_AMOUNT' />
+   <value enum='S' description='
