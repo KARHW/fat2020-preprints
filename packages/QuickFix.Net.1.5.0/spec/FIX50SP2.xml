@@ -7742,4 +7742,33 @@
    <value enum='3' description='MINI_CASH_ISA' />
    <value enum='4' description='MINI_STOCKS_AND_SHARES_ISA' />
    <value enum='5' description='MINI_INSURANCE_ISA' />
-   <value enum='6' de
+   <value enum='6' description='CURRENT_YEAR_PAYMENT' />
+   <value enum='7' description='PRIOR_YEAR_PAYMENT' />
+   <value enum='8' description='ASSET_TRANSFER' />
+   <value enum='9' description='EMPLOYEE_9' />
+   <value enum='999' description='OTHER' />
+  </field>
+  <field number='496' name='RegistRejReasonText' type='STRING' />
+  <field number='497' name='FundRenewWaiv' type='CHAR'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='498' name='CashDistribAgentName' type='STRING' />
+  <field number='499' name='CashDistribAgentCode' type='STRING' />
+  <field number='500' name='CashDistribAgentAcctNumber' type='STRING' />
+  <field number='501' name='CashDistribPayRef' type='STRING' />
+  <field number='502' name='CashDistribAgentAcctName' type='STRING' />
+  <field number='503' name='CardStartDate' type='LOCALMKTDATE' />
+  <field number='504' name='PaymentDate' type='LOCALMKTDATE' />
+  <field number='505' name='PaymentRemitterID' type='STRING' />
+  <field number='506' name='RegistStatus' type='CHAR'>
+   <value enum='A' description='ACCEPTED' />
+   <value enum='H' description='HELD' />
+   <value enum='N' description='REMINDER' />
+   <value enum='R' description='REJECTED' />
+  </field>
+  <field number='507' name='RegistRejReasonCode' type='INT'>
+   <value enum='1' description='INVALID_UNACCEPTABLE_ACCOUNT_TYPE' />
+   <value enum='10' description='INVALID_UNACEEPTABLE_INVESTOR_ID_SOURCE' />
+   <value enum='11' description='INVALID_UNACCEPTABLE_DATE_OF_BIRTH' />
+   <value enum='12' descrip
