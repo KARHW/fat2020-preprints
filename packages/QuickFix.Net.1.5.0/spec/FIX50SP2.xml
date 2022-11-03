@@ -7793,4 +7793,33 @@
   <field number='510' name='NoDistribInsts' type='NUMINGROUP' />
   <field number='511' name='RegistEmail' type='STRING' />
   <field number='512' name='DistribPercentage' type='PERCENTAGE' />
-  <field number='513' name='RegistID' ty
+  <field number='513' name='RegistID' type='STRING' />
+  <field number='514' name='RegistTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+  </field>
+  <field number='515' name='ExecValuationPoint' type='UTCTIMESTAMP' />
+  <field number='516' name='OrderPercent' type='PERCENTAGE' />
+  <field number='517' name='OwnershipType' type='CHAR'>
+   <value enum='2' description='JOINT_TRUSTEES' />
+   <value enum='J' description='JOINT_INVESTORS' />
+   <value enum='T' description='TENANTS_IN_COMMON' />
+  </field>
+  <field number='518' name='NoContAmts' type='NUMINGROUP' />
+  <field number='519' name='ContAmtType' type='INT'>
+   <value enum='1' description='COMMISSION_AMOUNT' />
+   <value enum='10' description='EXIT_CHARGE_PERCENT' />
+   <value enum='11' description='FUND_BASED_RENEWAL_COMMISSION_PERCENT' />
+   <value enum='12' description='PROJECTED_FUND_VALUE' />
+   <value enum='13' description='FUND_BASED_RENEWAL_COMMISSION_AMOUNT_13' />
+   <value enum='14' description='FUND_BASED_RENEWAL_COMMISSION_AMOUNT_14' />
+   <value enum='15' description='NET_SETTLEMENT_AMOUNT' />
+   <value enum='2' description='COMMISSION_PERCENT' />
+   <value enum='3' description='INITIAL_CHARGE_AMOUNT' />
+   <value enum='4' description='INITIAL_CHARGE_PERCENT' />
+   <value enum='5' description='DISCOUNT_AMOUNT' />
+   <value enum='6' description='DISCOUNT_PERCENT' />
+   <value enum='7' description='DILUTION_LEVY_AMOUNT' />
+   <value enum='8' description='DILUTION_LEVY_PERCENT' />
+   <value enum='9' description=
