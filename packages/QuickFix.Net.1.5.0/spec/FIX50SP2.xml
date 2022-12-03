@@ -7989,4 +7989,31 @@
   <field number='562' name='MinTradeVol' type='QTY' />
   <field number='563' name='MultiLegRptTypeReq' type='INT'>
    <value enum='0' description='REPORT_BY_MULITLEG_SECURITY_ONLY' />
-   <value enum='1' description='REPORT_B
+   <value enum='1' description='REPORT_BY_MULTILEG_SECURITY_AND_BY_INSTRUMENT_LEGS_BELONGING_TO_THE_MULTILEG_SECURITY' />
+   <value enum='2' description='REPORT_BY_INSTRUMENT_LEGS_BELONGING_TO_THE_MULTILEG_SECURITY_ONLY' />
+  </field>
+  <field number='564' name='LegPositionEffect' type='CHAR' />
+  <field number='565' name='LegCoveredOrUncovered' type='INT' />
+  <field number='566' name='LegPrice' type='PRICE' />
+  <field number='567' name='TradSesStatusRejReason' type='INT'>
+   <value enum='1' description='UNKNOWN_OR_INVALID_TRADINGSESSIONID' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='568' name='TradeRequestID' type='STRING' />
+  <field number='569' name='TradeRequestType' type='INT'>
+   <value enum='0' description='ALL_TRADES' />
+   <value enum='1' description='MATCHED_TRADES_MATCHING_CRITERIA_PROVIDED_ON_REQUEST' />
+   <value enum='2' description='UNMATCHED_TRADES_THAT_MATCH_CRITERIA' />
+   <value enum='3' description='UNREPORTED_TRADES_THAT_MATCH_CRITERIA' />
+   <value enum='4' description='ADVISORIES_THAT_MATCH_CRITERIA' />
+  </field>
+  <field number='570' name='PreviouslyReported' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='571' name='TradeReportID' type='STRING' />
+  <field number='572' name='TradeReportRefID' type='STRING' />
+  <field number='573' name='MatchStatus' type='CHAR'>
+   <value enum='0' description='COMPARED_MATCHED_OR_AFFIRMED' />
+   <value enum='1' description='UNCOMPARED_UNMATCHED_OR_UNAFFIRMED' />
+   <value enum='2' description='ADVISORY_OR_ALERT' />
