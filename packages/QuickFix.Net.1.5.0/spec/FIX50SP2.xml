@@ -8155,4 +8155,33 @@
    <value enum='3' description='3' />
    <value enum='4' description='CLOSING_OR_CLOSING_AUCTION' />
    <value enum='5' description='POST_TRADING' />
-   <value enum='6' description='INTRAD
+   <value enum='6' description='INTRADAY_AUCTION' />
+   <value enum='7' description='QUIESCENT' />
+  </field>
+  <field number='626' name='AllocType' type='INT'>
+   <value enum='1' description='CALCULATED' />
+   <value enum='2' description='PRELIMINARY' />
+   <value enum='3' description='SELLSIDE_CALCULATED_USING_PRELIMINARY' />
+   <value enum='4' description='SELLSIDE_CALCULATED_WITHOUT_PRELIMINARY' />
+   <value enum='5' description='READY_TO_BOOK' />
+   <value enum='6' description='BUYSIDE_READY_TO_BOOK' />
+   <value enum='7' description='WAREHOUSE_INSTRUCTION' />
+   <value enum='8' description='REQUEST_TO_INTERMEDIARY' />
+   <value enum='9' description='ACCEPT' />
+   <value enum='10' description='REJECT' />
+   <value enum='11' description='ACCEPT_PENDING' />
+   <value enum='12' description='INCOMPLETE_GROUP' />
+   <value enum='13' description='COMPLETE_GROUP' />
+   <value enum='14' description='REVERSAL_PENDING' />
+  </field>
+  <field number='627' name='NoHops' type='NUMINGROUP' />
+  <field number='628' name='HopCompID' type='STRING' />
+  <field number='629' name='HopSendingTime' type='UTCTIMESTAMP' />
+  <field number='630' name='HopRefID' type='SEQNUM' />
+  <field number='631' name='MidPx' type='PRICE' />
+  <field number='632' name='BidYield' type='PERCENTAGE' />
+  <field number='633' name='MidYield' type='PERCENTAGE' />
+  <field number='634' name='OfferYield' type='PERCENTAGE' />
+  <field number='635' name='ClearingFeeIndicator' type='STRING'>
+   <value enum='1' description='1ST_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='2' description='2ND_YEAR_DELEGATE_T
