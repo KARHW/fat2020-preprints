@@ -8273,4 +8273,31 @@
    <value enum='0' description='NEW' />
    <value enum='1' description='REPLACE' />
    <value enum='2' description='CANCEL' />
-  </
+  </field>
+  <field number='667' name='ContractSettlMonth' type='MONTHYEAR' />
+  <field number='668' name='DeliveryForm' type='INT'>
+   <value enum='1' description='BOOK_ENTRY' />
+   <value enum='2' description='BEARER' />
+  </field>
+  <field number='669' name='LastParPx' type='PRICE' />
+  <field number='670' name='NoLegAllocs' type='NUMINGROUP' />
+  <field number='671' name='LegAllocAccount' type='STRING' />
+  <field number='672' name='LegIndividualAllocID' type='STRING' />
+  <field number='673' name='LegAllocQty' type='QTY' />
+  <field number='674' name='LegAllocAcctIDSource' type='STRING' />
+  <field number='675' name='LegSettlCurrency' type='CURRENCY' />
+  <field number='676' name='LegBenchmarkCurveCurrency' type='CURRENCY' />
+  <field number='677' name='LegBenchmarkCurveName' type='STRING' />
+  <field number='678' name='LegBenchmarkCurvePoint' type='STRING' />
+  <field number='679' name='LegBenchmarkPrice' type='PRICE' />
+  <field number='680' name='LegBenchmarkPriceType' type='INT' />
+  <field number='681' name='LegBidPx' type='PRICE' />
+  <field number='682' name='LegIOIQty' type='STRING' />
+  <field number='683' name='NoLegStipulations' type='NUMINGROUP' />
+  <field number='684' name='LegOfferPx' type='PRICE' />
+  <field number='685' name='LegOrderQty' type='QTY' />
+  <field number='686' name='LegPriceType' type='INT' />
+  <field number='687' name='LegQty' type='QTY' />
+  <field number='688' name='LegStipulationType' type='STRING' />
+  <field number='689' name='LegStipulationValue' type='STRING' />
+  <field number='690' n
