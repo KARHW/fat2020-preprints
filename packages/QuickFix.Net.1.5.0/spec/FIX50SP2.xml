@@ -8361,4 +8361,31 @@
    <value enum='RCV' description='RECEIVE_QUANTITY' />
    <value enum='CAA' description='CORPORATE_ACTION_ADJUSTMENT' />
    <value enum='DN' description='DELIVERY_NOTICE_QTY' />
-   <value enum='EP' des
+   <value enum='EP' description='EXCHANGE_FOR_PHYSICAL_QTY' />
+   <value enum='PNTN' description='PRIVATELY_NEGOTIATED_TRADE_QTY' />
+   <value enum='DLT' description='NET_DELTA_QTY' />
+   <value enum='CEA' description='CREDIT_EVENT_ADJUSTMENT' />
+   <value enum='SEA' description='SUCCESSION_EVENT_ADJUSTMENT' />
+  </field>
+  <field number='704' name='LongQty' type='QTY' />
+  <field number='705' name='ShortQty' type='QTY' />
+  <field number='706' name='PosQtyStatus' type='INT'>
+   <value enum='0' description='SUBMITTED' />
+   <value enum='1' description='ACCEPTED' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='707' name='PosAmtType' type='STRING'>
+   <value enum='CASH' description='CASH_AMOUNT' />
+   <value enum='CRES' description='CASH_RESIDUAL_AMOUNT' />
+   <value enum='FMTM' description='FINAL_MARK_TO_MARKET_AMOUNT' />
+   <value enum='IMTM' description='INCREMENTAL_MARK_TO_MARKET_AMOUNT' />
+   <value enum='PREM' description='PREMIUM_AMOUNT' />
+   <value enum='SMTM' description='START_OF_DAY_MARK_TO_MARKET_AMOUNT' />
+   <value enum='TVAR' description='TRADE_VARIATION_AMOUNT' />
+   <value enum='VADJ' description='VALUE_ADJUSTED_AMOUNT' />
+   <value enum='SETL' description='SETTLEMENT_VALUE' />
+   <value enum='ICPN' description='INITIAL_TRADE_COUPON_AMOUNT' />
+   <value enum='ACPN' description='ACCRUED_COUPON_AMOUNT' />
+   <value enum='CPN' description='COUPON_AMOUNT' />
+   <value enum='IACPN' description='INCREMENTAL_ACCRUED_COUPON' />
+   <value enum='CMTM' description='COLLATERALIZED_MARK_TO_MA
