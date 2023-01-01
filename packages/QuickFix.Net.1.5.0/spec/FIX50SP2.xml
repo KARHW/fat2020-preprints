@@ -8300,4 +8300,38 @@
   <field number='687' name='LegQty' type='QTY' />
   <field number='688' name='LegStipulationType' type='STRING' />
   <field number='689' name='LegStipulationValue' type='STRING' />
-  <field number='690' n
+  <field number='690' name='LegSwapType' type='INT'>
+   <value enum='1' description='PAR_FOR_PAR' />
+   <value enum='2' description='MODIFIED_DURATION' />
+   <value enum='4' description='RISK' />
+   <value enum='5' description='PROCEEDS' />
+  </field>
+  <field number='691' name='Pool' type='STRING' />
+  <field number='692' name='QuotePriceType' type='INT'>
+   <value enum='1' description='PERCENT' />
+   <value enum='10' description='YIELD' />
+   <value enum='2' description='PER_SHARE' />
+   <value enum='3' description='FIXED_AMOUNT' />
+   <value enum='4' description='DISCOUNT' />
+   <value enum='5' description='PREMIUM' />
+   <value enum='6' description='SPREAD' />
+   <value enum='7' description='TED_PRICE' />
+   <value enum='8' description='TED_YIELD' />
+   <value enum='9' description='YIELD_SPREAD' />
+  </field>
+  <field number='693' name='QuoteRespID' type='STRING' />
+  <field number='694' name='QuoteRespType' type='INT'>
+   <value enum='1' description='HIT_LIFT' />
+   <value enum='2' description='COUNTER' />
+   <value enum='3' description='EXPIRED' />
+   <value enum='4' description='COVER' />
+   <value enum='5' description='DONE_AWAY' />
+   <value enum='6' description='PASS' />
+   <value enum='7' description='END_TRADE' />
+   <value enum='8' description='TIMED_OUT' />
+  </field>
+  <field number='695' name='QuoteQualifier' type='CHAR' />
+  <field number='696' name='YieldRedemptionDate' type='LOCALMKTDATE' />
+  <field number='697' name='YieldRedemptionPrice' type='PRICE' />
+  <field number='698' name='YieldRedemptionPriceType' type='INT' />
+  <field number='
