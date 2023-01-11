@@ -8452,3 +8452,32 @@
    <value enum='6' description='DELTA_POSITIONS' />
   </field>
   <field number='725' name='ResponseTransportType' type='INT'>
+   <value enum='0' description='INBAND' />
+   <value enum='1' description='OUT_OF_BAND' />
+  </field>
+  <field number='726' name='ResponseDestination' type='STRING' />
+  <field number='727' name='TotalNumPosReports' type='INT' />
+  <field number='728' name='PosReqResult' type='INT'>
+   <value enum='0' description='VALID_REQUEST' />
+   <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
+   <value enum='2' description='NO_POSITIONS_FOUND_THAT_MATCH_CRITERIA' />
+   <value enum='3' description='NOT_AUTHORIZED_TO_REQUEST_POSITIONS' />
+   <value enum='4' description='REQUEST_FOR_POSITION_NOT_SUPPORTED' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='729' name='PosReqStatus' type='INT'>
+   <value enum='0' description='COMPLETED' />
+   <value enum='1' description='COMPLETED_WITH_WARNINGS' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='730' name='SettlPrice' type='PRICE' />
+  <field number='731' name='SettlPriceType' type='INT'>
+   <value enum='1' description='FINAL' />
+   <value enum='2' description='THEORETICAL' />
+  </field>
+  <field number='732' name='UnderlyingSettlPrice' type='PRICE' />
+  <field number='733' name='UnderlyingSettlPriceType' type='INT' />
+  <field number='734' name='PriorSettlPrice' type='PRICE' />
+  <field number='735' name='NoQuoteQualifiers' type='NUMINGROUP' />
+  <field number='736' name='AllocSettlCurrency' type='CURRENCY' />
+  <field number='737' name='AllocSettlCurrAmt' type='AMT'
