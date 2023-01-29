@@ -8598,4 +8598,31 @@
    <value enum='4' description='OPEN' />
   </field>
   <field number='789' name='NextExpectedMsgSeqNum' type='SEQNUM' />
-  <field number='790' name=
+  <field number='790' name='OrdStatusReqID' type='STRING' />
+  <field number='791' name='SettlInstReqID' type='STRING' />
+  <field number='792' name='SettlInstReqRejCode' type='INT'>
+   <value enum='0' description='UNABLE_TO_PROCESS_REQUEST' />
+   <value enum='1' description='UNKNOWN_ACCOUNT' />
+   <value enum='2' description='NO_MATCHING_SETTLEMENT_INSTRUCTIONS_FOUND' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='793' name='SecondaryAllocID' type='STRING' />
+  <field number='794' name='AllocReportType' type='INT'>
+   <value enum='3' description='SELLSIDE_CALCULATED_USING_PRELIMINARY' />
+   <value enum='4' description='SELLSIDE_CALCULATED_WITHOUT_PRELIMINARY' />
+   <value enum='5' description='WAREHOUSE_RECAP' />
+   <value enum='8' description='REQUEST_TO_INTERMEDIARY' />
+   <value enum='2' description='PRELIMINARY_REQUEST_TO_INTERMEDIARY' />
+   <value enum='9' description='ACCEPT' />
+   <value enum='10' description='REJECT' />
+   <value enum='11' description='ACCEPT_PENDING' />
+   <value enum='12' description='COMPLETE' />
+   <value enum='14' description='REVERSE_PENDING' />
+  </field>
+  <field number='795' name='AllocReportRefID' type='STRING' />
+  <field number='796' name='AllocCancReplaceReason' type='INT'>
+   <value enum='1' description='ORIGINAL_DETAILS_INCOMPLETE_INCORRECT' />
+   <value enum='2' description='CHANGE_IN_UNDERLYING_ORDER_DETAILS' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='797' name='CopyMsgIndicator' type='BOOLEAN' />
