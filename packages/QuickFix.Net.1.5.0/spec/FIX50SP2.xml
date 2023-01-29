@@ -8681,4 +8681,34 @@
   <field number='808' name='AllocIntermedReqType' type='INT'>
    <value enum='1' description='PENDING_ACCEPT' />
    <value enum='2' description='PENDING_RELEASE' />
-   
+   <value enum='3' description='PENDING_REVERSAL' />
+   <value enum='4' description='ACCEPT' />
+   <value enum='5' description='BLOCK_LEVEL_REJECT' />
+   <value enum='6' description='ACCOUNT_LEVEL_REJECT' />
+  </field>
+  <field number='810' name='UnderlyingPx' type='PRICE' />
+  <field number='811' name='PriceDelta' type='FLOAT' />
+  <field number='812' name='ApplQueueMax' type='INT' />
+  <field number='813' name='ApplQueueDepth' type='INT' />
+  <field number='814' name='ApplQueueResolution' type='INT'>
+   <value enum='0' description='NO_ACTION_TAKEN' />
+   <value enum='1' description='QUEUE_FLUSHED' />
+   <value enum='2' description='OVERLAY_LAST' />
+   <value enum='3' description='END_SESSION' />
+  </field>
+  <field number='815' name='ApplQueueAction' type='INT'>
+   <value enum='0' description='NO_ACTION_TAKEN' />
+   <value enum='1' description='QUEUE_FLUSHED' />
+   <value enum='2' description='OVERLAY_LAST' />
+   <value enum='3' description='END_SESSION' />
+  </field>
+  <field number='816' name='NoAltMDSource' type='NUMINGROUP' />
+  <field number='817' name='AltMDSourceID' type='STRING' />
+  <field number='818' name='SecondaryTradeReportID' type='STRING' />
+  <field number='819' name='AvgPxIndicator' type='INT'>
+   <value enum='0' description='NO_AVERAGE_PRICING' />
+   <value enum='1' description='TRADE_IS_PART_OF_AN_AVERAGE_PRICE_GROUP_IDENTIFIED_BY_THE_TRADELINKID' />
+   <value enum='2' description='LAST_TRADE_IS_THE_AVERAGE_PRICE_GROUP_IDENTIFIED_BY_THE_TRADELINKID' />
+  </field>
+  <field number='820' name='TradeLinkID' type='STRING' />
+  <field number='821' name='Orde
