@@ -8790,4 +8790,37 @@
    <value enum='0' description='CMTA' />
    <value enum='1' description='INTERNAL_TRANSFER_OR_ADJUSTMENT' />
    <value enum='2' description='EXTERNAL_TRANSFER_OR_TRANSFER_OF_ACCOUNT' />
-   <value enum='3' description='REJECT_FOR_SUBMITTING_SIDE' 
+   <value enum='3' description='REJECT_FOR_SUBMITTING_SIDE' />
+   <value enum='4' description='ADVISORY_FOR_CONTRA_SIDE' />
+   <value enum='5' description='OFFSET_DUE_TO_AN_ALLOCATION' />
+   <value enum='6' description='ONSET_DUE_TO_AN_ALLOCATION' />
+   <value enum='7' description='DIFFERENTIAL_SPREAD' />
+   <value enum='8' description='IMPLIED_SPREAD_LEG_EXECUTED_AGAINST_AN_OUTRIGHT' />
+   <value enum='9' description='TRANSACTION_FROM_EXERCISE' />
+   <value enum='10' description='TRANSACTION_FROM_ASSIGNMENT' />
+   <value enum='11' description='ACATS' />
+   <value enum='14' description='AI' />
+   <value enum='15' description='B' />
+   <value enum='16' description='K' />
+   <value enum='17' description='LC' />
+   <value enum='18' description='M' />
+   <value enum='19' description='N' />
+   <value enum='20' description='NM' />
+   <value enum='21' description='NR' />
+   <value enum='22' description='P' />
+   <value enum='23' description='PA' />
+   <value enum='24' description='PC' />
+   <value enum='25' description='PN' />
+   <value enum='26' description='R' />
+   <value enum='27' description='RO' />
+   <value enum='28' description='RT' />
+   <value enum='29' description='SW' />
+   <value enum='30' description='T' />
+   <value enum='31' description='WN' />
+   <value enum='32' description='WT' />
+   <value enum='33' description='OFF_HOURS_TRADE' />
+   <value enum='34' description='ON_HOURS_TRADE' />
+   <value enum='35' description='OTC_QUOTE' />
+   <value enum='36' description='CONVERTED_SWAP' />
+   <value enum='37' description='CROSSED_TRADE' />
+   <value enum='38' description='INTERIM_PROTECTED_TRADE'
