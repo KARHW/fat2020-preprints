@@ -9037,4 +9037,35 @@
    <value enum='Y' description='YES' />
   </field>
   <field number='894' name='CollReqID' type='STRING' />
-  <field number='895' name='Col
+  <field number='895' name='CollAsgnReason' type='INT'>
+   <value enum='0' description='INITIAL' />
+   <value enum='1' description='SCHEDULED' />
+   <value enum='2' description='TIME_WARNING' />
+   <value enum='3' description='MARGIN_DEFICIENCY' />
+   <value enum='4' description='MARGIN_EXCESS' />
+   <value enum='5' description='FORWARD_COLLATERAL_DEMAND' />
+   <value enum='6' description='EVENT_OF_DEFAULT' />
+   <value enum='7' description='ADVERSE_TAX_EVENT' />
+  </field>
+  <field number='896' name='CollInquiryQualifier' type='INT'>
+   <value enum='0' description='TRADE_DATE' />
+   <value enum='1' description='GC_INSTRUMENT' />
+   <value enum='2' description='COLLATERAL_INSTRUMENT' />
+   <value enum='3' description='SUBSTITUTION_ELIGIBLE' />
+   <value enum='4' description='NOT_ASSIGNED' />
+   <value enum='5' description='PARTIALLY_ASSIGNED' />
+   <value enum='6' description='FULLY_ASSIGNED' />
+   <value enum='7' description='OUTSTANDING_TRADES' />
+  </field>
+  <field number='897' name='NoTrades' type='NUMINGROUP' />
+  <field number='898' name='MarginRatio' type='PERCENTAGE' />
+  <field number='899' name='MarginExcess' type='AMT' />
+  <field number='900' name='TotalNetValue' type='AMT' />
+  <field number='901' name='CashOutstanding' type='AMT' />
+  <field number='902' name='CollAsgnID' type='STRING' />
+  <field number='903' name='CollAsgnTransType' type='INT'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+   <value enum='3' description='RELEASE' />
+   <value enum='4' d
