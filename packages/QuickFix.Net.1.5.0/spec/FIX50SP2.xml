@@ -9279,4 +9279,34 @@
   <field number='982' name='ExpirationQtyType' type='INT'>
    <value enum='1' description='AUTO_EXERCISE' />
    <value enum='2' description='NON_AUTO_EXERCISE' />
-   <value enum='3' description='FINAL_WILL_BE_EXERCISED
+   <value enum='3' description='FINAL_WILL_BE_EXERCISED' />
+   <value enum='4' description='CONTRARY_INTENTION' />
+   <value enum='5' description='DIFFERENCE' />
+  </field>
+  <field number='983' name='ExpQty' type='QTY' />
+  <field number='984' name='NoUnderlyingAmounts' type='NUMINGROUP' />
+  <field number='985' name='UnderlyingPayAmount' type='AMT' />
+  <field number='986' name='UnderlyingCollectAmount' type='AMT' />
+  <field number='987' name='UnderlyingSettlementDate' type='LOCALMKTDATE' />
+  <field number='988' name='UnderlyingSettlementStatus' type='STRING' />
+  <field number='989' name='SecondaryIndividualAllocID' type='STRING' />
+  <field number='990' name='LegReportID' type='STRING' />
+  <field number='991' name='RndPx' type='PRICE' />
+  <field number='992' name='IndividualAllocType' type='INT'>
+   <value enum='1' description='SUB_ALLOCATE' />
+   <value enum='2' description='THIRD_PARTY_ALLOCATION' />
+  </field>
+  <field number='993' name='AllocCustomerCapacity' type='STRING' />
+  <field number='994' name='TierCode' type='STRING' />
+  <field number='996' name='UnitOfMeasure' type='STRING'>
+   <value enum='MWh' description='MEGAWATT_HOURS' />
+   <value enum='MMBtu' description='ONE_MILLION_BTU' />
+   <value enum='Bbl' description='BARRELS' />
+   <value enum='Gal' description='GALLONS' />
+   <value enum='t' description='METRIC_TONS' />
+   <value enum='tn' description='TONS' />
+   <value enum='MMbbl' description='MILLION_BARRELS' />
+   <value enum='lbs' description='POUNDS' />
+   <value enum='oz_tr' description='TROY_OUNCES' />
+   <value enum='USD' description='US_DOLLARS' />
+   <value enum='Bcf
