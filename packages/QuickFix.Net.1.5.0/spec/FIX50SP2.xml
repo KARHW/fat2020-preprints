@@ -9667,4 +9667,32 @@
   <field number='1142' name='MatchAlgorithm' type='STRING' />
   <field number='1143' name='MaxPriceVariation' type='FLOAT' />
   <field number='1144' name='ImpliedMarketIndicator' type='INT'>
-   <val
+   <value enum='0' description='NOT_IMPLIED' />
+   <value enum='1' description='IMPLIED_IN' />
+   <value enum='2' description='IMPLIED_OUT' />
+   <value enum='3' description='BOTH_IMPLIED_IN_AND_IMPLIED_OUT' />
+  </field>
+  <field number='1145' name='EventTime' type='UTCTIMESTAMP' />
+  <field number='1146' name='MinPriceIncrementAmount' type='AMT' />
+  <field number='1147' name='UnitOfMeasureQty' type='QTY' />
+  <field number='1148' name='LowLimitPrice' type='PRICE' />
+  <field number='1149' name='HighLimitPrice' type='PRICE' />
+  <field number='1150' name='TradingReferencePrice' type='PRICE' />
+  <field number='1151' name='SecurityGroup' type='STRING' />
+  <field number='1152' name='LegNumber' type='INT' />
+  <field number='1153' name='SettlementCycleNo' type='INT' />
+  <field number='1154' name='SideCurrency' type='CURRENCY' />
+  <field number='1155' name='SideSettlCurrency' type='CURRENCY' />
+  <field number='1156' name='ApplExtID' type='INT' />
+  <field number='1157' name='CcyAmt' type='AMT' />
+  <field number='1158' name='NoSettlDetails' type='NUMINGROUP' />
+  <field number='1159' name='SettlObligMode' type='INT'>
+   <value enum='1' description='PRELIMINARY' />
+   <value enum='2' description='FINAL' />
+  </field>
+  <field number='1160' name='SettlObligMsgID' type='STRING' />
+  <field number='1161' name='SettlObligID' type='STRING' />
+  <field number='1162' name='SettlObligTransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPL
