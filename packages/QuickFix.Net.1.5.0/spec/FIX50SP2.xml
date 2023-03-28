@@ -9725,4 +9725,34 @@
    <value enum='1' description='ALL_MARKET_PARTICIPANTS' />
    <value enum='2' description='SPECIFIED_MARKET_PARTICIPANTS' />
    <value enum='3' description='ALL_MARKET_MAKERS' />
-   <value enum='4' description='PRIMAR
+   <value enum='4' description='PRIMARY_MARKET_MAKER' />
+  </field>
+  <field number='1173' name='MDSubBookType' type='INT' />
+  <field number='1174' name='SecurityTradingEvent' type='INT'>
+   <value enum='1' description='ORDER_IMBALANCE_AUCTION_IS_EXTENDED' />
+   <value enum='2' description='TRADING_RESUMES' />
+   <value enum='3' description='PRICE_VOLATILITY_INTERRUPTION' />
+   <value enum='4' description='CHANGE_OF_TRADING_SESSION' />
+   <value enum='5' description='CHANGE_OF_TRADING_SUBSESSION' />
+   <value enum='6' description='CHANGE_OF_SECURITY_TRADING_STATUS' />
+   <value enum='7' description='CHANGE_OF_BOOK_TYPE' />
+   <value enum='8' description='CHANGE_OF_MARKET_DEPTH' />
+  </field>
+  <field number='1175' name='NoStatsIndicators' type='NUMINGROUP' />
+  <field number='1176' name='StatsType' type='INT'>
+   <value enum='1' description='EXCHANGE_LAST' />
+   <value enum='2' description='HIGH' />
+   <value enum='3' description='AVERAGE_PRICE' />
+   <value enum='4' description='TURNOVER' />
+  </field>
+  <field number='1177' name='NoOfSecSizes' type='NUMINGROUP' />
+  <field number='1178' name='MDSecSizeType' type='INT'>
+   <value enum='1' description='CUSTOMER' />
+  </field>
+  <field number='1179' name='MDSecSize' type='QTY' />
+  <field number='1180' name='ApplID' type='STRING' />
+  <field number='1181' name='ApplSeqNum' type='SEQNUM' />
+  <field number='1182' name='ApplBegSeqNum' type='SEQNUM' />
+  <field number='1183' name='ApplEndSeqNum' type='SEQNUM' />
+  <field number='1184' name='SecurityXMLLen' type='LENGTH' />
+  <field number='118
