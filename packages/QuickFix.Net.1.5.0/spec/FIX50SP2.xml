@@ -9810,4 +9810,27 @@
   <field number='1210' name='NestedInstrAttribType' type='INT' />
   <field number='1211' name='NestedInstrAttribValue' type='STRING' />
   <field number='1212' name='LegMaturityTime' type='TZTIMEONLY' />
-  <field number='1213' name='UnderlyingMaturity
+  <field number='1213' name='UnderlyingMaturityTime' type='TZTIMEONLY' />
+  <field number='1214' name='DerivativeSymbol' type='STRING' />
+  <field number='1215' name='DerivativeSymbolSfx' type='STRING' />
+  <field number='1216' name='DerivativeSecurityID' type='STRING' />
+  <field number='1217' name='DerivativeSecurityIDSource' type='STRING' />
+  <field number='1218' name='NoDerivativeSecurityAltID' type='NUMINGROUP' />
+  <field number='1219' name='DerivativeSecurityAltID' type='STRING' />
+  <field number='1220' name='DerivativeSecurityAltIDSource' type='STRING' />
+  <field number='1221' name='SecondaryLowLimitPrice' type='PRICE' />
+  <field number='1222' name='MaturityRuleID' type='STRING' />
+  <field number='1223' name='StrikeRuleID' type='STRING' />
+  <field number='1224' name='LegUnitOfMeasureQty' type='QTY' />
+  <field number='1225' name='DerivativeOptPayAmount' type='AMT' />
+  <field number='1226' name='EndMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1227' name='ProductComplex' type='STRING' />
+  <field number='1228' name='DerivativeProductComplex' type='STRING' />
+  <field number='1229' name='MaturityMonthYearIncrement' type='INT' />
+  <field number='1230' name='SecondaryHighLimitPrice' type='PRICE' />
+  <field number='1231' name='MinLotSize' type='QTY' />
+  <field number='1232' name='NoExecInstRules' type='NUMINGROUP' />
+  <field number='1234' name='NoLotTypeRules' type='NUMINGROUP' />
+  <field number='1235' name='NoMatchRules' type='NUMINGROUP' />
+  <field number='1236' name='NoMaturityRules' type='NUMINGROUP' />
+  <field number='1237' name='No
