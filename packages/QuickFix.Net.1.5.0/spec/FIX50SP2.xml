@@ -9854,4 +9854,27 @@
   <field number='1256' name='DerivativeSecurityStatus' type='STRING' />
   <field number='1257' name='DerivativeInstrRegistry' type='STRING' />
   <field number='1258' name='DerivativeCountryOfIssue' type='COUNTRY' />
-  <field number='1259' name='DerivativeSt
+  <field number='1259' name='DerivativeStateOrProvinceOfIssue' type='STRING' />
+  <field number='1260' name='DerivativeLocaleOfIssue' type='STRING' />
+  <field number='1261' name='DerivativeStrikePrice' type='PRICE' />
+  <field number='1262' name='DerivativeStrikeCurrency' type='CURRENCY' />
+  <field number='1263' name='DerivativeStrikeMultiplier' type='FLOAT' />
+  <field number='1264' name='DerivativeStrikeValue' type='FLOAT' />
+  <field number='1265' name='DerivativeOptAttribute' type='CHAR' />
+  <field number='1266' name='DerivativeContractMultiplier' type='FLOAT' />
+  <field number='1267' name='DerivativeMinPriceIncrement' type='FLOAT' />
+  <field number='1268' name='DerivativeMinPriceIncrementAmount' type='AMT' />
+  <field number='1269' name='DerivativeUnitOfMeasure' type='STRING' />
+  <field number='1270' name='DerivativeUnitOfMeasureQty' type='QTY' />
+  <field number='1271' name='DerivativeTimeUnit' type='STRING' />
+  <field number='1272' name='DerivativeSecurityExchange' type='EXCHANGE' />
+  <field number='1273' name='DerivativePositionLimit' type='INT' />
+  <field number='1274' name='DerivativeNTPositionLimit' type='INT' />
+  <field number='1275' name='DerivativeIssuer' type='STRING' />
+  <field number='1276' name='DerivativeIssueDate' type='LOCALMKTDATE' />
+  <field number='1277' name='DerivativeEncodedIssuerLen' type='LENGTH' />
+  <field number='1278' name='DerivativeEncodedIssuer' type='DATA' />
+  <field number='1279' name='DerivativeSecurityDesc' type='STRING' />
+  <field number='1280' name='DerivativeEncodedSecurityDescLen' type='LENGTH' />
+  <field number='1281' name='DerivativeEncodedSecurityDesc' type='DATA' />
+  <
