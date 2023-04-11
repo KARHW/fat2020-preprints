@@ -9833,4 +9833,25 @@
   <field number='1234' name='NoLotTypeRules' type='NUMINGROUP' />
   <field number='1235' name='NoMatchRules' type='NUMINGROUP' />
   <field number='1236' name='NoMaturityRules' type='NUMINGROUP' />
-  <field number='1237' name='No
+  <field number='1237' name='NoOrdTypeRules' type='NUMINGROUP' />
+  <field number='1239' name='NoTimeInForceRules' type='NUMINGROUP' />
+  <field number='1240' name='SecondaryTradingReferencePrice' type='PRICE' />
+  <field number='1241' name='StartMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1242' name='FlexProductEligibilityIndicator' type='BOOLEAN' />
+  <field number='1243' name='DerivFlexProductEligibilityIndicator' type='BOOLEAN' />
+  <field number='1244' name='FlexibleIndicator' type='BOOLEAN' />
+  <field number='1245' name='TradingCurrency' type='CURRENCY' />
+  <field number='1246' name='DerivativeProduct' type='INT' />
+  <field number='1247' name='DerivativeSecurityGroup' type='STRING' />
+  <field number='1248' name='DerivativeCFICode' type='STRING' />
+  <field number='1249' name='DerivativeSecurityType' type='STRING' />
+  <field number='1250' name='DerivativeSecuritySubType' type='STRING' />
+  <field number='1251' name='DerivativeMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1252' name='DerivativeMaturityDate' type='LOCALMKTDATE' />
+  <field number='1253' name='DerivativeMaturityTime' type='TZTIMEONLY' />
+  <field number='1254' name='DerivativeSettleOnOpenFlag' type='STRING' />
+  <field number='1255' name='DerivativeInstrmtAssignmentMethod' type='CHAR' />
+  <field number='1256' name='DerivativeSecurityStatus' type='STRING' />
+  <field number='1257' name='DerivativeInstrRegistry' type='STRING' />
+  <field number='1258' name='DerivativeCountryOfIssue' type='COUNTRY' />
+  <field number='1259' name='DerivativeSt
