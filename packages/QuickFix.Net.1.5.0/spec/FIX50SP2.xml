@@ -9898,4 +9898,34 @@
   <field number='1300' name='MarketSegmentID' type='STRING' />
   <field number='1301' name='MarketID' type='EXCHANGE' />
   <field number='1302' name='MaturityMonthYearIncrementUnits' type='INT'>
-   <value enum='0' descri
+   <value enum='0' description='MONTHS' />
+   <value enum='1' description='DAYS' />
+   <value enum='2' description='WEEKS' />
+   <value enum='3' description='YEARS' />
+  </field>
+  <field number='1303' name='MaturityMonthYearFormat' type='INT'>
+   <value enum='0' description='YEARMONTH_ONLY' />
+   <value enum='1' description='YEARMONTHDAY' />
+   <value enum='2' description='YEARMONTHWEEK' />
+  </field>
+  <field number='1304' name='StrikeExerciseStyle' type='INT' />
+  <field number='1305' name='SecondaryPriceLimitType' type='INT' />
+  <field number='1306' name='PriceLimitType' type='INT'>
+   <value enum='0' description='PRICE' />
+   <value enum='1' description='TICKS' />
+   <value enum='2' description='PERCENTAGE' />
+  </field>
+  <field number='1307' name='DerivativeSecurityListRequestType' type='INT'>
+   <value enum='0' description='SYMBOL' />
+   <value enum='1' description='SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='2' description='PRODUCT' />
+   <value enum='3' description='TRADINGSESSIONID' />
+   <value enum='4' description='ALL_SECURITIES' />
+   <value enum='5' description='UNDELYINGSYMBOL' />
+   <value enum='6' description='UNDERLYING_SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='7' description='UNDERLYING_PRODUCT' />
+   <value enum='8' description='MARKETID_OR_MARKETID_PLUS_MARKETSEGMENTID' />
+  </field>
+  <field number='1308' name='ExecInstValue' type='CHAR' />
+  <field number='1309' name='NoTradingSessionRules' type='NUMINGROUP' />
+  <field number='1310
