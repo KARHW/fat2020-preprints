@@ -9928,4 +9928,27 @@
   </field>
   <field number='1308' name='ExecInstValue' type='CHAR' />
   <field number='1309' name='NoTradingSessionRules' type='NUMINGROUP' />
-  <field number='1310
+  <field number='1310' name='NoMarketSegments' type='NUMINGROUP' />
+  <field number='1311' name='NoDerivativeInstrAttrib' type='NUMINGROUP' />
+  <field number='1312' name='NoNestedInstrAttrib' type='NUMINGROUP' />
+  <field number='1313' name='DerivativeInstrAttribType' type='INT' />
+  <field number='1314' name='DerivativeInstrAttribValue' type='STRING' />
+  <field number='1315' name='DerivativePriceUnitOfMeasure' type='STRING' />
+  <field number='1316' name='DerivativePriceUnitOfMeasureQty' type='QTY' />
+  <field number='1317' name='DerivativeSettlMethod' type='CHAR' />
+  <field number='1318' name='DerivativePriceQuoteMethod' type='STRING' />
+  <field number='1319' name='DerivativeValuationMethod' type='STRING' />
+  <field number='1320' name='DerivativeListMethod' type='INT' />
+  <field number='1321' name='DerivativeCapPrice' type='PRICE' />
+  <field number='1322' name='DerivativeFloorPrice' type='PRICE' />
+  <field number='1323' name='DerivativePutOrCall' type='INT' />
+  <field number='1324' name='ListUpdateAction' type='CHAR' />
+  <field number='1325' name='ParentMktSegmID' type='STRING' />
+  <field number='1326' name='TradingSessionDesc' type='STRING' />
+  <field number='1327' name='TradSesUpdateAction' type='CHAR' />
+  <field number='1328' name='RejectText' type='STRING' />
+  <field number='1329' name='FeeMultiplier' type='FLOAT' />
+  <field number='1330' name='UnderlyingLegSymbol' type='STRING' />
+  <field number='1331' name='UnderlyingLegSymbolSfx' type='STRING' />
+  <field number='1332' name='UnderlyingLegSecurityID' type='STRING' />
+  <field number='1333' name='UnderlyingLegSec
