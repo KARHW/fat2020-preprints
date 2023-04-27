@@ -9951,4 +9951,25 @@
   <field number='1330' name='UnderlyingLegSymbol' type='STRING' />
   <field number='1331' name='UnderlyingLegSymbolSfx' type='STRING' />
   <field number='1332' name='UnderlyingLegSecurityID' type='STRING' />
-  <field number='1333' name='UnderlyingLegSec
+  <field number='1333' name='UnderlyingLegSecurityIDSource' type='STRING' />
+  <field number='1334' name='NoUnderlyingLegSecurityAltID' type='NUMINGROUP' />
+  <field number='1335' name='UnderlyingLegSecurityAltID' type='STRING' />
+  <field number='1336' name='UnderlyingLegSecurityAltIDSource' type='STRING' />
+  <field number='1337' name='UnderlyingLegSecurityType' type='STRING' />
+  <field number='1338' name='UnderlyingLegSecuritySubType' type='STRING' />
+  <field number='1339' name='UnderlyingLegMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1340' name='UnderlyingLegStrikePrice' type='PRICE' />
+  <field number='1341' name='UnderlyingLegSecurityExchange' type='STRING' />
+  <field number='1342' name='NoOfLegUnderlyings' type='NUMINGROUP' />
+  <field number='1343' name='UnderlyingLegPutOrCall' type='INT' />
+  <field number='1344' name='UnderlyingLegCFICode' type='STRING' />
+  <field number='1345' name='UnderlyingLegMaturityDate' type='LOCALMKTDATE' />
+  <field number='1346' name='ApplReqID' type='STRING' />
+  <field number='1347' name='ApplReqType' type='INT'>
+   <value enum='0' description='RETRANSMISSION_OF_APPLICATION_MESSAGES_FOR_THE_SPECIFIED_APPLICATIONS' />
+   <value enum='1' description='SUBSCRIPTION_TO_THE_SPECIFIED_APPLICATIONS' />
+   <value enum='2' description='REQUEST_FOR_THE_LAST_APPLLASTSEQNUM_PUBLISHED_FOR_THE_SPECIFIED_APPLICATIONS' />
+   <value enum='3' description='REQUEST_VALID_SET_OF_APPLICATIONS' />
+   <value enum='4' description='UNSUBSCRIBE_TO_THE_SPECIFIED_APPLICATIONS' />
+   <value enum='5' description='CANCEL_RETRANSMISSION' />
+   <value enum='6' description='CAN
