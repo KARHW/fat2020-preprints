@@ -9972,4 +9972,30 @@
    <value enum='3' description='REQUEST_VALID_SET_OF_APPLICATIONS' />
    <value enum='4' description='UNSUBSCRIBE_TO_THE_SPECIFIED_APPLICATIONS' />
    <value enum='5' description='CANCEL_RETRANSMISSION' />
-   <value enum='6' description='CAN
+   <value enum='6' description='CANCEL_RETRANSMISSION_AND_UNSUBSCRIBE_TO_THE_SPECIFIED_APPLICATIONS' />
+  </field>
+  <field number='1348' name='ApplResponseType' type='INT'>
+   <value enum='0' description='REQUEST_SUCCESSFULLY_PROCESSED' />
+   <value enum='1' description='APPLICATION_DOES_NOT_EXIST' />
+   <value enum='2' description='MESSAGES_NOT_AVAILABLE' />
+  </field>
+  <field number='1349' name='ApplTotalMessageCount' type='INT' />
+  <field number='1350' name='ApplLastSeqNum' type='SEQNUM' />
+  <field number='1351' name='NoApplIDs' type='NUMINGROUP' />
+  <field number='1352' name='ApplResendFlag' type='BOOLEAN' />
+  <field number='1353' name='ApplResponseID' type='STRING' />
+  <field number='1354' name='ApplResponseError' type='INT'>
+   <value enum='0' description='APPLICATION_DOES_NOT_EXIST' />
+   <value enum='1' description='MESSAGES_REQUESTED_ARE_NOT_AVAILABLE' />
+   <value enum='2' description='USER_NOT_AUTHORIZED_FOR_APPLICATION' />
+  </field>
+  <field number='1355' name='RefApplID' type='STRING' />
+  <field number='1356' name='ApplReportID' type='STRING' />
+  <field number='1357' name='RefApplLastSeqNum' type='SEQNUM' />
+  <field number='1358' name='LegPutOrCall' type='INT' />
+  <field number='1359' name='EncodedSymbolLen' type='LENGTH' />
+  <field number='1360' name='EncodedSymbol' type='DATA' />
+  <field number='1361' name='TotNoFills' type='INT' />
+  <field number='1362' name='NoFills' type='NUMINGROUP' />
+  <field number='1363' name='FillExecID' type='STRING' />
+  <field number='1364' name='FillPx' type
