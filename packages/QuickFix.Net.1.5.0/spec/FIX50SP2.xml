@@ -10026,4 +10026,31 @@
    <value enum='6' description='ALL_ORDERS_FOR_A_TRADING_SESSION' />
    <value enum='7' description='ALL_ORDERS' />
    <value enum='8' description='ALL_ORDERS_FOR_A_MARKET' />
-   <value enum='9' description='ALL_ORDERS_FOR_A
+   <value enum='9' description='ALL_ORDERS_FOR_A_MARKET_SEGMENT' />
+   <value enum='10' description='ALL_ORDERS_FOR_A_SECURITY_GROUP' />
+   <value enum='11' description='CANCEL_FOR_SECURITY_ISSUER' />
+   <value enum='12' description='CANCEL_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='1375' name='MassActionResponse' type='INT'>
+   <value enum='0' description='REJECTED' />
+   <value enum='1' description='ACCEPTED' />
+  </field>
+  <field number='1376' name='MassActionRejectReason' type='INT'>
+   <value enum='0' description='MASS_ACTION_NOT_SUPPORTED' />
+   <value enum='1' description='INVALID_OR_UNKNOWN_SECURITY' />
+   <value enum='2' description='INVALID_OR_UNKNOWN_UNDERLYING_SECURITY' />
+   <value enum='3' description='INVALID_OR_UNKNOWN_PRODUCT' />
+   <value enum='4' description='INVALID_OR_UNKNOWN_CFICODE' />
+   <value enum='5' description='INVALID_OR_UNKNOWN_SECURITYTYPE' />
+   <value enum='6' description='INVALID_OR_UNKNOWN_TRADING_SESSION' />
+   <value enum='7' description='INVALID_OR_UNKNOWN_MARKET' />
+   <value enum='8' description='INVALID_OR_UNKNOWN_MARKET_SEGMENT' />
+   <value enum='9' description='INVALID_OR_UNKNOWN_SECURITY_GROUP' />
+   <value enum='99' description='OTHER' />
+   <value enum='10' description='INVALID_OR_UNKNOWN_SECURITY_ISSUER' />
+   <value enum='11' description='INVALID_OR_UNKNOWN_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='1377' name='MultilegModel' type='INT'>
+   <value enum='0' description='PREDEFINED_MULTILEG_SECURITY' />
+   <value enum='1' description='USER_DEFINED_MULTLEG_SECURITY' />
+   <value enum='2' description='USER_DEFINE
