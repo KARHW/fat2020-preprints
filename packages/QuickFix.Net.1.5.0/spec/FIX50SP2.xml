@@ -9998,4 +9998,32 @@
   <field number='1361' name='TotNoFills' type='INT' />
   <field number='1362' name='NoFills' type='NUMINGROUP' />
   <field number='1363' name='FillExecID' type='STRING' />
-  <field number='1364' name='FillPx' type
+  <field number='1364' name='FillPx' type='PRICE' />
+  <field number='1365' name='FillQty' type='QTY' />
+  <field number='1366' name='LegAllocID' type='STRING' />
+  <field number='1367' name='LegAllocSettlCurrency' type='CURRENCY' />
+  <field number='1368' name='TradSesEvent' type='INT'>
+   <value enum='0' description='TRADING_RESUMES' />
+   <value enum='1' description='CHANGE_OF_TRADING_SESSION' />
+   <value enum='2' description='CHANGE_OF_TRADING_SUBSESSION' />
+   <value enum='3' description='CHANGE_OF_TRADING_STATUS' />
+  </field>
+  <field number='1369' name='MassActionReportID' type='STRING' />
+  <field number='1370' name='NoNotAffectedOrders' type='NUMINGROUP' />
+  <field number='1371' name='NotAffectedOrderID' type='STRING' />
+  <field number='1372' name='NotAffOrigClOrdID' type='STRING' />
+  <field number='1373' name='MassActionType' type='INT'>
+   <value enum='1' description='SUSPEND_ORDERS' />
+   <value enum='2' description='RELEASE_ORDERS_FROM_SUSPENSION' />
+   <value enum='3' description='CANCEL_ORDERS' />
+  </field>
+  <field number='1374' name='MassActionScope' type='INT'>
+   <value enum='1' description='ALL_ORDERS_FOR_A_SECURITY' />
+   <value enum='2' description='ALL_ORDERS_FOR_AN_UNDERLYING_SECURITY' />
+   <value enum='3' description='ALL_ORDERS_FOR_A_PRODUCT' />
+   <value enum='4' description='ALL_ORDERS_FOR_A_CFICODE' />
+   <value enum='5' description='ALL_ORDERS_FOR_A_SECURITYTYPE' />
+   <value enum='6' description='ALL_ORDERS_FOR_A_TRADING_SESSION' />
+   <value enum='7' description='ALL_ORDERS' />
+   <value enum='8' description='ALL_ORDERS_FOR_A_MARKET' />
+   <value enum='9' description='ALL_ORDERS_FOR_A
