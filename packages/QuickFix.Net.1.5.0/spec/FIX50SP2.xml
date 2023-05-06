@@ -10135,4 +10135,30 @@
   <field number='1417' name='Nested4PartyRole' type='INT' />
   <field number='1418' name='LegLastQty' type='QTY' />
   <field number='1419' name='UnderlyingExerciseStyle' type='INT' />
-  <field number='1420' name='Leg
+  <field number='1420' name='LegExerciseStyle' type='INT' />
+  <field number='1421' name='LegPriceUnitOfMeasure' type='STRING' />
+  <field number='1422' name='LegPriceUnitOfMeasureQty' type='QTY' />
+  <field number='1423' name='UnderlyingUnitOfMeasureQty' type='QTY' />
+  <field number='1424' name='UnderlyingPriceUnitOfMeasure' type='STRING' />
+  <field number='1425' name='UnderlyingPriceUnitOfMeasureQty' type='QTY' />
+  <field number='1426' name='ApplReportType' type='INT'>
+   <value enum='0' description='RESET_APPLSEQNUM_TO_NEW_VALUE_SPECIFIED_IN_APPLNEWSEQNUM' />
+   <value enum='1' description='REPORTS_THAT_THE_LAST_MESSAGE_HAS_BEEN_SENT_FOR_THE_APPLIDS_REFER_TO_REFAPPLLASTSEQNUM' />
+   <value enum='2' description='HEARTBEAT_MESSAGE_INDICATING_THAT_APPLICATION_IDENTIFIED_BY_REFAPPLID' />
+   <value enum='3' description='APPLICATION_MESSAGE_RE_SEND_COMPLETED' />
+  </field>
+  <field number='1427' name='SideExecID' type='STRING' />
+  <field number='1428' name='OrderDelay' type='INT' />
+  <field number='1429' name='OrderDelayUnit' type='INT'>
+   <value enum='0' description='SECONDS' />
+   <value enum='1' description='TENTHS_OF_A_SECOND' />
+   <value enum='2' description='HUNDREDTHS_OF_A_SECOND' />
+   <value enum='3' description='MILLISECONDS' />
+   <value enum='4' description='MICROSECONDS' />
+   <value enum='5' description='NANOSECONDS' />
+   <value enum='10' description='MINUTES' />
+   <value enum='11' description='HOURS' />
+   <value enum='12' description='DAYS' />
+   <value enum='13' description='WEEKS' />
+   <value enum='14' description='MONTHS' />
+   <value enum='15' 
