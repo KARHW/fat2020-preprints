@@ -10193,4 +10193,33 @@
   <field number='1437' name='UnderlyingContractMultiplierUnit' type='INT' />
   <field number='1438' name='DerivativeContractMultiplierUnit' type='INT' />
   <field number='1439' name='FlowScheduleType' type='INT'>
-   <value enum
+   <value enum='0' description='NERC_EASTERN_OFF_PEAK' />
+   <value enum='1' description='NERC_WESTERN_OFF_PEAK' />
+   <value enum='2' description='NERC_CALENDAR_ALL_DAYS_IN_MONTH' />
+   <value enum='3' description='NERC_EASTERN_PEAK' />
+   <value enum='4' description='NERC_WESTERN_PEAK' />
+  </field>
+  <field number='1440' name='LegFlowScheduleType' type='INT' />
+  <field number='1441' name='UnderlyingFlowScheduleType' type='INT' />
+  <field number='1442' name='DerivativeFlowScheduleType' type='INT' />
+  <field number='1443' name='FillLiquidityInd' type='INT' />
+  <field number='1444' name='SideLiquidityInd' type='INT' />
+  <field number='1445' name='NoRateSources' type='NUMINGROUP' />
+  <field number='1446' name='RateSource' type='INT'>
+   <value enum='0' description='BLOOMBERG' />
+   <value enum='1' description='REUTERS' />
+   <value enum='2' description='TELERATE' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='1447' name='RateSourceType' type='INT'>
+   <value enum='0' description='PRIMARY' />
+   <value enum='1' description='SECONDARY' />
+  </field>
+  <field number='1448' name='ReferencePage' type='STRING' />
+  <field number='1449' name='RestructuringType' type='STRING'>
+   <value enum='FR' description='FULL_RESTRUCTURING' />
+   <value enum='MR' description='MODIFIED_RESTRUCTURING' />
+   <value enum='MM' description='MODIFIED_MOD_RESTRUCTURING' />
+   <value enum='XR' description='NO_RESTRUCTURING_SPECIFIED' />
+  </field>
+  <field number='1450' name='Seniority' ty
