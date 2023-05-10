@@ -10222,4 +10222,28 @@
    <value enum='MM' description='MODIFIED_MOD_RESTRUCTURING' />
    <value enum='XR' description='NO_RESTRUCTURING_SPECIFIED' />
   </field>
-  <field number='1450' name='Seniority' ty
+  <field number='1450' name='Seniority' type='STRING'>
+   <value enum='SD' description='SENIOR_SECURED' />
+   <value enum='SR' description='SENIOR' />
+   <value enum='SB' description='SUBORDINATED' />
+  </field>
+  <field number='1451' name='NotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1452' name='OriginalNotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1453' name='UnderlyingRestructuringType' type='STRING' />
+  <field number='1454' name='UnderlyingSeniority' type='STRING' />
+  <field number='1455' name='UnderlyingNotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1456' name='UnderlyingOriginalNotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1457' name='AttachmentPoint' type='PERCENTAGE' />
+  <field number='1458' name='DetachmentPoint' type='PERCENTAGE' />
+  <field number='1459' name='UnderlyingAttachmentPoint' type='PERCENTAGE' />
+  <field number='1460' name='UnderlyingDetachmentPoint' type='PERCENTAGE' />
+  <field number='1461' name='NoTargetPartyIDs' type='NUMINGROUP' />
+  <field number='1462' name='TargetPartyID' type='STRING' />
+  <field number='1463' name='TargetPartyIDSource' type='CHAR' />
+  <field number='1464' name='TargetPartyRole' type='INT' />
+  <field number='1465' name='SecurityListID' type='STRING' />
+  <field number='1466' name='SecurityListRefID' type='STRING' />
+  <field number='1467' name='SecurityListDesc' type='STRING' />
+  <field number='1468' name='EncodedSecurityListDescLen' type='LENGTH' />
+  <field number='1469' name='EncodedSecurityListDesc' type='DATA' />
+  <field number='1470' name='SecurityLis
