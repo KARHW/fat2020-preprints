@@ -10276,4 +10276,31 @@
   <field number='1478' name='StrikePriceDeterminationMethod' type='INT'>
    <value enum='1' description='FIXED_STRIKE' />
    <value enum='2' description='STRIKE_SET_AT_EXPIRATION_TO_UNDERLYING_OR_OTHER_VALUE' />
-   <value enu
+   <value enum='3' description='STRIKE_SET_TO_AVERAGE_OF_UNDERLYING_SETTLEMENT_PRICE_ACROSS_THE_LIFE_OF_THE_OPTION' />
+   <value enum='4' description='STRIKE_SET_TO_OPTIMAL_VALUE' />
+  </field>
+  <field number='1479' name='StrikePriceBoundaryMethod' type='INT'>
+   <value enum='1' description='LESS_THAN_UNDERLYING_PRICE_IS_IN_THE_MONEY' />
+   <value enum='2' description='LESS_THAN_OR_EQUAL_TO_THE_UNDERLYING_PRICE_IS_IN_THE_MONEY' />
+   <value enum='3' description='EQUAL_TO_THE_UNDERLYING_PRICE_IS_IN_THE_MONEY' />
+   <value enum='4' description='GREATER_THAN_OR_EQUAL_TO_UNDERLYING_PRICE_IS_IN_THE_MONEY' />
+   <value enum='5' description='GREATER_THAN_UNDERLYING_IS_IN_THE_MONEY' />
+  </field>
+  <field number='1480' name='StrikePriceBoundaryPrecision' type='PERCENTAGE' />
+  <field number='1481' name='UnderlyingPriceDeterminationMethod' type='INT'>
+   <value enum='1' description='REGULAR' />
+   <value enum='2' description='SPECIAL_REFERENCE' />
+   <value enum='3' description='OPTIMAL_VALUE' />
+   <value enum='4' description='AVERAGE_VALUE' />
+  </field>
+  <field number='1482' name='OptPayoutType' type='INT'>
+   <value enum='1' description='VANILLA' />
+   <value enum='2' description='CAPPED' />
+   <value enum='3' description='BINARY' />
+  </field>
+  <field number='1483' name='NoComplexEvents' type='NUMINGROUP' />
+  <field number='1484' name='ComplexEventType' type='INT'>
+   <value enum='1' description='CAPPED' />
+   <value enum='2' description='TRIGGER' />
+   <value enum='3' description='KNOCK_IN_UP' />
+   <value enum='4' description='KOCK_IN_DOWN'
