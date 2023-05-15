@@ -10385,4 +10385,32 @@
    <value enum='2' description='CLEARS_THROUGH' />
    <value enum='3' description='TRADES_FOR' />
    <value enum='4' description='TRADES_THROUGH' />
-   <value enum='5' descrip
+   <value enum='5' description='SPONSORS' />
+   <value enum='6' description='SPONSORED_THROUGH' />
+   <value enum='7' description='PROVIDES_GUARANTEE_FOR' />
+   <value enum='8' description='IS_GUARANTEED_BY' />
+   <value enum='9' description='MEMBER_OF' />
+   <value enum='10' description='HAS_MEMBERS' />
+   <value enum='11' description='PROVIDES_MARKETPLACE_FOR' />
+   <value enum='12' description='PARTICIPANT_OF_MARKETPLACE' />
+   <value enum='13' description='CARRIES_POSITIONS_FOR' />
+   <value enum='14' description='POSTS_TRADES_TO' />
+   <value enum='15' description='ENTERS_TRADES_FOR' />
+   <value enum='16' description='ENTERS_TRADES_THROUGH' />
+   <value enum='17' description='PROVIDES_QUOTES_TO' />
+   <value enum='18' description='REQUESTS_QUOTES_FROM' />
+   <value enum='19' description='INVESTS_FOR' />
+   <value enum='20' description='INVESTS_THROUGH' />
+   <value enum='21' description='BROKERS_TRADES_FOR' />
+   <value enum='22' description='BROKERS_TRADES_THROUGH' />
+   <value enum='23' description='PROVIDES_TRADING_SERVICES_FOR' />
+   <value enum='24' description='USES_TRADING_SERVICES_OF' />
+   <value enum='25' description='APPROVES_OF' />
+   <value enum='26' description='APPROVED_BY' />
+   <value enum='27' description='PARENT_FIRM_FOR' />
+   <value enum='28' description='SUBSIDIARY_OF' />
+   <value enum='29' description='REGULATORY_OWNER_OF' />
+   <value enum='30' description='OWNED_BY_30' />
+   <value enum='31' description='CONTROLS' />
+   <value enum='32' description='IS_CONTROLLED_BY' />
+   <value enum='33' descripti
