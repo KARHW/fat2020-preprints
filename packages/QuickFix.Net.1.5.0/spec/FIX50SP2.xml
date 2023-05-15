@@ -10359,4 +10359,30 @@
   <field number='1506' name='NoPartyListResponseTypes' type='NUMINGROUP' />
   <field number='1507' name='PartyListResponseType' type='INT'>
    <value enum='0' description='RETURN_ALL_AVAILABLE_INFORMATION_ON_PARTIES_AND_RELATED_PARTIES' />
-   <value 
+   <value enum='1' description='RETURN_ONLY_PARTY_INFORMATION' />
+   <value enum='2' description='INCLUDE_INFORMATION_ON_RELATED_PARTIES' />
+   <value enum='3' description='INCLUDE_RISK_LIMIT_INFORMATION' />
+  </field>
+  <field number='1508' name='NoRequestedPartyRoles' type='NUMINGROUP' />
+  <field number='1509' name='RequestedPartyRole' type='INT' />
+  <field number='1510' name='PartyDetailsListReportID' type='STRING' />
+  <field number='1511' name='PartyDetailsRequestResult' type='INT'>
+   <value enum='0' description='VALID_REQUEST' />
+   <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
+   <value enum='2' description='NO_PARTIES_OR_PARTY_DETAILS_FOUND_THAT_MATCH_SELECTION_CRITERIA' />
+   <value enum='3' description='UNSUPPORTED_PARTYLISTRESPONSETYPE' />
+   <value enum='4' description='NOT_AUTHORIZED_TO_RETRIEVE_PARTIES_OR_PARTY_DETAILS_DATA' />
+   <value enum='5' description='PARTIES_OR_PARTY_DETAILS_DATA_TEMPORARILY_UNAVAILABLE' />
+   <value enum='6' description='REQUEST_FOR_PARTIES_DATA_NOT_SUPPORTED' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='1512' name='TotNoPartyList' type='INT' />
+  <field number='1513' name='NoPartyList' type='NUMINGROUP' />
+  <field number='1514' name='NoPartyRelationships' type='NUMINGROUP' />
+  <field number='1515' name='PartyRelationship' type='INT'>
+   <value enum='0' description='IS_ALSO' />
+   <value enum='1' description='CLEARS_FOR' />
+   <value enum='2' description='CLEARS_THROUGH' />
+   <value enum='3' description='TRADES_FOR' />
+   <value enum='4' description='TRADES_THROUGH' />
+   <value enum='5' descrip
