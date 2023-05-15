@@ -10303,4 +10303,34 @@
    <value enum='1' description='CAPPED' />
    <value enum='2' description='TRIGGER' />
    <value enum='3' description='KNOCK_IN_UP' />
-   <value enum='4' description='KOCK_IN_DOWN'
+   <value enum='4' description='KOCK_IN_DOWN' />
+   <value enum='5' description='KNOCK_OUT_UP' />
+   <value enum='6' description='KNOCK_OUT_DOWN' />
+   <value enum='7' description='UNDERLYING' />
+   <value enum='8' description='RESET_BARRIER' />
+   <value enum='9' description='ROLLING_BARRIER' />
+  </field>
+  <field number='1485' name='ComplexOptPayoutAmount' type='AMT' />
+  <field number='1486' name='ComplexEventPrice' type='PRICE' />
+  <field number='1487' name='ComplexEventPriceBoundaryMethod' type='INT'>
+   <value enum='1' description='LESS_THAN_COMPLEXEVENTPRICE' />
+   <value enum='2' description='LESS_THAN_OR_EQUAL_TO_COMPLEXEVENTPRICE' />
+   <value enum='3' description='EQUAL_TO_COMPLEXEVENTPRICE' />
+   <value enum='4' description='GREATER_THAN_OR_EQUAL_TO_COMPLEXEVENTPRICE' />
+   <value enum='5' description='GREATER_THAN_COMPLEXEVENTPRICE' />
+  </field>
+  <field number='1488' name='ComplexEventPriceBoundaryPrecision' type='PERCENTAGE' />
+  <field number='1489' name='ComplexEventPriceTimeType' type='INT'>
+   <value enum='1' description='EXPIRATION' />
+   <value enum='2' description='IMMEDIATE' />
+   <value enum='3' description='SPECIFIED_DATE_TIME' />
+  </field>
+  <field number='1490' name='ComplexEventCondition' type='INT'>
+   <value enum='1' description='AND' />
+   <value enum='2' description='OR' />
+  </field>
+  <field number='1491' name='NoComplexEventDates' type='NUMINGROUP' />
+  <field number='1492' name='ComplexEventStartDate' type='UTCTIMESTAMP' />
+  <field number='1493' name='ComplexEventEndDate' type='UTCTIMESTAMP' />
+  <field number='1494' name='NoComplexEventTimes' type='NUMINGROUP' />
+  <field numb
