@@ -10441,4 +10441,29 @@
   </field>
   <field number='1531' name='RiskLimitAmount' type='AMT' />
   <field number='1532' name='RiskLimitCurrency' type='CURRENCY' />
-  <field number='1533' name='R
+  <field number='1533' name='RiskLimitPlatform' type='STRING' />
+  <field number='1534' name='NoRiskInstruments' type='NUMINGROUP' />
+  <field number='1535' name='RiskInstrumentOperator' type='INT'>
+   <value enum='1' description='INCLUDE' />
+   <value enum='2' description='EXCLUDE' />
+  </field>
+  <field number='1536' name='RiskSymbol' type='STRING' />
+  <field number='1537' name='RiskSymbolSfx' type='STRING' />
+  <field number='1538' name='RiskSecurityID' type='STRING' />
+  <field number='1539' name='RiskSecurityIDSource' type='STRING' />
+  <field number='1540' name='NoRiskSecurityAltID' type='NUMINGROUP' />
+  <field number='1541' name='RiskSecurityAltID' type='STRING' />
+  <field number='1542' name='RiskSecurityAltIDSource' type='STRING' />
+  <field number='1543' name='RiskProduct' type='INT' />
+  <field number='1544' name='RiskProductComplex' type='STRING' />
+  <field number='1545' name='RiskSecurityGroup' type='STRING' />
+  <field number='1546' name='RiskCFICode' type='STRING' />
+  <field number='1547' name='RiskSecurityType' type='STRING' />
+  <field number='1548' name='RiskSecuritySubType' type='STRING' />
+  <field number='1549' name='RiskMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1550' name='RiskMaturityTime' type='TZTIMEONLY' />
+  <field number='1551' name='RiskRestructuringType' type='STRING' />
+  <field number='1552' name='RiskSeniority' type='STRING' />
+  <field number='1553' name='RiskPutOrCall' type='INT' />
+  <field number='1554' name='RiskFlexibleIndicator' type='BOOLEAN' />
+  <field number='1555' name='RiskCou
