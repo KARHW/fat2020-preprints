@@ -10528,4 +10528,14 @@
   <field number='1614' name='RelationshipRiskWarningLevelPercent' type='PERCENTAGE' />
   <field number='1615' name='RelationshipRiskWarningLevelName' type='STRING' />
   <field number='1616' name='RiskSecurityExchange' type='EXCHANGE' />
-  <field number='1617' name='StreamAsgnTy
+  <field number='1617' name='StreamAsgnType' type='INT'>
+   <value enum='1' description='ASSIGNMENT' />
+   <value enum='2' description='REJECTED' />
+   <value enum='3' description='TERMINATE_UNASSIGN' />
+  </field>
+  <field number='1618' name='RelationshipRiskEncodedSecurityDescLen' type='LENGTH' />
+  <field number='1619' name='RelationshipRiskEncodedSecurityDesc' type='DATA' />
+  <field number='1620' name='RiskEncodedSecurityDescLen' type='LENGTH' />
+  <field number='1621' name='RiskEncodedSecurityDesc' type='DATA' />
+ </fields>
+</fix>
