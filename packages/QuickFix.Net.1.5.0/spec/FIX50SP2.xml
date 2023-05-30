@@ -10489,4 +10489,24 @@
   <field number='1575' name='NoRelatedContextPartyIDs' type='NUMINGROUP' />
   <field number='1576' name='RelatedContextPartyID' type='STRING' />
   <field number='1577' name='RelatedContextPartyIDSource' type='CHAR' />
-  <field number='1578' name='RelatedC
+  <field number='1578' name='RelatedContextPartyRole' type='INT' />
+  <field number='1579' name='NoRelatedContextPartySubIDs' type='NUMINGROUP' />
+  <field number='1580' name='RelatedContextPartySubID' type='STRING' />
+  <field number='1581' name='RelatedContextPartySubIDType' type='INT' />
+  <field number='1582' name='NoRelationshipRiskLimits' type='NUMINGROUP' />
+  <field number='1583' name='RelationshipRiskLimitType' type='INT' />
+  <field number='1584' name='RelationshipRiskLimitAmount' type='AMT' />
+  <field number='1585' name='RelationshipRiskLimitCurrency' type='CURRENCY' />
+  <field number='1586' name='RelationshipRiskLimitPlatform' type='STRING' />
+  <field number='1587' name='NoRelationshipRiskInstruments' type='NUMINGROUP' />
+  <field number='1588' name='RelationshipRiskInstrumentOperator' type='INT' />
+  <field number='1589' name='RelationshipRiskSymbol' type='STRING' />
+  <field number='1590' name='RelationshipRiskSymbolSfx' type='STRING' />
+  <field number='1591' name='RelationshipRiskSecurityID' type='STRING' />
+  <field number='1592' name='RelationshipRiskSecurityIDSource' type='STRING' />
+  <field number='1593' name='NoRelationshipRiskSecurityAltID' type='NUMINGROUP' />
+  <field number='1594' name='RelationshipRiskSecurityAltID' type='STRING' />
+  <field number='1595' name='RelationshipRiskSecurityAltIDSource' type='STRING' />
+  <field number='1596' name='RelationshipRiskProduct' type='INT' />
+  <field number='1597' name='RelationshipRiskProductComplex' type='STRING' />
+  <field number='1598' name='Relatio
