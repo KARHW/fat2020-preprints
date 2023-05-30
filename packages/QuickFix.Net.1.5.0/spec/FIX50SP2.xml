@@ -10509,4 +10509,23 @@
   <field number='1595' name='RelationshipRiskSecurityAltIDSource' type='STRING' />
   <field number='1596' name='RelationshipRiskProduct' type='INT' />
   <field number='1597' name='RelationshipRiskProductComplex' type='STRING' />
-  <field number='1598' name='Relatio
+  <field number='1598' name='RelationshipRiskSecurityGroup' type='STRING' />
+  <field number='1599' name='RelationshipRiskCFICode' type='STRING' />
+  <field number='1600' name='RelationshipRiskSecurityType' type='STRING' />
+  <field number='1601' name='RelationshipRiskSecuritySubType' type='STRING' />
+  <field number='1602' name='RelationshipRiskMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1603' name='RelationshipRiskMaturityTime' type='TZTIMEONLY' />
+  <field number='1604' name='RelationshipRiskRestructuringType' type='STRING' />
+  <field number='1605' name='RelationshipRiskSeniority' type='STRING' />
+  <field number='1606' name='RelationshipRiskPutOrCall' type='INT' />
+  <field number='1607' name='RelationshipRiskFlexibleIndicator' type='BOOLEAN' />
+  <field number='1608' name='RelationshipRiskCouponRate' type='PERCENTAGE' />
+  <field number='1609' name='RelationshipRiskSecurityExchange' type='EXCHANGE' />
+  <field number='1610' name='RelationshipRiskSecurityDesc' type='STRING' />
+  <field number='1611' name='RelationshipRiskInstrumentSettlType' type='STRING' />
+  <field number='1612' name='RelationshipRiskInstrumentMultiplier' type='FLOAT' />
+  <field number='1613' name='NoRelationshipRiskWarningLevels' type='NUMINGROUP' />
+  <field number='1614' name='RelationshipRiskWarningLevelPercent' type='PERCENTAGE' />
+  <field number='1615' name='RelationshipRiskWarningLevelName' type='STRING' />
+  <field number='1616' name='RiskSecurityExchange' type='EXCHANGE' />
+  <field number='1617' name='StreamAsgnTy
